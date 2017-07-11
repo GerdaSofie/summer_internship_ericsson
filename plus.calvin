@@ -1,0 +1,53 @@
+component mediaplayer() dict -> {
+
+    const : std.Constant(data=true)
+    mush : text.Mustache(fmt="{{data}}.ogg")
+    player : media.MediaPlayer2()
+
+    .dict > mush.dict
+    mush.text > player.mediafile
+    const.token > player.play
+
+}
+
+format : text.Mustache(fmt="Card with data {{data}}, card id {{cardno}}")
+status : json.GetValue()
+push : web.Pushbullet(title="Is It Working?")
+select : flow.Select()
+select2 : flow.Select()
+rfid : sensor.RFIDReader()
+mp : mediaplayer()
+
+people : room.PersonCounter()
+print : io.Print()
+rum : json.GetValue()
+getv : json.GetValue()
+length : text.Length()
+
+voidport > rfid.data
+
+rfid.data > select.data
+rfid.data > status.container
+"status" > status.key
+status.value > select.select
+
+select.case_false > voidport
+select.case_true > format.dict
+select.case_true > mp.dict
+select.case_true > getv.container
+
+format.text > push.message
+
+"data" > getv.key
+getv.value > people.id
+"garage" > people.room
+
+people.rooms > rum.container
+"garage" > rum.key
+rum.value > length.string
+length.length > print.token
+
+people.status > select2.select
+
+select2.case_true >
+select2.case_false >
