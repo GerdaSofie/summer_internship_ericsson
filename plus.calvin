@@ -9,12 +9,12 @@ component mediaplayer() dict -> {
     const.token > player.play
 
 }
+antaldic : json.Dict()
+antalmush : text.Mustache(fmt"There is {{antal}} people in this room")
 
-format : text.Mustache(fmt="Card with data {{data}}, card id {{cardno}}")
 status : json.GetValue()
 push : web.Pushbullet(title="Is It Working?")
 select : flow.Select()
-select2 : flow.Select()
 rfid : sensor.RFIDReader()
 mp : mediaplayer()
 
@@ -32,11 +32,8 @@ rfid.data > status.container
 status.value > select.select
 
 select.case_false > voidport
-select.case_true > format.dict
 select.case_true > mp.dict
 select.case_true > getv.container
-
-format.text > push.message
 
 "data" > getv.key
 getv.value > people.id
@@ -45,9 +42,10 @@ getv.value > people.id
 people.rooms > rum.container
 "garage" > rum.key
 rum.value > length.string
-length.length > print.token
+length.length > antaldic.value
+"antal" > antaldic.key
+antaldic.dict > antalmush.dict
 
-people.status > select2.select
+antalmush.text > push.message
 
-select2.case_true >
-select2.case_false >
+people.status > voidport
