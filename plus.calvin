@@ -10,10 +10,9 @@ component mediaplayer() dict -> {
 
 }
 antaldic : json.Dict()
-antalmush : text.Mustache(fmt"There is {{antal}} people in this room")
+antalmush : text.Mustache(fmt="There is {{antal}} people in this room")
 
 status : json.GetValue()
-push : web.Pushbullet(title="Is It Working?")
 select : flow.Select()
 rfid : sensor.RFIDReader()
 mp : mediaplayer()
@@ -46,6 +45,6 @@ length.length > antaldic.value
 "antal" > antaldic.key
 antaldic.dict > antalmush.dict
 
-antalmush.text > push.message
+antalmush.text > print.token
 
 people.status > voidport
