@@ -10,6 +10,7 @@ component MediaPlayer() dict -> {
 
 }
 
+
 component ClearRFID() -> ontrue {
   /* component som rensar ut falsevärdet som kommer när du plockar bort idt från läsaren och skickar ut rfid datan. */
   rfid : sensor.RFIDReader()
@@ -33,37 +34,57 @@ render : media.MultipleImageRenderer()
 select2 : flow.Select()
 init : flow.Init(data="1")
 antaldic : json.Dict()
-rum : json.GetValue()
-getv : json.GetValue()
-antalmush : text.Mustache(fmt="There is {{antal}} people in this room")
-length : text.Length()
+antalmush2 : text.Mustache(fmt="There is {{antal}} person in this room")
+antalmush : text.Mustache(fmt="There are {{antal}} people in this room")
+push : web.Pushbullet(title="Are you keeping up with the garage info?")
 people : room.PersonCounter()
-compare : std.Compare(op=">=")
+switch : flow.Switch()
+compare : std.Compare(rel="=")
+rum : json.GetValue()
+/*getv : json.GetValue()*/
+getid : json.GetValue()
+length : text.Length()
+compareio : std.Compare(rel=">=")
 print : io.Print()
 
-rfid.ontrue > getv.container
+rfid.ontrue > getid.container
 
-"data" > getv.key
-getv.value > people.id
+"data" > getid.key
+getid.value > people.id
 "garage" > people.room
 people.status > voidport
 people.rooms > rum.container
 "garage" > rum.key
 rum.value > length.string
 length.length > antaldic.value
-length.length > compare.a
+length.length > compareio.a
 length.length > init.in
 "antal" > antaldic.key
-init.out > compare.b
-antaldic.dict > antalmush.dict
-antalmush.text > print.token
 
-compare.result > select2.select
-getv.value > select2.data
+init.out > compareio.b
+antaldic.dict >  print.token      /* antalmush redigering*/
+
+compareio.result > select2.select
+getid.value > select2.data
 select2.case_false > render.remove
-/* select2.case_false > här ska ljudet för när man går ut ligga */ 
+/* select2.case_false > här ska ljudet för när man går ut ligga */
 select2.case_true > camera.trigger
 select2.case_true > mp.dict
 camera.status > voidport
 camera.image > render.image
-getv.value > render.id
+getid.value > render.id
+
+
+length.length > compare.a
+1 >compare.b
+antaldic.dict > antalmush.dict
+antaldic.dict > antalmush2.dict
+
+compare.result > switch.switch
+antalmush2.text > switch.a
+antalmush.text > switch.b
+
+switch.b > push.message
+switch.a > voidport
+
+people.status > voidport
