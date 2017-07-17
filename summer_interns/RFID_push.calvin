@@ -1,0 +1,8 @@
+trigger :std.Trigger(tick=60, data="Welcome")
+push : web.Pushbullet(title=" Is It Working?")
+rfid : sensor.RFIDReader()
+
+
+
+trigger.data  > rfid.data
+rfid.data > push.message

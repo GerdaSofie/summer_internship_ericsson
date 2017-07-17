@@ -1,0 +1,27 @@
+people : room.PersonCounter()
+print : io.Print()
+rfid : sensor.RFIDReader()
+getv : json.GetValue()
+length : text.Length()
+select : flow.Select()
+status : json.GetValue()
+rum : json.GetValue()
+
+voidport > rfid.data
+rfid.data > select.data
+rfid.data > status.container
+"status" > status.key
+status.value > select.select
+
+select.case_false > voidport
+select.case_true > getv.container
+
+"data" > getv.key
+getv.value > people.id
+"garage" > people.room
+
+people.status > voidport
+people.rooms > rum.container
+"garage" > rum.key
+rum.value > length.string
+length.length > print.token
