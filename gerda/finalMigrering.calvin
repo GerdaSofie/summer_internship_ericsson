@@ -222,18 +222,6 @@ component RedFlashLight(address, username, lightno, interval) input-> {
   light.status > voidport
 }
 
-component GreenOkLight(address, username, lightno, time) input-> {
-  light : StopLight(address=address, username=username, lightno=lightno,red=0, green=255, blue=0)
-  pacer : std.ClassicDelay(delay=time)
-  alternate : flow.Alternate2()
-
-  .input > alternate.token_1
-  false > alternate.token_2
-  alternate.token > pacer.token
-  pacer.token > light.state
-  light.status > voidport
-}
-
 component CmdBuilder() on, sat, bri, hue -> string {
     to_str : json.ToString()
     set_on : json.SetValue()
@@ -274,9 +262,7 @@ redgb.brightness > .brightness
 
 component Lights() room, status -> {
   flashRedGarage : RedFlashLight(address="192.168.0.141", username="191db4b57899c277637781315c1f53", lightno=3, interval=1.0)
-  flashGreenGarage : GreenOkLight(address="192.168.0.141", username="191db4b57899c277637781315c1f53", lightno=3, time=5.0)
   flashRedLego : RedFlashLight(address="192.168.0.141", username="191db4b57899c277637781315c1f53", lightno=2, interval=1.0)
-  flashGreenLego : GreenOkLight(address="192.168.0.141", username="191db4b57899c277637781315c1f53", lightno=2, time=5.0)
   compare : std.Compare(rel="=")
   selectLight : flow.Select()
   selectGarage : flow.Select()
@@ -286,17 +272,9 @@ component Lights() room, status -> {
   "stationGarage" > compare.b
   compare.result > selectLight.select
   .status > selectLight.data
-  selectLight.case_true > selectGarage.select
-  selectLight.case_false > selectLego.select
-
-  /*Skicka vidare vilket rum det är, samt datan*/
-  true > selectGarage.data
-  selectGarage.case_true > flashGreenGarage.input
-  selectGarage.case_false > flashRedGarage.input
-
-  true > selectLego.data
-  selectLego.case_true > flashGreenLego.input
-  selectLego.case_false > flashRedLego.input
+  selectLight.case_true > flashRedGarage.input
+  selectLight.case_false > flashRedLego.input
+  
 }
 
 deploy_info : std.Constant(data=

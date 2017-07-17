@@ -163,7 +163,6 @@ deploy: CalvinDeployer(control_uri=CONTROL_URI)
 rfid : RFIDReader()
 migrator : Migrator()
 peopleCounter : PeopleCounter()
-lights : Lights()
 print : io.Log(loglevel="INFO")
 print2 : io.Log(loglevel="INFO")
 

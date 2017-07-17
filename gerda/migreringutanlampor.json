@@ -1,0 +1,1511 @@
+{
+    "connections": {
+        "migreringutanlampor:rfid:_literal_const_11.token": [
+            "migreringutanlampor:rfid:deselect.case_false"
+        ], 
+        "migreringutanlampor:rfid:compare.result": [
+            "migreringutanlampor:rfid:deselect.select"
+        ], 
+        "migreringutanlampor:peopleCounter:_literal_const_16.token": [
+            "migreringutanlampor:peopleCounter:getv.key"
+        ], 
+        "migreringutanlampor:rfid:_literal_const_10.token": [
+            "migreringutanlampor:rfid:deselect.case_true"
+        ], 
+        "migreringutanlampor:migrator:migrate:migrate.header": [
+            "migreringutanlampor:migrator:migrate:post.header"
+        ], 
+        "migreringutanlampor:rfid:_void_13.void": [
+            "migreringutanlampor:rfid:log2.data"
+        ], 
+        "migreringutanlampor:migrator:_literal_const_5.token": [
+            "migreringutanlampor:migrator:deselect.case_true"
+        ], 
+        "migreringutanlampor:rfid:rfidGarage.data": [
+            "migreringutanlampor:rfid:joinData.token", 
+            "migreringutanlampor:rfid:constantGarage.in"
+        ], 
+        "migreringutanlampor:migrator:migrate:controlpath.out": [
+            "migreringutanlampor:migrator:migrate:migrate.control_uri"
+        ], 
+        "migreringutanlampor:peopleCounter:getv.value": [
+            "migreringutanlampor:peopleCounter:people.id"
+        ], 
+        "migreringutanlampor:migrator:migrate:migrate.params": [
+            "migreringutanlampor:migrator:migrate:post.params"
+        ], 
+        "migreringutanlampor:peopleCounter:people.rooms": [
+            "migreringutanlampor:peopleCounter:rum.container"
+        ], 
+        "migreringutanlampor:rfid:_void_8.void": [
+            "migreringutanlampor:rfid:rfidLego.data"
+        ], 
+        "migreringutanlampor:filereader.out": [
+            "migreringutanlampor:linejoin.line"
+        ], 
+        "migreringutanlampor:deploy:deploy.header": [
+            "migreringutanlampor:deploy:post.header"
+        ], 
+        "migreringutanlampor:deploy:sec_credentials.token": [
+            "migreringutanlampor:deploy:deploy.sec_credentials"
+        ], 
+        "migreringutanlampor:migrator:deselect.data": [
+            "migreringutanlampor:migrator:migrate:migrate.key"
+        ], 
+        "migreringutanlampor:migrator:migrate:migrate.done": [
+            "migreringutanlampor:_void_19.void"
+        ], 
+        "migreringutanlampor:rfid:constantGarage.out": [
+            "migreringutanlampor:rfid:joinConstant.token"
+        ], 
+        "migreringutanlampor:deploy:post.header": [
+            "migreringutanlampor:deploy:deploy.header"
+        ], 
+        "migreringutanlampor:rfid:constantLego.out": [
+            "migreringutanlampor:rfid:joinConstant.token"
+        ], 
+        "migreringutanlampor:peopleCounter:status.value": [
+            "migreringutanlampor:peopleCounter:select.select"
+        ], 
+        "migreringutanlampor:deploy:deploy.app_info": [
+            "migreringutanlampor:migrator:migrate:migrate.app_id"
+        ], 
+        "migreringutanlampor:peopleCounter:_literal_const_15.token": [
+            "migreringutanlampor:peopleCounter:status.key"
+        ], 
+        "migreringutanlampor:linejoin.text": [
+            "migreringutanlampor:deploy:deploy.script"
+        ], 
+        "migreringutanlampor:rfid:_literal_const_9.token": [
+            "migreringutanlampor:rfid:compare.a"
+        ], 
+        "migreringutanlampor:name.out": [
+            "migreringutanlampor:deploy:deploy.name"
+        ], 
+        "migreringutanlampor:deploy:deploy.params": [
+            "migreringutanlampor:deploy:post.params"
+        ], 
+        "migreringutanlampor:migrator:migrate:migrate.data": [
+            "migreringutanlampor:migrator:migrate:post.data"
+        ], 
+        "migreringutanlampor:migrator:migrate:_void_3.void": [
+            "migreringutanlampor:migrator:migrate:controlpath.in"
+        ], 
+        "migreringutanlampor:peopleCounter:people.status": [
+            "migreringutanlampor:_void_17.void"
+        ], 
+        "migreringutanlampor:rfid:rfidLego.data": [
+            "migreringutanlampor:rfid:joinData.token", 
+            "migreringutanlampor:rfid:constantLego.in"
+        ], 
+        "migreringutanlampor:migrator:_literal_const_4.token": [
+            "migreringutanlampor:migrator:compare.b"
+        ], 
+        "migreringutanlampor:peopleCounter:select.case_false": [
+            "migreringutanlampor:peopleCounter:_void_14.void"
+        ], 
+        "migreringutanlampor:peopleCounter:select.case_true": [
+            "migreringutanlampor:peopleCounter:getv.container"
+        ], 
+        "migreringutanlampor:migrator:migrate:migrate.URL": [
+            "migreringutanlampor:migrator:migrate:post.URL"
+        ], 
+        "migreringutanlampor:deploy:post.status": [
+            "migreringutanlampor:deploy:deploy.status"
+        ], 
+        "migreringutanlampor:rfid:_void_12.void": [
+            "migreringutanlampor:rfid:log1.data"
+        ], 
+        "migreringutanlampor:migrator:migrate:post.status": [
+            "migreringutanlampor:migrator:migrate:migrate.status"
+        ], 
+        "migreringutanlampor:_literal_const_20.token": [
+            "migreringutanlampor:filereader.filename"
+        ], 
+        "migreringutanlampor:deploy:controlpath.token": [
+            "migreringutanlampor:deploy:_void_1.void", 
+            "migreringutanlampor:deploy:deploy.control_uri"
+        ], 
+        "migreringutanlampor:rfid:joinData.token": [
+            "migreringutanlampor:peopleCounter:select.data", 
+            "migreringutanlampor:peopleCounter:status.container"
+        ], 
+        "migreringutanlampor:_void_21.void": [
+            "migreringutanlampor:name.in"
+        ], 
+        "migreringutanlampor:migrator:migrate:post.header": [
+            "migreringutanlampor:migrator:migrate:migrate.header"
+        ], 
+        "migreringutanlampor:rfid:joinConstant.token": [
+            "migreringutanlampor:rfid:compare.b"
+        ], 
+        "migreringutanlampor:migrator:_literal_const_6.token": [
+            "migreringutanlampor:migrator:deselect.case_false"
+        ], 
+        "migreringutanlampor:deploy:deploy.URL": [
+            "migreringutanlampor:deploy:post.URL"
+        ], 
+        "migreringutanlampor:peopleCounter:rum.value": [
+            "migreringutanlampor:peopleCounter:length.string"
+        ], 
+        "migreringutanlampor:deploy_info.token": [
+            "migreringutanlampor:deploy:deploy.deploy_info"
+        ], 
+        "migreringutanlampor:deploy:deploy.data": [
+            "migreringutanlampor:deploy:post.data"
+        ], 
+        "migreringutanlampor:migrator:compare.result": [
+            "migreringutanlampor:migrator:log.data", 
+            "migreringutanlampor:migrator:deselect.select"
+        ], 
+        "migreringutanlampor:migrator:migrate:post.data": [
+            "migreringutanlampor:migrator:migrate:_void_2.void"
+        ], 
+        "migreringutanlampor:deploy:post.data": [
+            "migreringutanlampor:deploy:deploy.data"
+        ], 
+        "migreringutanlampor:rfid:deselect.data": [
+            "migreringutanlampor:print.data", 
+            "migreringutanlampor:migrator:compare.a", 
+            "migreringutanlampor:peopleCounter:people.room", 
+            "migreringutanlampor:peopleCounter:rum.key"
+        ], 
+        "migreringutanlampor:_void_22.void": [
+            "migreringutanlampor:print2.data"
+        ], 
+        "migreringutanlampor:rfid:_void_7.void": [
+            "migreringutanlampor:rfid:rfidGarage.data"
+        ], 
+        "migreringutanlampor:peopleCounter:length.length": [
+            "migreringutanlampor:_void_18.void"
+        ]
+    }, 
+    "port_properties": {
+        "migreringutanlampor:migrator:migrate:_void_3": [
+            {
+                "direction": "out", 
+                "port": "void", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "migreringutanlampor:migrator:migrate:_void_2": [
+            {
+                "direction": "in", 
+                "port": "void", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "migreringutanlampor:peopleCounter:_void_14": [
+            {
+                "direction": "in", 
+                "port": "void", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "migreringutanlampor:rfid:_void_12": [
+            {
+                "direction": "out", 
+                "port": "void", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "migreringutanlampor:rfid:_void_13": [
+            {
+                "direction": "out", 
+                "port": "void", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "migreringutanlampor:rfid:rfidGarage": [
+            {
+                "direction": "in", 
+                "port": "data", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "data", 
+                "properties": {
+                    "nbr_peers": 2
+                }
+            }
+        ], 
+        "migreringutanlampor:rfid:deselect": [
+            {
+                "direction": "in", 
+                "port": "case_true", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "select", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "case_false", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "data", 
+                "properties": {
+                    "nbr_peers": 4
+                }
+            }
+        ], 
+        "migreringutanlampor:deploy:deploy": [
+            {
+                "direction": "in", 
+                "port": "status", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "deploy_info", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "name", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "sec_credentials", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "script", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "header", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "control_uri", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "data", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "app_info", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "URL", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "params", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "data", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "header", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "migreringutanlampor:rfid:_literal_const_10": [
+            {
+                "direction": "out", 
+                "port": "token", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "migreringutanlampor:rfid:_literal_const_11": [
+            {
+                "direction": "out", 
+                "port": "token", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "migreringutanlampor:deploy:_void_1": [
+            {
+                "direction": "in", 
+                "port": "void", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "migreringutanlampor:migrator:deselect": [
+            {
+                "direction": "in", 
+                "port": "case_true", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "select", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "case_false", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "data", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "migreringutanlampor:linejoin": [
+            {
+                "direction": "in", 
+                "port": "line", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "text", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "migreringutanlampor:rfid:_literal_const_9": [
+            {
+                "direction": "out", 
+                "port": "token", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "migreringutanlampor:peopleCounter:rum": [
+            {
+                "direction": "in", 
+                "port": "container", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "key", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "value", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "migreringutanlampor:_void_19": [
+            {
+                "direction": "in", 
+                "port": "void", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "migreringutanlampor:migrator:_literal_const_4": [
+            {
+                "direction": "out", 
+                "port": "token", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "migreringutanlampor:migrator:_literal_const_5": [
+            {
+                "direction": "out", 
+                "port": "token", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "migreringutanlampor:migrator:_literal_const_6": [
+            {
+                "direction": "out", 
+                "port": "token", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "migreringutanlampor:_void_18": [
+            {
+                "direction": "in", 
+                "port": "void", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "migreringutanlampor:_literal_const_20": [
+            {
+                "direction": "out", 
+                "port": "token", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "migreringutanlampor:deploy_info": [
+            {
+                "direction": "out", 
+                "port": "token", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "migreringutanlampor:rfid:compare": [
+            {
+                "direction": "in", 
+                "port": "a", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "b", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "result", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "migreringutanlampor:peopleCounter:select": [
+            {
+                "direction": "in", 
+                "port": "data", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "select", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "case_true", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "case_false", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "migreringutanlampor:rfid:joinConstant": [
+            {
+                "direction": "in", 
+                "port": "token", 
+                "properties": {
+                    "nbr_peers": 2, 
+                    "routing": "collect-unordered"
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "token", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "migreringutanlampor:name": [
+            {
+                "direction": "in", 
+                "port": "in", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "out", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "migreringutanlampor:migrator:migrate:controlpath": [
+            {
+                "direction": "in", 
+                "port": "in", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "out", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "migreringutanlampor:peopleCounter:_literal_const_16": [
+            {
+                "direction": "out", 
+                "port": "token", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "migreringutanlampor:peopleCounter:_literal_const_15": [
+            {
+                "direction": "out", 
+                "port": "token", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "migreringutanlampor:_void_17": [
+            {
+                "direction": "in", 
+                "port": "void", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "migreringutanlampor:print2": [
+            {
+                "direction": "in", 
+                "port": "data", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "migreringutanlampor:migrator:migrate:migrate": [
+            {
+                "direction": "in", 
+                "port": "status", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "header", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "control_uri", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "app_id", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "key", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "URL", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "params", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "done", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "data", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "header", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "migreringutanlampor:filereader": [
+            {
+                "direction": "in", 
+                "port": "filename", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "out", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "migreringutanlampor:rfid:joinData": [
+            {
+                "direction": "in", 
+                "port": "token", 
+                "properties": {
+                    "nbr_peers": 2, 
+                    "routing": "collect-unordered"
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "token", 
+                "properties": {
+                    "nbr_peers": 2
+                }
+            }
+        ], 
+        "migreringutanlampor:peopleCounter:people": [
+            {
+                "direction": "in", 
+                "port": "room", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "id", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "status", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "rooms", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "migreringutanlampor:deploy:sec_credentials": [
+            {
+                "direction": "out", 
+                "port": "token", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "migreringutanlampor:migrator:migrate:post": [
+            {
+                "direction": "in", 
+                "port": "URL", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "header", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "params", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "data", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "status", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "header", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "data", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "migreringutanlampor:migrator:log": [
+            {
+                "direction": "in", 
+                "port": "data", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "migreringutanlampor:rfid:_void_7": [
+            {
+                "direction": "out", 
+                "port": "void", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "migreringutanlampor:peopleCounter:getv": [
+            {
+                "direction": "in", 
+                "port": "container", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "key", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "value", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "migreringutanlampor:rfid:_void_8": [
+            {
+                "direction": "out", 
+                "port": "void", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "migreringutanlampor:print": [
+            {
+                "direction": "in", 
+                "port": "data", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "migreringutanlampor:rfid:constantLego": [
+            {
+                "direction": "in", 
+                "port": "in", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "out", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "migreringutanlampor:rfid:constantGarage": [
+            {
+                "direction": "in", 
+                "port": "in", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "out", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "migreringutanlampor:rfid:rfidLego": [
+            {
+                "direction": "in", 
+                "port": "data", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "data", 
+                "properties": {
+                    "nbr_peers": 2
+                }
+            }
+        ], 
+        "migreringutanlampor:deploy:controlpath": [
+            {
+                "direction": "out", 
+                "port": "token", 
+                "properties": {
+                    "nbr_peers": 2
+                }
+            }
+        ], 
+        "migreringutanlampor:deploy:post": [
+            {
+                "direction": "in", 
+                "port": "URL", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "header", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "params", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "data", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "status", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "header", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "data", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "migreringutanlampor:_void_21": [
+            {
+                "direction": "out", 
+                "port": "void", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "migreringutanlampor:peopleCounter:length": [
+            {
+                "direction": "in", 
+                "port": "string", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "length", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "migreringutanlampor:_void_22": [
+            {
+                "direction": "out", 
+                "port": "void", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "migreringutanlampor:rfid:log1": [
+            {
+                "direction": "in", 
+                "port": "data", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "migreringutanlampor:migrator:compare": [
+            {
+                "direction": "in", 
+                "port": "a", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "b", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "result", 
+                "properties": {
+                    "nbr_peers": 2
+                }
+            }
+        ], 
+        "migreringutanlampor:rfid:log2": [
+            {
+                "direction": "in", 
+                "port": "data", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "migreringutanlampor:peopleCounter:status": [
+            {
+                "direction": "in", 
+                "port": "container", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "key", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "value", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ]
+    }, 
+    "valid": true, 
+    "actors": {
+        "migreringutanlampor:migrator:migrate:_void_3": {
+            "args": {}, 
+            "actor_type": "flow.Void", 
+            "signature": "3a749ff7e2bc123a6e5870c9a337f72e0025a69bff24de632bd2905f7bf21d00"
+        }, 
+        "migreringutanlampor:migrator:migrate:_void_2": {
+            "args": {}, 
+            "actor_type": "flow.Terminator", 
+            "signature": "d020e4a1dc9953df2924eba3ceed61544fff2bd4fab9f602758cce0e8957d522"
+        }, 
+        "migreringutanlampor:peopleCounter:_void_14": {
+            "args": {}, 
+            "actor_type": "flow.Terminator", 
+            "signature": "d020e4a1dc9953df2924eba3ceed61544fff2bd4fab9f602758cce0e8957d522"
+        }, 
+        "migreringutanlampor:rfid:_void_12": {
+            "args": {}, 
+            "actor_type": "flow.Void", 
+            "signature": "3a749ff7e2bc123a6e5870c9a337f72e0025a69bff24de632bd2905f7bf21d00"
+        }, 
+        "migreringutanlampor:rfid:_void_13": {
+            "args": {}, 
+            "actor_type": "flow.Void", 
+            "signature": "3a749ff7e2bc123a6e5870c9a337f72e0025a69bff24de632bd2905f7bf21d00"
+        }, 
+        "migreringutanlampor:rfid:rfidGarage": {
+            "args": {}, 
+            "actor_type": "sensor.RFIDReader", 
+            "signature": "c6d20d15bf5bcd83714d963b4348025fb6882ecd955776bdb78b5598ec115e3f"
+        }, 
+        "migreringutanlampor:rfid:deselect": {
+            "args": {}, 
+            "actor_type": "flow.Deselect", 
+            "signature": "a4f030267249aa9d2498dac1d5f9494b616bfc9d3dfd44760b3b3a9b696ee52b"
+        }, 
+        "migreringutanlampor:deploy:deploy": {
+            "args": {}, 
+            "actor_type": "calvin.CalvinDeployerA", 
+            "signature": "04ad548d73c2c38a31532705b376cced977ec194bf52df742343e9e860a9336f"
+        }, 
+        "migreringutanlampor:rfid:_literal_const_10": {
+            "args": {
+                "data": "stationGarage"
+            }, 
+            "actor_type": "std.Constant", 
+            "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
+        }, 
+        "migreringutanlampor:rfid:_literal_const_11": {
+            "args": {
+                "data": "stationLego"
+            }, 
+            "actor_type": "std.Constant", 
+            "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
+        }, 
+        "migreringutanlampor:deploy:_void_1": {
+            "args": {}, 
+            "actor_type": "flow.Terminator", 
+            "signature": "d020e4a1dc9953df2924eba3ceed61544fff2bd4fab9f602758cce0e8957d522"
+        }, 
+        "migreringutanlampor:migrator:deselect": {
+            "args": {}, 
+            "actor_type": "flow.Deselect", 
+            "signature": "a4f030267249aa9d2498dac1d5f9494b616bfc9d3dfd44760b3b3a9b696ee52b"
+        }, 
+        "migreringutanlampor:linejoin": {
+            "args": {}, 
+            "actor_type": "text.LineJoin", 
+            "signature": "d56aebb2d606cbcc767002df862aecec5162c0bbdd7f6e6547f4bcbbaa1beabe"
+        }, 
+        "migreringutanlampor:rfid:_literal_const_9": {
+            "args": {
+                "data": 1
+            }, 
+            "actor_type": "std.Constant", 
+            "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
+        }, 
+        "migreringutanlampor:peopleCounter:rum": {
+            "args": {}, 
+            "actor_type": "json.GetValue", 
+            "signature": "b5af23ef7594f12cb586ebda67fd1b51b6c437445c67593b37d6dc3b00fc66f7"
+        }, 
+        "migreringutanlampor:_void_19": {
+            "args": {}, 
+            "actor_type": "flow.Terminator", 
+            "signature": "d020e4a1dc9953df2924eba3ceed61544fff2bd4fab9f602758cce0e8957d522"
+        }, 
+        "migreringutanlampor:migrator:_literal_const_4": {
+            "args": {
+                "data": "stationGarage"
+            }, 
+            "actor_type": "std.Constant", 
+            "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
+        }, 
+        "migreringutanlampor:migrator:_literal_const_5": {
+            "args": {
+                "data": "stationGarage"
+            }, 
+            "actor_type": "std.Constant", 
+            "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
+        }, 
+        "migreringutanlampor:migrator:_literal_const_6": {
+            "args": {
+                "data": "stationLego"
+            }, 
+            "actor_type": "std.Constant", 
+            "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
+        }, 
+        "migreringutanlampor:_void_18": {
+            "args": {}, 
+            "actor_type": "flow.Terminator", 
+            "signature": "d020e4a1dc9953df2924eba3ceed61544fff2bd4fab9f602758cce0e8957d522"
+        }, 
+        "migreringutanlampor:_literal_const_20": {
+            "args": {
+                "data": "testprint.calvin"
+            }, 
+            "actor_type": "std.Constant", 
+            "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
+        }, 
+        "migreringutanlampor:deploy_info": {
+            "args": {
+                "data": {
+                    "requirements": {
+                        "log": [
+                            {
+                                "kwargs": {
+                                    "index": [
+                                        "address", 
+                                        {
+                                            "name": "Garage"
+                                        }
+                                    ]
+                                }, 
+                                "type": "+", 
+                                "op": "node_attr_match"
+                            }
+                        ]
+                    }
+                }
+            }, 
+            "actor_type": "std.Constant", 
+            "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
+        }, 
+        "migreringutanlampor:rfid:compare": {
+            "args": {
+                "rel": "="
+            }, 
+            "actor_type": "std.Compare", 
+            "signature": "ea233444664ef2a929101373002d8fa5d89e91aceae7724fbd5a109e5f874446"
+        }, 
+        "migreringutanlampor:peopleCounter:select": {
+            "args": {}, 
+            "actor_type": "flow.Select", 
+            "signature": "95f965d1cdf97fc1148c0dd763f15ee2822f8a448b965ca387ca983921dda847"
+        }, 
+        "migreringutanlampor:rfid:joinConstant": {
+            "args": {}, 
+            "actor_type": "flow.Collect", 
+            "signature": "e6b5141ac9ddab19cec49d8785f1f3cf4acf763498c721870ff1dcafca119059"
+        }, 
+        "migreringutanlampor:name": {
+            "args": {
+                "data": "migrate_room"
+            }, 
+            "actor_type": "flow.Init", 
+            "signature": "3e308e47a996352b4965a7449eeb84f049b9e0931e5011dd923bad6660e6e002"
+        }, 
+        "migreringutanlampor:migrator:migrate:controlpath": {
+            "args": {
+                "data": "http://192.168.0.139:5001"
+            }, 
+            "actor_type": "flow.Init", 
+            "signature": "3e308e47a996352b4965a7449eeb84f049b9e0931e5011dd923bad6660e6e002"
+        }, 
+        "migreringutanlampor:peopleCounter:_literal_const_16": {
+            "args": {
+                "data": "data"
+            }, 
+            "actor_type": "std.Constant", 
+            "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
+        }, 
+        "migreringutanlampor:peopleCounter:_literal_const_15": {
+            "args": {
+                "data": "status"
+            }, 
+            "actor_type": "std.Constant", 
+            "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
+        }, 
+        "migreringutanlampor:_void_17": {
+            "args": {}, 
+            "actor_type": "flow.Terminator", 
+            "signature": "d020e4a1dc9953df2924eba3ceed61544fff2bd4fab9f602758cce0e8957d522"
+        }, 
+        "migreringutanlampor:print2": {
+            "args": {
+                "loglevel": "INFO"
+            }, 
+            "actor_type": "io.Log", 
+            "signature": "e73ce6ca0ccc9bce14f8d546e930f53cb69e466eb3325e1cc24d64e8b0bb97b5"
+        }, 
+        "migreringutanlampor:migrator:migrate:migrate": {
+            "args": {
+                "deploy_info": {
+                    "stationLego": {
+                        "requirements": {
+                            "log": [
+                                {
+                                    "kwargs": {
+                                        "index": [
+                                            "address", 
+                                            {
+                                                "room": "Lego"
+                                            }
+                                        ]
+                                    }, 
+                                    "type": "+", 
+                                    "op": "node_attr_match"
+                                }
+                            ]
+                        }
+                    }, 
+                    "stationGarage": {
+                        "requirements": {
+                            "log": [
+                                {
+                                    "kwargs": {
+                                        "index": [
+                                            "address", 
+                                            {
+                                                "room": "Garage"
+                                            }
+                                        ]
+                                    }, 
+                                    "type": "+", 
+                                    "op": "node_attr_match"
+                                }
+                            ]
+                        }
+                    }
+                }
+            }, 
+            "actor_type": "calvin.CalvinMigraterA", 
+            "signature": "e671fbaa47a4bc35eef5bbabe94f5b5d649b729bb94e58f0bb698f4c56195c03"
+        }, 
+        "migreringutanlampor:filereader": {
+            "args": {}, 
+            "actor_type": "io.FileReader", 
+            "signature": "22504cbad608cd467cb9fb346940ef04491cd7c6ad7aab035c36bd09ffd63f2d"
+        }, 
+        "migreringutanlampor:rfid:joinData": {
+            "args": {}, 
+            "actor_type": "flow.Collect", 
+            "signature": "e6b5141ac9ddab19cec49d8785f1f3cf4acf763498c721870ff1dcafca119059"
+        }, 
+        "migreringutanlampor:peopleCounter:people": {
+            "args": {}, 
+            "actor_type": "room.PersonCounter", 
+            "signature": "c6a4012230f2b6d14e4ef7a00790fc8093692f66b1255f99a1a05483b7801fdc"
+        }, 
+        "migreringutanlampor:deploy:sec_credentials": {
+            "args": {
+                "data": {}
+            }, 
+            "actor_type": "std.Constant", 
+            "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
+        }, 
+        "migreringutanlampor:migrator:migrate:post": {
+            "args": {}, 
+            "actor_type": "net.HTTPPost", 
+            "signature": "51594f52b9c2d375fe535740fa4173db2a3d4c5353843753a511af0f0b8da72a"
+        }, 
+        "migreringutanlampor:migrator:log": {
+            "args": {
+                "loglevel": "INFO"
+            }, 
+            "actor_type": "io.Log", 
+            "signature": "e73ce6ca0ccc9bce14f8d546e930f53cb69e466eb3325e1cc24d64e8b0bb97b5"
+        }, 
+        "migreringutanlampor:rfid:_void_7": {
+            "args": {}, 
+            "actor_type": "flow.Void", 
+            "signature": "3a749ff7e2bc123a6e5870c9a337f72e0025a69bff24de632bd2905f7bf21d00"
+        }, 
+        "migreringutanlampor:peopleCounter:getv": {
+            "args": {}, 
+            "actor_type": "json.GetValue", 
+            "signature": "b5af23ef7594f12cb586ebda67fd1b51b6c437445c67593b37d6dc3b00fc66f7"
+        }, 
+        "migreringutanlampor:rfid:_void_8": {
+            "args": {}, 
+            "actor_type": "flow.Void", 
+            "signature": "3a749ff7e2bc123a6e5870c9a337f72e0025a69bff24de632bd2905f7bf21d00"
+        }, 
+        "migreringutanlampor:print": {
+            "args": {
+                "loglevel": "INFO"
+            }, 
+            "actor_type": "io.Log", 
+            "signature": "e73ce6ca0ccc9bce14f8d546e930f53cb69e466eb3325e1cc24d64e8b0bb97b5"
+        }, 
+        "migreringutanlampor:rfid:constantLego": {
+            "args": {
+                "constant": 2
+            }, 
+            "actor_type": "std.Constantify", 
+            "signature": "1a4817b57e4582f845962c396b4305f8a48609c75fdcb134ed50c34226b1a97d"
+        }, 
+        "migreringutanlampor:rfid:constantGarage": {
+            "args": {
+                "constant": 1
+            }, 
+            "actor_type": "std.Constantify", 
+            "signature": "1a4817b57e4582f845962c396b4305f8a48609c75fdcb134ed50c34226b1a97d"
+        }, 
+        "migreringutanlampor:rfid:rfidLego": {
+            "args": {}, 
+            "actor_type": "sensor.RFIDReader", 
+            "signature": "c6d20d15bf5bcd83714d963b4348025fb6882ecd955776bdb78b5598ec115e3f"
+        }, 
+        "migreringutanlampor:deploy:controlpath": {
+            "args": {
+                "data": "http://192.168.0.139:5001"
+            }, 
+            "actor_type": "std.Constant", 
+            "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
+        }, 
+        "migreringutanlampor:deploy:post": {
+            "args": {}, 
+            "actor_type": "net.HTTPPost", 
+            "signature": "51594f52b9c2d375fe535740fa4173db2a3d4c5353843753a511af0f0b8da72a"
+        }, 
+        "migreringutanlampor:_void_21": {
+            "args": {}, 
+            "actor_type": "flow.Void", 
+            "signature": "3a749ff7e2bc123a6e5870c9a337f72e0025a69bff24de632bd2905f7bf21d00"
+        }, 
+        "migreringutanlampor:peopleCounter:length": {
+            "args": {}, 
+            "actor_type": "text.Length", 
+            "signature": "8a70cfa62da2134e74b308fac090aaa279574fabcc6afbb5bb6a26f364534da9"
+        }, 
+        "migreringutanlampor:_void_22": {
+            "args": {}, 
+            "actor_type": "flow.Void", 
+            "signature": "3a749ff7e2bc123a6e5870c9a337f72e0025a69bff24de632bd2905f7bf21d00"
+        }, 
+        "migreringutanlampor:rfid:log1": {
+            "args": {
+                "loglevel": "INFO"
+            }, 
+            "actor_type": "io.Log", 
+            "signature": "e73ce6ca0ccc9bce14f8d546e930f53cb69e466eb3325e1cc24d64e8b0bb97b5"
+        }, 
+        "migreringutanlampor:migrator:compare": {
+            "args": {
+                "rel": "="
+            }, 
+            "actor_type": "std.Compare", 
+            "signature": "ea233444664ef2a929101373002d8fa5d89e91aceae7724fbd5a109e5f874446"
+        }, 
+        "migreringutanlampor:rfid:log2": {
+            "args": {
+                "loglevel": "INFO"
+            }, 
+            "actor_type": "io.Log", 
+            "signature": "e73ce6ca0ccc9bce14f8d546e930f53cb69e466eb3325e1cc24d64e8b0bb97b5"
+        }, 
+        "migreringutanlampor:peopleCounter:status": {
+            "args": {}, 
+            "actor_type": "json.GetValue", 
+            "signature": "b5af23ef7594f12cb586ebda67fd1b51b6c437445c67593b37d6dc3b00fc66f7"
+        }
+    }, 
+    "name": "migreringutanlampor"
+}
