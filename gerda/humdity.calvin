@@ -1,0 +1,6 @@
+src : std.CountTimer(sleep=5)
+moisture : sensor.TriggeredSoilMoisture()
+snk : io.Print()
+
+src.integer > moisture.trigger
+moisture.level > snk.token

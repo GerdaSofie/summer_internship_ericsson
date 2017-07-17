@@ -1,0 +1,343 @@
+define CONTROL_URI = "http://192.168.0.139:5001"
+define APPNAME = "migrate_room"
+define FILE = "testprint.calvin"
+
+component CalvinDeployer(control_uri) name, script, deploy_info -> app_info {
+    sec_credentials:std.Constant(data={})
+    controlpath: std.Constant(data=control_uri)
+    deploy: calvin.CalvinDeployerA()
+    post: net.HTTPPost()
+
+    sec_credentials.token > deploy.sec_credentials
+    .name > deploy.name
+    .script > deploy.script
+    .deploy_info > deploy.deploy_info
+    deploy.app_info > .app_info
+
+    controlpath.token > voidport
+    controlpath.token > deploy.control_uri
+
+    deploy.URL > post.URL
+    deploy.params > post.params
+    deploy.header > post.header
+    deploy.data > post.data
+
+    post.status > deploy.status
+    post.header > deploy.header
+    post.data > deploy.data
+}
+
+component CalvinMigrater(control_uri, deploy_info) app_id, key -> done {
+    controlpath: flow.Init(data=control_uri)
+    migrate: calvin.CalvinMigraterA(deploy_info=deploy_info)
+    post: net.HTTPPost()
+
+    .app_id > migrate.app_id
+    .key > migrate.key
+
+    voidport > controlpath.in
+    controlpath.out > migrate.control_uri
+
+    migrate.URL > post.URL
+    migrate.params > post.params
+    migrate.header > post.header
+    migrate.data > post.data
+    migrate.done > .done
+
+    post.status > migrate.status
+    post.header > migrate.header
+    post.data > voidport
+}
+
+component Migrator() room , app_id -> done {
+  migrate: CalvinMigrater(control_uri=CONTROL_URI, deploy_info=
+  {
+     "stationGarage":
+     {
+          "requirements":
+          {
+  	    "log":[{"op": "node_attr_match","kwargs": {"index": ["address", {"room": "Garage"}]}, "type": "+"}],
+          }
+      },
+      "stationLego":
+      {
+          "requirements":
+          {
+  	    "log":[{"op": "node_attr_match","kwargs": {"index": ["address", {"room": "Lego"}]}, "type": "+"}],
+
+          }
+      }
+  })
+  deselect : flow.Deselect()
+  compare : std.Compare(rel="=")
+  log : io.Log(loglevel="INFO")
+
+  .app_id > migrate.app_id
+  .room > compare.a
+  "stationGarage" > compare.b
+  compare.result > log.data
+  compare.result > deselect.select
+  "stationGarage" > deselect.case_true
+  "stationLego" > deselect.case_false
+  deselect.data > migrate.key
+  migrate.done > .done
+}
+
+component RFIDReader() -> data, room {
+  rfidGarage : sensor.RFIDReader()
+  rfidLego : sensor.RFIDReader()
+  constantGarage : std.Constantify(constant=1)
+  constantLego : std.Constantify(constant=2)
+  joinConstant : flow.Collect()
+  compare : std.Compare(rel="=")
+  deselect : flow.Deselect()
+  joinData : flow.Collect()
+  log1 : io.Log(loglevel="INFO")
+  log2 : io.Log(loglevel="INFO")
+
+  voidport > rfidGarage.data
+  rfidGarage.data > joinData.token
+  rfidGarage.data > constantGarage.in
+
+  voidport > rfidLego.data
+  rfidLego.data > joinData.token
+  rfidLego.data > constantLego.in
+
+  constantGarage.out > joinConstant.token
+  constantLego.out > joinConstant.token
+  joinConstant.token > compare.b
+  1 > compare.a
+
+  compare.result > deselect.select
+  "stationGarage" > deselect.case_true
+  "stationLego" > deselect.case_false
+  deselect.data > .room
+  voidport > log1.data
+  joinData.token > .data
+  voidport > log2.data
+}
+
+component PeopleCounter() data, room -> output, count{
+people : room.PersonCounter()
+getv : json.GetValue()
+length : text.Length()
+select : flow.Select()
+status : json.GetValue()
+rum : json.GetValue()
+
+.data > select.data
+.data > status.container
+"status" > status.key
+status.value > select.select
+
+select.case_false > voidport
+select.case_true > getv.container
+
+"data" > getv.key
+getv.value > people.id
+.room > people.room
+
+people.status > .output
+people.rooms > rum.container
+.room > rum.key
+rum.value > length.string
+length.length > .count
+}
+
+component PhilipsHue(address, username, lightno) on, saturation, brightness, hue -> status {
+    url : URLBuilder(address=address, username=username, lightno=lightno)
+    command : CmdBuilder()
+    light : net.HTTPPut()
+
+    .on > command.on
+    .saturation > command.sat
+    .brightness > command.bri
+    .hue > command.hue
+
+    url.url > light.URL
+    {} > light.params
+    command.string > light.data
+    {"Content-Type": "application/json"} > light.header
+
+    light.status > .status
+    light.header > voidport
+    light.data > voidport
+}
+
+component StopLight(address, username, lightno,red, green, blue) state -> status {
+light : PhilipsHue(address=address, username=username, lightno=lightno)
+rgb : RgbBuilder(red=red, green=green,blue=blue)
+bool:   flow.Bool()
+select : flow.Deselect()
+
+.state > bool.token
+bool.bool > select.select
+rgb.saturation > light.saturation
+rgb.brightness > light.brightness
+rgb.hue > light.hue
+
+true > select.case_true
+false > select.case_false
+select.data > light.on
+light.status > .status
+
+}
+
+component URLBuilder(address, username, lightno) -> url {
+    format : text.Format(fmt="http://{address}/api/{username}/lights/{lightno}/state")
+    set_address : json.SetValue()
+    set_username : json.SetValue()
+    set_lightno : json.SetValue()
+
+    {} > set_address.container
+    "address" > set_address.key
+    address > set_address.value
+    set_address.container > set_username.container
+    "username" > set_username.key
+    username > set_username.value
+    set_username.container > set_lightno.container
+    "lightno" > set_lightno.key
+    lightno > set_lightno.value
+    set_lightno.container > format.dict
+    format.text > .url
+}
+
+component RedFlashLight(address, username, lightno, interval) input-> {
+  light : StopLight(address=address, username=username, lightno=lightno,red=255, green=0, blue=0)
+  itemize : json.Items()
+  pacer : std.ClassicDelay(delay=interval)
+  bool : flow.Bool()
+  select : flow.Select()
+  alternate : flow.Alternate2()
+
+  .input > select.select
+  [1,1,1,1,1] > select.data
+  select.case_true > itemize.list
+  select.case_false > voidport
+  itemize.item > bool.token
+  bool.bool > pacer.token
+  pacer.token > alternate.token_1
+  false > alternate.token_2
+  alternate.token > light.state
+  light.status > voidport
+}
+
+component GreenOkLight(address, username, lightno, time) input-> {
+  light : StopLight(address=address, username=username, lightno=lightno,red=0, green=255, blue=0)
+  pacer : std.ClassicDelay(delay=time)
+  alternate : flow.Alternate2()
+
+  .input > alternate.token_1
+  false > alternate.token_2
+  alternate.token > pacer.token
+  pacer.token > light.state
+  light.status > voidport
+}
+
+component CmdBuilder() on, sat, bri, hue -> string {
+    to_str : json.ToString()
+    set_on : json.SetValue()
+    set_sat: json.SetValue()
+    set_bri: json.SetValue()
+    set_hue: json.SetValue()
+
+    {} > set_on.container
+    "on" > set_on.key
+    .on > set_on.value
+
+    set_on.container > set_sat.container
+    "sat" > set_sat.key
+    .sat > set_sat.value
+
+    set_sat.container > set_bri.container
+    "bri" > set_bri.key
+    .bri > set_bri.value
+
+    set_bri.container > set_hue.container
+    "hue" > set_hue.key
+    .hue > set_hue.value
+
+    set_hue.container > to_str.data
+    to_str.string > .string
+}
+
+component RgbBuilder(red, green, blue) -> saturation, brightness, hue {
+redgb : math.RGBtoHSL()
+
+red > redgb.red
+green > redgb.green
+blue > redgb.blue
+redgb.hue > .hue
+redgb.saturation > .saturation
+redgb.brightness > .brightness
+}
+
+component Lights() room, status -> {
+  flashRedGarage : RedFlashLight(address="192.168.0.141", username="191db4b57899c277637781315c1f53", lightno=3, interval=1.0)
+  flashGreenGarage : GreenOkLight(address="192.168.0.141", username="191db4b57899c277637781315c1f53", lightno=3, time=5.0)
+  flashRedLego : RedFlashLight(address="192.168.0.141", username="191db4b57899c277637781315c1f53", lightno=2, interval=1.0)
+  flashGreenLego : GreenOkLight(address="192.168.0.141", username="191db4b57899c277637781315c1f53", lightno=2, time=5.0)
+  compare : std.Compare(rel="=")
+  selectLight : flow.Select()
+  selectGarage : flow.Select()
+  selectLego : flow.Select()
+
+  .room > compare.a
+  "stationGarage" > compare.b
+  compare.result > selectLight.select
+  .status > selectLight.data
+  selectLight.case_true > selectGarage.select
+  selectLight.case_false > selectLego.select
+
+  /*Skicka vidare vilket rum det är, samt datan*/
+  true > selectGarage.data
+  selectGarage.case_true > flashGreenGarage.input
+  selectGarage.case_false > flashRedGarage.input
+
+  true > selectLego.data
+  selectLego.case_true > flashGreenLego.input
+  selectLego.case_false > flashRedLego.input
+}
+
+deploy_info : std.Constant(data=
+{
+    "requirements":
+    {
+        "log":[{"op": "node_attr_match", "kwargs": {"index": ["address", {"name": "Garage"}]},"type":"+"}]
+
+    }
+})
+
+name : flow.Init(data=APPNAME)
+
+filereader: io.FileReader()
+linejoin : text.LineJoin()
+
+# rt control
+deploy: CalvinDeployer(control_uri=CONTROL_URI)
+rfid : RFIDReader()
+migrator : Migrator()
+peopleCounter : PeopleCounter()
+lights : Lights()
+print : io.Log(loglevel="INFO")
+print2 : io.Log(loglevel="INFO")
+
+# deploy
+FILE > filereader.filename
+filereader.out > linejoin.line
+linejoin.text > deploy.script
+voidport > name.in
+name.out > deploy.name
+deploy_info.token > deploy.deploy_info
+deploy.app_info > migrator.app_id
+
+rfid.room > peopleCounter.room
+rfid.room > lights.room
+rfid.data > peopleCounter.data
+
+peopleCounter.output > lights.status
+voidport > print2.data
+peopleCounter.count > voidport
+rfid.room > print.data
+rfid.room > migrator.room
+migrator.done > voidport
