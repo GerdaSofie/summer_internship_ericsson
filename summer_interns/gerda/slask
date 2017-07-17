@@ -1,0 +1,33 @@
+
+/*The component sends out a personal voice-file. */
+component MediaPlayer() dict -> {
+    const : std.Constant(data=true)
+    mush : text.Mustache(fmt="{{data}}.ogg")
+    mediaplayer : media.MediaPlayer()
+    .dict > mush.dict
+    mush.text > mediaplayer.mediafile
+    const.token > mediaplayer.play
+}
+/*The component takes the temperature in the room when triggered, and returns it as a dictionary*/
+component Temperature() trigger -> dict {
+    temp : sensor.TriggeredTemperature()
+    toDict : json.Dict()
+    "temperature" > toDict.key
+    .trigger > temp.trigger
+    temp.centigrade > toDict.value
+    doDict.dict > .centigrade
+}
+/*The component creates a push-message.*/
+component CreatePushMessage() input, room -> {
+  tempDict : Temperature()
+  tempText : text.Mustache(fmt="The temperature is {{temperature}} degrees")
+  tempDict.dict > temp.dict
+  .input > tempDict.trigger
+
+}
+/*The component sends a push-message to a specified PushBullet channel*/
+component SendMessage() dict -> {
+  player : MediaPlayer()
+  push : CreatePushMessage()
+  .dict > player.dict
+}

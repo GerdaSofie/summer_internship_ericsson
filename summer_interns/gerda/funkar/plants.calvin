@@ -1,0 +1,137 @@
+component PhilipsHue(address, username, lightno) on, saturation, brightness, hue -> status {
+    url : URLBuilder(address=address, username=username, lightno=lightno)
+    command : CmdBuilder()
+    light : net.HTTPPut()
+
+    .on > command.on
+    .saturation > command.sat
+    .brightness > command.bri
+    .hue > command.hue
+
+    url.url > light.URL
+    {} > light.params
+    command.string > light.data
+    {"Content-Type": "application/json"} > light.header
+
+    light.status > .status
+    light.header > voidport
+    light.data > voidport
+}
+
+component StopLight(address, username, lightno) red,green,blue, state -> status {
+light : PhilipsHue(address=address, username=username, lightno=lightno)
+rgb : RgbBuilder()
+
+.red > rgb.red
+.green > rgb.green
+.blue > rgb.blue
+.state > light.on
+rgb.saturation > light.saturation
+rgb.brightness > light.brightness
+rgb.hue > light.hue
+light.status > .status
+
+}
+
+component URLBuilder(address, username, lightno) -> url {
+    format : text.Format(fmt="http://{address}/api/{username}/lights/{lightno}/state")
+    set_address : json.SetValue()
+    set_username : json.SetValue()
+    set_lightno : json.SetValue()
+
+    {} > set_address.container
+    "address" > set_address.key
+    address > set_address.value
+    set_address.container > set_username.container
+    "username" > set_username.key
+    username > set_username.value
+    set_username.container > set_lightno.container
+    "lightno" > set_lightno.key
+    lightno > set_lightno.value
+    set_lightno.container > format.dict
+    format.text > .url
+}
+
+component FlashingStopLights(address, username, lightno) red,green,blue -> {
+    """Use StopLight component to set PhilipsHue light to different colors"""
+    light : StopLight(address=address, username=username, lightno=lightno)
+    on : std.Trigger(tick=0.0, data=true)
+    .red> light.red
+    .green > light.green
+    .blue > light.blue
+    on.data > light.state
+    light.status > voidport
+
+}
+
+component CmdBuilder() on, sat, bri, hue -> string {
+    to_str : json.ToString()
+    set_on : json.SetValue()
+    set_sat: json.SetValue()
+    set_bri: json.SetValue()
+    set_hue: json.SetValue()
+
+    {} > set_on.container
+    "on" > set_on.key
+    .on > set_on.value
+
+    set_on.container > set_sat.container
+    "sat" > set_sat.key
+    .sat > set_sat.value
+
+    set_sat.container > set_bri.container
+    "bri" > set_bri.key
+    .bri > set_bri.value
+
+    set_bri.container > set_hue.container
+    "hue" > set_hue.key
+    .hue > set_hue.value
+
+    set_hue.container > to_str.data
+    to_str.string > .string
+}
+component RgbBuilder() red, green, blue-> saturation, brightness, hue {
+redgb : math.RGBtoHSL()
+
+.red > redgb.red
+.green > redgb.green
+.blue > redgb.blue
+redgb.hue > .hue
+redgb.saturation > .saturation
+redgb.brightness > .brightness
+}
+
+/*The component returns the colors to the PhilipsHue-light depending on if the plant needs watering. The outport "water" gives True/False depending on if the plant needs watering.*/
+component getColorsAndBeing() trigger -> red,green,blue,water{
+  moisture : sensor.TriggeredSoilMoisture()
+  getColors : math.GetHumidityColors()
+  compare : std.Compare(rel="=")
+
+  .trigger > moisture.trigger
+  moisture.level > getColors.humidity
+  getColors.red > .red
+  getColors.green > .green
+  getColors.blue > .blue
+
+  getColors.red > compare.a
+  255 > compare.b
+  compare.result > .water
+}
+
+/*The component reads the humidity and sets the light to the correct color. Green is for OK-humidity, Yellow is for quite dry and Red means that the plant needs to be watered. The outport "water" is a boolean that tells if the plant needs watering. */
+component PlantPuppy() trigger -> water {
+  flash : FlashingStopLights(address="192.168.0.141", username="191db4b57899c277637781315c1f53", lightno=1)
+  humidity : getColorsAndBeing()
+
+  .trigger > humidity.trigger
+  humidity.water > .water
+  humidity.red > flash.red
+  humidity.green > flash.green
+  humidity.blue > flash.blue
+}
+
+plant : PlantPuppy()
+print : io.Print()
+trigger : std.Trigger(data="", tick=10)
+trigger.data > plant.trigger
+plant.water > print.token
