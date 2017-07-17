@@ -1,0 +1,149 @@
+define CONTROL_URI = "http://192.168.0.139:5001"
+define APPNAME = "migrate_room"
+define FILE = "testprint.calvin"
+
+/*Deploys the application that is sent in as a script.*/
+component CalvinDeployer(control_uri) name, script, deploy_info -> app_info {
+    sec_credentials:std.Constant(data={})
+    controlpath: std.Constant(data=control_uri)
+    deploy: calvin.CalvinDeployerA()
+    post: net.HTTPPost()
+
+    sec_credentials.token > deploy.sec_credentials
+    .name > deploy.name
+    .script > deploy.script
+    .deploy_info > deploy.deploy_info
+    deploy.app_info > .app_info
+
+    controlpath.token > voidport
+    controlpath.token > deploy.control_uri
+
+    deploy.URL > post.URL
+    deploy.params > post.params
+    deploy.header > post.header
+    deploy.data > post.data
+
+    post.status > deploy.status
+    post.header > deploy.header
+    post.data > deploy.data
+}
+/*Migrates an application depending on the input-key*/
+component CalvinMigrater(control_uri, deploy_info) app_id, key -> done {
+    controlpath: flow.Init(data=control_uri)
+    migrate: calvin.CalvinMigraterA(deploy_info=deploy_info)
+    post: net.HTTPPost()
+
+    .app_id > migrate.app_id
+    .key > migrate.key
+
+    voidport > controlpath.in
+    controlpath.out > migrate.control_uri
+
+    migrate.URL > post.URL
+    migrate.params > post.params
+    migrate.header > post.header
+    migrate.data > post.data
+    migrate.done > .done
+
+    post.status > migrate.status
+    post.header > migrate.header
+    post.data > voidport
+}
+/*This component migrates to the specified room if the status is True.*/
+component Migrator() room , app_id, status-> done {
+  migrate: CalvinMigrater(control_uri=CONTROL_URI, deploy_info=
+  {
+     "stationGarage":
+     {
+          "requirements":
+          {
+  	    "log":[{"op": "node_attr_match","kwargs": {"index": ["address", {"room": "Garage"}]}, "type": "+"}],
+          }
+      },
+      "stationLego":
+      {
+          "requirements":
+          {
+  	    "log":[{"op": "node_attr_match","kwargs": {"index": ["address", {"room": "Lego"}]}, "type": "+"}],
+
+          }
+      }
+  })
+  deselect : flow.Deselect()
+  selectMigrate : flow.Select()
+  compare : std.Compare(rel="=")
+
+  .app_id > migrate.app_id
+  .room > compare.a
+  "stationGarage" > compare.b
+  compare.result > deselect.select
+  "stationGarage" > deselect.case_true
+  "stationLego" > deselect.case_false
+  deselect.data > selectMigrate.data
+  .status > selectMigrate.select
+  selectMigrate.case_true > migrate.key
+  selectMigrate.case_false > voidport
+  migrate.done > .done
+}
+/*Ska migrera när man får data på rfid-läsaren. Skickar vidare datan samt stationLego eller stationGarage*/
+component RFIDReader() -> data, room {
+  rfidGarage : sensor.RFIDReader()
+  rfidLego : sensor.RFIDReader()
+  constantGarage : std.Constantify(constant=1)
+  constantLego : std.Constantify(constant=2)
+  joinConstant : flow.Join()
+  compare : std.Compare(rel="=")
+  deselect : flow.Deselect()
+  joinData : flow.Join()
+
+  voidport > rfidGarage.data
+  rfidGarage.data > joinData.token_1
+  rfidGarage.data > constantGarage.in
+
+  voidport > rfidLego.data
+  rfidLego.data > joinData.token_2
+  rfidLego.data > constantLego.in
+
+  constantGarage.out > joinConstant.token_1
+  constantLego.out > joinConstant.token_2
+  joinConstant.token > compare.b
+  1 > compare.a
+
+  compare.result > deselect.select
+  "stationGarage" > deselect.case_true
+  "stationLego" > deselect.case_false
+  deselect.data > .room
+  joinData.token > .data
+}
+deploy_info: std.Constant(data=
+{
+    "requirements":
+    {
+        "log":[{"op": "node_attr_match", "kwargs": {"index": ["address", {"name": "Garage"}]},"type":"+"}]
+
+    }
+})
+# name
+name : flow.Init(data=APPNAME)
+
+# rt control
+deploy: CalvinDeployer(control_uri=CONTROL_URI)
+rfid : RFIDReader()
+migrator : Migrator()
+filereader: io.FileReader()
+linejoin : text.LineJoin()
+
+# deploy
+FILE > filereader.filename
+filereader.out > linejoin.line
+linejoin.text > deploy.script
+voidport > name.in
+name.out > deploy.name
+deploy_info.token > deploy.deploy_info
+deploy.app_info > migrator.app_id
+
+rfid.data > voidport
+
+true > migrator.status
+rfid.room > migrator.room
+migrator.done > voidport

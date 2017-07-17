@@ -1,0 +1,7 @@
+printLego : io.Log(loglevel="INFO")
+printGarage : io.Log(loglevel="INFO")
+trigger1 : std.Trigger(data="Lund", tick=4)
+trigger2 : std.Trigger(data="Malmo", tick=4)
+
+trigger1.data > printLego.data
+trigger2.data > printGarage.data

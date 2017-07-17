@@ -1,0 +1,17 @@
+component mediaplayer() dict -> {
+
+    const : std.Constant(data=true)
+    mush : text.Mustache(fmt="{{data}}.ogg")
+    player : media.MediaPlayer2()
+
+    .dict > mush.dict
+    mush.text > player.mediafile
+    const.token > player.play
+
+}
+
+rfid : sensor.RFIDReader()
+mp : mediaplayer()
+
+voidport > rfid.data
+rfid.data > mp.dict

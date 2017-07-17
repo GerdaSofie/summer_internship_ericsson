@@ -1,0 +1,6 @@
+rfid : sensor.RFIDReader()
+log : io.Log(loglevel="INFO")
+
+
+{"data": 4} > rfid.data
+rfid.data > log.data
