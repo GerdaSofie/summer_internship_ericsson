@@ -63,58 +63,25 @@ mp : MediaPlayer()
 inorout : InOrOut()
 camera : media.IPCamera()
 render : media.MultipleImageRenderer()
-antaldic : json.Dict()
 antalmush2 : text.Mustache(fmt="There is {{antal}} person in this room")
 antalmush : text.Mustache(fmt="There are {{antal}} people in this room")
 push : web.Pushbullet(title="Are you keeping up with the garage info?")
 people : room.PersonCounter()
 switch : flow.Switch()
-compare : std.Compare(rel="=")
+compare : std.Compare(op="=")
 rum : json.GetValue()
 
 /*getv : json.GetValue()*/
-getid : json.GetValue()
 length : text.Length()
-compareio : std.Compare(rel=">=")
-print : io.Print()
-
-rfid.ontrue > getid.container
-
-"data" > getid.key
-getid.value > people.id
-
-antalmush : text.Mustache(fmt="There is {{antal}} people in this room")
-length : text.Length()
-people : room.PersonCounter()
 print : io.Print()
 
 rfid.ontrue > inorout.data
 
 inorout.in > people.id
-
 "garage" > people.room
 people.rooms > rum.container
 "garage" > rum.key
 rum.value > length.string
-length.length > antaldic.value
-
-length.length > compareio.a
-length.length > init.in
-"antal" > antaldic.key
-
-init.out > compareio.b
-antaldic.dict >  print.token      /* antalmush redigering*/
-
-compareio.result > select2.select
-getid.value > select2.data
-select2.case_false > render.remove
-/* select2.case_false > här ska ljudet för när man går ut ligga */
-select2.case_true > camera.trigger
-select2.case_true > mp.dict
-camera.status > voidport
-camera.image > render.image
-getid.value > render.id
-
 
 length.length > compare.a
 1 > compare.b
@@ -140,9 +107,9 @@ inorout.out > render.remove
 inorout.in > camera.trigger
 inorout.in > mp.dict
 camera.image > render.image
+inorout.in > temp.trigger
 inorout.in > render.id
-inorout.in > temp.in
   /*här lägger jag alla onödig portar som ska gå till void typ en sophög*/
 camera.status > voidport
-
 people.status > voidport
+temp.message > voidport
