@@ -69,7 +69,7 @@ component Migrator() room , app_id -> done {
       }
   })
   deselect : flow.Deselect()
-  compare : std.Compare(rel="=")
+  compare : std.Compare(op="=")
   log : io.Log(loglevel="INFO")
 
   .app_id > migrate.app_id
@@ -89,7 +89,7 @@ component RFIDReader() -> data, room {
   constantGarage : std.Constantify(constant=1)
   constantLego : std.Constantify(constant=2)
   joinConstant : flow.Collect()
-  compare : std.Compare(rel="=")
+  compare : std.Compare(op="=")
   deselect : flow.Deselect()
   joinData : flow.Collect()
   log1 : io.Log(loglevel="INFO")
@@ -263,9 +263,8 @@ redgb.brightness > .brightness
 component Lights() room, status -> {
   flashRedGarage : RedFlashLight(address="192.168.0.141", username="191db4b57899c277637781315c1f53", lightno=3, interval=1.0)
   flashRedLego : RedFlashLight(address="192.168.0.141", username="191db4b57899c277637781315c1f53", lightno=2, interval=1.0)
-  compare : std.Compare(rel="=")
+  compare : std.Compare(op="=")
   selectLight : flow.Select()
-
   .room > compare.a
   "stationGarage" > compare.b
   compare.result > selectLight.select
