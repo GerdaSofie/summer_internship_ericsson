@@ -265,8 +265,6 @@ component Lights() room, status -> {
   flashRedLego : RedFlashLight(address="192.168.0.141", username="191db4b57899c277637781315c1f53", lightno=2, interval=1.0)
   compare : std.Compare(rel="=")
   selectLight : flow.Select()
-  selectGarage : flow.Select()
-  selectLego : flow.Select()
 
   .room > compare.a
   "stationGarage" > compare.b
@@ -274,7 +272,7 @@ component Lights() room, status -> {
   .status > selectLight.data
   selectLight.case_true > flashRedGarage.input
   selectLight.case_false > flashRedLego.input
-  
+
 }
 
 deploy_info : std.Constant(data=

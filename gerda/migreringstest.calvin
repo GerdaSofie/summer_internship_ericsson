@@ -2,7 +2,6 @@ define CONTROL_URI = "http://192.168.0.139:5001"
 define APPNAME = "migrate_room"
 define FILE = "testprint.calvin"
 
-/*Deploys the application that is sent in as a script.*/
 component CalvinDeployer(control_uri) name, script, deploy_info -> app_info {
     sec_credentials:std.Constant(data={})
     controlpath: std.Constant(data=control_uri)
@@ -27,7 +26,7 @@ component CalvinDeployer(control_uri) name, script, deploy_info -> app_info {
     post.header > deploy.header
     post.data > deploy.data
 }
-/*Migrates an application depending on the input-key*/
+
 component CalvinMigrater(control_uri, deploy_info) app_id, key -> done {
     controlpath: flow.Init(data=control_uri)
     migrate: calvin.CalvinMigraterA(deploy_info=deploy_info)
@@ -49,8 +48,8 @@ component CalvinMigrater(control_uri, deploy_info) app_id, key -> done {
     post.header > migrate.header
     post.data > voidport
 }
-/*This component migrates to the specified room if the status is True.*/
-component Migrator() room , app_id, status-> done {
+
+component Migrator() room , app_id -> done {
   migrate: CalvinMigrater(control_uri=CONTROL_URI, deploy_info=
   {
      "stationGarage":
@@ -70,42 +69,56 @@ component Migrator() room , app_id, status-> done {
       }
   })
   deselect : flow.Deselect()
-  selectMigrate : flow.Select()
   compare : std.Compare(rel="=")
+  log : io.Log(loglevel="INFO")
 
   .app_id > migrate.app_id
   .room > compare.a
   "stationGarage" > compare.b
+  compare.result > log.data
   compare.result > deselect.select
   "stationGarage" > deselect.case_true
   "stationLego" > deselect.case_false
-  deselect.data > selectMigrate.data
-  .status > selectMigrate.select
-  selectMigrate.case_true > migrate.key
-  selectMigrate.case_false > voidport
+  deselect.data > migrate.key
   migrate.done > .done
 }
-/*Ska migrera när man får data på rfid-läsaren. Skickar vidare datan samt stationLego eller stationGarage*/
+
 component RFIDReader() -> data, room {
   rfidGarage : sensor.RFIDReader()
   rfidLego : sensor.RFIDReader()
   constantGarage : std.Constantify(constant=1)
   constantLego : std.Constantify(constant=2)
-  joinConstant : flow.Join()
+  joinConstant : flow.Collect()
   compare : std.Compare(rel="=")
   deselect : flow.Deselect()
-  joinData : flow.Join()
+  joinData : flow.Collect()
+  log1 : io.Log(loglevel="INFO")
+  log2 : io.Log(loglevel="INFO")
+  selectgarage : flow.Select()
+  selectlego : flow.Select()
+  garagestatus : json.GetValue()
+  legostatus : json.GetValue()
 
   voidport > rfidGarage.data
-  rfidGarage.data > joinData.token_1
-  rfidGarage.data > constantGarage.in
+  rfidGarage.data > selectgarage.data
+  rfidGarage.data > garagestatus.container
+  "status" > garagestatus.key
+  garagestatus.value > selectgarage.select
+  selectgarage.case_true > joinData.token
+  selectgarage.case_true > constantGarage.in
+  selectgarage.case_false > voidport
 
   voidport > rfidLego.data
-  rfidLego.data > joinData.token_2
-  rfidLego.data > constantLego.in
+  rfidLego.data > selectlego.data
+  rfidLego.data > legostatus.container
+  "status" > legostatus.key
+  legostatus.value > selectlego.select
+  selectlego.case_true > joinData.token
+  selectlego.case_true > constantLego.in
+  selectlego.case_false > voidport
 
-  constantGarage.out > joinConstant.token_1
-  constantLego.out > joinConstant.token_2
+  constantGarage.out > joinConstant.token
+  constantLego.out > joinConstant.token
   joinConstant.token > compare.b
   1 > compare.a
 
@@ -113,9 +126,59 @@ component RFIDReader() -> data, room {
   "stationGarage" > deselect.case_true
   "stationLego" > deselect.case_false
   deselect.data > .room
+  voidport > log1.data
   joinData.token > .data
+  voidport > log2.data
 }
-deploy_info: std.Constant(data=
+
+component PeopleCounter() data, room -> output, count{
+people : room.PersonCounter()
+getv : json.GetValue()
+length : text.Length()
+rum : json.GetValue()
+
+.data > getv.container
+
+"data" > getv.key
+getv.value > people.id
+.room > people.room
+
+people.status > .output
+people.rooms > rum.container
+.room > rum.key
+rum.value > length.string
+length.length > .count
+}
+
+component InOrOut() data, antal -> in, out {
+  select : flow.Select()
+  getv : json.GetValue()
+  compare : std.Compare(rel=">=")
+  init : flow.Init(data="1")
+
+  .data > getv.container
+  "data" > getv.key
+
+  .antal > compare.a
+  .antal > init.in
+  init.out > compare.b
+  compare.result > select.select
+  getv.value > select.data
+  select.case_true > .in
+  select.case_false > .out
+}
+component Picture() id, remove -> {
+  camera : media.IPCamera()
+  render : media.MultipleImageRenderer()
+
+  .id > camera.trigger
+  camera.status > voidport
+  camera.image > render.image
+  .id > render.id
+  .remove > render.remove
+}
+
+deploy_info : std.Constant(data=
 {
     "requirements":
     {
@@ -123,15 +186,21 @@ deploy_info: std.Constant(data=
 
     }
 })
-# name
+
 name : flow.Init(data=APPNAME)
+filereader: io.FileReader()
+linejoin : text.LineJoin()
+
+InorOut : InOrOut()
+mediaPlayer : MediaPlayer()
 
 # rt control
 deploy: CalvinDeployer(control_uri=CONTROL_URI)
 rfid : RFIDReader()
 migrator : Migrator()
-filereader: io.FileReader()
-linejoin : text.LineJoin()
+peopleCounter : PeopleCounter()
+print : io.Log(loglevel="INFO")
+print2 : io.Log(loglevel="INFO")
 
 # deploy
 FILE > filereader.filename
@@ -142,8 +211,16 @@ name.out > deploy.name
 deploy_info.token > deploy.deploy_info
 deploy.app_info > migrator.app_id
 
-rfid.data > voidport
+rfid.room > peopleCounter.room
+rfid.data > peopleCounter.data
 
-true > migrator.status
+peopleCounter.output > voidport
+peopleCounter.count > voidport
 rfid.room > migrator.room
 migrator.done > voidport
+
+rfid.data > InorOut.data
+InorOut.in > mediaPlayer.dict
+peopleCounter.count > InorOut.antal
+InorOut.in > print2.data
+InorOut.out > print.data

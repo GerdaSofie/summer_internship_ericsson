@@ -1,4 +1,4 @@
-rel=define CONTROL_URI = "http://192.168.0.139:5001"
+define CONTROL_URI = "http://192.168.0.139:5001"
 define APPNAME = "migrate_room"
 define FILE = "testprint.calvin"
 
@@ -177,7 +177,6 @@ component InOrOut() data, antal -> in, out {
   getv.value > select.data
   select.case_true > .in
   select.case_false > .out
-
 }
 
 component Picture() id, remove -> {
@@ -189,7 +188,6 @@ component Picture() id, remove -> {
   camera.image > render.image
   .id > render.id
   .remove > render.remove
-
 }
 
 component MediaPlayer() dict -> {
