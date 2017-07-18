@@ -177,6 +177,18 @@ component Picture() id, remove -> {
   .id > render.id
   .remove > render.remove
 }
+component MediaPlayer() dict -> {
+    dict : json.Dict()
+    const : std.Constant(data=true)
+    mush : text.Mustache(fmt="{{data}}.ogg")
+    player : media.MediaPlayer2()
+
+    .dict > dict.value
+    "data" > dict.key
+    dict.dict > mush.dict
+    mush.text > player.mediafile
+    const.token > player.play
+}
 
 deploy_info : std.Constant(data=
 {
@@ -190,9 +202,10 @@ deploy_info : std.Constant(data=
 name : flow.Init(data=APPNAME)
 filereader: io.FileReader()
 linejoin : text.LineJoin()
+mediaPlayer : MediaPlayer()
 
 InorOut : InOrOut()
-mediaPlayer : MediaPlayer()
+camera : Picture()
 
 # rt control
 deploy: CalvinDeployer(control_uri=CONTROL_URI)
@@ -220,7 +233,9 @@ rfid.room > migrator.room
 migrator.done > voidport
 
 rfid.data > InorOut.data
-InorOut.in > mediaPlayer.dict
+InorOut.in > camera.id
 peopleCounter.count > InorOut.antal
+InorOut.out > camera.remove
 InorOut.in > print2.data
+InorOut.in > mediaPlayer.dict
 InorOut.out > print.data
