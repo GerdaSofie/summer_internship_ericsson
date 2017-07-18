@@ -1,18 +1,6 @@
-component MediaPlayer() dict -> {
-
-    const : std.Constant(data=true)
-    mush : text.Mustache(fmt="{{data}}.ogg")
-    player : media.MediaPlayer2()
-
-    .dict > mush.dict
-    mush.text > player.mediafile
-    const.token > player.play
-
-}
-
 
 component ClearRFID() -> ontrue {
-  /* component som rensar ut falsevärdet som kommer när du plockar bort idt från läsaren och skickar ut rfid datan. */
+  /* component som rensar ut falsevärdet som kommer när du plockar bort idt från läsaren och skickar ut rfid datan on true. */
   rfid : sensor.RFIDReader()
   select : flow.Select()
   status : json.GetValue()
@@ -27,56 +15,76 @@ component ClearRFID() -> ontrue {
   select.case_true > .ontrue
 }
 
+component MediaPlayer() dict -> {
+  /* component som spelat upp ett välkommst meddelande*/
+    const : std.Constant(data=true)
+    mush : text.Mustache(fmt="{{data}}.ogg")
+    player : media.MediaPlayer2()
+
+    .dict > mush.dict
+    mush.text > player.mediafile
+    const.token > player.play
+}
+
+component InOrOut() data, antal -> in, out {
+  /* componenet som bestämer om personen går in eller ut och vem det är*/
+  /* outporten in skickar ut id.t när någon går in, out skickar id.t när någon går ut från rummet*/
+  select : flow.Select()
+  getv : json.GetValue()
+  compare : std.Compare(op=">=")
+  init : flow.Init(data="1")
+
+  .antal > compare.a
+  .antal > init.in
+  init.out > compare.b
+  compare.result > select.select
+
+  .data > getv.container
+  "data" > getv.key
+
+  getv.value > select.data
+  select.case_true > .in
+  select.case_false > .out
+}
+component Temperature() trigger -> message {
+    temp : sensor.TriggeredTemperature()
+    text : std.Constant(data="the temperature is ")
+    plus : math.Compute(op="+")
+
+    .trigger > temp.trigger
+    text.token > plus.a
+    temp.centigrade > plus.b
+    plus.result > .message
+}
+
+temp : Temperature()
 rfid : ClearRFID()
 mp : MediaPlayer()
+inorout : InOrOut()
 camera : media.IPCamera()
 render : media.MultipleImageRenderer()
-select2 : flow.Select()
-init : flow.Init(data="1")
-antaldic : json.Dict()
 antalmush2 : text.Mustache(fmt="There is {{antal}} person in this room")
 antalmush : text.Mustache(fmt="There are {{antal}} people in this room")
 push : web.Pushbullet(title="Are you keeping up with the garage info?")
 people : room.PersonCounter()
 switch : flow.Switch()
-compare : std.Compare(rel="=")
+compare : std.Compare(op="=")
 rum : json.GetValue()
+
 /*getv : json.GetValue()*/
-getid : json.GetValue()
 length : text.Length()
-compareio : std.Compare(rel=">=")
 print : io.Print()
 
-rfid.ontrue > getid.container
+rfid.ontrue > inorout.data
 
-"data" > getid.key
-getid.value > people.id
+inorout.in > people.id
 "garage" > people.room
-people.status > voidport
 people.rooms > rum.container
 "garage" > rum.key
 rum.value > length.string
-length.length > antaldic.value
-length.length > compareio.a
-length.length > init.in
-"antal" > antaldic.key
-
-init.out > compareio.b
-antaldic.dict >  print.token      /* antalmush redigering*/
-
-compareio.result > select2.select
-getid.value > select2.data
-select2.case_false > render.remove
-/* select2.case_false > här ska ljudet för när man går ut ligga */
-select2.case_true > camera.trigger
-select2.case_true > mp.dict
-camera.status > voidport
-camera.image > render.image
-getid.value > render.id
-
 
 length.length > compare.a
-1 >compare.b
+1 > compare.b
 antaldic.dict > antalmush.dict
 antaldic.dict > antalmush2.dict
 
@@ -87,4 +95,21 @@ antalmush.text > switch.b
 switch.b > push.message
 switch.a > voidport
 
+
+length.length > inorout.antal
+
+"antal" > antaldic.key
+antaldic.dict > antalmush.dict
+antalmush.text > print.token
+
+inorout.out > render.remove
+  /* inorout.out > här ska ljudet för när man går ut ligga */
+inorout.in > camera.trigger
+inorout.in > mp.dict
+camera.image > render.image
+inorout.in > temp.trigger
+inorout.in > render.id
+  /*här lägger jag alla onödig portar som ska gå till void typ en sophög*/
+camera.status > voidport
 people.status > voidport
+temp.message > voidport

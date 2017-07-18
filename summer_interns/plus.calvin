@@ -1,0 +1,69 @@
+component MediaPlayer() dict -> {
+
+    const : std.Constant(data=true)
+    mush : text.Mustache(fmt="{{data}}.ogg")
+    player : media.MediaPlayer2()
+
+    .dict > mush.dict
+    mush.text > player.mediafile
+    const.token > player.play
+
+}
+
+component ClearRFID() -> ontrue {
+  /* component som rensar ut falsevärdet som kommer när du plockar bort idt från läsaren och skickar ut rfid datan. */
+  rfid : sensor.RFIDReader()
+  select : flow.Select()
+  status : json.GetValue()
+
+  voidport > rfid.data
+  rfid.data > select.data
+  rfid.data > status.container
+  "status" > status.key
+  status.value > select.select
+
+  select.case_false > voidport
+  select.case_true > .ontrue
+}
+
+rfid : ClearRFID()
+mp : MediaPlayer()
+camera : media.IPCamera()
+render : media.MultipleImageRenderer()
+select2 : flow.Select()
+init : flow.Init(data="1")
+antaldic : json.Dict()
+rum : json.GetValue()
+getv : json.GetValue()
+antalmush : text.Mustache(fmt="There is {{antal}} people in this room")
+length : text.Length()
+people : room.PersonCounter()
+compare : std.Compare(op=">=")
+print : io.Print()
+
+rfid.ontrue > getv.container
+
+"data" > getv.key
+getv.value > people.id
+"garage" > people.room
+people.status > voidport
+people.rooms > rum.container
+"garage" > rum.key
+rum.value > length.string
+length.length > antaldic.value
+length.length > compare.a
+length.length > init.in
+"antal" > antaldic.key
+init.out > compare.b
+antaldic.dict > antalmush.dict
+antalmush.text > print.token
+
+compare.result > select2.select
+getv.value > select2.data
+select2.case_false > render.remove
+/* select2.case_false > här ska ljudet för när man går ut ligga */ 
+select2.case_true > camera.trigger
+select2.case_true > mp.dict
+camera.status > voidport
+camera.image > render.image
+getv.value > render.id

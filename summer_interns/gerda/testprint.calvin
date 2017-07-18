@@ -1,0 +1,3 @@
+log : io.Log(loglevel="Data")
+trigger : std.Trigger(data="Lund", tick=1.0)
+trigger.data > log.data

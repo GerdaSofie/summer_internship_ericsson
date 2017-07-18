@@ -94,28 +94,14 @@ component RFIDReader() -> data, room {
   joinData : flow.Collect()
   log1 : io.Log(loglevel="INFO")
   log2 : io.Log(loglevel="INFO")
-  selectgarage : flow.Select()
-  selectlego : flow.Select()
-  garagestatus : json.GetValue()
-  legostatus : json.GetValue()
 
   voidport > rfidGarage.data
-  rfidGarage.data > selectgarage.data
-  rfidGarage.data > garagestatus.container
-  "status" > garagestatus.key
-  garagestatus.value > selectgarage.select
-  selectgarage.case_true > joinData.token
-  selectgarage.case_true > constantGarage.in
-  selectgarage.case_false > voidport
+  rfidGarage.data > joinData.token
+  rfidGarage.data > constantGarage.in
 
   voidport > rfidLego.data
-  rfidLego.data > selectlego.data
-  rfidLego.data > legostatus.container
-  "status" > legostatus.key
-  legostatus.value > selectlego.select
-  selectlego.case_true > joinData.token
-  selectlego.case_true > constantLego.in
-  selectlego.case_false > voidport
+  rfidLego.data > joinData.token
+  rfidLego.data > constantLego.in
 
   constantGarage.out > joinConstant.token
   constantLego.out > joinConstant.token
@@ -135,9 +121,17 @@ component PeopleCounter() data, room -> output, count{
 people : room.PersonCounter()
 getv : json.GetValue()
 length : text.Length()
+select : flow.Select()
+status : json.GetValue()
 rum : json.GetValue()
 
-.data > getv.container
+.data > select.data
+.data > status.container
+"status" > status.key
+status.value > select.select
+
+select.case_false > voidport
+select.case_true > getv.container
 
 "data" > getv.key
 getv.value > people.id
@@ -150,60 +144,138 @@ rum.value > length.string
 length.length > .count
 }
 
-component Temperature() trigger -> message {
-    temp : sensor.TriggeredTemperature()
-    text : std.Constant(data="the temperature is ")
-    plus : math.Compute(rel="+")
+component PhilipsHue(address, username) lightno, on, saturation, brightness, hue -> status {
+    url : URLBuilder(address=address, username=username)
+    command : CmdBuilder()
+    light : net.HTTPPut()
 
-    .trigger > temp.trigger
-    text.token > plus.a
-    temp.centigrade > plus.b
-    plus.result > .message
+    .on > command.on
+    .saturation > command.sat
+    .brightness > command.bri
+    .hue > command.hue
+
+    .lightno > url.lightno
+    url.url > light.URL
+    {} > light.params
+    command.string > light.data
+    {"Content-Type": "application/json"} > light.header
+
+    light.status > .status
+    light.header > voidport
+    light.data > voidport
 }
 
-component InOrOut() data, antal -> in, out {
+component StopLight(address, username,red, green, blue) lightno, state -> status {
+light : PhilipsHue(address=address, username=username)
+rgb : RgbBuilder(red=red, green=green,blue=blue)
+bool:   flow.Bool()
+select : flow.Deselect()
+
+.lightno > light.lightno
+.state > bool.token
+bool.bool > select.select
+rgb.saturation > light.saturation
+rgb.brightness > light.brightness
+rgb.hue > light.hue
+
+true > select.case_true
+false > select.case_false
+select.data > light.on
+light.status > .status
+
+}
+
+component URLBuilder(address, username) lightno -> url {
+    format : text.Format(fmt="http://{address}/api/{username}/lights/{lightno}/state")
+    set_address : json.SetValue()
+    set_username : json.SetValue()
+    set_lightno : json.SetValue()
+
+    {} > set_address.container
+    "address" > set_address.key
+    address > set_address.value
+    set_address.container > set_username.container
+    "username" > set_username.key
+    username > set_username.value
+    set_username.container > set_lightno.container
+    "lightno" > set_lightno.key
+    .lightno > set_lightno.value
+    set_lightno.container > format.dict
+    format.text > .url
+}
+
+component RedFlashLight(address, username, interval) lightno, input-> {
+  light : StopLight(address=address, username=username, red=255, green=0, blue=0)
+  itemize : json.Items()
+  pacer : std.ClassicDelay(delay=interval)
+  bool : flow.Bool()
   select : flow.Select()
-  getv : json.GetValue()
-  compare : std.Compare(rel=">=")
-  init : flow.Init(data="1")
+  alternate : flow.Alternate2()
 
-  .data > getv.container
-  "data" > getv.key
-
-  .antal > compare.a
-  .antal > init.in
-  init.out > compare.b
-  compare.result > select.select
-  getv.value > select.data
-  select.case_true > .in
-  select.case_false > .out
+  .lightno > light.lightno
+  .input > select.select
+  [1,1,1,1,1] > select.data
+  select.case_true > itemize.list
+  select.case_false > voidport
+  itemize.item > bool.token
+  bool.bool > pacer.token
+  pacer.token > alternate.token_1
+  false > alternate.token_2
+  alternate.token > light.state
+  light.status > voidport
 }
 
-component Picture() id, remove -> {
-  camera : media.IPCamera()
-  render : media.MultipleImageRenderer()
+component CmdBuilder() on, sat, bri, hue -> string {
+    to_str : json.ToString()
+    set_on : json.SetValue()
+    set_sat: json.SetValue()
+    set_bri: json.SetValue()
+    set_hue: json.SetValue()
 
-  .id > camera.trigger
-  camera.status > voidport
-  camera.image > render.image
-  .id > render.id
-  .remove > render.remove
+    {} > set_on.container
+    "on" > set_on.key
+    .on > set_on.value
+
+    set_on.container > set_sat.container
+    "sat" > set_sat.key
+    .sat > set_sat.value
+
+    set_sat.container > set_bri.container
+    "bri" > set_bri.key
+    .bri > set_bri.value
+
+    set_bri.container > set_hue.container
+    "hue" > set_hue.key
+    .hue > set_hue.value
+
+    set_hue.container > to_str.data
+    to_str.string > .string
 }
 
-component MediaPlayer() dict -> {
-    dict : json.Dict()
-    const : std.Constant(data=true)
-    mush : text.Mustache(fmt="{{data}}.ogg")
-    player : media.MediaPlayer2()
+component RgbBuilder(red, green, blue) -> saturation, brightness, hue {
+redgb : math.RGBtoHSL()
 
-    .dict > dict.value
-    "data" > dict.key
-    dict.dict > mush.dict
-    mush.text > player.mediafile
-    const.token > player.play
-
+red > redgb.red
+green > redgb.green
+blue > redgb.blue
+redgb.hue > .hue
+redgb.saturation > .saturation
+redgb.brightness > .brightness
 }
 
+component Lights() room, status -> {
+  flashRed : RedFlashLight(address="192.168.0.141", username="191db4b57899c277637781315c1f53", interval=1.0)
+  compare : std.Compare(rel="=")
+  selectLight : flow.Deselect()
+
+  .room > compare.a
+  "stationGarage" > compare.b
+  compare.result > selectLight.select
+  .status > flashRed.input
+  2 > selectLight.case_true
+  3 > selectLight.case_false
+  selectLight.data > flashRed.lightno
+}
 
 deploy_info : std.Constant(data=
 {
@@ -216,11 +288,6 @@ deploy_info : std.Constant(data=
 
 name : flow.Init(data=APPNAME)
 
-camera : Picture()
-InorOut : InOrOut()
-mediaPlayer : MediaPlayer()
-temperatur : Temperature()
-
 filereader: io.FileReader()
 linejoin : text.LineJoin()
 
@@ -229,6 +296,7 @@ deploy: CalvinDeployer(control_uri=CONTROL_URI)
 rfid : RFIDReader()
 migrator : Migrator()
 peopleCounter : PeopleCounter()
+lights : Lights()
 print : io.Log(loglevel="INFO")
 print2 : io.Log(loglevel="INFO")
 
@@ -242,19 +310,12 @@ deploy_info.token > deploy.deploy_info
 deploy.app_info > migrator.app_id
 
 rfid.room > peopleCounter.room
+rfid.room > lights.room
 rfid.data > peopleCounter.data
 
-peopleCounter.output > voidport
+peopleCounter.output > lights.status
 voidport > print2.data
 peopleCounter.count > voidport
 rfid.room > print.data
 rfid.room > migrator.room
 migrator.done > voidport
-
-rfid.data > InorOut.data
-peopleCounter.count > InorOut.antal
-InorOut.in > camera.id
-InorOut.in > mediaPlayer.dict
-InorOut.out > camera.remove
-InorOut.in > temperatur.trigger
-temperatur.message > voidport

@@ -69,7 +69,7 @@ component Migrator() room , app_id -> done {
       }
   })
   deselect : flow.Deselect()
-  compare : std.Compare(rel="=")
+  compare : std.Compare(op="=")
   log : io.Log(loglevel="INFO")
 
   .app_id > migrate.app_id
@@ -89,7 +89,7 @@ component RFIDReader() -> data, room {
   constantGarage : std.Constantify(constant=1)
   constantLego : std.Constantify(constant=2)
   joinConstant : flow.Collect()
-  compare : std.Compare(rel="=")
+  compare : std.Compare(op="=")
   deselect : flow.Deselect()
   joinData : flow.Collect()
   log1 : io.Log(loglevel="INFO")
@@ -251,7 +251,6 @@ component CmdBuilder() on, sat, bri, hue -> string {
 
 component RgbBuilder(red, green, blue) -> saturation, brightness, hue {
 redgb : math.RGBtoHSL()
-
 red > redgb.red
 green > redgb.green
 blue > redgb.blue
@@ -263,20 +262,58 @@ redgb.brightness > .brightness
 component Lights() room, status -> {
   flashRedGarage : RedFlashLight(address="192.168.0.141", username="191db4b57899c277637781315c1f53", lightno=3, interval=1.0)
   flashRedLego : RedFlashLight(address="192.168.0.141", username="191db4b57899c277637781315c1f53", lightno=2, interval=1.0)
-  compare : std.Compare(rel="=")
+  compare : std.Compare(op="=")
   selectLight : flow.Select()
-  selectGarage : flow.Select()
-  selectLego : flow.Select()
-
   .room > compare.a
   "stationGarage" > compare.b
   compare.result > selectLight.select
   .status > selectLight.data
   selectLight.case_true > flashRedGarage.input
   selectLight.case_false > flashRedLego.input
-  
+
+}
+component InOrOut() data, antal -> in, out {
+  select : flow.Select()
+  getv : json.GetValue()
+  compare : std.Compare(rel=">=")
+  init : flow.Init(data="1")
+
+  .data > getv.container
+  "data" > getv.key
+
+  .antal > compare.a
+  .antal > init.in
+  init.out > compare.b
+  compare.result > select.select
+  getv.value > select.data
+  select.case_true > .in
+  select.case_false > .out
 }
 
+component Picture() id, remove -> {
+  camera : media.IPCamera()
+  render : media.MultipleImageRenderer()
+
+  .id > camera.trigger
+  camera.status > voidport
+  camera.image > render.image
+  .id > render.id
+  .remove > render.remove
+}
+
+component MediaPlayer() dict -> {
+    dict : json.Dict()
+    const : std.Constant(data=true)
+    mush : text.Mustache(fmt="{{data}}.ogg")
+    player : media.MediaPlayer2()
+
+    .dict > dict.value
+    "data" > dict.key
+    dict.dict > mush.dict
+    mush.text > player.mediafile
+    const.token > player.play
+
+}
 deploy_info : std.Constant(data=
 {
     "requirements":
@@ -287,7 +324,9 @@ deploy_info : std.Constant(data=
 })
 
 name : flow.Init(data=APPNAME)
-
+camera : Picture()
+InorOut : InOrOut()
+mediaPlayer : MediaPlayer()
 filereader: io.FileReader()
 linejoin : text.LineJoin()
 
@@ -319,3 +358,10 @@ peopleCounter.count > voidport
 rfid.room > print.data
 rfid.room > migrator.room
 migrator.done > voidport
+
+
+rfid.data > InorOut.data
+peopleCounter.count > InorOut.antal
+InorOut.in > camera.id
+InorOut.in > mediaPlayer.dict
+InorOut.out > camera.remove

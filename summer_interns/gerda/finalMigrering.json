@@ -1,0 +1,2717 @@
+{
+    "connections": {
+        "finalMigrering:migrator:migrate:migrate.done": [
+            "finalMigrering:_void_45.void"
+        ], 
+        "finalMigrering:rfid:_void_7.void": [
+            "finalMigrering:rfid:rfidGarage.data"
+        ], 
+        "finalMigrering:rfid:constantLego.out": [
+            "finalMigrering:rfid:joinConstant.token"
+        ], 
+        "finalMigrering:deploy:deploy.data": [
+            "finalMigrering:deploy:post.data"
+        ], 
+        "finalMigrering:lights:flashRed:light:light:light.data": [
+            "finalMigrering:lights:flashRed:light:light:_void_18.void"
+        ], 
+        "finalMigrering:rfid:_literal_const_11.token": [
+            "finalMigrering:rfid:deselect.case_false"
+        ], 
+        "finalMigrering:migrator:migrate:post.status": [
+            "finalMigrering:migrator:migrate:migrate.status"
+        ], 
+        "finalMigrering:migrator:migrate:_void_3.void": [
+            "finalMigrering:migrator:migrate:controlpath.in"
+        ], 
+        "finalMigrering:lights:flashRed:light:bool.bool": [
+            "finalMigrering:lights:flashRed:light:select.select"
+        ], 
+        "finalMigrering:lights:compare.result": [
+            "finalMigrering:lights:selectLight.select"
+        ], 
+        "finalMigrering:migrator:deselect.data": [
+            "finalMigrering:migrator:migrate:migrate.key"
+        ], 
+        "finalMigrering:deploy:deploy.header": [
+            "finalMigrering:deploy:post.header"
+        ], 
+        "finalMigrering:deploy:post.status": [
+            "finalMigrering:deploy:deploy.status"
+        ], 
+        "finalMigrering:migrator:migrate:migrate.params": [
+            "finalMigrering:migrator:migrate:post.params"
+        ], 
+        "finalMigrering:lights:flashRed:light:light:url:set_address.container": [
+            "finalMigrering:lights:flashRed:light:light:url:set_username.container"
+        ], 
+        "finalMigrering:lights:flashRed:light:light:url:_literal_const_27.token": [
+            "finalMigrering:lights:flashRed:light:light:url:set_username.value"
+        ], 
+        "finalMigrering:rfid:_void_8.void": [
+            "finalMigrering:rfid:rfidLego.data"
+        ], 
+        "finalMigrering:deploy_info.token": [
+            "finalMigrering:deploy:deploy.deploy_info"
+        ], 
+        "finalMigrering:lights:selectLight.data": [
+            "finalMigrering:lights:flashRed:light:light:url:set_lightno.value"
+        ], 
+        "finalMigrering:peopleCounter:getv.value": [
+            "finalMigrering:peopleCounter:people.id"
+        ], 
+        "finalMigrering:lights:flashRed:itemize.item": [
+            "finalMigrering:lights:flashRed:bool.token"
+        ], 
+        "finalMigrering:_literal_const_46.token": [
+            "finalMigrering:filereader.filename"
+        ], 
+        "finalMigrering:peopleCounter:people.status": [
+            "finalMigrering:lights:flashRed:select.select"
+        ], 
+        "finalMigrering:lights:flashRed:light:light:command:_literal_const_36.token": [
+            "finalMigrering:lights:flashRed:light:light:command:set_bri.key"
+        ], 
+        "finalMigrering:peopleCounter:_literal_const_16.token": [
+            "finalMigrering:peopleCounter:getv.key"
+        ], 
+        "finalMigrering:lights:_literal_const_41.token": [
+            "finalMigrering:lights:compare.b"
+        ], 
+        "finalMigrering:filereader.out": [
+            "finalMigrering:linejoin.line"
+        ], 
+        "finalMigrering:deploy:deploy.params": [
+            "finalMigrering:deploy:post.params"
+        ], 
+        "finalMigrering:rfid:_void_12.void": [
+            "finalMigrering:rfid:log1.data"
+        ], 
+        "finalMigrering:lights:flashRed:light:light:url:_literal_const_25.token": [
+            "finalMigrering:lights:flashRed:light:light:url:set_address.value"
+        ], 
+        "finalMigrering:migrator:_literal_const_6.token": [
+            "finalMigrering:migrator:deselect.case_false"
+        ], 
+        "finalMigrering:deploy:post.data": [
+            "finalMigrering:deploy:deploy.data"
+        ], 
+        "finalMigrering:lights:flashRed:light:rgb:_literal_const_39.token": [
+            "finalMigrering:lights:flashRed:light:rgb:redgb.green"
+        ], 
+        "finalMigrering:lights:flashRed:alternate.token": [
+            "finalMigrering:lights:flashRed:light:bool.token"
+        ], 
+        "finalMigrering:lights:flashRed:light:light:url:set_username.container": [
+            "finalMigrering:lights:flashRed:light:light:url:set_lightno.container"
+        ], 
+        "finalMigrering:migrator:migrate:post.header": [
+            "finalMigrering:migrator:migrate:migrate.header"
+        ], 
+        "finalMigrering:rfid:_void_13.void": [
+            "finalMigrering:rfid:log2.data"
+        ], 
+        "finalMigrering:lights:flashRed:light:rgb:redgb.brightness": [
+            "finalMigrering:lights:flashRed:light:light:command:set_bri.value"
+        ], 
+        "finalMigrering:lights:flashRed:bool.bool": [
+            "finalMigrering:lights:flashRed:pacer.token"
+        ], 
+        "finalMigrering:lights:flashRed:light:light:url:_literal_const_24.token": [
+            "finalMigrering:lights:flashRed:light:light:url:set_address.key"
+        ], 
+        "finalMigrering:rfid:compare.result": [
+            "finalMigrering:rfid:deselect.select"
+        ], 
+        "finalMigrering:lights:flashRed:light:rgb:redgb.hue": [
+            "finalMigrering:lights:flashRed:light:light:command:set_hue.value"
+        ], 
+        "finalMigrering:peopleCounter:select.case_false": [
+            "finalMigrering:peopleCounter:_void_14.void"
+        ], 
+        "finalMigrering:lights:flashRed:light:light:command:_literal_const_34.token": [
+            "finalMigrering:lights:flashRed:light:light:command:set_on.key"
+        ], 
+        "finalMigrering:rfid:rfidGarage.data": [
+            "finalMigrering:rfid:joinData.token", 
+            "finalMigrering:rfid:constantGarage.in"
+        ], 
+        "finalMigrering:lights:flashRed:pacer.token": [
+            "finalMigrering:lights:flashRed:alternate.token_1"
+        ], 
+        "finalMigrering:lights:flashRed:light:light:light.status": [
+            "finalMigrering:lights:flashRed:_void_30.void"
+        ], 
+        "finalMigrering:rfid:joinConstant.token": [
+            "finalMigrering:rfid:compare.b"
+        ], 
+        "finalMigrering:lights:flashRed:light:light:command:set_bri.container": [
+            "finalMigrering:lights:flashRed:light:light:command:set_hue.container"
+        ], 
+        "finalMigrering:lights:_literal_const_43.token": [
+            "finalMigrering:lights:selectLight.case_false"
+        ], 
+        "finalMigrering:deploy:sec_credentials.token": [
+            "finalMigrering:deploy:deploy.sec_credentials"
+        ], 
+        "finalMigrering:migrator:migrate:migrate.header": [
+            "finalMigrering:migrator:migrate:post.header"
+        ], 
+        "finalMigrering:lights:flashRed:light:light:light.header": [
+            "finalMigrering:lights:flashRed:light:light:_void_17.void"
+        ], 
+        "finalMigrering:peopleCounter:select.case_true": [
+            "finalMigrering:peopleCounter:getv.container"
+        ], 
+        "finalMigrering:lights:flashRed:select.case_false": [
+            "finalMigrering:lights:flashRed:_void_29.void"
+        ], 
+        "finalMigrering:migrator:_literal_const_5.token": [
+            "finalMigrering:migrator:deselect.case_true"
+        ], 
+        "finalMigrering:lights:flashRed:light:select.data": [
+            "finalMigrering:lights:flashRed:light:light:command:set_on.value"
+        ], 
+        "finalMigrering:lights:_literal_const_42.token": [
+            "finalMigrering:lights:selectLight.case_true"
+        ], 
+        "finalMigrering:deploy:deploy.app_info": [
+            "finalMigrering:migrator:migrate:migrate.app_id"
+        ], 
+        "finalMigrering:rfid:_literal_const_9.token": [
+            "finalMigrering:rfid:compare.a"
+        ], 
+        "finalMigrering:peopleCounter:status.value": [
+            "finalMigrering:peopleCounter:select.select"
+        ], 
+        "finalMigrering:lights:flashRed:_literal_const_31.token": [
+            "finalMigrering:lights:flashRed:select.data"
+        ], 
+        "finalMigrering:deploy:controlpath.token": [
+            "finalMigrering:deploy:_void_1.void", 
+            "finalMigrering:deploy:deploy.control_uri"
+        ], 
+        "finalMigrering:rfid:constantGarage.out": [
+            "finalMigrering:rfid:joinConstant.token"
+        ], 
+        "finalMigrering:migrator:migrate:migrate.data": [
+            "finalMigrering:migrator:migrate:post.data"
+        ], 
+        "finalMigrering:migrator:compare.result": [
+            "finalMigrering:migrator:log.data", 
+            "finalMigrering:migrator:deselect.select"
+        ], 
+        "finalMigrering:migrator:migrate:migrate.URL": [
+            "finalMigrering:migrator:migrate:post.URL"
+        ], 
+        "finalMigrering:lights:flashRed:light:light:command:_literal_const_33.token": [
+            "finalMigrering:lights:flashRed:light:light:command:set_on.container"
+        ], 
+        "finalMigrering:deploy:post.header": [
+            "finalMigrering:deploy:deploy.header"
+        ], 
+        "finalMigrering:migrator:_literal_const_4.token": [
+            "finalMigrering:migrator:compare.b"
+        ], 
+        "finalMigrering:lights:flashRed:light:rgb:redgb.saturation": [
+            "finalMigrering:lights:flashRed:light:light:command:set_sat.value"
+        ], 
+        "finalMigrering:lights:flashRed:light:light:command:to_str.string": [
+            "finalMigrering:lights:flashRed:light:light:light.data"
+        ], 
+        "finalMigrering:_void_48.void": [
+            "finalMigrering:print2.data"
+        ], 
+        "finalMigrering:lights:flashRed:_literal_const_32.token": [
+            "finalMigrering:lights:flashRed:alternate.token_2"
+        ], 
+        "finalMigrering:lights:flashRed:light:rgb:_literal_const_40.token": [
+            "finalMigrering:lights:flashRed:light:rgb:redgb.blue"
+        ], 
+        "finalMigrering:lights:flashRed:light:light:url:_literal_const_28.token": [
+            "finalMigrering:lights:flashRed:light:light:url:set_lightno.key"
+        ], 
+        "finalMigrering:lights:flashRed:select.case_true": [
+            "finalMigrering:lights:flashRed:itemize.list"
+        ], 
+        "finalMigrering:lights:flashRed:light:light:url:_literal_const_23.token": [
+            "finalMigrering:lights:flashRed:light:light:url:set_address.container"
+        ], 
+        "finalMigrering:lights:flashRed:light:light:_literal_const_20.token": [
+            "finalMigrering:lights:flashRed:light:light:light.header"
+        ], 
+        "finalMigrering:peopleCounter:length.length": [
+            "finalMigrering:_void_44.void"
+        ], 
+        "finalMigrering:deploy:deploy.URL": [
+            "finalMigrering:deploy:post.URL"
+        ], 
+        "finalMigrering:rfid:joinData.token": [
+            "finalMigrering:peopleCounter:select.data", 
+            "finalMigrering:peopleCounter:status.container"
+        ], 
+        "finalMigrering:peopleCounter:_literal_const_15.token": [
+            "finalMigrering:peopleCounter:status.key"
+        ], 
+        "finalMigrering:lights:flashRed:light:rgb:_literal_const_38.token": [
+            "finalMigrering:lights:flashRed:light:rgb:redgb.red"
+        ], 
+        "finalMigrering:lights:flashRed:light:light:url:format.text": [
+            "finalMigrering:lights:flashRed:light:light:light.URL"
+        ], 
+        "finalMigrering:lights:flashRed:light:light:url:_literal_const_26.token": [
+            "finalMigrering:lights:flashRed:light:light:url:set_username.key"
+        ], 
+        "finalMigrering:lights:flashRed:light:light:command:set_on.container": [
+            "finalMigrering:lights:flashRed:light:light:command:set_sat.container"
+        ], 
+        "finalMigrering:peopleCounter:people.rooms": [
+            "finalMigrering:peopleCounter:rum.container"
+        ], 
+        "finalMigrering:lights:flashRed:light:light:_literal_const_19.token": [
+            "finalMigrering:lights:flashRed:light:light:light.params"
+        ], 
+        "finalMigrering:linejoin.text": [
+            "finalMigrering:deploy:deploy.script"
+        ], 
+        "finalMigrering:lights:flashRed:light:light:command:_literal_const_37.token": [
+            "finalMigrering:lights:flashRed:light:light:command:set_hue.key"
+        ], 
+        "finalMigrering:name.out": [
+            "finalMigrering:deploy:deploy.name"
+        ], 
+        "finalMigrering:lights:flashRed:light:_literal_const_21.token": [
+            "finalMigrering:lights:flashRed:light:select.case_true"
+        ], 
+        "finalMigrering:rfid:rfidLego.data": [
+            "finalMigrering:rfid:joinData.token", 
+            "finalMigrering:rfid:constantLego.in"
+        ], 
+        "finalMigrering:lights:flashRed:light:light:command:_literal_const_35.token": [
+            "finalMigrering:lights:flashRed:light:light:command:set_sat.key"
+        ], 
+        "finalMigrering:lights:flashRed:light:light:command:set_sat.container": [
+            "finalMigrering:lights:flashRed:light:light:command:set_bri.container"
+        ], 
+        "finalMigrering:lights:flashRed:light:_literal_const_22.token": [
+            "finalMigrering:lights:flashRed:light:select.case_false"
+        ], 
+        "finalMigrering:lights:flashRed:light:light:command:set_hue.container": [
+            "finalMigrering:lights:flashRed:light:light:command:to_str.data"
+        ], 
+        "finalMigrering:_void_47.void": [
+            "finalMigrering:name.in"
+        ], 
+        "finalMigrering:migrator:migrate:controlpath.out": [
+            "finalMigrering:migrator:migrate:migrate.control_uri"
+        ], 
+        "finalMigrering:rfid:_literal_const_10.token": [
+            "finalMigrering:rfid:deselect.case_true"
+        ], 
+        "finalMigrering:rfid:deselect.data": [
+            "finalMigrering:print.data", 
+            "finalMigrering:migrator:compare.a", 
+            "finalMigrering:peopleCounter:people.room", 
+            "finalMigrering:peopleCounter:rum.key", 
+            "finalMigrering:lights:compare.a"
+        ], 
+        "finalMigrering:migrator:migrate:post.data": [
+            "finalMigrering:migrator:migrate:_void_2.void"
+        ], 
+        "finalMigrering:lights:flashRed:light:light:url:set_lightno.container": [
+            "finalMigrering:lights:flashRed:light:light:url:format.dict"
+        ], 
+        "finalMigrering:peopleCounter:rum.value": [
+            "finalMigrering:peopleCounter:length.string"
+        ]
+    }, 
+    "port_properties": {
+        "finalMigrering:linejoin": [
+            {
+                "direction": "in", 
+                "port": "line", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "text", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "finalMigrering:deploy_info": [
+            {
+                "direction": "out", 
+                "port": "token", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "finalMigrering:peopleCounter:people": [
+            {
+                "direction": "in", 
+                "port": "room", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "id", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "status", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "rooms", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "finalMigrering:lights:flashRed:light:light:url:_literal_const_23": [
+            {
+                "direction": "out", 
+                "port": "token", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "finalMigrering:lights:flashRed:light:light:url:_literal_const_24": [
+            {
+                "direction": "out", 
+                "port": "token", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "finalMigrering:lights:flashRed:light:light:url:_literal_const_25": [
+            {
+                "direction": "out", 
+                "port": "token", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "finalMigrering:lights:flashRed:light:light:url:_literal_const_26": [
+            {
+                "direction": "out", 
+                "port": "token", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "finalMigrering:lights:flashRed:light:light:url:_literal_const_27": [
+            {
+                "direction": "out", 
+                "port": "token", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "finalMigrering:lights:flashRed:light:light:url:_literal_const_28": [
+            {
+                "direction": "out", 
+                "port": "token", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "finalMigrering:deploy:post": [
+            {
+                "direction": "in", 
+                "port": "URL", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "header", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "params", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "data", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "status", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "header", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "data", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "finalMigrering:_void_47": [
+            {
+                "direction": "out", 
+                "port": "void", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "finalMigrering:rfid:joinData": [
+            {
+                "direction": "in", 
+                "port": "token", 
+                "properties": {
+                    "nbr_peers": 2, 
+                    "routing": "collect-unordered"
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "token", 
+                "properties": {
+                    "nbr_peers": 2
+                }
+            }
+        ], 
+        "finalMigrering:rfid:log2": [
+            {
+                "direction": "in", 
+                "port": "data", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "finalMigrering:rfid:log1": [
+            {
+                "direction": "in", 
+                "port": "data", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "finalMigrering:lights:flashRed:light:light:command:_literal_const_37": [
+            {
+                "direction": "out", 
+                "port": "token", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "finalMigrering:lights:flashRed:light:light:command:_literal_const_36": [
+            {
+                "direction": "out", 
+                "port": "token", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "finalMigrering:lights:flashRed:light:light:command:_literal_const_35": [
+            {
+                "direction": "out", 
+                "port": "token", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "finalMigrering:lights:flashRed:light:light:url:set_username": [
+            {
+                "direction": "in", 
+                "port": "container", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "key", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "value", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "container", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "finalMigrering:lights:flashRed:light:light:command:_literal_const_33": [
+            {
+                "direction": "out", 
+                "port": "token", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "finalMigrering:deploy:deploy": [
+            {
+                "direction": "in", 
+                "port": "status", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "deploy_info", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "name", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "sec_credentials", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "script", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "header", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "control_uri", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "data", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "app_info", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "URL", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "params", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "data", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "header", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "finalMigrering:lights:flashRed:bool": [
+            {
+                "direction": "in", 
+                "port": "token", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "bool", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "finalMigrering:migrator:_literal_const_6": [
+            {
+                "direction": "out", 
+                "port": "token", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "finalMigrering:migrator:_literal_const_4": [
+            {
+                "direction": "out", 
+                "port": "token", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "finalMigrering:migrator:_literal_const_5": [
+            {
+                "direction": "out", 
+                "port": "token", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "finalMigrering:lights:flashRed:light:light:light": [
+            {
+                "direction": "in", 
+                "port": "URL", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "header", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "params", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "data", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "status", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "header", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "data", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "finalMigrering:print2": [
+            {
+                "direction": "in", 
+                "port": "data", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "finalMigrering:deploy:controlpath": [
+            {
+                "direction": "out", 
+                "port": "token", 
+                "properties": {
+                    "nbr_peers": 2
+                }
+            }
+        ], 
+        "finalMigrering:migrator:migrate:controlpath": [
+            {
+                "direction": "in", 
+                "port": "in", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "out", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "finalMigrering:lights:flashRed:light:light:command:set_bri": [
+            {
+                "direction": "in", 
+                "port": "container", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "key", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "value", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "container", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "finalMigrering:lights:flashRed:select": [
+            {
+                "direction": "in", 
+                "port": "data", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "select", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "case_true", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "case_false", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "finalMigrering:rfid:_void_7": [
+            {
+                "direction": "out", 
+                "port": "void", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "finalMigrering:migrator:migrate:migrate": [
+            {
+                "direction": "in", 
+                "port": "status", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "header", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "control_uri", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "app_id", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "key", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "URL", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "params", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "done", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "data", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "header", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "finalMigrering:rfid:_void_8": [
+            {
+                "direction": "out", 
+                "port": "void", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "finalMigrering:lights:flashRed:light:light:command:set_sat": [
+            {
+                "direction": "in", 
+                "port": "container", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "key", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "value", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "container", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "finalMigrering:peopleCounter:select": [
+            {
+                "direction": "in", 
+                "port": "data", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "select", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "case_true", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "case_false", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "finalMigrering:lights:flashRed:light:rgb:_literal_const_39": [
+            {
+                "direction": "out", 
+                "port": "token", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "finalMigrering:migrator:migrate:_void_3": [
+            {
+                "direction": "out", 
+                "port": "void", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "finalMigrering:rfid:constantLego": [
+            {
+                "direction": "in", 
+                "port": "in", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "out", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "finalMigrering:peopleCounter:getv": [
+            {
+                "direction": "in", 
+                "port": "container", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "key", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "value", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "finalMigrering:_void_45": [
+            {
+                "direction": "in", 
+                "port": "void", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "finalMigrering:_void_44": [
+            {
+                "direction": "in", 
+                "port": "void", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "finalMigrering:lights:selectLight": [
+            {
+                "direction": "in", 
+                "port": "case_true", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "select", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "case_false", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "data", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "finalMigrering:lights:flashRed:light:light:_literal_const_19": [
+            {
+                "direction": "out", 
+                "port": "token", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "finalMigrering:_void_48": [
+            {
+                "direction": "out", 
+                "port": "void", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "finalMigrering:lights:flashRed:light:light:url:set_address": [
+            {
+                "direction": "in", 
+                "port": "container", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "key", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "value", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "container", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "finalMigrering:lights:flashRed:_literal_const_32": [
+            {
+                "direction": "out", 
+                "port": "token", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "finalMigrering:lights:flashRed:_literal_const_31": [
+            {
+                "direction": "out", 
+                "port": "token", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "finalMigrering:lights:compare": [
+            {
+                "direction": "in", 
+                "port": "a", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "b", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "result", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "finalMigrering:peopleCounter:status": [
+            {
+                "direction": "in", 
+                "port": "container", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "key", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "value", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "finalMigrering:lights:flashRed:light:select": [
+            {
+                "direction": "in", 
+                "port": "case_true", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "select", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "case_false", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "data", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "finalMigrering:lights:flashRed:light:light:url:set_lightno": [
+            {
+                "direction": "in", 
+                "port": "container", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "key", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "value", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "container", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "finalMigrering:peopleCounter:_literal_const_15": [
+            {
+                "direction": "out", 
+                "port": "token", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "finalMigrering:migrator:compare": [
+            {
+                "direction": "in", 
+                "port": "a", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "b", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "result", 
+                "properties": {
+                    "nbr_peers": 2
+                }
+            }
+        ], 
+        "finalMigrering:peopleCounter:length": [
+            {
+                "direction": "in", 
+                "port": "string", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "length", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "finalMigrering:lights:flashRed:pacer": [
+            {
+                "direction": "in", 
+                "port": "token", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "token", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "finalMigrering:rfid:_literal_const_9": [
+            {
+                "direction": "out", 
+                "port": "token", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "finalMigrering:deploy:_void_1": [
+            {
+                "direction": "in", 
+                "port": "void", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "finalMigrering:rfid:joinConstant": [
+            {
+                "direction": "in", 
+                "port": "token", 
+                "properties": {
+                    "nbr_peers": 2, 
+                    "routing": "collect-unordered"
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "token", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "finalMigrering:peopleCounter:_literal_const_16": [
+            {
+                "direction": "out", 
+                "port": "token", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "finalMigrering:lights:flashRed:_void_29": [
+            {
+                "direction": "in", 
+                "port": "void", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "finalMigrering:peopleCounter:rum": [
+            {
+                "direction": "in", 
+                "port": "container", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "key", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "value", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "finalMigrering:migrator:log": [
+            {
+                "direction": "in", 
+                "port": "data", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "finalMigrering:migrator:migrate:_void_2": [
+            {
+                "direction": "in", 
+                "port": "void", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "finalMigrering:lights:flashRed:alternate": [
+            {
+                "direction": "in", 
+                "port": "token_1", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "token_2", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "token", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "finalMigrering:lights:flashRed:light:light:url:format": [
+            {
+                "direction": "in", 
+                "port": "dict", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "text", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "finalMigrering:lights:_literal_const_43": [
+            {
+                "direction": "out", 
+                "port": "token", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "finalMigrering:lights:_literal_const_42": [
+            {
+                "direction": "out", 
+                "port": "token", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "finalMigrering:lights:_literal_const_41": [
+            {
+                "direction": "out", 
+                "port": "token", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "finalMigrering:lights:flashRed:light:light:command:set_on": [
+            {
+                "direction": "in", 
+                "port": "container", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "key", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "value", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "container", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "finalMigrering:lights:flashRed:light:light:_void_18": [
+            {
+                "direction": "in", 
+                "port": "void", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "finalMigrering:lights:flashRed:light:light:command:set_hue": [
+            {
+                "direction": "in", 
+                "port": "container", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "key", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "value", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "container", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "finalMigrering:_literal_const_46": [
+            {
+                "direction": "out", 
+                "port": "token", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "finalMigrering:lights:flashRed:light:light:_void_17": [
+            {
+                "direction": "in", 
+                "port": "void", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "finalMigrering:name": [
+            {
+                "direction": "in", 
+                "port": "in", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "out", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "finalMigrering:lights:flashRed:_void_30": [
+            {
+                "direction": "in", 
+                "port": "void", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "finalMigrering:migrator:deselect": [
+            {
+                "direction": "in", 
+                "port": "case_true", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "select", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "case_false", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "data", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "finalMigrering:rfid:rfidGarage": [
+            {
+                "direction": "in", 
+                "port": "data", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "data", 
+                "properties": {
+                    "nbr_peers": 2
+                }
+            }
+        ], 
+        "finalMigrering:lights:flashRed:itemize": [
+            {
+                "direction": "in", 
+                "port": "list", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "item", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "finalMigrering:rfid:constantGarage": [
+            {
+                "direction": "in", 
+                "port": "in", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "out", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "finalMigrering:rfid:_void_12": [
+            {
+                "direction": "out", 
+                "port": "void", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "finalMigrering:rfid:_void_13": [
+            {
+                "direction": "out", 
+                "port": "void", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "finalMigrering:deploy:sec_credentials": [
+            {
+                "direction": "out", 
+                "port": "token", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "finalMigrering:lights:flashRed:light:light:_literal_const_20": [
+            {
+                "direction": "out", 
+                "port": "token", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "finalMigrering:print": [
+            {
+                "direction": "in", 
+                "port": "data", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "finalMigrering:peopleCounter:_void_14": [
+            {
+                "direction": "in", 
+                "port": "void", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "finalMigrering:lights:flashRed:light:light:command:_literal_const_34": [
+            {
+                "direction": "out", 
+                "port": "token", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "finalMigrering:rfid:_literal_const_10": [
+            {
+                "direction": "out", 
+                "port": "token", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "finalMigrering:rfid:_literal_const_11": [
+            {
+                "direction": "out", 
+                "port": "token", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "finalMigrering:rfid:compare": [
+            {
+                "direction": "in", 
+                "port": "a", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "b", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "result", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "finalMigrering:filereader": [
+            {
+                "direction": "in", 
+                "port": "filename", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "out", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "finalMigrering:lights:flashRed:light:_literal_const_21": [
+            {
+                "direction": "out", 
+                "port": "token", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "finalMigrering:lights:flashRed:light:_literal_const_22": [
+            {
+                "direction": "out", 
+                "port": "token", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "finalMigrering:lights:flashRed:light:bool": [
+            {
+                "direction": "in", 
+                "port": "token", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "bool", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "finalMigrering:rfid:rfidLego": [
+            {
+                "direction": "in", 
+                "port": "data", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "data", 
+                "properties": {
+                    "nbr_peers": 2
+                }
+            }
+        ], 
+        "finalMigrering:lights:flashRed:light:rgb:redgb": [
+            {
+                "direction": "in", 
+                "port": "blue", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "green", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "red", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "hue", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "saturation", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "brightness", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "finalMigrering:migrator:migrate:post": [
+            {
+                "direction": "in", 
+                "port": "URL", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "header", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "params", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "data", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "status", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "header", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "data", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "finalMigrering:rfid:deselect": [
+            {
+                "direction": "in", 
+                "port": "case_true", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "select", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "case_false", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "data", 
+                "properties": {
+                    "nbr_peers": 5
+                }
+            }
+        ], 
+        "finalMigrering:lights:flashRed:light:rgb:_literal_const_40": [
+            {
+                "direction": "out", 
+                "port": "token", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "finalMigrering:lights:flashRed:light:rgb:_literal_const_38": [
+            {
+                "direction": "out", 
+                "port": "token", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "finalMigrering:lights:flashRed:light:light:command:to_str": [
+            {
+                "direction": "in", 
+                "port": "data", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "string", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ]
+    }, 
+    "valid": true, 
+    "actors": {
+        "finalMigrering:linejoin": {
+            "args": {}, 
+            "actor_type": "text.LineJoin", 
+            "signature": "d56aebb2d606cbcc767002df862aecec5162c0bbdd7f6e6547f4bcbbaa1beabe"
+        }, 
+        "finalMigrering:deploy_info": {
+            "args": {
+                "data": {
+                    "requirements": {
+                        "log": [
+                            {
+                                "kwargs": {
+                                    "index": [
+                                        "address", 
+                                        {
+                                            "name": "Garage"
+                                        }
+                                    ]
+                                }, 
+                                "type": "+", 
+                                "op": "node_attr_match"
+                            }
+                        ]
+                    }
+                }
+            }, 
+            "actor_type": "std.Constant", 
+            "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
+        }, 
+        "finalMigrering:peopleCounter:people": {
+            "args": {}, 
+            "actor_type": "room.PersonCounter", 
+            "signature": "c6a4012230f2b6d14e4ef7a00790fc8093692f66b1255f99a1a05483b7801fdc"
+        }, 
+        "finalMigrering:lights:flashRed:light:light:url:_literal_const_23": {
+            "args": {
+                "data": {}
+            }, 
+            "actor_type": "std.Constant", 
+            "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
+        }, 
+        "finalMigrering:lights:flashRed:light:light:url:_literal_const_24": {
+            "args": {
+                "data": "address"
+            }, 
+            "actor_type": "std.Constant", 
+            "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
+        }, 
+        "finalMigrering:lights:flashRed:light:light:url:_literal_const_25": {
+            "args": {
+                "data": "192.168.0.141"
+            }, 
+            "actor_type": "std.Constant", 
+            "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
+        }, 
+        "finalMigrering:lights:flashRed:light:light:url:_literal_const_26": {
+            "args": {
+                "data": "username"
+            }, 
+            "actor_type": "std.Constant", 
+            "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
+        }, 
+        "finalMigrering:lights:flashRed:light:light:url:_literal_const_27": {
+            "args": {
+                "data": "191db4b57899c277637781315c1f53"
+            }, 
+            "actor_type": "std.Constant", 
+            "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
+        }, 
+        "finalMigrering:lights:flashRed:light:light:url:_literal_const_28": {
+            "args": {
+                "data": "lightno"
+            }, 
+            "actor_type": "std.Constant", 
+            "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
+        }, 
+        "finalMigrering:deploy:post": {
+            "args": {}, 
+            "actor_type": "net.HTTPPost", 
+            "signature": "51594f52b9c2d375fe535740fa4173db2a3d4c5353843753a511af0f0b8da72a"
+        }, 
+        "finalMigrering:_void_47": {
+            "args": {}, 
+            "actor_type": "flow.Void", 
+            "signature": "3a749ff7e2bc123a6e5870c9a337f72e0025a69bff24de632bd2905f7bf21d00"
+        }, 
+        "finalMigrering:rfid:joinData": {
+            "args": {}, 
+            "actor_type": "flow.Collect", 
+            "signature": "e6b5141ac9ddab19cec49d8785f1f3cf4acf763498c721870ff1dcafca119059"
+        }, 
+        "finalMigrering:rfid:log2": {
+            "args": {
+                "loglevel": "INFO"
+            }, 
+            "actor_type": "io.Log", 
+            "signature": "e73ce6ca0ccc9bce14f8d546e930f53cb69e466eb3325e1cc24d64e8b0bb97b5"
+        }, 
+        "finalMigrering:rfid:log1": {
+            "args": {
+                "loglevel": "INFO"
+            }, 
+            "actor_type": "io.Log", 
+            "signature": "e73ce6ca0ccc9bce14f8d546e930f53cb69e466eb3325e1cc24d64e8b0bb97b5"
+        }, 
+        "finalMigrering:lights:flashRed:light:light:command:_literal_const_37": {
+            "args": {
+                "data": "hue"
+            }, 
+            "actor_type": "std.Constant", 
+            "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
+        }, 
+        "finalMigrering:lights:flashRed:light:light:command:_literal_const_36": {
+            "args": {
+                "data": "bri"
+            }, 
+            "actor_type": "std.Constant", 
+            "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
+        }, 
+        "finalMigrering:lights:flashRed:light:light:command:_literal_const_35": {
+            "args": {
+                "data": "sat"
+            }, 
+            "actor_type": "std.Constant", 
+            "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
+        }, 
+        "finalMigrering:lights:flashRed:light:light:url:set_username": {
+            "args": {}, 
+            "actor_type": "json.SetValue", 
+            "signature": "3e76e92b20364f1972aff4cb233188b7e41a65abe7816896cb4d09a37adf137f"
+        }, 
+        "finalMigrering:lights:flashRed:light:light:command:_literal_const_33": {
+            "args": {
+                "data": {}
+            }, 
+            "actor_type": "std.Constant", 
+            "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
+        }, 
+        "finalMigrering:deploy:deploy": {
+            "args": {}, 
+            "actor_type": "calvin.CalvinDeployerA", 
+            "signature": "04ad548d73c2c38a31532705b376cced977ec194bf52df742343e9e860a9336f"
+        }, 
+        "finalMigrering:lights:flashRed:bool": {
+            "args": {}, 
+            "actor_type": "flow.Bool", 
+            "signature": "bb08d2e2cc20741968e8c27886c1d8917382699121e5d303efcfe3ca72ff246a"
+        }, 
+        "finalMigrering:migrator:_literal_const_6": {
+            "args": {
+                "data": "stationLego"
+            }, 
+            "actor_type": "std.Constant", 
+            "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
+        }, 
+        "finalMigrering:migrator:_literal_const_4": {
+            "args": {
+                "data": "stationGarage"
+            }, 
+            "actor_type": "std.Constant", 
+            "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
+        }, 
+        "finalMigrering:migrator:_literal_const_5": {
+            "args": {
+                "data": "stationGarage"
+            }, 
+            "actor_type": "std.Constant", 
+            "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
+        }, 
+        "finalMigrering:lights:flashRed:light:light:light": {
+            "args": {}, 
+            "actor_type": "net.HTTPPut", 
+            "signature": "d77713364a40a05000ddd140cf8081ccc5a61ab9535b53ac5e100bf21adad46d"
+        }, 
+        "finalMigrering:print2": {
+            "args": {
+                "loglevel": "INFO"
+            }, 
+            "actor_type": "io.Log", 
+            "signature": "e73ce6ca0ccc9bce14f8d546e930f53cb69e466eb3325e1cc24d64e8b0bb97b5"
+        }, 
+        "finalMigrering:deploy:controlpath": {
+            "args": {
+                "data": "http://192.168.0.139:5001"
+            }, 
+            "actor_type": "std.Constant", 
+            "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
+        }, 
+        "finalMigrering:migrator:migrate:controlpath": {
+            "args": {
+                "data": "http://192.168.0.139:5001"
+            }, 
+            "actor_type": "flow.Init", 
+            "signature": "3e308e47a996352b4965a7449eeb84f049b9e0931e5011dd923bad6660e6e002"
+        }, 
+        "finalMigrering:lights:flashRed:light:light:command:set_bri": {
+            "args": {}, 
+            "actor_type": "json.SetValue", 
+            "signature": "3e76e92b20364f1972aff4cb233188b7e41a65abe7816896cb4d09a37adf137f"
+        }, 
+        "finalMigrering:lights:flashRed:select": {
+            "args": {}, 
+            "actor_type": "flow.Select", 
+            "signature": "95f965d1cdf97fc1148c0dd763f15ee2822f8a448b965ca387ca983921dda847"
+        }, 
+        "finalMigrering:rfid:_void_7": {
+            "args": {}, 
+            "actor_type": "flow.Void", 
+            "signature": "3a749ff7e2bc123a6e5870c9a337f72e0025a69bff24de632bd2905f7bf21d00"
+        }, 
+        "finalMigrering:migrator:migrate:migrate": {
+            "args": {
+                "deploy_info": {
+                    "stationLego": {
+                        "requirements": {
+                            "log": [
+                                {
+                                    "kwargs": {
+                                        "index": [
+                                            "address", 
+                                            {
+                                                "room": "Lego"
+                                            }
+                                        ]
+                                    }, 
+                                    "type": "+", 
+                                    "op": "node_attr_match"
+                                }
+                            ]
+                        }
+                    }, 
+                    "stationGarage": {
+                        "requirements": {
+                            "log": [
+                                {
+                                    "kwargs": {
+                                        "index": [
+                                            "address", 
+                                            {
+                                                "room": "Garage"
+                                            }
+                                        ]
+                                    }, 
+                                    "type": "+", 
+                                    "op": "node_attr_match"
+                                }
+                            ]
+                        }
+                    }
+                }
+            }, 
+            "actor_type": "calvin.CalvinMigraterA", 
+            "signature": "e671fbaa47a4bc35eef5bbabe94f5b5d649b729bb94e58f0bb698f4c56195c03"
+        }, 
+        "finalMigrering:rfid:_void_8": {
+            "args": {}, 
+            "actor_type": "flow.Void", 
+            "signature": "3a749ff7e2bc123a6e5870c9a337f72e0025a69bff24de632bd2905f7bf21d00"
+        }, 
+        "finalMigrering:lights:flashRed:light:light:command:set_sat": {
+            "args": {}, 
+            "actor_type": "json.SetValue", 
+            "signature": "3e76e92b20364f1972aff4cb233188b7e41a65abe7816896cb4d09a37adf137f"
+        }, 
+        "finalMigrering:peopleCounter:select": {
+            "args": {}, 
+            "actor_type": "flow.Select", 
+            "signature": "95f965d1cdf97fc1148c0dd763f15ee2822f8a448b965ca387ca983921dda847"
+        }, 
+        "finalMigrering:lights:flashRed:light:rgb:_literal_const_39": {
+            "args": {
+                "data": 0
+            }, 
+            "actor_type": "std.Constant", 
+            "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
+        }, 
+        "finalMigrering:migrator:migrate:_void_3": {
+            "args": {}, 
+            "actor_type": "flow.Void", 
+            "signature": "3a749ff7e2bc123a6e5870c9a337f72e0025a69bff24de632bd2905f7bf21d00"
+        }, 
+        "finalMigrering:rfid:constantLego": {
+            "args": {
+                "constant": 2
+            }, 
+            "actor_type": "std.Constantify", 
+            "signature": "1a4817b57e4582f845962c396b4305f8a48609c75fdcb134ed50c34226b1a97d"
+        }, 
+        "finalMigrering:peopleCounter:getv": {
+            "args": {}, 
+            "actor_type": "json.GetValue", 
+            "signature": "b5af23ef7594f12cb586ebda67fd1b51b6c437445c67593b37d6dc3b00fc66f7"
+        }, 
+        "finalMigrering:_void_45": {
+            "args": {}, 
+            "actor_type": "flow.Terminator", 
+            "signature": "d020e4a1dc9953df2924eba3ceed61544fff2bd4fab9f602758cce0e8957d522"
+        }, 
+        "finalMigrering:_void_44": {
+            "args": {}, 
+            "actor_type": "flow.Terminator", 
+            "signature": "d020e4a1dc9953df2924eba3ceed61544fff2bd4fab9f602758cce0e8957d522"
+        }, 
+        "finalMigrering:lights:selectLight": {
+            "args": {}, 
+            "actor_type": "flow.Deselect", 
+            "signature": "a4f030267249aa9d2498dac1d5f9494b616bfc9d3dfd44760b3b3a9b696ee52b"
+        }, 
+        "finalMigrering:lights:flashRed:light:light:_literal_const_19": {
+            "args": {
+                "data": {}
+            }, 
+            "actor_type": "std.Constant", 
+            "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
+        }, 
+        "finalMigrering:_void_48": {
+            "args": {}, 
+            "actor_type": "flow.Void", 
+            "signature": "3a749ff7e2bc123a6e5870c9a337f72e0025a69bff24de632bd2905f7bf21d00"
+        }, 
+        "finalMigrering:lights:flashRed:light:light:url:set_address": {
+            "args": {}, 
+            "actor_type": "json.SetValue", 
+            "signature": "3e76e92b20364f1972aff4cb233188b7e41a65abe7816896cb4d09a37adf137f"
+        }, 
+        "finalMigrering:lights:flashRed:_literal_const_32": {
+            "args": {
+                "data": false
+            }, 
+            "actor_type": "std.Constant", 
+            "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
+        }, 
+        "finalMigrering:lights:flashRed:_literal_const_31": {
+            "args": {
+                "data": [
+                    1, 
+                    1, 
+                    1, 
+                    1, 
+                    1
+                ]
+            }, 
+            "actor_type": "std.Constant", 
+            "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
+        }, 
+        "finalMigrering:lights:compare": {
+            "args": {
+                "rel": "="
+            }, 
+            "actor_type": "std.Compare", 
+            "signature": "ea233444664ef2a929101373002d8fa5d89e91aceae7724fbd5a109e5f874446"
+        }, 
+        "finalMigrering:peopleCounter:status": {
+            "args": {}, 
+            "actor_type": "json.GetValue", 
+            "signature": "b5af23ef7594f12cb586ebda67fd1b51b6c437445c67593b37d6dc3b00fc66f7"
+        }, 
+        "finalMigrering:lights:flashRed:light:select": {
+            "args": {}, 
+            "actor_type": "flow.Deselect", 
+            "signature": "a4f030267249aa9d2498dac1d5f9494b616bfc9d3dfd44760b3b3a9b696ee52b"
+        }, 
+        "finalMigrering:lights:flashRed:light:light:url:set_lightno": {
+            "args": {}, 
+            "actor_type": "json.SetValue", 
+            "signature": "3e76e92b20364f1972aff4cb233188b7e41a65abe7816896cb4d09a37adf137f"
+        }, 
+        "finalMigrering:peopleCounter:_literal_const_15": {
+            "args": {
+                "data": "status"
+            }, 
+            "actor_type": "std.Constant", 
+            "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
+        }, 
+        "finalMigrering:migrator:compare": {
+            "args": {
+                "rel": "="
+            }, 
+            "actor_type": "std.Compare", 
+            "signature": "ea233444664ef2a929101373002d8fa5d89e91aceae7724fbd5a109e5f874446"
+        }, 
+        "finalMigrering:peopleCounter:length": {
+            "args": {}, 
+            "actor_type": "text.Length", 
+            "signature": "8a70cfa62da2134e74b308fac090aaa279574fabcc6afbb5bb6a26f364534da9"
+        }, 
+        "finalMigrering:lights:flashRed:pacer": {
+            "args": {
+                "delay": 1.0
+            }, 
+            "actor_type": "std.ClassicDelay", 
+            "signature": "5787838e931900c0dd74d6bee2347038577a2677016ed4992c7653889cf1678f"
+        }, 
+        "finalMigrering:rfid:_literal_const_9": {
+            "args": {
+                "data": 1
+            }, 
+            "actor_type": "std.Constant", 
+            "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
+        }, 
+        "finalMigrering:deploy:_void_1": {
+            "args": {}, 
+            "actor_type": "flow.Terminator", 
+            "signature": "d020e4a1dc9953df2924eba3ceed61544fff2bd4fab9f602758cce0e8957d522"
+        }, 
+        "finalMigrering:rfid:joinConstant": {
+            "args": {}, 
+            "actor_type": "flow.Collect", 
+            "signature": "e6b5141ac9ddab19cec49d8785f1f3cf4acf763498c721870ff1dcafca119059"
+        }, 
+        "finalMigrering:peopleCounter:_literal_const_16": {
+            "args": {
+                "data": "data"
+            }, 
+            "actor_type": "std.Constant", 
+            "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
+        }, 
+        "finalMigrering:lights:flashRed:_void_29": {
+            "args": {}, 
+            "actor_type": "flow.Terminator", 
+            "signature": "d020e4a1dc9953df2924eba3ceed61544fff2bd4fab9f602758cce0e8957d522"
+        }, 
+        "finalMigrering:peopleCounter:rum": {
+            "args": {}, 
+            "actor_type": "json.GetValue", 
+            "signature": "b5af23ef7594f12cb586ebda67fd1b51b6c437445c67593b37d6dc3b00fc66f7"
+        }, 
+        "finalMigrering:migrator:log": {
+            "args": {
+                "loglevel": "INFO"
+            }, 
+            "actor_type": "io.Log", 
+            "signature": "e73ce6ca0ccc9bce14f8d546e930f53cb69e466eb3325e1cc24d64e8b0bb97b5"
+        }, 
+        "finalMigrering:migrator:migrate:_void_2": {
+            "args": {}, 
+            "actor_type": "flow.Terminator", 
+            "signature": "d020e4a1dc9953df2924eba3ceed61544fff2bd4fab9f602758cce0e8957d522"
+        }, 
+        "finalMigrering:lights:flashRed:alternate": {
+            "args": {}, 
+            "actor_type": "flow.Alternate2", 
+            "signature": "fc9bf89634e74f97688f8b44d94a2c1e3f242f0d994c9818a5249d9e7b35921f"
+        }, 
+        "finalMigrering:lights:flashRed:light:light:url:format": {
+            "args": {
+                "fmt": "http://{address}/api/{username}/lights/{lightno}/state"
+            }, 
+            "actor_type": "text.Format", 
+            "signature": "5076805251ae7e423b8d422f3e9cba41d3b986c612c110ffe6c27d377dfaa044"
+        }, 
+        "finalMigrering:lights:_literal_const_43": {
+            "args": {
+                "data": 3
+            }, 
+            "actor_type": "std.Constant", 
+            "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
+        }, 
+        "finalMigrering:lights:_literal_const_42": {
+            "args": {
+                "data": 2
+            }, 
+            "actor_type": "std.Constant", 
+            "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
+        }, 
+        "finalMigrering:lights:_literal_const_41": {
+            "args": {
+                "data": "stationGarage"
+            }, 
+            "actor_type": "std.Constant", 
+            "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
+        }, 
+        "finalMigrering:lights:flashRed:light:light:command:set_on": {
+            "args": {}, 
+            "actor_type": "json.SetValue", 
+            "signature": "3e76e92b20364f1972aff4cb233188b7e41a65abe7816896cb4d09a37adf137f"
+        }, 
+        "finalMigrering:lights:flashRed:light:light:_void_18": {
+            "args": {}, 
+            "actor_type": "flow.Terminator", 
+            "signature": "d020e4a1dc9953df2924eba3ceed61544fff2bd4fab9f602758cce0e8957d522"
+        }, 
+        "finalMigrering:lights:flashRed:light:light:command:set_hue": {
+            "args": {}, 
+            "actor_type": "json.SetValue", 
+            "signature": "3e76e92b20364f1972aff4cb233188b7e41a65abe7816896cb4d09a37adf137f"
+        }, 
+        "finalMigrering:_literal_const_46": {
+            "args": {
+                "data": "testprint.calvin"
+            }, 
+            "actor_type": "std.Constant", 
+            "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
+        }, 
+        "finalMigrering:lights:flashRed:light:light:_void_17": {
+            "args": {}, 
+            "actor_type": "flow.Terminator", 
+            "signature": "d020e4a1dc9953df2924eba3ceed61544fff2bd4fab9f602758cce0e8957d522"
+        }, 
+        "finalMigrering:name": {
+            "args": {
+                "data": "migrate_room"
+            }, 
+            "actor_type": "flow.Init", 
+            "signature": "3e308e47a996352b4965a7449eeb84f049b9e0931e5011dd923bad6660e6e002"
+        }, 
+        "finalMigrering:lights:flashRed:_void_30": {
+            "args": {}, 
+            "actor_type": "flow.Terminator", 
+            "signature": "d020e4a1dc9953df2924eba3ceed61544fff2bd4fab9f602758cce0e8957d522"
+        }, 
+        "finalMigrering:migrator:deselect": {
+            "args": {}, 
+            "actor_type": "flow.Deselect", 
+            "signature": "a4f030267249aa9d2498dac1d5f9494b616bfc9d3dfd44760b3b3a9b696ee52b"
+        }, 
+        "finalMigrering:rfid:rfidGarage": {
+            "args": {}, 
+            "actor_type": "sensor.RFIDReader", 
+            "signature": "c6d20d15bf5bcd83714d963b4348025fb6882ecd955776bdb78b5598ec115e3f"
+        }, 
+        "finalMigrering:lights:flashRed:itemize": {
+            "args": {}, 
+            "actor_type": "json.Items", 
+            "signature": "3a387e57370546dc0c449790c66f8d44257152d0e42c3c94b844893f215313d6"
+        }, 
+        "finalMigrering:rfid:constantGarage": {
+            "args": {
+                "constant": 1
+            }, 
+            "actor_type": "std.Constantify", 
+            "signature": "1a4817b57e4582f845962c396b4305f8a48609c75fdcb134ed50c34226b1a97d"
+        }, 
+        "finalMigrering:rfid:_void_12": {
+            "args": {}, 
+            "actor_type": "flow.Void", 
+            "signature": "3a749ff7e2bc123a6e5870c9a337f72e0025a69bff24de632bd2905f7bf21d00"
+        }, 
+        "finalMigrering:rfid:_void_13": {
+            "args": {}, 
+            "actor_type": "flow.Void", 
+            "signature": "3a749ff7e2bc123a6e5870c9a337f72e0025a69bff24de632bd2905f7bf21d00"
+        }, 
+        "finalMigrering:deploy:sec_credentials": {
+            "args": {
+                "data": {}
+            }, 
+            "actor_type": "std.Constant", 
+            "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
+        }, 
+        "finalMigrering:lights:flashRed:light:light:_literal_const_20": {
+            "args": {
+                "data": {
+                    "Content-Type": "application/json"
+                }
+            }, 
+            "actor_type": "std.Constant", 
+            "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
+        }, 
+        "finalMigrering:print": {
+            "args": {
+                "loglevel": "INFO"
+            }, 
+            "actor_type": "io.Log", 
+            "signature": "e73ce6ca0ccc9bce14f8d546e930f53cb69e466eb3325e1cc24d64e8b0bb97b5"
+        }, 
+        "finalMigrering:peopleCounter:_void_14": {
+            "args": {}, 
+            "actor_type": "flow.Terminator", 
+            "signature": "d020e4a1dc9953df2924eba3ceed61544fff2bd4fab9f602758cce0e8957d522"
+        }, 
+        "finalMigrering:lights:flashRed:light:light:command:_literal_const_34": {
+            "args": {
+                "data": "on"
+            }, 
+            "actor_type": "std.Constant", 
+            "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
+        }, 
+        "finalMigrering:rfid:_literal_const_10": {
+            "args": {
+                "data": "stationGarage"
+            }, 
+            "actor_type": "std.Constant", 
+            "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
+        }, 
+        "finalMigrering:rfid:_literal_const_11": {
+            "args": {
+                "data": "stationLego"
+            }, 
+            "actor_type": "std.Constant", 
+            "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
+        }, 
+        "finalMigrering:rfid:compare": {
+            "args": {
+                "rel": "="
+            }, 
+            "actor_type": "std.Compare", 
+            "signature": "ea233444664ef2a929101373002d8fa5d89e91aceae7724fbd5a109e5f874446"
+        }, 
+        "finalMigrering:filereader": {
+            "args": {}, 
+            "actor_type": "io.FileReader", 
+            "signature": "22504cbad608cd467cb9fb346940ef04491cd7c6ad7aab035c36bd09ffd63f2d"
+        }, 
+        "finalMigrering:lights:flashRed:light:_literal_const_21": {
+            "args": {
+                "data": true
+            }, 
+            "actor_type": "std.Constant", 
+            "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
+        }, 
+        "finalMigrering:lights:flashRed:light:_literal_const_22": {
+            "args": {
+                "data": false
+            }, 
+            "actor_type": "std.Constant", 
+            "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
+        }, 
+        "finalMigrering:lights:flashRed:light:bool": {
+            "args": {}, 
+            "actor_type": "flow.Bool", 
+            "signature": "bb08d2e2cc20741968e8c27886c1d8917382699121e5d303efcfe3ca72ff246a"
+        }, 
+        "finalMigrering:rfid:rfidLego": {
+            "args": {}, 
+            "actor_type": "sensor.RFIDReader", 
+            "signature": "c6d20d15bf5bcd83714d963b4348025fb6882ecd955776bdb78b5598ec115e3f"
+        }, 
+        "finalMigrering:lights:flashRed:light:rgb:redgb": {
+            "args": {}, 
+            "actor_type": "math.RGBtoHSL", 
+            "signature": "e231b14f55dbcbc393f0c67c4316b711a8f0fe843b0732f7922752c2cc722892"
+        }, 
+        "finalMigrering:migrator:migrate:post": {
+            "args": {}, 
+            "actor_type": "net.HTTPPost", 
+            "signature": "51594f52b9c2d375fe535740fa4173db2a3d4c5353843753a511af0f0b8da72a"
+        }, 
+        "finalMigrering:rfid:deselect": {
+            "args": {}, 
+            "actor_type": "flow.Deselect", 
+            "signature": "a4f030267249aa9d2498dac1d5f9494b616bfc9d3dfd44760b3b3a9b696ee52b"
+        }, 
+        "finalMigrering:lights:flashRed:light:rgb:_literal_const_40": {
+            "args": {
+                "data": 0
+            }, 
+            "actor_type": "std.Constant", 
+            "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
+        }, 
+        "finalMigrering:lights:flashRed:light:rgb:_literal_const_38": {
+            "args": {
+                "data": 255
+            }, 
+            "actor_type": "std.Constant", 
+            "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
+        }, 
+        "finalMigrering:lights:flashRed:light:light:command:to_str": {
+            "args": {}, 
+            "actor_type": "json.ToString", 
+            "signature": "723cc86269b427b45cc02541afefefca1c512ea194d2b719cf36a077d4cb25ec"
+        }
+    }, 
+    "name": "finalMigrering"
+}

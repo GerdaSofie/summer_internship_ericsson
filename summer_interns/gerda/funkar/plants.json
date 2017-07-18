@@ -46,7 +46,7 @@
         "plants:plant:flash:light:light:url:_literal_const_8.token": [
             "plants:plant:flash:light:light:url:set_username.key"
         ], 
-        "plants:plant:humidity:sensor.data": [
+        "plants:plant:humidity:moisture.level": [
             "plants:plant:humidity:getColors.humidity"
         ], 
         "plants:plant:flash:light:light:command:_literal_const_14.token": [
@@ -96,6 +96,9 @@
         ], 
         "plants:plant:humidity:_literal_const_18.token": [
             "plants:plant:humidity:compare.b"
+        ], 
+        "plants:trigger.data": [
+            "plants:plant:humidity:moisture.trigger"
         ], 
         "plants:plant:humidity:getColors.green": [
             "plants:plant:flash:light:rgb:redgb.green"
@@ -242,15 +245,6 @@
             {
                 "direction": "out", 
                 "port": "container", 
-                "properties": {
-                    "nbr_peers": 1
-                }
-            }
-        ], 
-        "plants:plant:humidity:sensor": [
-            {
-                "direction": "out", 
-                "port": "data", 
                 "properties": {
                     "nbr_peers": 1
                 }
@@ -432,6 +426,15 @@
                 "port": "red", 
                 "properties": {
                     "nbr_peers": 2
+                }
+            }
+        ], 
+        "plants:trigger": [
+            {
+                "direction": "out", 
+                "port": "data", 
+                "properties": {
+                    "nbr_peers": 1
                 }
             }
         ], 
@@ -660,6 +663,22 @@
                 }
             }
         ], 
+        "plants:plant:humidity:moisture": [
+            {
+                "direction": "in", 
+                "port": "trigger", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "level", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
         "plants:plant:flash:light:light:command:set_on": [
             {
                 "direction": "in", 
@@ -750,7 +769,7 @@
         }, 
         "plants:plant:flash:light:light:url:_literal_const_11": {
             "args": {
-                "data": 3
+                "data": 1
             }, 
             "actor_type": "std.Constant", 
             "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
@@ -769,14 +788,6 @@
             "args": {}, 
             "actor_type": "json.SetValue", 
             "signature": "3e76e92b20364f1972aff4cb233188b7e41a65abe7816896cb4d09a37adf137f"
-        }, 
-        "plants:plant:humidity:sensor": {
-            "args": {
-                "tick": 10, 
-                "data": 15
-            }, 
-            "actor_type": "std.Trigger", 
-            "signature": "ba09c716dfc88b9fdf447ede4d0ad64ee4ea24c03a7fb1568f24f5b89254b58e"
         }, 
         "plants:plant:flash:light:light:light": {
             "args": {}, 
@@ -832,6 +843,14 @@
             "args": {}, 
             "actor_type": "math.GetHumidityColors", 
             "signature": "48978b02bb2f5984b83a05194358edd84f758fd41a603b76ff1cf3be2e7a9c9a"
+        }, 
+        "plants:trigger": {
+            "args": {
+                "tick": 10, 
+                "data": ""
+            }, 
+            "actor_type": "std.Trigger", 
+            "signature": "ba09c716dfc88b9fdf447ede4d0ad64ee4ea24c03a7fb1568f24f5b89254b58e"
         }, 
         "plants:plant:flash:light:light:url:set_address": {
             "args": {}, 
@@ -899,6 +918,11 @@
             }, 
             "actor_type": "text.Format", 
             "signature": "5076805251ae7e423b8d422f3e9cba41d3b986c612c110ffe6c27d377dfaa044"
+        }, 
+        "plants:plant:humidity:moisture": {
+            "args": {}, 
+            "actor_type": "sensor.TriggeredSoilMoisture", 
+            "signature": "0ad63cef90cd99293eb2c70ddfc513daf09fb674847eb805b4fdb0531a88eb83"
         }, 
         "plants:plant:flash:light:light:command:set_on": {
             "args": {}, 

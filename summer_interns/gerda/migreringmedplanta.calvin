@@ -94,28 +94,14 @@ component RFIDReader() -> data, room {
   joinData : flow.Collect()
   log1 : io.Log(loglevel="INFO")
   log2 : io.Log(loglevel="INFO")
-  selectgarage : flow.Select()
-  selectlego : flow.Select()
-  garagestatus : json.GetValue()
-  legostatus : json.GetValue()
 
   voidport > rfidGarage.data
-  rfidGarage.data > selectgarage.data
-  rfidGarage.data > garagestatus.container
-  "status" > garagestatus.key
-  garagestatus.value > selectgarage.select
-  selectgarage.case_true > joinData.token
-  selectgarage.case_true > constantGarage.in
-  selectgarage.case_false > voidport
+  rfidGarage.data > joinData.token
+  rfidGarage.data > constantGarage.in
 
   voidport > rfidLego.data
-  rfidLego.data > selectlego.data
-  rfidLego.data > legostatus.container
-  "status" > legostatus.key
-  legostatus.value > selectlego.select
-  selectlego.case_true > joinData.token
-  selectlego.case_true > constantLego.in
-  selectlego.case_false > voidport
+  rfidLego.data > joinData.token
+  rfidLego.data > constantLego.in
 
   constantGarage.out > joinConstant.token
   constantLego.out > joinConstant.token
@@ -135,9 +121,17 @@ component PeopleCounter() data, room -> output, count{
 people : room.PersonCounter()
 getv : json.GetValue()
 length : text.Length()
+select : flow.Select()
+status : json.GetValue()
 rum : json.GetValue()
 
-.data > getv.container
+.data > select.data
+.data > status.container
+"status" > status.key
+status.value > select.select
+
+select.case_false > voidport
+select.case_true > getv.container
 
 "data" > getv.key
 getv.value > people.id
@@ -150,61 +144,6 @@ rum.value > length.string
 length.length > .count
 }
 
-component Temperature() trigger -> message {
-    temp : sensor.TriggeredTemperature()
-    text : std.Constant(data="the temperature is ")
-    plus : math.Compute(rel="+")
-
-    .trigger > temp.trigger
-    text.token > plus.a
-    temp.centigrade > plus.b
-    plus.result > .message
-}
-
-component InOrOut() data, antal -> in, out {
-  select : flow.Select()
-  getv : json.GetValue()
-  compare : std.Compare(rel=">=")
-  init : flow.Init(data="1")
-
-  .data > getv.container
-  "data" > getv.key
-
-  .antal > compare.a
-  .antal > init.in
-  init.out > compare.b
-  compare.result > select.select
-  getv.value > select.data
-  select.case_true > .in
-  select.case_false > .out
-}
-
-component Picture() id, remove -> {
-  camera : media.IPCamera()
-  render : media.MultipleImageRenderer()
-
-  .id > camera.trigger
-  camera.status > voidport
-  camera.image > render.image
-  .id > render.id
-  .remove > render.remove
-}
-
-component MediaPlayer() dict -> {
-    dict : json.Dict()
-    const : std.Constant(data=true)
-    mush : text.Mustache(fmt="{{data}}.ogg")
-    player : media.MediaPlayer2()
-
-    .dict > dict.value
-    "data" > dict.key
-    dict.dict > mush.dict
-    mush.text > player.mediafile
-    const.token > player.play
-
-}
-
-
 deploy_info : std.Constant(data=
 {
     "requirements":
@@ -215,11 +154,6 @@ deploy_info : std.Constant(data=
 })
 
 name : flow.Init(data=APPNAME)
-
-camera : Picture()
-InorOut : InOrOut()
-mediaPlayer : MediaPlayer()
-temperatur : Temperature()
 
 filereader: io.FileReader()
 linejoin : text.LineJoin()
@@ -250,11 +184,3 @@ peopleCounter.count > voidport
 rfid.room > print.data
 rfid.room > migrator.room
 migrator.done > voidport
-
-rfid.data > InorOut.data
-peopleCounter.count > InorOut.antal
-InorOut.in > camera.id
-InorOut.in > mediaPlayer.dict
-InorOut.out > camera.remove
-InorOut.in > temperatur.trigger
-temperatur.message > voidport

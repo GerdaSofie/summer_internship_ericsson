@@ -1,0 +1,12 @@
+component temperature() -> message
+{
+    temp : sensor.Temperature(frequency=0.9)
+
+    text : std.Constant(data="The temperature is")
+    plus : math.Compute(op="+")
+
+    text.token > plus.a
+    temp.centigrade > plus.b
+
+    plus.result > .message
+}

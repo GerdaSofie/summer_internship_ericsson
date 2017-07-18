@@ -9,17 +9,11 @@
         "finalMigrering:rfid:constantLego.out": [
             "finalMigrering:rfid:joinConstant.token"
         ], 
-        "finalMigrering:lights:flashRedLego:light:light:command:set_hue.container": [
-            "finalMigrering:lights:flashRedLego:light:light:command:to_str.data"
-        ], 
-        "finalMigrering:lights:_literal_const_44.token": [
-            "finalMigrering:lights:compare.b"
-        ], 
         "finalMigrering:deploy:deploy.data": [
             "finalMigrering:deploy:post.data"
         ], 
         "finalMigrering:lights:flashRedLego:light:rgb:_literal_const_41.token": [
-            "finalMigrering:lights:flashRedLego:light:rgb:redgb.red"
+            "finalMigrering:lights:flashRedLego:light:rgb:redgb.blue"
         ], 
         "finalMigrering:rfid:_literal_const_11.token": [
             "finalMigrering:rfid:deselect.case_false"
@@ -27,8 +21,8 @@
         "finalMigrering:migrator:migrate:post.status": [
             "finalMigrering:migrator:migrate:migrate.status"
         ], 
-        "finalMigrering:lights:flashGreenLego:light:light:command:set_bri.container": [
-            "finalMigrering:lights:flashGreenLego:light:light:command:set_hue.container"
+        "finalMigrering:lights:flashRedLego:light:rgb:_literal_const_39.token": [
+            "finalMigrering:lights:flashRedLego:light:rgb:redgb.red"
         ], 
         "finalMigrering:lights:flashRedLego:light:light:url:_literal_const_24.token": [
             "finalMigrering:lights:flashRedLego:light:light:url:set_address.key"
@@ -45,9 +39,6 @@
         "finalMigrering:lights:flashRedLego:alternate.token": [
             "finalMigrering:lights:flashRedLego:light:bool.token"
         ], 
-        "finalMigrering:lights:flashGreenGarage:light:_literal_const_21.token": [
-            "finalMigrering:lights:flashGreenGarage:light:select.case_true"
-        ], 
         "finalMigrering:lights:compare.result": [
             "finalMigrering:lights:selectLight.select"
         ], 
@@ -57,23 +48,11 @@
         "finalMigrering:lights:flashRedGarage:light:light:url:_literal_const_27.token": [
             "finalMigrering:lights:flashRedGarage:light:light:url:set_username.value"
         ], 
-        "finalMigrering:lights:flashGreenGarage:light:light:url:_literal_const_26.token": [
-            "finalMigrering:lights:flashGreenGarage:light:light:url:set_username.key"
-        ], 
         "finalMigrering:deploy:deploy.header": [
             "finalMigrering:deploy:post.header"
         ], 
         "finalMigrering:lights:flashRedLego:light:light:_literal_const_19.token": [
             "finalMigrering:lights:flashRedLego:light:light:light.params"
-        ], 
-        "finalMigrering:lights:flashGreenGarage:light:light:light.data": [
-            "finalMigrering:lights:flashGreenGarage:light:light:_void_18.void"
-        ], 
-        "finalMigrering:lights:flashGreenGarage:light:select.data": [
-            "finalMigrering:lights:flashGreenGarage:light:light:command:set_on.value"
-        ], 
-        "finalMigrering:lights:flashGreenGarage:light:light:_literal_const_20.token": [
-            "finalMigrering:lights:flashGreenGarage:light:light:light.header"
         ], 
         "finalMigrering:deploy:post.status": [
             "finalMigrering:deploy:deploy.status"
@@ -84,20 +63,8 @@
         "finalMigrering:lights:flashRedLego:light:light:url:_literal_const_28.token": [
             "finalMigrering:lights:flashRedLego:light:light:url:set_lightno.key"
         ], 
-        "finalMigrering:lights:flashGreenGarage:light:light:light.status": [
-            "finalMigrering:lights:flashGreenGarage:_void_34.void"
-        ], 
-        "finalMigrering:lights:flashRedLego:light:rgb:_literal_const_42.token": [
-            "finalMigrering:lights:flashRedLego:light:rgb:redgb.green"
-        ], 
         "finalMigrering:lights:flashRedLego:light:light:url:_literal_const_27.token": [
             "finalMigrering:lights:flashRedLego:light:light:url:set_username.value"
-        ], 
-        "finalMigrering:lights:flashGreenLego:light:rgb:_literal_const_43.token": [
-            "finalMigrering:lights:flashGreenLego:light:rgb:redgb.blue"
-        ], 
-        "finalMigrering:lights:flashRedLego:light:rgb:redgb.hue": [
-            "finalMigrering:lights:flashRedLego:light:light:command:set_hue.value"
         ], 
         "finalMigrering:lights:flashRedGarage:light:light:url:set_address.container": [
             "finalMigrering:lights:flashRedGarage:light:light:url:set_username.container"
@@ -105,65 +72,29 @@
         "finalMigrering:lights:flashRedGarage:light:light:command:set_bri.container": [
             "finalMigrering:lights:flashRedGarage:light:light:command:set_hue.container"
         ], 
-        "finalMigrering:lights:flashRedLego:light:rgb:_literal_const_43.token": [
-            "finalMigrering:lights:flashRedLego:light:rgb:redgb.blue"
-        ], 
-        "finalMigrering:lights:_literal_const_45.token": [
-            "finalMigrering:lights:selectGarage.data"
-        ], 
-        "finalMigrering:lights:flashRedGarage:light:light:url:_literal_const_25.token": [
-            "finalMigrering:lights:flashRedGarage:light:light:url:set_address.value"
+        "finalMigrering:deploy_info.token": [
+            "finalMigrering:deploy:deploy.deploy_info"
         ], 
         "finalMigrering:peopleCounter:getv.value": [
             "finalMigrering:peopleCounter:people.id"
         ], 
-        "finalMigrering:lights:flashGreenLego:light:light:url:set_username.container": [
-            "finalMigrering:lights:flashGreenLego:light:light:url:set_lightno.container"
+        "finalMigrering:lights:flashRedGarage:light:rgb:_literal_const_39.token": [
+            "finalMigrering:lights:flashRedGarage:light:rgb:redgb.red"
         ], 
         "finalMigrering:lights:flashRedLego:light:light:url:set_address.container": [
             "finalMigrering:lights:flashRedLego:light:light:url:set_username.container"
         ], 
-        "finalMigrering:lights:flashGreenLego:light:rgb:_literal_const_41.token": [
-            "finalMigrering:lights:flashGreenLego:light:rgb:redgb.red"
-        ], 
         "finalMigrering:lights:flashRedGarage:pacer.token": [
             "finalMigrering:lights:flashRedGarage:alternate.token_1"
         ], 
-        "finalMigrering:lights:flashGreenLego:alternate.token": [
-            "finalMigrering:lights:flashGreenLego:pacer.token"
-        ], 
-        "finalMigrering:lights:flashGreenLego:light:light:url:_literal_const_23.token": [
-            "finalMigrering:lights:flashGreenLego:light:light:url:set_address.container"
-        ], 
-        "finalMigrering:lights:flashGreenLego:light:light:url:_literal_const_24.token": [
-            "finalMigrering:lights:flashGreenLego:light:light:url:set_address.key"
-        ], 
-        "finalMigrering:lights:flashGreenGarage:light:light:url:set_lightno.container": [
-            "finalMigrering:lights:flashGreenGarage:light:light:url:format.dict"
+        "finalMigrering:lights:flashRedGarage:light:light:command:_literal_const_34.token": [
+            "finalMigrering:lights:flashRedGarage:light:light:command:set_on.container"
         ], 
         "finalMigrering:peopleCounter:people.status": [
             "finalMigrering:lights:selectLight.data"
         ], 
-        "finalMigrering:lights:selectGarage.case_false": [
-            "finalMigrering:lights:flashRedGarage:select.select"
-        ], 
-        "finalMigrering:lights:flashGreenLego:light:light:command:_literal_const_37.token": [
-            "finalMigrering:lights:flashGreenLego:light:light:command:set_on.key"
-        ], 
-        "finalMigrering:lights:flashGreenGarage:light:light:url:_literal_const_27.token": [
-            "finalMigrering:lights:flashGreenGarage:light:light:url:set_username.value"
-        ], 
-        "finalMigrering:lights:flashGreenLego:light:light:command:_literal_const_39.token": [
-            "finalMigrering:lights:flashGreenLego:light:light:command:set_bri.key"
-        ], 
         "finalMigrering:lights:flashRedGarage:light:light:url:set_username.container": [
             "finalMigrering:lights:flashRedGarage:light:light:url:set_lightno.container"
-        ], 
-        "finalMigrering:migrator:migrate:migrate.done": [
-            "finalMigrering:_void_48.void"
-        ], 
-        "finalMigrering:lights:flashGreenLego:light:light:command:set_on.container": [
-            "finalMigrering:lights:flashGreenLego:light:light:command:set_sat.container"
         ], 
         "finalMigrering:peopleCounter:_literal_const_16.token": [
             "finalMigrering:peopleCounter:getv.key"
@@ -180,6 +111,12 @@
         "finalMigrering:rfid:_void_12.void": [
             "finalMigrering:rfid:log1.data"
         ], 
+        "finalMigrering:lights:flashRedLego:light:light:command:_literal_const_34.token": [
+            "finalMigrering:lights:flashRedLego:light:light:command:set_on.container"
+        ], 
+        "finalMigrering:_void_46.void": [
+            "finalMigrering:name.in"
+        ], 
         "finalMigrering:lights:flashRedLego:itemize.item": [
             "finalMigrering:lights:flashRedLego:bool.token"
         ], 
@@ -188,15 +125,6 @@
         ], 
         "finalMigrering:deploy:post.data": [
             "finalMigrering:deploy:deploy.data"
-        ], 
-        "finalMigrering:lights:flashGreenGarage:_literal_const_35.token": [
-            "finalMigrering:lights:flashGreenGarage:alternate.token_2"
-        ], 
-        "finalMigrering:lights:flashGreenLego:light:light:light.data": [
-            "finalMigrering:lights:flashGreenLego:light:light:_void_18.void"
-        ], 
-        "finalMigrering:_void_50.void": [
-            "finalMigrering:name.in"
         ], 
         "finalMigrering:lights:flashRedGarage:light:light:command:set_on.container": [
             "finalMigrering:lights:flashRedGarage:light:light:command:set_sat.container"
@@ -207,26 +135,14 @@
         "finalMigrering:rfid:_void_13.void": [
             "finalMigrering:rfid:log2.data"
         ], 
-        "finalMigrering:lights:flashGreenLego:light:light:url:set_address.container": [
-            "finalMigrering:lights:flashGreenLego:light:light:url:set_username.container"
-        ], 
-        "finalMigrering:lights:flashRedLego:light:light:command:to_str.string": [
-            "finalMigrering:lights:flashRedLego:light:light:light.data"
-        ], 
-        "finalMigrering:lights:flashGreenLego:_literal_const_35.token": [
-            "finalMigrering:lights:flashGreenLego:alternate.token_2"
-        ], 
         "finalMigrering:lights:flashRedLego:light:light:command:set_bri.container": [
             "finalMigrering:lights:flashRedLego:light:light:command:set_hue.container"
-        ], 
-        "finalMigrering:lights:flashGreenLego:light:light:light.status": [
-            "finalMigrering:lights:flashGreenLego:_void_34.void"
         ], 
         "finalMigrering:lights:flashRedGarage:light:light:url:_literal_const_23.token": [
             "finalMigrering:lights:flashRedGarage:light:light:url:set_address.container"
         ], 
-        "finalMigrering:peopleCounter:status.value": [
-            "finalMigrering:peopleCounter:select.select"
+        "finalMigrering:lights:flashRedGarage:select.case_false": [
+            "finalMigrering:lights:flashRedGarage:_void_30.void"
         ], 
         "finalMigrering:lights:flashRedLego:light:rgb:redgb.saturation": [
             "finalMigrering:lights:flashRedLego:light:light:command:set_sat.value"
@@ -234,29 +150,20 @@
         "finalMigrering:lights:flashRedGarage:itemize.item": [
             "finalMigrering:lights:flashRedGarage:bool.token"
         ], 
-        "finalMigrering:lights:flashGreenLego:light:light:command:_literal_const_38.token": [
-            "finalMigrering:lights:flashGreenLego:light:light:command:set_sat.key"
-        ], 
-        "finalMigrering:lights:flashGreenGarage:light:light:command:set_hue.container": [
-            "finalMigrering:lights:flashGreenGarage:light:light:command:to_str.data"
-        ], 
-        "finalMigrering:peopleCounter:length.length": [
-            "finalMigrering:_void_47.void"
-        ], 
-        "finalMigrering:lights:flashGreenGarage:light:light:command:_literal_const_40.token": [
-            "finalMigrering:lights:flashGreenGarage:light:light:command:set_hue.key"
-        ], 
-        "finalMigrering:lights:flashRedGarage:light:light:command:set_hue.container": [
-            "finalMigrering:lights:flashRedGarage:light:light:command:to_str.data"
-        ], 
-        "finalMigrering:_literal_const_49.token": [
+        "finalMigrering:_literal_const_45.token": [
             "finalMigrering:filereader.filename"
+        ], 
+        "finalMigrering:lights:flashRedGarage:light:light:command:_literal_const_35.token": [
+            "finalMigrering:lights:flashRedGarage:light:light:command:set_on.key"
+        ], 
+        "finalMigrering:lights:flashRedLego:light:rgb:redgb.hue": [
+            "finalMigrering:lights:flashRedLego:light:light:command:set_hue.value"
+        ], 
+        "finalMigrering:lights:flashRedGarage:light:light:command:_literal_const_36.token": [
+            "finalMigrering:lights:flashRedGarage:light:light:command:set_sat.key"
         ], 
         "finalMigrering:rfid:compare.result": [
             "finalMigrering:rfid:deselect.select"
-        ], 
-        "finalMigrering:lights:flashGreenLego:light:light:url:_literal_const_26.token": [
-            "finalMigrering:lights:flashGreenLego:light:light:url:set_username.key"
         ], 
         "finalMigrering:peopleCounter:select.case_false": [
             "finalMigrering:peopleCounter:_void_14.void"
@@ -268,8 +175,8 @@
         "finalMigrering:lights:flashRedLego:light:light:url:set_lightno.container": [
             "finalMigrering:lights:flashRedLego:light:light:url:format.dict"
         ], 
-        "finalMigrering:lights:flashGreenGarage:alternate.token": [
-            "finalMigrering:lights:flashGreenGarage:pacer.token"
+        "finalMigrering:lights:flashRedLego:light:light:light.data": [
+            "finalMigrering:lights:flashRedLego:light:light:_void_18.void"
         ], 
         "finalMigrering:rfid:joinConstant.token": [
             "finalMigrering:rfid:compare.b"
@@ -277,41 +184,23 @@
         "finalMigrering:lights:flashRedLego:light:_literal_const_22.token": [
             "finalMigrering:lights:flashRedLego:light:select.case_false"
         ], 
-        "finalMigrering:lights:selectLego.case_true": [
-            "finalMigrering:lights:flashGreenLego:alternate.token_1"
-        ], 
         "finalMigrering:lights:flashRedLego:light:light:url:set_username.container": [
             "finalMigrering:lights:flashRedLego:light:light:url:set_lightno.container"
         ], 
-        "finalMigrering:lights:flashGreenGarage:light:light:command:to_str.string": [
-            "finalMigrering:lights:flashGreenGarage:light:light:light.data"
-        ], 
-        "finalMigrering:lights:selectLight.case_false": [
-            "finalMigrering:lights:selectLego.select"
+        "finalMigrering:lights:flashRedGarage:light:light:url:_literal_const_25.token": [
+            "finalMigrering:lights:flashRedGarage:light:light:url:set_address.value"
         ], 
         "finalMigrering:lights:flashRedGarage:light:light:command:_literal_const_38.token": [
-            "finalMigrering:lights:flashRedGarage:light:light:command:set_sat.key"
-        ], 
-        "finalMigrering:lights:flashGreenGarage:light:light:command:_literal_const_39.token": [
-            "finalMigrering:lights:flashGreenGarage:light:light:command:set_bri.key"
-        ], 
-        "finalMigrering:lights:flashGreenLego:pacer.token": [
-            "finalMigrering:lights:flashGreenLego:light:bool.token"
-        ], 
-        "finalMigrering:lights:flashGreenGarage:light:light:url:_literal_const_24.token": [
-            "finalMigrering:lights:flashGreenGarage:light:light:url:set_address.key"
+            "finalMigrering:lights:flashRedGarage:light:light:command:set_hue.key"
         ], 
         "finalMigrering:lights:flashRedGarage:light:light:url:format.text": [
             "finalMigrering:lights:flashRedGarage:light:light:light.URL"
         ], 
-        "finalMigrering:lights:flashGreenGarage:light:light:light.header": [
-            "finalMigrering:lights:flashGreenGarage:light:light:_void_17.void"
+        "finalMigrering:lights:flashRedLego:light:light:command:_literal_const_35.token": [
+            "finalMigrering:lights:flashRedLego:light:light:command:set_on.key"
         ], 
-        "finalMigrering:lights:flashGreenGarage:light:rgb:_literal_const_41.token": [
-            "finalMigrering:lights:flashGreenGarage:light:rgb:redgb.red"
-        ], 
-        "finalMigrering:lights:flashGreenLego:light:light:url:_literal_const_28.token": [
-            "finalMigrering:lights:flashGreenLego:light:light:url:set_lightno.key"
+        "finalMigrering:lights:flashRedLego:light:bool.bool": [
+            "finalMigrering:lights:flashRedLego:light:select.select"
         ], 
         "finalMigrering:lights:flashRedLego:_literal_const_33.token": [
             "finalMigrering:lights:flashRedLego:alternate.token_2"
@@ -319,29 +208,14 @@
         "finalMigrering:migrator:migrate:migrate.data": [
             "finalMigrering:migrator:migrate:post.data"
         ], 
-        "finalMigrering:lights:flashGreenGarage:light:light:command:_literal_const_36.token": [
-            "finalMigrering:lights:flashGreenGarage:light:light:command:set_on.container"
-        ], 
-        "finalMigrering:lights:flashGreenLego:light:light:_literal_const_19.token": [
-            "finalMigrering:lights:flashGreenLego:light:light:light.params"
-        ], 
-        "finalMigrering:lights:flashGreenLego:light:rgb:_literal_const_42.token": [
-            "finalMigrering:lights:flashGreenLego:light:rgb:redgb.green"
+        "finalMigrering:migrator:migrate:migrate.done": [
+            "finalMigrering:_void_44.void"
         ], 
         "finalMigrering:lights:flashRedGarage:light:rgb:_literal_const_41.token": [
-            "finalMigrering:lights:flashRedGarage:light:rgb:redgb.red"
-        ], 
-        "finalMigrering:lights:flashGreenGarage:light:light:command:_literal_const_38.token": [
-            "finalMigrering:lights:flashGreenGarage:light:light:command:set_sat.key"
-        ], 
-        "finalMigrering:lights:flashGreenLego:light:_literal_const_21.token": [
-            "finalMigrering:lights:flashGreenLego:light:select.case_true"
+            "finalMigrering:lights:flashRedGarage:light:rgb:redgb.blue"
         ], 
         "finalMigrering:deploy:sec_credentials.token": [
             "finalMigrering:deploy:deploy.sec_credentials"
-        ], 
-        "finalMigrering:lights:flashGreenLego:light:light:command:set_hue.container": [
-            "finalMigrering:lights:flashGreenLego:light:light:command:to_str.data"
         ], 
         "finalMigrering:migrator:migrate:migrate.header": [
             "finalMigrering:migrator:migrate:post.header"
@@ -349,53 +223,26 @@
         "finalMigrering:migrator:deselect.data": [
             "finalMigrering:migrator:migrate:migrate.key"
         ], 
-        "finalMigrering:lights:flashGreenGarage:light:light:url:format.text": [
-            "finalMigrering:lights:flashGreenGarage:light:light:light.URL"
-        ], 
-        "finalMigrering:lights:flashRedLego:light:light:url:_literal_const_29.token": [
-            "finalMigrering:lights:flashRedLego:light:light:url:set_lightno.value"
-        ], 
         "finalMigrering:peopleCounter:select.case_true": [
             "finalMigrering:peopleCounter:getv.container"
-        ], 
-        "finalMigrering:lights:selectGarage.case_true": [
-            "finalMigrering:lights:flashGreenGarage:alternate.token_1"
         ], 
         "finalMigrering:lights:flashRedGarage:bool.bool": [
             "finalMigrering:lights:flashRedGarage:pacer.token"
         ], 
-        "finalMigrering:lights:flashRedLego:light:light:light.data": [
-            "finalMigrering:lights:flashRedLego:light:light:_void_18.void"
-        ], 
-        "finalMigrering:lights:flashGreenGarage:light:light:command:set_sat.container": [
-            "finalMigrering:lights:flashGreenGarage:light:light:command:set_bri.container"
-        ], 
-        "finalMigrering:lights:flashGreenGarage:light:light:url:_literal_const_28.token": [
-            "finalMigrering:lights:flashGreenGarage:light:light:url:set_lightno.key"
-        ], 
         "finalMigrering:migrator:_literal_const_5.token": [
             "finalMigrering:migrator:deselect.case_true"
-        ], 
-        "finalMigrering:lights:flashGreenGarage:light:light:url:_literal_const_25.token": [
-            "finalMigrering:lights:flashGreenGarage:light:light:url:set_address.value"
         ], 
         "finalMigrering:lights:flashRedLego:light:light:url:_literal_const_23.token": [
             "finalMigrering:lights:flashRedLego:light:light:url:set_address.container"
         ], 
-        "finalMigrering:lights:flashGreenLego:light:rgb:redgb.brightness": [
-            "finalMigrering:lights:flashGreenLego:light:light:command:set_bri.value"
-        ], 
-        "finalMigrering:lights:flashGreenLego:light:light:light.header": [
-            "finalMigrering:lights:flashGreenLego:light:light:_void_17.void"
-        ], 
-        "finalMigrering:lights:flashRedLego:light:light:command:_literal_const_39.token": [
-            "finalMigrering:lights:flashRedLego:light:light:command:set_bri.key"
+        "finalMigrering:lights:_literal_const_42.token": [
+            "finalMigrering:lights:compare.b"
         ], 
         "finalMigrering:lights:flashRedGarage:light:light:url:set_lightno.container": [
             "finalMigrering:lights:flashRedGarage:light:light:url:format.dict"
         ], 
         "finalMigrering:lights:flashRedLego:light:light:command:_literal_const_37.token": [
-            "finalMigrering:lights:flashRedLego:light:light:command:set_on.key"
+            "finalMigrering:lights:flashRedLego:light:light:command:set_bri.key"
         ], 
         "finalMigrering:deploy:deploy.app_info": [
             "finalMigrering:migrator:migrate:migrate.app_id"
@@ -403,23 +250,11 @@
         "finalMigrering:rfid:_literal_const_9.token": [
             "finalMigrering:rfid:compare.a"
         ], 
-        "finalMigrering:lights:flashGreenLego:light:light:url:_literal_const_29.token": [
-            "finalMigrering:lights:flashGreenLego:light:light:url:set_lightno.value"
-        ], 
-        "finalMigrering:lights:flashGreenLego:light:light:url:_literal_const_25.token": [
-            "finalMigrering:lights:flashGreenLego:light:light:url:set_address.value"
-        ], 
         "finalMigrering:lights:flashRedLego:light:light:_literal_const_20.token": [
             "finalMigrering:lights:flashRedLego:light:light:light.header"
         ], 
-        "finalMigrering:_void_51.void": [
-            "finalMigrering:print2.data"
-        ], 
-        "finalMigrering:lights:flashGreenLego:light:light:command:_literal_const_40.token": [
-            "finalMigrering:lights:flashGreenLego:light:light:command:set_hue.key"
-        ], 
-        "finalMigrering:lights:_literal_const_46.token": [
-            "finalMigrering:lights:selectLego.data"
+        "finalMigrering:lights:flashRedLego:light:rgb:_literal_const_40.token": [
+            "finalMigrering:lights:flashRedLego:light:rgb:redgb.green"
         ], 
         "finalMigrering:lights:flashRedGarage:_literal_const_33.token": [
             "finalMigrering:lights:flashRedGarage:alternate.token_2"
@@ -427,21 +262,12 @@
         "finalMigrering:rfid:constantGarage.out": [
             "finalMigrering:rfid:joinConstant.token"
         ], 
-        "finalMigrering:lights:flashGreenLego:light:light:url:set_lightno.container": [
-            "finalMigrering:lights:flashGreenLego:light:light:url:format.dict"
-        ], 
-        "finalMigrering:lights:flashRedGarage:light:rgb:_literal_const_42.token": [
-            "finalMigrering:lights:flashRedGarage:light:rgb:redgb.green"
-        ], 
         "finalMigrering:migrator:compare.result": [
             "finalMigrering:migrator:log.data", 
             "finalMigrering:migrator:deselect.select"
         ], 
         "finalMigrering:lights:flashRedGarage:light:rgb:redgb.brightness": [
             "finalMigrering:lights:flashRedGarage:light:light:command:set_bri.value"
-        ], 
-        "finalMigrering:lights:flashGreenLego:light:_literal_const_22.token": [
-            "finalMigrering:lights:flashGreenLego:light:select.case_false"
         ], 
         "finalMigrering:migrator:migrate:migrate.URL": [
             "finalMigrering:migrator:migrate:post.URL"
@@ -451,6 +277,9 @@
         ], 
         "finalMigrering:migrator:_literal_const_4.token": [
             "finalMigrering:migrator:compare.b"
+        ], 
+        "finalMigrering:lights:selectLight.case_false": [
+            "finalMigrering:lights:flashRedLego:select.select"
         ], 
         "finalMigrering:rfid:_void_8.void": [
             "finalMigrering:rfid:rfidLego.data"
@@ -462,8 +291,8 @@
             "finalMigrering:deploy:_void_1.void", 
             "finalMigrering:deploy:deploy.control_uri"
         ], 
-        "finalMigrering:lights:flashGreenGarage:light:rgb:_literal_const_42.token": [
-            "finalMigrering:lights:flashGreenGarage:light:rgb:redgb.green"
+        "finalMigrering:lights:flashRedGarage:light:rgb:_literal_const_40.token": [
+            "finalMigrering:lights:flashRedGarage:light:rgb:redgb.green"
         ], 
         "finalMigrering:lights:flashRedGarage:light:light:url:_literal_const_29.token": [
             "finalMigrering:lights:flashRedGarage:light:light:url:set_lightno.value"
@@ -471,20 +300,14 @@
         "finalMigrering:lights:flashRedGarage:light:rgb:redgb.saturation": [
             "finalMigrering:lights:flashRedGarage:light:light:command:set_sat.value"
         ], 
-        "finalMigrering:lights:flashGreenLego:light:light:command:set_sat.container": [
-            "finalMigrering:lights:flashGreenLego:light:light:command:set_bri.container"
-        ], 
         "finalMigrering:lights:flashRedLego:light:light:command:_literal_const_38.token": [
-            "finalMigrering:lights:flashRedLego:light:light:command:set_sat.key"
+            "finalMigrering:lights:flashRedLego:light:light:command:set_hue.key"
         ], 
-        "finalMigrering:lights:selectLego.case_false": [
-            "finalMigrering:lights:flashRedLego:select.select"
+        "finalMigrering:peopleCounter:length.length": [
+            "finalMigrering:_void_43.void"
         ], 
-        "finalMigrering:lights:flashRedGarage:light:light:command:_literal_const_40.token": [
-            "finalMigrering:lights:flashRedGarage:light:light:command:set_hue.key"
-        ], 
-        "finalMigrering:lights:flashGreenLego:light:rgb:redgb.saturation": [
-            "finalMigrering:lights:flashGreenLego:light:light:command:set_sat.value"
+        "finalMigrering:lights:flashRedGarage:light:light:command:set_hue.container": [
+            "finalMigrering:lights:flashRedGarage:light:light:command:to_str.data"
         ], 
         "finalMigrering:deploy:deploy.URL": [
             "finalMigrering:deploy:post.URL"
@@ -496,35 +319,23 @@
             "finalMigrering:peopleCounter:select.data", 
             "finalMigrering:peopleCounter:status.container"
         ], 
-        "finalMigrering:lights:flashGreenGarage:light:light:url:set_address.container": [
-            "finalMigrering:lights:flashGreenGarage:light:light:url:set_username.container"
-        ], 
-        "finalMigrering:lights:flashGreenGarage:light:light:command:set_bri.container": [
-            "finalMigrering:lights:flashGreenGarage:light:light:command:set_hue.container"
-        ], 
         "finalMigrering:lights:flashRedLego:light:light:url:_literal_const_26.token": [
             "finalMigrering:lights:flashRedLego:light:light:url:set_username.key"
         ], 
         "finalMigrering:peopleCounter:_literal_const_15.token": [
             "finalMigrering:peopleCounter:status.key"
         ], 
-        "finalMigrering:lights:flashGreenLego:light:light:url:_literal_const_27.token": [
-            "finalMigrering:lights:flashGreenLego:light:light:url:set_username.value"
-        ], 
         "finalMigrering:lights:selectLight.case_true": [
-            "finalMigrering:lights:selectGarage.select"
+            "finalMigrering:lights:flashRedGarage:select.select"
         ], 
         "finalMigrering:lights:flashRedGarage:light:rgb:redgb.hue": [
             "finalMigrering:lights:flashRedGarage:light:light:command:set_hue.value"
         ], 
-        "finalMigrering:lights:flashGreenGarage:light:_literal_const_22.token": [
-            "finalMigrering:lights:flashGreenGarage:light:select.case_false"
-        ], 
         "finalMigrering:lights:flashRedLego:light:_literal_const_21.token": [
             "finalMigrering:lights:flashRedLego:light:select.case_true"
         ], 
-        "finalMigrering:lights:flashGreenGarage:light:rgb:redgb.brightness": [
-            "finalMigrering:lights:flashGreenGarage:light:light:command:set_bri.value"
+        "finalMigrering:lights:flashRedLego:light:light:command:set_hue.container": [
+            "finalMigrering:lights:flashRedLego:light:light:command:to_str.data"
         ], 
         "finalMigrering:lights:flashRedGarage:light:light:_literal_const_19.token": [
             "finalMigrering:lights:flashRedGarage:light:light:light.params"
@@ -535,15 +346,6 @@
         "finalMigrering:lights:flashRedLego:light:light:url:_literal_const_25.token": [
             "finalMigrering:lights:flashRedLego:light:light:url:set_address.value"
         ], 
-        "finalMigrering:lights:flashGreenLego:light:light:url:format.text": [
-            "finalMigrering:lights:flashGreenLego:light:light:light.URL"
-        ], 
-        "finalMigrering:lights:flashGreenGarage:light:light:_literal_const_19.token": [
-            "finalMigrering:lights:flashGreenGarage:light:light:light.params"
-        ], 
-        "finalMigrering:lights:flashGreenGarage:pacer.token": [
-            "finalMigrering:lights:flashGreenGarage:light:bool.token"
-        ], 
         "finalMigrering:peopleCounter:people.rooms": [
             "finalMigrering:peopleCounter:rum.container"
         ], 
@@ -553,11 +355,11 @@
         "finalMigrering:lights:flashRedLego:light:light:command:set_on.container": [
             "finalMigrering:lights:flashRedLego:light:light:command:set_sat.container"
         ], 
-        "finalMigrering:lights:flashRedGarage:light:light:command:_literal_const_39.token": [
-            "finalMigrering:lights:flashRedGarage:light:light:command:set_bri.key"
+        "finalMigrering:lights:flashRedGarage:light:light:command:to_str.string": [
+            "finalMigrering:lights:flashRedGarage:light:light:light.data"
         ], 
         "finalMigrering:lights:flashRedLego:light:light:command:_literal_const_36.token": [
-            "finalMigrering:lights:flashRedLego:light:light:command:set_on.container"
+            "finalMigrering:lights:flashRedLego:light:light:command:set_sat.key"
         ], 
         "finalMigrering:linejoin.text": [
             "finalMigrering:deploy:deploy.script"
@@ -568,51 +370,27 @@
         "finalMigrering:lights:flashRedGarage:light:light:light.header": [
             "finalMigrering:lights:flashRedGarage:light:light:_void_17.void"
         ], 
-        "finalMigrering:lights:flashRedLego:light:light:command:_literal_const_40.token": [
-            "finalMigrering:lights:flashRedLego:light:light:command:set_hue.key"
-        ], 
-        "finalMigrering:lights:flashGreenLego:light:bool.bool": [
-            "finalMigrering:lights:flashGreenLego:light:select.select"
+        "finalMigrering:lights:flashRedLego:light:light:command:to_str.string": [
+            "finalMigrering:lights:flashRedLego:light:light:light.data"
         ], 
         "finalMigrering:lights:flashRedGarage:light:light:command:_literal_const_37.token": [
-            "finalMigrering:lights:flashRedGarage:light:light:command:set_on.key"
-        ], 
-        "finalMigrering:lights:flashGreenGarage:light:light:url:set_username.container": [
-            "finalMigrering:lights:flashGreenGarage:light:light:url:set_lightno.container"
-        ], 
-        "finalMigrering:lights:flashGreenGarage:light:bool.bool": [
-            "finalMigrering:lights:flashGreenGarage:light:select.select"
-        ], 
-        "finalMigrering:lights:flashGreenGarage:light:rgb:_literal_const_43.token": [
-            "finalMigrering:lights:flashGreenGarage:light:rgb:redgb.blue"
+            "finalMigrering:lights:flashRedGarage:light:light:command:set_bri.key"
         ], 
         "finalMigrering:lights:flashRedLego:bool.bool": [
             "finalMigrering:lights:flashRedLego:pacer.token"
         ], 
-        "finalMigrering:lights:flashRedLego:light:bool.bool": [
-            "finalMigrering:lights:flashRedLego:light:select.select"
-        ], 
-        "finalMigrering:lights:flashGreenLego:light:select.data": [
-            "finalMigrering:lights:flashGreenLego:light:light:command:set_on.value"
+        "finalMigrering:lights:flashRedLego:light:light:url:_literal_const_29.token": [
+            "finalMigrering:lights:flashRedLego:light:light:url:set_lightno.value"
         ], 
         "finalMigrering:name.out": [
             "finalMigrering:deploy:deploy.name"
         ], 
-        "finalMigrering:deploy_info.token": [
-            "finalMigrering:deploy:deploy.deploy_info"
-        ], 
-        "finalMigrering:lights:flashGreenLego:light:light:command:to_str.string": [
-            "finalMigrering:lights:flashGreenLego:light:light:light.data"
-        ], 
-        "finalMigrering:lights:flashRedGarage:select.case_false": [
-            "finalMigrering:lights:flashRedGarage:_void_30.void"
+        "finalMigrering:peopleCounter:status.value": [
+            "finalMigrering:peopleCounter:select.select"
         ], 
         "finalMigrering:rfid:rfidLego.data": [
             "finalMigrering:rfid:joinData.token", 
             "finalMigrering:rfid:constantLego.in"
-        ], 
-        "finalMigrering:lights:flashGreenLego:light:light:command:_literal_const_36.token": [
-            "finalMigrering:lights:flashGreenLego:light:light:command:set_on.container"
         ], 
         "finalMigrering:lights:flashRedLego:select.case_false": [
             "finalMigrering:lights:flashRedLego:_void_30.void"
@@ -623,17 +401,8 @@
         "finalMigrering:lights:flashRedLego:light:light:light.header": [
             "finalMigrering:lights:flashRedLego:light:light:_void_17.void"
         ], 
-        "finalMigrering:lights:flashRedGarage:light:rgb:_literal_const_43.token": [
-            "finalMigrering:lights:flashRedGarage:light:rgb:redgb.blue"
-        ], 
-        "finalMigrering:lights:flashGreenGarage:light:rgb:redgb.saturation": [
-            "finalMigrering:lights:flashGreenGarage:light:light:command:set_sat.value"
-        ], 
-        "finalMigrering:lights:flashGreenGarage:light:rgb:redgb.hue": [
-            "finalMigrering:lights:flashGreenGarage:light:light:command:set_hue.value"
-        ], 
-        "finalMigrering:lights:flashGreenGarage:light:light:command:set_on.container": [
-            "finalMigrering:lights:flashGreenGarage:light:light:command:set_sat.container"
+        "finalMigrering:_void_47.void": [
+            "finalMigrering:print2.data"
         ], 
         "finalMigrering:migrator:migrate:controlpath.out": [
             "finalMigrering:migrator:migrate:migrate.control_uri"
@@ -660,20 +429,11 @@
         "finalMigrering:lights:flashRedGarage:light:light:command:set_sat.container": [
             "finalMigrering:lights:flashRedGarage:light:light:command:set_bri.container"
         ], 
-        "finalMigrering:lights:flashGreenLego:light:rgb:redgb.hue": [
-            "finalMigrering:lights:flashGreenLego:light:light:command:set_hue.value"
-        ], 
         "finalMigrering:lights:flashRedLego:light:rgb:redgb.brightness": [
             "finalMigrering:lights:flashRedLego:light:light:command:set_bri.value"
         ], 
-        "finalMigrering:lights:flashGreenGarage:light:light:url:_literal_const_23.token": [
-            "finalMigrering:lights:flashGreenGarage:light:light:url:set_address.container"
-        ], 
         "finalMigrering:lights:flashRedGarage:light:light:url:_literal_const_26.token": [
             "finalMigrering:lights:flashRedGarage:light:light:url:set_username.key"
-        ], 
-        "finalMigrering:lights:flashRedGarage:light:light:command:_literal_const_36.token": [
-            "finalMigrering:lights:flashRedGarage:light:light:command:set_on.container"
         ], 
         "finalMigrering:lights:flashRedGarage:light:_literal_const_21.token": [
             "finalMigrering:lights:flashRedGarage:light:select.case_true"
@@ -681,20 +441,8 @@
         "finalMigrering:lights:flashRedGarage:light:light:light.data": [
             "finalMigrering:lights:flashRedGarage:light:light:_void_18.void"
         ], 
-        "finalMigrering:lights:flashRedGarage:light:light:command:to_str.string": [
-            "finalMigrering:lights:flashRedGarage:light:light:light.data"
-        ], 
         "finalMigrering:lights:flashRedGarage:light:light:url:_literal_const_28.token": [
             "finalMigrering:lights:flashRedGarage:light:light:url:set_lightno.key"
-        ], 
-        "finalMigrering:lights:flashGreenLego:light:light:_literal_const_20.token": [
-            "finalMigrering:lights:flashGreenLego:light:light:light.header"
-        ], 
-        "finalMigrering:lights:flashGreenGarage:light:light:command:_literal_const_37.token": [
-            "finalMigrering:lights:flashGreenGarage:light:light:command:set_on.key"
-        ], 
-        "finalMigrering:lights:flashGreenGarage:light:light:url:_literal_const_29.token": [
-            "finalMigrering:lights:flashGreenGarage:light:light:url:set_lightno.value"
         ], 
         "finalMigrering:lights:flashRedLego:pacer.token": [
             "finalMigrering:lights:flashRedLego:alternate.token_1"
@@ -710,84 +458,6 @@
         ]
     }, 
     "port_properties": {
-        "finalMigrering:lights:flashGreenLego:light:light:command:_literal_const_36": [
-            {
-                "direction": "out", 
-                "port": "token", 
-                "properties": {
-                    "nbr_peers": 1
-                }
-            }
-        ], 
-        "finalMigrering:lights:flashGreenLego:light:light:command:_literal_const_37": [
-            {
-                "direction": "out", 
-                "port": "token", 
-                "properties": {
-                    "nbr_peers": 1
-                }
-            }
-        ], 
-        "finalMigrering:lights:flashGreenGarage:light:light:command:set_on": [
-            {
-                "direction": "in", 
-                "port": "container", 
-                "properties": {
-                    "nbr_peers": 1
-                }
-            }, 
-            {
-                "direction": "in", 
-                "port": "key", 
-                "properties": {
-                    "nbr_peers": 1
-                }
-            }, 
-            {
-                "direction": "in", 
-                "port": "value", 
-                "properties": {
-                    "nbr_peers": 1
-                }
-            }, 
-            {
-                "direction": "out", 
-                "port": "container", 
-                "properties": {
-                    "nbr_peers": 1
-                }
-            }
-        ], 
-        "finalMigrering:lights:flashGreenGarage:light:light:url:set_address": [
-            {
-                "direction": "in", 
-                "port": "container", 
-                "properties": {
-                    "nbr_peers": 1
-                }
-            }, 
-            {
-                "direction": "in", 
-                "port": "key", 
-                "properties": {
-                    "nbr_peers": 1
-                }
-            }, 
-            {
-                "direction": "in", 
-                "port": "value", 
-                "properties": {
-                    "nbr_peers": 1
-                }
-            }, 
-            {
-                "direction": "out", 
-                "port": "container", 
-                "properties": {
-                    "nbr_peers": 1
-                }
-            }
-        ], 
         "finalMigrering:lights:flashRedLego:light:light:url:format": [
             {
                 "direction": "in", 
@@ -815,15 +485,6 @@
             {
                 "direction": "out", 
                 "port": "item", 
-                "properties": {
-                    "nbr_peers": 1
-                }
-            }
-        ], 
-        "finalMigrering:lights:flashGreenLego:light:light:command:_literal_const_38": [
-            {
-                "direction": "out", 
-                "port": "token", 
                 "properties": {
                     "nbr_peers": 1
                 }
@@ -884,66 +545,6 @@
                 }
             }
         ], 
-        "finalMigrering:lights:flashGreenGarage:light:rgb:_literal_const_41": [
-            {
-                "direction": "out", 
-                "port": "token", 
-                "properties": {
-                    "nbr_peers": 1
-                }
-            }
-        ], 
-        "finalMigrering:lights:flashGreenLego:light:light:light": [
-            {
-                "direction": "in", 
-                "port": "URL", 
-                "properties": {
-                    "nbr_peers": 1
-                }
-            }, 
-            {
-                "direction": "in", 
-                "port": "header", 
-                "properties": {
-                    "nbr_peers": 1
-                }
-            }, 
-            {
-                "direction": "in", 
-                "port": "params", 
-                "properties": {
-                    "nbr_peers": 1
-                }
-            }, 
-            {
-                "direction": "in", 
-                "port": "data", 
-                "properties": {
-                    "nbr_peers": 1
-                }
-            }, 
-            {
-                "direction": "out", 
-                "port": "status", 
-                "properties": {
-                    "nbr_peers": 1
-                }
-            }, 
-            {
-                "direction": "out", 
-                "port": "header", 
-                "properties": {
-                    "nbr_peers": 1
-                }
-            }, 
-            {
-                "direction": "out", 
-                "port": "data", 
-                "properties": {
-                    "nbr_peers": 1
-                }
-            }
-        ], 
         "finalMigrering:peopleCounter:people": [
             {
                 "direction": "in", 
@@ -969,22 +570,6 @@
             {
                 "direction": "out", 
                 "port": "rooms", 
-                "properties": {
-                    "nbr_peers": 1
-                }
-            }
-        ], 
-        "finalMigrering:lights:flashGreenGarage:light:bool": [
-            {
-                "direction": "in", 
-                "port": "token", 
-                "properties": {
-                    "nbr_peers": 1
-                }
-            }, 
-            {
-                "direction": "out", 
-                "port": "bool", 
                 "properties": {
                     "nbr_peers": 1
                 }
@@ -1057,22 +642,6 @@
                 }
             }
         ], 
-        "finalMigrering:lights:flashGreenGarage:light:light:command:to_str": [
-            {
-                "direction": "in", 
-                "port": "data", 
-                "properties": {
-                    "nbr_peers": 1
-                }
-            }, 
-            {
-                "direction": "out", 
-                "port": "string", 
-                "properties": {
-                    "nbr_peers": 1
-                }
-            }
-        ], 
         "finalMigrering:rfid:joinData": [
             {
                 "direction": "in", 
@@ -1129,28 +698,17 @@
                 }
             }
         ], 
-        "finalMigrering:rfid:log1": [
+        "finalMigrering:lights:flashRedGarage:light:light:command:to_str": [
             {
                 "direction": "in", 
                 "port": "data", 
                 "properties": {
                     "nbr_peers": 1
                 }
-            }
-        ], 
-        "finalMigrering:lights:flashRedGarage:light:light:command:_literal_const_40": [
+            }, 
             {
                 "direction": "out", 
-                "port": "token", 
-                "properties": {
-                    "nbr_peers": 1
-                }
-            }
-        ], 
-        "finalMigrering:lights:flashRedLego:_literal_const_33": [
-            {
-                "direction": "out", 
-                "port": "token", 
+                "port": "string", 
                 "properties": {
                     "nbr_peers": 1
                 }
@@ -1181,6 +739,24 @@
             {
                 "direction": "out", 
                 "port": "case_false", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "finalMigrering:lights:flashRedLego:light:light:command:_literal_const_34": [
+            {
+                "direction": "out", 
+                "port": "token", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "finalMigrering:lights:flashRedLego:light:light:command:_literal_const_35": [
+            {
+                "direction": "out", 
+                "port": "token", 
                 "properties": {
                     "nbr_peers": 1
                 }
@@ -1318,59 +894,7 @@
                 }
             }
         ], 
-        "finalMigrering:lights:flashGreenLego:light:light:url:format": [
-            {
-                "direction": "in", 
-                "port": "dict", 
-                "properties": {
-                    "nbr_peers": 1
-                }
-            }, 
-            {
-                "direction": "out", 
-                "port": "text", 
-                "properties": {
-                    "nbr_peers": 1
-                }
-            }
-        ], 
         "finalMigrering:lights:flashRedLego:light:light:command:_literal_const_38": [
-            {
-                "direction": "out", 
-                "port": "token", 
-                "properties": {
-                    "nbr_peers": 1
-                }
-            }
-        ], 
-        "finalMigrering:lights:flashRedLego:light:light:command:_literal_const_39": [
-            {
-                "direction": "out", 
-                "port": "token", 
-                "properties": {
-                    "nbr_peers": 1
-                }
-            }
-        ], 
-        "finalMigrering:lights:flashGreenLego:light:rgb:_literal_const_41": [
-            {
-                "direction": "out", 
-                "port": "token", 
-                "properties": {
-                    "nbr_peers": 1
-                }
-            }
-        ], 
-        "finalMigrering:lights:flashGreenLego:light:rgb:_literal_const_43": [
-            {
-                "direction": "out", 
-                "port": "token", 
-                "properties": {
-                    "nbr_peers": 1
-                }
-            }
-        ], 
-        "finalMigrering:lights:flashGreenLego:light:rgb:_literal_const_42": [
             {
                 "direction": "out", 
                 "port": "token", 
@@ -1396,54 +920,6 @@
             }
         ], 
         "finalMigrering:lights:flashRedLego:light:light:command:_literal_const_36": [
-            {
-                "direction": "out", 
-                "port": "token", 
-                "properties": {
-                    "nbr_peers": 1
-                }
-            }
-        ], 
-        "finalMigrering:lights:flashGreenLego:light:light:command:_literal_const_39": [
-            {
-                "direction": "out", 
-                "port": "token", 
-                "properties": {
-                    "nbr_peers": 1
-                }
-            }
-        ], 
-        "finalMigrering:lights:flashGreenLego:light:light:url:set_lightno": [
-            {
-                "direction": "in", 
-                "port": "container", 
-                "properties": {
-                    "nbr_peers": 1
-                }
-            }, 
-            {
-                "direction": "in", 
-                "port": "key", 
-                "properties": {
-                    "nbr_peers": 1
-                }
-            }, 
-            {
-                "direction": "in", 
-                "port": "value", 
-                "properties": {
-                    "nbr_peers": 1
-                }
-            }, 
-            {
-                "direction": "out", 
-                "port": "container", 
-                "properties": {
-                    "nbr_peers": 1
-                }
-            }
-        ], 
-        "finalMigrering:lights:flashRedLego:light:_literal_const_21": [
             {
                 "direction": "out", 
                 "port": "token", 
@@ -1533,7 +1009,7 @@
                 }
             }
         ], 
-        "finalMigrering:lights:flashRedLego:light:rgb:_literal_const_42": [
+        "finalMigrering:lights:flashRedLego:light:rgb:_literal_const_41": [
             {
                 "direction": "out", 
                 "port": "token", 
@@ -1542,7 +1018,7 @@
                 }
             }
         ], 
-        "finalMigrering:lights:flashRedLego:light:rgb:_literal_const_41": [
+        "finalMigrering:lights:flashRedLego:light:rgb:_literal_const_40": [
             {
                 "direction": "out", 
                 "port": "token", 
@@ -1555,15 +1031,6 @@
             {
                 "direction": "in", 
                 "port": "data", 
-                "properties": {
-                    "nbr_peers": 1
-                }
-            }
-        ], 
-        "finalMigrering:lights:flashGreenLego:light:light:_literal_const_20": [
-            {
-                "direction": "out", 
-                "port": "token", 
                 "properties": {
                     "nbr_peers": 1
                 }
@@ -1631,15 +1098,6 @@
         "finalMigrering:rfid:_void_7": [
             {
                 "direction": "out", 
-                "port": "void", 
-                "properties": {
-                    "nbr_peers": 1
-                }
-            }
-        ], 
-        "finalMigrering:lights:flashRedLego:_void_31": [
-            {
-                "direction": "in", 
                 "port": "void", 
                 "properties": {
                     "nbr_peers": 1
@@ -1718,15 +1176,6 @@
                 }
             }
         ], 
-        "finalMigrering:lights:flashRedLego:light:rgb:_literal_const_43": [
-            {
-                "direction": "out", 
-                "port": "token", 
-                "properties": {
-                    "nbr_peers": 1
-                }
-            }
-        ], 
         "finalMigrering:lights:flashRedLego:light:light:light": [
             {
                 "direction": "in", 
@@ -1791,15 +1240,6 @@
             {
                 "direction": "in", 
                 "port": "void", 
-                "properties": {
-                    "nbr_peers": 1
-                }
-            }
-        ], 
-        "finalMigrering:lights:flashGreenLego:light:light:command:_literal_const_40": [
-            {
-                "direction": "out", 
-                "port": "token", 
                 "properties": {
                     "nbr_peers": 1
                 }
@@ -1883,7 +1323,7 @@
                 }
             }
         ], 
-        "finalMigrering:lights:flashGreenLego:light:light:url:set_username": [
+        "finalMigrering:lights:flashRedLego:light:light:url:set_username": [
             {
                 "direction": "in", 
                 "port": "container", 
@@ -1913,51 +1353,7 @@
                 }
             }
         ], 
-        "finalMigrering:lights:flashGreenGarage:light:rgb:redgb": [
-            {
-                "direction": "in", 
-                "port": "blue", 
-                "properties": {
-                    "nbr_peers": 1
-                }
-            }, 
-            {
-                "direction": "in", 
-                "port": "green", 
-                "properties": {
-                    "nbr_peers": 1
-                }
-            }, 
-            {
-                "direction": "in", 
-                "port": "red", 
-                "properties": {
-                    "nbr_peers": 1
-                }
-            }, 
-            {
-                "direction": "out", 
-                "port": "hue", 
-                "properties": {
-                    "nbr_peers": 1
-                }
-            }, 
-            {
-                "direction": "out", 
-                "port": "saturation", 
-                "properties": {
-                    "nbr_peers": 1
-                }
-            }, 
-            {
-                "direction": "out", 
-                "port": "brightness", 
-                "properties": {
-                    "nbr_peers": 1
-                }
-            }
-        ], 
-        "finalMigrering:lights:flashRedGarage:light:rgb:_literal_const_42": [
+        "finalMigrering:lights:flashRedLego:light:rgb:_literal_const_39": [
             {
                 "direction": "out", 
                 "port": "token", 
@@ -2044,49 +1440,10 @@
                 }
             }
         ], 
-        "finalMigrering:lights:flashGreenLego:light:light:command:set_sat": [
+        "finalMigrering:_void_44": [
             {
                 "direction": "in", 
-                "port": "container", 
-                "properties": {
-                    "nbr_peers": 1
-                }
-            }, 
-            {
-                "direction": "in", 
-                "port": "key", 
-                "properties": {
-                    "nbr_peers": 1
-                }
-            }, 
-            {
-                "direction": "in", 
-                "port": "value", 
-                "properties": {
-                    "nbr_peers": 1
-                }
-            }, 
-            {
-                "direction": "out", 
-                "port": "container", 
-                "properties": {
-                    "nbr_peers": 1
-                }
-            }
-        ], 
-        "finalMigrering:lights:flashGreenGarage:light:light:command:_literal_const_38": [
-            {
-                "direction": "out", 
-                "port": "token", 
-                "properties": {
-                    "nbr_peers": 1
-                }
-            }
-        ], 
-        "finalMigrering:lights:flashGreenGarage:light:light:command:_literal_const_39": [
-            {
-                "direction": "out", 
-                "port": "token", 
+                "port": "void", 
                 "properties": {
                     "nbr_peers": 1
                 }
@@ -2122,17 +1479,10 @@
                 }
             }
         ], 
-        "finalMigrering:lights:flashGreenLego:light:bool": [
-            {
-                "direction": "in", 
-                "port": "token", 
-                "properties": {
-                    "nbr_peers": 1
-                }
-            }, 
+        "finalMigrering:_void_46": [
             {
                 "direction": "out", 
-                "port": "bool", 
+                "port": "void", 
                 "properties": {
                     "nbr_peers": 1
                 }
@@ -2182,6 +1532,15 @@
                 }
             }
         ], 
+        "finalMigrering:_void_43": [
+            {
+                "direction": "in", 
+                "port": "void", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
         "finalMigrering:rfid:rfidLego": [
             {
                 "direction": "in", 
@@ -2207,76 +1566,7 @@
                 }
             }
         ], 
-        "finalMigrering:lights:flashGreenGarage:light:light:command:set_hue": [
-            {
-                "direction": "in", 
-                "port": "container", 
-                "properties": {
-                    "nbr_peers": 1
-                }
-            }, 
-            {
-                "direction": "in", 
-                "port": "key", 
-                "properties": {
-                    "nbr_peers": 1
-                }
-            }, 
-            {
-                "direction": "in", 
-                "port": "value", 
-                "properties": {
-                    "nbr_peers": 1
-                }
-            }, 
-            {
-                "direction": "out", 
-                "port": "container", 
-                "properties": {
-                    "nbr_peers": 1
-                }
-            }
-        ], 
-        "finalMigrering:lights:selectGarage": [
-            {
-                "direction": "in", 
-                "port": "data", 
-                "properties": {
-                    "nbr_peers": 1
-                }
-            }, 
-            {
-                "direction": "in", 
-                "port": "select", 
-                "properties": {
-                    "nbr_peers": 1
-                }
-            }, 
-            {
-                "direction": "out", 
-                "port": "case_true", 
-                "properties": {
-                    "nbr_peers": 1
-                }
-            }, 
-            {
-                "direction": "out", 
-                "port": "case_false", 
-                "properties": {
-                    "nbr_peers": 1
-                }
-            }
-        ], 
-        "finalMigrering:_void_48": [
-            {
-                "direction": "in", 
-                "port": "void", 
-                "properties": {
-                    "nbr_peers": 1
-                }
-            }
-        ], 
-        "finalMigrering:lights:flashGreenGarage:light:light:command:_literal_const_36": [
+        "finalMigrering:lights:flashRedLego:light:_literal_const_21": [
             {
                 "direction": "out", 
                 "port": "token", 
@@ -2285,16 +1575,7 @@
                 }
             }
         ], 
-        "finalMigrering:lights:flashGreenGarage:light:light:command:_literal_const_37": [
-            {
-                "direction": "out", 
-                "port": "token", 
-                "properties": {
-                    "nbr_peers": 1
-                }
-            }
-        ], 
-        "finalMigrering:lights:flashGreenGarage:light:light:url:set_lightno": [
+        "finalMigrering:lights:flashRedLego:light:light:command:set_bri": [
             {
                 "direction": "in", 
                 "port": "container", 
@@ -2347,56 +1628,24 @@
                 }
             }
         ], 
-        "finalMigrering:lights:flashGreenLego:light:select": [
+        "finalMigrering:peopleCounter:status": [
             {
                 "direction": "in", 
-                "port": "case_true", 
+                "port": "container", 
                 "properties": {
                     "nbr_peers": 1
                 }
             }, 
             {
                 "direction": "in", 
-                "port": "select", 
-                "properties": {
-                    "nbr_peers": 1
-                }
-            }, 
-            {
-                "direction": "in", 
-                "port": "case_false", 
+                "port": "key", 
                 "properties": {
                     "nbr_peers": 1
                 }
             }, 
             {
                 "direction": "out", 
-                "port": "data", 
-                "properties": {
-                    "nbr_peers": 1
-                }
-            }
-        ], 
-        "finalMigrering:lights:flashGreenLego:light:light:_void_17": [
-            {
-                "direction": "in", 
-                "port": "void", 
-                "properties": {
-                    "nbr_peers": 1
-                }
-            }
-        ], 
-        "finalMigrering:name": [
-            {
-                "direction": "in", 
-                "port": "in", 
-                "properties": {
-                    "nbr_peers": 1
-                }
-            }, 
-            {
-                "direction": "out", 
-                "port": "out", 
+                "port": "value", 
                 "properties": {
                     "nbr_peers": 1
                 }
@@ -2406,22 +1655,6 @@
             {
                 "direction": "out", 
                 "port": "token", 
-                "properties": {
-                    "nbr_peers": 1
-                }
-            }
-        ], 
-        "finalMigrering:lights:flashGreenLego:light:light:command:to_str": [
-            {
-                "direction": "in", 
-                "port": "data", 
-                "properties": {
-                    "nbr_peers": 1
-                }
-            }, 
-            {
-                "direction": "out", 
-                "port": "string", 
                 "properties": {
                     "nbr_peers": 1
                 }
@@ -2447,45 +1680,6 @@
                 "port": "result", 
                 "properties": {
                     "nbr_peers": 2
-                }
-            }
-        ], 
-        "finalMigrering:lights:flashGreenGarage:light:select": [
-            {
-                "direction": "in", 
-                "port": "case_true", 
-                "properties": {
-                    "nbr_peers": 1
-                }
-            }, 
-            {
-                "direction": "in", 
-                "port": "select", 
-                "properties": {
-                    "nbr_peers": 1
-                }
-            }, 
-            {
-                "direction": "in", 
-                "port": "case_false", 
-                "properties": {
-                    "nbr_peers": 1
-                }
-            }, 
-            {
-                "direction": "out", 
-                "port": "data", 
-                "properties": {
-                    "nbr_peers": 1
-                }
-            }
-        ], 
-        "finalMigrering:lights:flashGreenLego:light:light:url:_literal_const_29": [
-            {
-                "direction": "out", 
-                "port": "token", 
-                "properties": {
-                    "nbr_peers": 1
                 }
             }
         ], 
@@ -2519,110 +1713,6 @@
                 }
             }
         ], 
-        "finalMigrering:lights:flashGreenGarage:light:light:light": [
-            {
-                "direction": "in", 
-                "port": "URL", 
-                "properties": {
-                    "nbr_peers": 1
-                }
-            }, 
-            {
-                "direction": "in", 
-                "port": "header", 
-                "properties": {
-                    "nbr_peers": 1
-                }
-            }, 
-            {
-                "direction": "in", 
-                "port": "params", 
-                "properties": {
-                    "nbr_peers": 1
-                }
-            }, 
-            {
-                "direction": "in", 
-                "port": "data", 
-                "properties": {
-                    "nbr_peers": 1
-                }
-            }, 
-            {
-                "direction": "out", 
-                "port": "status", 
-                "properties": {
-                    "nbr_peers": 1
-                }
-            }, 
-            {
-                "direction": "out", 
-                "port": "header", 
-                "properties": {
-                    "nbr_peers": 1
-                }
-            }, 
-            {
-                "direction": "out", 
-                "port": "data", 
-                "properties": {
-                    "nbr_peers": 1
-                }
-            }
-        ], 
-        "finalMigrering:lights:flashRedLego:light:light:command:set_bri": [
-            {
-                "direction": "in", 
-                "port": "container", 
-                "properties": {
-                    "nbr_peers": 1
-                }
-            }, 
-            {
-                "direction": "in", 
-                "port": "key", 
-                "properties": {
-                    "nbr_peers": 1
-                }
-            }, 
-            {
-                "direction": "in", 
-                "port": "value", 
-                "properties": {
-                    "nbr_peers": 1
-                }
-            }, 
-            {
-                "direction": "out", 
-                "port": "container", 
-                "properties": {
-                    "nbr_peers": 1
-                }
-            }
-        ], 
-        "finalMigrering:peopleCounter:status": [
-            {
-                "direction": "in", 
-                "port": "container", 
-                "properties": {
-                    "nbr_peers": 1
-                }
-            }, 
-            {
-                "direction": "in", 
-                "port": "key", 
-                "properties": {
-                    "nbr_peers": 1
-                }
-            }, 
-            {
-                "direction": "out", 
-                "port": "value", 
-                "properties": {
-                    "nbr_peers": 1
-                }
-            }
-        ], 
         "finalMigrering:peopleCounter:length": [
             {
                 "direction": "in", 
@@ -2639,50 +1729,7 @@
                 }
             }
         ], 
-        "finalMigrering:lights:flashGreenLego:pacer": [
-            {
-                "direction": "in", 
-                "port": "token", 
-                "properties": {
-                    "nbr_peers": 1
-                }
-            }, 
-            {
-                "direction": "out", 
-                "port": "token", 
-                "properties": {
-                    "nbr_peers": 1
-                }
-            }
-        ], 
-        "finalMigrering:_void_50": [
-            {
-                "direction": "out", 
-                "port": "void", 
-                "properties": {
-                    "nbr_peers": 1
-                }
-            }
-        ], 
-        "finalMigrering:_void_51": [
-            {
-                "direction": "out", 
-                "port": "void", 
-                "properties": {
-                    "nbr_peers": 1
-                }
-            }
-        ], 
         "finalMigrering:lights:flashRedGarage:light:light:command:_literal_const_38": [
-            {
-                "direction": "out", 
-                "port": "token", 
-                "properties": {
-                    "nbr_peers": 1
-                }
-            }
-        ], 
-        "finalMigrering:lights:flashRedGarage:light:light:command:_literal_const_39": [
             {
                 "direction": "out", 
                 "port": "token", 
@@ -2701,6 +1748,24 @@
             }
         ], 
         "finalMigrering:rfid:_literal_const_9": [
+            {
+                "direction": "out", 
+                "port": "token", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "finalMigrering:lights:flashRedGarage:light:light:command:_literal_const_34": [
+            {
+                "direction": "out", 
+                "port": "token", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "finalMigrering:lights:flashRedGarage:light:light:command:_literal_const_35": [
             {
                 "direction": "out", 
                 "port": "token", 
@@ -2729,15 +1794,6 @@
             {
                 "direction": "in", 
                 "port": "void", 
-                "properties": {
-                    "nbr_peers": 1
-                }
-            }
-        ], 
-        "finalMigrering:lights:flashGreenLego:light:_literal_const_22": [
-            {
-                "direction": "out", 
-                "port": "token", 
                 "properties": {
                     "nbr_peers": 1
                 }
@@ -2782,32 +1838,7 @@
                 }
             }
         ], 
-        "finalMigrering:lights:flashGreenGarage:light:light:url:format": [
-            {
-                "direction": "in", 
-                "port": "dict", 
-                "properties": {
-                    "nbr_peers": 1
-                }
-            }, 
-            {
-                "direction": "out", 
-                "port": "text", 
-                "properties": {
-                    "nbr_peers": 1
-                }
-            }
-        ], 
-        "finalMigrering:lights:flashRedLego:light:light:command:_literal_const_40": [
-            {
-                "direction": "out", 
-                "port": "token", 
-                "properties": {
-                    "nbr_peers": 1
-                }
-            }
-        ], 
-        "finalMigrering:lights:flashGreenGarage:_literal_const_35": [
+        "finalMigrering:lights:flashRedGarage:light:light:url:_literal_const_24": [
             {
                 "direction": "out", 
                 "port": "token", 
@@ -2833,7 +1864,7 @@
                 }
             }
         ], 
-        "finalMigrering:lights:flashGreenGarage:light:light:_literal_const_20": [
+        "finalMigrering:lights:flashRedLego:_literal_const_33": [
             {
                 "direction": "out", 
                 "port": "token", 
@@ -2902,40 +1933,10 @@
                 }
             }
         ], 
-        "finalMigrering:lights:flashGreenLego:light:light:url:_literal_const_28": [
-            {
-                "direction": "out", 
-                "port": "token", 
-                "properties": {
-                    "nbr_peers": 1
-                }
-            }
-        ], 
-        "finalMigrering:lights:flashGreenGarage:light:light:url:set_username": [
+        "finalMigrering:lights:flashRedLego:_void_31": [
             {
                 "direction": "in", 
-                "port": "container", 
-                "properties": {
-                    "nbr_peers": 1
-                }
-            }, 
-            {
-                "direction": "in", 
-                "port": "key", 
-                "properties": {
-                    "nbr_peers": 1
-                }
-            }, 
-            {
-                "direction": "in", 
-                "port": "value", 
-                "properties": {
-                    "nbr_peers": 1
-                }
-            }, 
-            {
-                "direction": "out", 
-                "port": "container", 
+                "port": "void", 
                 "properties": {
                     "nbr_peers": 1
                 }
@@ -2959,7 +1960,7 @@
                 }
             }
         ], 
-        "finalMigrering:lights:flashRedGarage:light:rgb:_literal_const_43": [
+        "finalMigrering:lights:flashRedGarage:light:rgb:_literal_const_40": [
             {
                 "direction": "out", 
                 "port": "token", 
@@ -3053,7 +2054,7 @@
                 }
             }
         ], 
-        "finalMigrering:lights:_literal_const_46": [
+        "finalMigrering:lights:_literal_const_42": [
             {
                 "direction": "out", 
                 "port": "token", 
@@ -3062,209 +2063,10 @@
                 }
             }
         ], 
-        "finalMigrering:lights:_literal_const_45": [
+        "finalMigrering:_literal_const_45": [
             {
                 "direction": "out", 
                 "port": "token", 
-                "properties": {
-                    "nbr_peers": 1
-                }
-            }
-        ], 
-        "finalMigrering:lights:_literal_const_44": [
-            {
-                "direction": "out", 
-                "port": "token", 
-                "properties": {
-                    "nbr_peers": 1
-                }
-            }
-        ], 
-        "finalMigrering:lights:flashGreenGarage:light:_literal_const_22": [
-            {
-                "direction": "out", 
-                "port": "token", 
-                "properties": {
-                    "nbr_peers": 1
-                }
-            }
-        ], 
-        "finalMigrering:lights:flashGreenGarage:light:light:command:set_sat": [
-            {
-                "direction": "in", 
-                "port": "container", 
-                "properties": {
-                    "nbr_peers": 1
-                }
-            }, 
-            {
-                "direction": "in", 
-                "port": "key", 
-                "properties": {
-                    "nbr_peers": 1
-                }
-            }, 
-            {
-                "direction": "in", 
-                "port": "value", 
-                "properties": {
-                    "nbr_peers": 1
-                }
-            }, 
-            {
-                "direction": "out", 
-                "port": "container", 
-                "properties": {
-                    "nbr_peers": 1
-                }
-            }
-        ], 
-        "finalMigrering:lights:flashGreenGarage:light:_literal_const_21": [
-            {
-                "direction": "out", 
-                "port": "token", 
-                "properties": {
-                    "nbr_peers": 1
-                }
-            }
-        ], 
-        "finalMigrering:lights:flashGreenLego:light:light:url:_literal_const_25": [
-            {
-                "direction": "out", 
-                "port": "token", 
-                "properties": {
-                    "nbr_peers": 1
-                }
-            }
-        ], 
-        "finalMigrering:lights:flashGreenLego:light:light:url:_literal_const_24": [
-            {
-                "direction": "out", 
-                "port": "token", 
-                "properties": {
-                    "nbr_peers": 1
-                }
-            }
-        ], 
-        "finalMigrering:lights:flashGreenLego:light:light:url:_literal_const_27": [
-            {
-                "direction": "out", 
-                "port": "token", 
-                "properties": {
-                    "nbr_peers": 1
-                }
-            }
-        ], 
-        "finalMigrering:lights:flashGreenLego:light:light:url:_literal_const_26": [
-            {
-                "direction": "out", 
-                "port": "token", 
-                "properties": {
-                    "nbr_peers": 1
-                }
-            }
-        ], 
-        "finalMigrering:lights:flashGreenLego:light:rgb:redgb": [
-            {
-                "direction": "in", 
-                "port": "blue", 
-                "properties": {
-                    "nbr_peers": 1
-                }
-            }, 
-            {
-                "direction": "in", 
-                "port": "green", 
-                "properties": {
-                    "nbr_peers": 1
-                }
-            }, 
-            {
-                "direction": "in", 
-                "port": "red", 
-                "properties": {
-                    "nbr_peers": 1
-                }
-            }, 
-            {
-                "direction": "out", 
-                "port": "hue", 
-                "properties": {
-                    "nbr_peers": 1
-                }
-            }, 
-            {
-                "direction": "out", 
-                "port": "saturation", 
-                "properties": {
-                    "nbr_peers": 1
-                }
-            }, 
-            {
-                "direction": "out", 
-                "port": "brightness", 
-                "properties": {
-                    "nbr_peers": 1
-                }
-            }
-        ], 
-        "finalMigrering:lights:flashGreenLego:light:light:url:_literal_const_23": [
-            {
-                "direction": "out", 
-                "port": "token", 
-                "properties": {
-                    "nbr_peers": 1
-                }
-            }
-        ], 
-        "finalMigrering:lights:flashGreenLego:alternate": [
-            {
-                "direction": "in", 
-                "port": "token_1", 
-                "properties": {
-                    "nbr_peers": 1
-                }
-            }, 
-            {
-                "direction": "in", 
-                "port": "token_2", 
-                "properties": {
-                    "nbr_peers": 1
-                }
-            }, 
-            {
-                "direction": "out", 
-                "port": "token", 
-                "properties": {
-                    "nbr_peers": 1
-                }
-            }
-        ], 
-        "finalMigrering:lights:flashGreenLego:light:light:command:set_hue": [
-            {
-                "direction": "in", 
-                "port": "container", 
-                "properties": {
-                    "nbr_peers": 1
-                }
-            }, 
-            {
-                "direction": "in", 
-                "port": "key", 
-                "properties": {
-                    "nbr_peers": 1
-                }
-            }, 
-            {
-                "direction": "in", 
-                "port": "value", 
-                "properties": {
-                    "nbr_peers": 1
-                }
-            }, 
-            {
-                "direction": "out", 
-                "port": "container", 
                 "properties": {
                     "nbr_peers": 1
                 }
@@ -3325,45 +2127,6 @@
                 }
             }
         ], 
-        "finalMigrering:_literal_const_49": [
-            {
-                "direction": "out", 
-                "port": "token", 
-                "properties": {
-                    "nbr_peers": 1
-                }
-            }
-        ], 
-        "finalMigrering:lights:flashGreenLego:light:light:command:set_on": [
-            {
-                "direction": "in", 
-                "port": "container", 
-                "properties": {
-                    "nbr_peers": 1
-                }
-            }, 
-            {
-                "direction": "in", 
-                "port": "key", 
-                "properties": {
-                    "nbr_peers": 1
-                }
-            }, 
-            {
-                "direction": "in", 
-                "port": "value", 
-                "properties": {
-                    "nbr_peers": 1
-                }
-            }, 
-            {
-                "direction": "out", 
-                "port": "container", 
-                "properties": {
-                    "nbr_peers": 1
-                }
-            }
-        ], 
         "finalMigrering:lights:flashRedGarage:_literal_const_33": [
             {
                 "direction": "out", 
@@ -3382,67 +2145,10 @@
                 }
             }
         ], 
-        "finalMigrering:lights:flashGreenGarage:light:light:url:_literal_const_29": [
-            {
-                "direction": "out", 
-                "port": "token", 
-                "properties": {
-                    "nbr_peers": 1
-                }
-            }
-        ], 
-        "finalMigrering:lights:flashGreenGarage:light:light:url:_literal_const_28": [
-            {
-                "direction": "out", 
-                "port": "token", 
-                "properties": {
-                    "nbr_peers": 1
-                }
-            }
-        ], 
-        "finalMigrering:lights:selectLego": [
+        "finalMigrering:rfid:log1": [
             {
                 "direction": "in", 
                 "port": "data", 
-                "properties": {
-                    "nbr_peers": 1
-                }
-            }, 
-            {
-                "direction": "in", 
-                "port": "select", 
-                "properties": {
-                    "nbr_peers": 1
-                }
-            }, 
-            {
-                "direction": "out", 
-                "port": "case_true", 
-                "properties": {
-                    "nbr_peers": 1
-                }
-            }, 
-            {
-                "direction": "out", 
-                "port": "case_false", 
-                "properties": {
-                    "nbr_peers": 1
-                }
-            }
-        ], 
-        "finalMigrering:lights:flashGreenGarage:light:light:_literal_const_19": [
-            {
-                "direction": "out", 
-                "port": "token", 
-                "properties": {
-                    "nbr_peers": 1
-                }
-            }
-        ], 
-        "finalMigrering:lights:flashGreenGarage:light:light:url:_literal_const_23": [
-            {
-                "direction": "out", 
-                "port": "token", 
                 "properties": {
                     "nbr_peers": 1
                 }
@@ -3494,58 +2200,6 @@
                 }
             }
         ], 
-        "finalMigrering:lights:flashRedGarage:light:light:command:to_str": [
-            {
-                "direction": "in", 
-                "port": "data", 
-                "properties": {
-                    "nbr_peers": 1
-                }
-            }, 
-            {
-                "direction": "out", 
-                "port": "string", 
-                "properties": {
-                    "nbr_peers": 1
-                }
-            }
-        ], 
-        "finalMigrering:lights:flashGreenGarage:light:light:url:_literal_const_27": [
-            {
-                "direction": "out", 
-                "port": "token", 
-                "properties": {
-                    "nbr_peers": 1
-                }
-            }
-        ], 
-        "finalMigrering:lights:flashGreenGarage:light:light:url:_literal_const_26": [
-            {
-                "direction": "out", 
-                "port": "token", 
-                "properties": {
-                    "nbr_peers": 1
-                }
-            }
-        ], 
-        "finalMigrering:lights:flashGreenGarage:light:light:url:_literal_const_25": [
-            {
-                "direction": "out", 
-                "port": "token", 
-                "properties": {
-                    "nbr_peers": 1
-                }
-            }
-        ], 
-        "finalMigrering:lights:flashGreenGarage:light:light:url:_literal_const_24": [
-            {
-                "direction": "out", 
-                "port": "token", 
-                "properties": {
-                    "nbr_peers": 1
-                }
-            }
-        ], 
         "finalMigrering:lights:flashRedGarage:light:light:url:set_username": [
             {
                 "direction": "in", 
@@ -3571,42 +2225,6 @@
             {
                 "direction": "out", 
                 "port": "container", 
-                "properties": {
-                    "nbr_peers": 1
-                }
-            }
-        ], 
-        "finalMigrering:lights:flashGreenGarage:light:light:_void_18": [
-            {
-                "direction": "in", 
-                "port": "void", 
-                "properties": {
-                    "nbr_peers": 1
-                }
-            }
-        ], 
-        "finalMigrering:lights:flashGreenGarage:light:rgb:_literal_const_43": [
-            {
-                "direction": "out", 
-                "port": "token", 
-                "properties": {
-                    "nbr_peers": 1
-                }
-            }
-        ], 
-        "finalMigrering:lights:flashGreenGarage:light:rgb:_literal_const_42": [
-            {
-                "direction": "out", 
-                "port": "token", 
-                "properties": {
-                    "nbr_peers": 1
-                }
-            }
-        ], 
-        "finalMigrering:lights:flashGreenGarage:light:light:_void_17": [
-            {
-                "direction": "in", 
-                "port": "void", 
                 "properties": {
                     "nbr_peers": 1
                 }
@@ -3697,36 +2315,6 @@
                 }
             }
         ], 
-        "finalMigrering:lights:flashRedLego:light:light:command:set_sat": [
-            {
-                "direction": "in", 
-                "port": "container", 
-                "properties": {
-                    "nbr_peers": 1
-                }
-            }, 
-            {
-                "direction": "in", 
-                "port": "key", 
-                "properties": {
-                    "nbr_peers": 1
-                }
-            }, 
-            {
-                "direction": "in", 
-                "port": "value", 
-                "properties": {
-                    "nbr_peers": 1
-                }
-            }, 
-            {
-                "direction": "out", 
-                "port": "container", 
-                "properties": {
-                    "nbr_peers": 1
-                }
-            }
-        ], 
         "finalMigrering:rfid:_void_12": [
             {
                 "direction": "out", 
@@ -3788,10 +2376,17 @@
                 }
             }
         ], 
-        "finalMigrering:lights:flashRedGarage:light:light:url:_literal_const_24": [
+        "finalMigrering:name": [
+            {
+                "direction": "in", 
+                "port": "in", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
             {
                 "direction": "out", 
-                "port": "token", 
+                "port": "out", 
                 "properties": {
                     "nbr_peers": 1
                 }
@@ -3842,16 +2437,7 @@
                 }
             }
         ], 
-        "finalMigrering:lights:flashGreenGarage:_void_34": [
-            {
-                "direction": "in", 
-                "port": "void", 
-                "properties": {
-                    "nbr_peers": 1
-                }
-            }
-        ], 
-        "finalMigrering:lights:flashGreenGarage:light:light:command:set_bri": [
+        "finalMigrering:lights:flashRedLego:light:light:command:set_sat": [
             {
                 "direction": "in", 
                 "port": "container", 
@@ -3876,15 +2462,6 @@
             {
                 "direction": "out", 
                 "port": "container", 
-                "properties": {
-                    "nbr_peers": 1
-                }
-            }
-        ], 
-        "finalMigrering:lights:flashGreenLego:light:_literal_const_21": [
-            {
-                "direction": "out", 
-                "port": "token", 
                 "properties": {
                     "nbr_peers": 1
                 }
@@ -3903,36 +2480,6 @@
             {
                 "direction": "in", 
                 "port": "void", 
-                "properties": {
-                    "nbr_peers": 1
-                }
-            }
-        ], 
-        "finalMigrering:lights:flashGreenLego:light:light:url:set_address": [
-            {
-                "direction": "in", 
-                "port": "container", 
-                "properties": {
-                    "nbr_peers": 1
-                }
-            }, 
-            {
-                "direction": "in", 
-                "port": "key", 
-                "properties": {
-                    "nbr_peers": 1
-                }
-            }, 
-            {
-                "direction": "in", 
-                "port": "value", 
-                "properties": {
-                    "nbr_peers": 1
-                }
-            }, 
-            {
-                "direction": "out", 
-                "port": "container", 
                 "properties": {
                     "nbr_peers": 1
                 }
@@ -3963,29 +2510,6 @@
             {
                 "direction": "out", 
                 "port": "container", 
-                "properties": {
-                    "nbr_peers": 1
-                }
-            }
-        ], 
-        "finalMigrering:lights:flashGreenGarage:alternate": [
-            {
-                "direction": "in", 
-                "port": "token_1", 
-                "properties": {
-                    "nbr_peers": 1
-                }
-            }, 
-            {
-                "direction": "in", 
-                "port": "token_2", 
-                "properties": {
-                    "nbr_peers": 1
-                }
-            }, 
-            {
-                "direction": "out", 
-                "port": "token", 
                 "properties": {
                     "nbr_peers": 1
                 }
@@ -4034,17 +2558,8 @@
         ], 
         "finalMigrering:_void_47": [
             {
-                "direction": "in", 
-                "port": "void", 
-                "properties": {
-                    "nbr_peers": 1
-                }
-            }
-        ], 
-        "finalMigrering:lights:flashGreenLego:light:light:_literal_const_19": [
-            {
                 "direction": "out", 
-                "port": "token", 
+                "port": "void", 
                 "properties": {
                     "nbr_peers": 1
                 }
@@ -4118,49 +2633,10 @@
                 }
             }
         ], 
-        "finalMigrering:lights:flashRedLego:light:light:url:set_username": [
-            {
-                "direction": "in", 
-                "port": "container", 
-                "properties": {
-                    "nbr_peers": 1
-                }
-            }, 
-            {
-                "direction": "in", 
-                "port": "key", 
-                "properties": {
-                    "nbr_peers": 1
-                }
-            }, 
-            {
-                "direction": "in", 
-                "port": "value", 
-                "properties": {
-                    "nbr_peers": 1
-                }
-            }, 
-            {
-                "direction": "out", 
-                "port": "container", 
-                "properties": {
-                    "nbr_peers": 1
-                }
-            }
-        ], 
-        "finalMigrering:lights:flashGreenLego:_literal_const_35": [
+        "finalMigrering:lights:flashRedGarage:light:rgb:_literal_const_39": [
             {
                 "direction": "out", 
                 "port": "token", 
-                "properties": {
-                    "nbr_peers": 1
-                }
-            }
-        ], 
-        "finalMigrering:lights:flashGreenLego:_void_34": [
-            {
-                "direction": "in", 
-                "port": "void", 
                 "properties": {
                     "nbr_peers": 1
                 }
@@ -4226,31 +2702,6 @@
                 }
             }
         ], 
-        "finalMigrering:lights:flashGreenLego:light:light:_void_18": [
-            {
-                "direction": "in", 
-                "port": "void", 
-                "properties": {
-                    "nbr_peers": 1
-                }
-            }
-        ], 
-        "finalMigrering:lights:flashGreenGarage:pacer": [
-            {
-                "direction": "in", 
-                "port": "token", 
-                "properties": {
-                    "nbr_peers": 1
-                }
-            }, 
-            {
-                "direction": "out", 
-                "port": "token", 
-                "properties": {
-                    "nbr_peers": 1
-                }
-            }
-        ], 
         "finalMigrering:rfid:deselect": [
             {
                 "direction": "in", 
@@ -4291,45 +2742,6 @@
             }
         ], 
         "finalMigrering:lights:flashRedGarage:light:_literal_const_22": [
-            {
-                "direction": "out", 
-                "port": "token", 
-                "properties": {
-                    "nbr_peers": 1
-                }
-            }
-        ], 
-        "finalMigrering:lights:flashGreenLego:light:light:command:set_bri": [
-            {
-                "direction": "in", 
-                "port": "container", 
-                "properties": {
-                    "nbr_peers": 1
-                }
-            }, 
-            {
-                "direction": "in", 
-                "port": "key", 
-                "properties": {
-                    "nbr_peers": 1
-                }
-            }, 
-            {
-                "direction": "in", 
-                "port": "value", 
-                "properties": {
-                    "nbr_peers": 1
-                }
-            }, 
-            {
-                "direction": "out", 
-                "port": "container", 
-                "properties": {
-                    "nbr_peers": 1
-                }
-            }
-        ], 
-        "finalMigrering:lights:flashGreenGarage:light:light:command:_literal_const_40": [
             {
                 "direction": "out", 
                 "port": "token", 
@@ -4470,30 +2882,6 @@
     }, 
     "valid": true, 
     "actors": {
-        "finalMigrering:lights:flashGreenLego:light:light:command:_literal_const_36": {
-            "args": {
-                "data": {}
-            }, 
-            "actor_type": "std.Constant", 
-            "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
-        }, 
-        "finalMigrering:lights:flashGreenLego:light:light:command:_literal_const_37": {
-            "args": {
-                "data": "on"
-            }, 
-            "actor_type": "std.Constant", 
-            "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
-        }, 
-        "finalMigrering:lights:flashGreenGarage:light:light:command:set_on": {
-            "args": {}, 
-            "actor_type": "json.SetValue", 
-            "signature": "3e76e92b20364f1972aff4cb233188b7e41a65abe7816896cb4d09a37adf137f"
-        }, 
-        "finalMigrering:lights:flashGreenGarage:light:light:url:set_address": {
-            "args": {}, 
-            "actor_type": "json.SetValue", 
-            "signature": "3e76e92b20364f1972aff4cb233188b7e41a65abe7816896cb4d09a37adf137f"
-        }, 
         "finalMigrering:lights:flashRedLego:light:light:url:format": {
             "args": {
                 "fmt": "http://{address}/api/{username}/lights/{lightno}/state"
@@ -4505,13 +2893,6 @@
             "args": {}, 
             "actor_type": "json.Items", 
             "signature": "3a387e57370546dc0c449790c66f8d44257152d0e42c3c94b844893f215313d6"
-        }, 
-        "finalMigrering:lights:flashGreenLego:light:light:command:_literal_const_38": {
-            "args": {
-                "data": "sat"
-            }, 
-            "actor_type": "std.Constant", 
-            "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
         }, 
         "finalMigrering:lights:flashRedLego:light:light:command:set_hue": {
             "args": {}, 
@@ -4549,27 +2930,10 @@
             "actor_type": "std.Constant", 
             "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
         }, 
-        "finalMigrering:lights:flashGreenGarage:light:rgb:_literal_const_41": {
-            "args": {
-                "data": 0
-            }, 
-            "actor_type": "std.Constant", 
-            "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
-        }, 
-        "finalMigrering:lights:flashGreenLego:light:light:light": {
-            "args": {}, 
-            "actor_type": "net.HTTPPut", 
-            "signature": "d77713364a40a05000ddd140cf8081ccc5a61ab9535b53ac5e100bf21adad46d"
-        }, 
         "finalMigrering:peopleCounter:people": {
             "args": {}, 
             "actor_type": "room.PersonCounter", 
             "signature": "c6a4012230f2b6d14e4ef7a00790fc8093692f66b1255f99a1a05483b7801fdc"
-        }, 
-        "finalMigrering:lights:flashGreenGarage:light:bool": {
-            "args": {}, 
-            "actor_type": "flow.Bool", 
-            "signature": "bb08d2e2cc20741968e8c27886c1d8917382699121e5d303efcfe3ca72ff246a"
         }, 
         "finalMigrering:deploy:post": {
             "args": {}, 
@@ -4580,11 +2944,6 @@
             "args": {}, 
             "actor_type": "json.Items", 
             "signature": "3a387e57370546dc0c449790c66f8d44257152d0e42c3c94b844893f215313d6"
-        }, 
-        "finalMigrering:lights:flashGreenGarage:light:light:command:to_str": {
-            "args": {}, 
-            "actor_type": "json.ToString", 
-            "signature": "723cc86269b427b45cc02541afefefca1c512ea194d2b719cf36a077d4cb25ec"
         }, 
         "finalMigrering:rfid:joinData": {
             "args": {}, 
@@ -4603,31 +2962,29 @@
             "actor_type": "io.Log", 
             "signature": "e73ce6ca0ccc9bce14f8d546e930f53cb69e466eb3325e1cc24d64e8b0bb97b5"
         }, 
-        "finalMigrering:rfid:log1": {
-            "args": {
-                "loglevel": "INFO"
-            }, 
-            "actor_type": "io.Log", 
-            "signature": "e73ce6ca0ccc9bce14f8d546e930f53cb69e466eb3325e1cc24d64e8b0bb97b5"
-        }, 
-        "finalMigrering:lights:flashRedGarage:light:light:command:_literal_const_40": {
-            "args": {
-                "data": "hue"
-            }, 
-            "actor_type": "std.Constant", 
-            "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
-        }, 
-        "finalMigrering:lights:flashRedLego:_literal_const_33": {
-            "args": {
-                "data": false
-            }, 
-            "actor_type": "std.Constant", 
-            "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
+        "finalMigrering:lights:flashRedGarage:light:light:command:to_str": {
+            "args": {}, 
+            "actor_type": "json.ToString", 
+            "signature": "723cc86269b427b45cc02541afefefca1c512ea194d2b719cf36a077d4cb25ec"
         }, 
         "finalMigrering:lights:flashRedGarage:select": {
             "args": {}, 
             "actor_type": "flow.Select", 
             "signature": "95f965d1cdf97fc1148c0dd763f15ee2822f8a448b965ca387ca983921dda847"
+        }, 
+        "finalMigrering:lights:flashRedLego:light:light:command:_literal_const_34": {
+            "args": {
+                "data": {}
+            }, 
+            "actor_type": "std.Constant", 
+            "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
+        }, 
+        "finalMigrering:lights:flashRedLego:light:light:command:_literal_const_35": {
+            "args": {
+                "data": "on"
+            }, 
+            "actor_type": "std.Constant", 
+            "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
         }, 
         "finalMigrering:deploy:deploy": {
             "args": {}, 
@@ -4652,44 +3009,9 @@
             "actor_type": "json.SetValue", 
             "signature": "3e76e92b20364f1972aff4cb233188b7e41a65abe7816896cb4d09a37adf137f"
         }, 
-        "finalMigrering:lights:flashGreenLego:light:light:url:format": {
-            "args": {
-                "fmt": "http://{address}/api/{username}/lights/{lightno}/state"
-            }, 
-            "actor_type": "text.Format", 
-            "signature": "5076805251ae7e423b8d422f3e9cba41d3b986c612c110ffe6c27d377dfaa044"
-        }, 
         "finalMigrering:lights:flashRedLego:light:light:command:_literal_const_38": {
             "args": {
-                "data": "sat"
-            }, 
-            "actor_type": "std.Constant", 
-            "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
-        }, 
-        "finalMigrering:lights:flashRedLego:light:light:command:_literal_const_39": {
-            "args": {
-                "data": "bri"
-            }, 
-            "actor_type": "std.Constant", 
-            "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
-        }, 
-        "finalMigrering:lights:flashGreenLego:light:rgb:_literal_const_41": {
-            "args": {
-                "data": 0
-            }, 
-            "actor_type": "std.Constant", 
-            "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
-        }, 
-        "finalMigrering:lights:flashGreenLego:light:rgb:_literal_const_43": {
-            "args": {
-                "data": 0
-            }, 
-            "actor_type": "std.Constant", 
-            "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
-        }, 
-        "finalMigrering:lights:flashGreenLego:light:rgb:_literal_const_42": {
-            "args": {
-                "data": 255
+                "data": "hue"
             }, 
             "actor_type": "std.Constant", 
             "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
@@ -4701,26 +3023,7 @@
         }, 
         "finalMigrering:lights:flashRedLego:light:light:command:_literal_const_36": {
             "args": {
-                "data": {}
-            }, 
-            "actor_type": "std.Constant", 
-            "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
-        }, 
-        "finalMigrering:lights:flashGreenLego:light:light:command:_literal_const_39": {
-            "args": {
-                "data": "bri"
-            }, 
-            "actor_type": "std.Constant", 
-            "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
-        }, 
-        "finalMigrering:lights:flashGreenLego:light:light:url:set_lightno": {
-            "args": {}, 
-            "actor_type": "json.SetValue", 
-            "signature": "3e76e92b20364f1972aff4cb233188b7e41a65abe7816896cb4d09a37adf137f"
-        }, 
-        "finalMigrering:lights:flashRedLego:light:_literal_const_21": {
-            "args": {
-                "data": true
+                "data": "sat"
             }, 
             "actor_type": "std.Constant", 
             "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
@@ -4788,16 +3091,16 @@
             "actor_type": "std.Constant", 
             "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
         }, 
-        "finalMigrering:lights:flashRedLego:light:rgb:_literal_const_42": {
+        "finalMigrering:lights:flashRedLego:light:rgb:_literal_const_41": {
             "args": {
                 "data": 0
             }, 
             "actor_type": "std.Constant", 
             "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
         }, 
-        "finalMigrering:lights:flashRedLego:light:rgb:_literal_const_41": {
+        "finalMigrering:lights:flashRedLego:light:rgb:_literal_const_40": {
             "args": {
-                "data": 255
+                "data": 0
             }, 
             "actor_type": "std.Constant", 
             "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
@@ -4808,15 +3111,6 @@
             }, 
             "actor_type": "io.Log", 
             "signature": "e73ce6ca0ccc9bce14f8d546e930f53cb69e466eb3325e1cc24d64e8b0bb97b5"
-        }, 
-        "finalMigrering:lights:flashGreenLego:light:light:_literal_const_20": {
-            "args": {
-                "data": {
-                    "Content-Type": "application/json"
-                }
-            }, 
-            "actor_type": "std.Constant", 
-            "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
         }, 
         "finalMigrering:deploy:controlpath": {
             "args": {
@@ -4844,7 +3138,7 @@
         }, 
         "finalMigrering:lights:flashRedLego:light:light:command:_literal_const_37": {
             "args": {
-                "data": "on"
+                "data": "bri"
             }, 
             "actor_type": "std.Constant", 
             "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
@@ -4853,11 +3147,6 @@
             "args": {}, 
             "actor_type": "flow.Void", 
             "signature": "3a749ff7e2bc123a6e5870c9a337f72e0025a69bff24de632bd2905f7bf21d00"
-        }, 
-        "finalMigrering:lights:flashRedLego:_void_31": {
-            "args": {}, 
-            "actor_type": "flow.Terminator", 
-            "signature": "d020e4a1dc9953df2924eba3ceed61544fff2bd4fab9f602758cce0e8957d522"
         }, 
         "finalMigrering:migrator:migrate:migrate": {
             "args": {
@@ -4903,13 +3192,6 @@
             "actor_type": "calvin.CalvinMigraterA", 
             "signature": "e671fbaa47a4bc35eef5bbabe94f5b5d649b729bb94e58f0bb698f4c56195c03"
         }, 
-        "finalMigrering:lights:flashRedLego:light:rgb:_literal_const_43": {
-            "args": {
-                "data": 0
-            }, 
-            "actor_type": "std.Constant", 
-            "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
-        }, 
         "finalMigrering:lights:flashRedLego:light:light:light": {
             "args": {}, 
             "actor_type": "net.HTTPPut", 
@@ -4924,13 +3206,6 @@
             "args": {}, 
             "actor_type": "flow.Terminator", 
             "signature": "d020e4a1dc9953df2924eba3ceed61544fff2bd4fab9f602758cce0e8957d522"
-        }, 
-        "finalMigrering:lights:flashGreenLego:light:light:command:_literal_const_40": {
-            "args": {
-                "data": "hue"
-            }, 
-            "actor_type": "std.Constant", 
-            "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
         }, 
         "finalMigrering:lights:flashRedGarage:light:light:command:set_on": {
             "args": {}, 
@@ -4952,19 +3227,14 @@
             "actor_type": "flow.Deselect", 
             "signature": "a4f030267249aa9d2498dac1d5f9494b616bfc9d3dfd44760b3b3a9b696ee52b"
         }, 
-        "finalMigrering:lights:flashGreenLego:light:light:url:set_username": {
+        "finalMigrering:lights:flashRedLego:light:light:url:set_username": {
             "args": {}, 
             "actor_type": "json.SetValue", 
             "signature": "3e76e92b20364f1972aff4cb233188b7e41a65abe7816896cb4d09a37adf137f"
         }, 
-        "finalMigrering:lights:flashGreenGarage:light:rgb:redgb": {
-            "args": {}, 
-            "actor_type": "math.RGBtoHSL", 
-            "signature": "e231b14f55dbcbc393f0c67c4316b711a8f0fe843b0732f7922752c2cc722892"
-        }, 
-        "finalMigrering:lights:flashRedGarage:light:rgb:_literal_const_42": {
+        "finalMigrering:lights:flashRedLego:light:rgb:_literal_const_39": {
             "args": {
-                "data": 0
+                "data": 255
             }, 
             "actor_type": "std.Constant", 
             "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
@@ -4991,39 +3261,30 @@
             "actor_type": "json.GetValue", 
             "signature": "b5af23ef7594f12cb586ebda67fd1b51b6c437445c67593b37d6dc3b00fc66f7"
         }, 
-        "finalMigrering:lights:flashGreenLego:light:light:command:set_sat": {
+        "finalMigrering:_void_44": {
             "args": {}, 
-            "actor_type": "json.SetValue", 
-            "signature": "3e76e92b20364f1972aff4cb233188b7e41a65abe7816896cb4d09a37adf137f"
-        }, 
-        "finalMigrering:lights:flashGreenGarage:light:light:command:_literal_const_38": {
-            "args": {
-                "data": "sat"
-            }, 
-            "actor_type": "std.Constant", 
-            "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
-        }, 
-        "finalMigrering:lights:flashGreenGarage:light:light:command:_literal_const_39": {
-            "args": {
-                "data": "bri"
-            }, 
-            "actor_type": "std.Constant", 
-            "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
+            "actor_type": "flow.Terminator", 
+            "signature": "d020e4a1dc9953df2924eba3ceed61544fff2bd4fab9f602758cce0e8957d522"
         }, 
         "finalMigrering:lights:selectLight": {
             "args": {}, 
             "actor_type": "flow.Select", 
             "signature": "95f965d1cdf97fc1148c0dd763f15ee2822f8a448b965ca387ca983921dda847"
         }, 
-        "finalMigrering:lights:flashGreenLego:light:bool": {
+        "finalMigrering:_void_46": {
             "args": {}, 
-            "actor_type": "flow.Bool", 
-            "signature": "bb08d2e2cc20741968e8c27886c1d8917382699121e5d303efcfe3ca72ff246a"
+            "actor_type": "flow.Void", 
+            "signature": "3a749ff7e2bc123a6e5870c9a337f72e0025a69bff24de632bd2905f7bf21d00"
         }, 
         "finalMigrering:lights:flashRedGarage:light:rgb:redgb": {
             "args": {}, 
             "actor_type": "math.RGBtoHSL", 
             "signature": "e231b14f55dbcbc393f0c67c4316b711a8f0fe843b0732f7922752c2cc722892"
+        }, 
+        "finalMigrering:_void_43": {
+            "args": {}, 
+            "actor_type": "flow.Terminator", 
+            "signature": "d020e4a1dc9953df2924eba3ceed61544fff2bd4fab9f602758cce0e8957d522"
         }, 
         "finalMigrering:rfid:rfidLego": {
             "args": {}, 
@@ -5037,36 +3298,14 @@
             "actor_type": "std.Constant", 
             "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
         }, 
-        "finalMigrering:lights:flashGreenGarage:light:light:command:set_hue": {
-            "args": {}, 
-            "actor_type": "json.SetValue", 
-            "signature": "3e76e92b20364f1972aff4cb233188b7e41a65abe7816896cb4d09a37adf137f"
-        }, 
-        "finalMigrering:lights:selectGarage": {
-            "args": {}, 
-            "actor_type": "flow.Select", 
-            "signature": "95f965d1cdf97fc1148c0dd763f15ee2822f8a448b965ca387ca983921dda847"
-        }, 
-        "finalMigrering:_void_48": {
-            "args": {}, 
-            "actor_type": "flow.Terminator", 
-            "signature": "d020e4a1dc9953df2924eba3ceed61544fff2bd4fab9f602758cce0e8957d522"
-        }, 
-        "finalMigrering:lights:flashGreenGarage:light:light:command:_literal_const_36": {
+        "finalMigrering:lights:flashRedLego:light:_literal_const_21": {
             "args": {
-                "data": {}
+                "data": true
             }, 
             "actor_type": "std.Constant", 
             "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
         }, 
-        "finalMigrering:lights:flashGreenGarage:light:light:command:_literal_const_37": {
-            "args": {
-                "data": "on"
-            }, 
-            "actor_type": "std.Constant", 
-            "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
-        }, 
-        "finalMigrering:lights:flashGreenGarage:light:light:url:set_lightno": {
+        "finalMigrering:lights:flashRedLego:light:light:command:set_bri": {
             "args": {}, 
             "actor_type": "json.SetValue", 
             "signature": "3e76e92b20364f1972aff4cb233188b7e41a65abe7816896cb4d09a37adf137f"
@@ -5078,22 +3317,10 @@
             "actor_type": "std.Compare", 
             "signature": "ea233444664ef2a929101373002d8fa5d89e91aceae7724fbd5a109e5f874446"
         }, 
-        "finalMigrering:lights:flashGreenLego:light:select": {
+        "finalMigrering:peopleCounter:status": {
             "args": {}, 
-            "actor_type": "flow.Deselect", 
-            "signature": "a4f030267249aa9d2498dac1d5f9494b616bfc9d3dfd44760b3b3a9b696ee52b"
-        }, 
-        "finalMigrering:lights:flashGreenLego:light:light:_void_17": {
-            "args": {}, 
-            "actor_type": "flow.Terminator", 
-            "signature": "d020e4a1dc9953df2924eba3ceed61544fff2bd4fab9f602758cce0e8957d522"
-        }, 
-        "finalMigrering:name": {
-            "args": {
-                "data": "migrate_room"
-            }, 
-            "actor_type": "flow.Init", 
-            "signature": "3e308e47a996352b4965a7449eeb84f049b9e0931e5011dd923bad6660e6e002"
+            "actor_type": "json.GetValue", 
+            "signature": "b5af23ef7594f12cb586ebda67fd1b51b6c437445c67593b37d6dc3b00fc66f7"
         }, 
         "finalMigrering:peopleCounter:_literal_const_15": {
             "args": {
@@ -5102,11 +3329,6 @@
             "actor_type": "std.Constant", 
             "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
         }, 
-        "finalMigrering:lights:flashGreenLego:light:light:command:to_str": {
-            "args": {}, 
-            "actor_type": "json.ToString", 
-            "signature": "723cc86269b427b45cc02541afefefca1c512ea194d2b719cf36a077d4cb25ec"
-        }, 
         "finalMigrering:migrator:compare": {
             "args": {
                 "rel": "="
@@ -5114,77 +3336,26 @@
             "actor_type": "std.Compare", 
             "signature": "ea233444664ef2a929101373002d8fa5d89e91aceae7724fbd5a109e5f874446"
         }, 
-        "finalMigrering:lights:flashGreenGarage:light:select": {
-            "args": {}, 
-            "actor_type": "flow.Deselect", 
-            "signature": "a4f030267249aa9d2498dac1d5f9494b616bfc9d3dfd44760b3b3a9b696ee52b"
-        }, 
-        "finalMigrering:lights:flashGreenLego:light:light:url:_literal_const_29": {
-            "args": {
-                "data": 2
-            }, 
-            "actor_type": "std.Constant", 
-            "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
-        }, 
         "finalMigrering:lights:flashRedGarage:light:light:command:set_bri": {
             "args": {}, 
             "actor_type": "json.SetValue", 
             "signature": "3e76e92b20364f1972aff4cb233188b7e41a65abe7816896cb4d09a37adf137f"
-        }, 
-        "finalMigrering:lights:flashGreenGarage:light:light:light": {
-            "args": {}, 
-            "actor_type": "net.HTTPPut", 
-            "signature": "d77713364a40a05000ddd140cf8081ccc5a61ab9535b53ac5e100bf21adad46d"
-        }, 
-        "finalMigrering:lights:flashRedLego:light:light:command:set_bri": {
-            "args": {}, 
-            "actor_type": "json.SetValue", 
-            "signature": "3e76e92b20364f1972aff4cb233188b7e41a65abe7816896cb4d09a37adf137f"
-        }, 
-        "finalMigrering:peopleCounter:status": {
-            "args": {}, 
-            "actor_type": "json.GetValue", 
-            "signature": "b5af23ef7594f12cb586ebda67fd1b51b6c437445c67593b37d6dc3b00fc66f7"
         }, 
         "finalMigrering:peopleCounter:length": {
             "args": {}, 
             "actor_type": "text.Length", 
             "signature": "8a70cfa62da2134e74b308fac090aaa279574fabcc6afbb5bb6a26f364534da9"
         }, 
-        "finalMigrering:lights:flashGreenLego:pacer": {
-            "args": {
-                "delay": 5.0
-            }, 
-            "actor_type": "std.ClassicDelay", 
-            "signature": "5787838e931900c0dd74d6bee2347038577a2677016ed4992c7653889cf1678f"
-        }, 
-        "finalMigrering:_void_50": {
-            "args": {}, 
-            "actor_type": "flow.Void", 
-            "signature": "3a749ff7e2bc123a6e5870c9a337f72e0025a69bff24de632bd2905f7bf21d00"
-        }, 
-        "finalMigrering:_void_51": {
-            "args": {}, 
-            "actor_type": "flow.Void", 
-            "signature": "3a749ff7e2bc123a6e5870c9a337f72e0025a69bff24de632bd2905f7bf21d00"
-        }, 
         "finalMigrering:lights:flashRedGarage:light:light:command:_literal_const_38": {
             "args": {
-                "data": "sat"
-            }, 
-            "actor_type": "std.Constant", 
-            "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
-        }, 
-        "finalMigrering:lights:flashRedGarage:light:light:command:_literal_const_39": {
-            "args": {
-                "data": "bri"
+                "data": "hue"
             }, 
             "actor_type": "std.Constant", 
             "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
         }, 
         "finalMigrering:lights:flashRedGarage:light:light:command:_literal_const_36": {
             "args": {
-                "data": {}
+                "data": "sat"
             }, 
             "actor_type": "std.Constant", 
             "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
@@ -5192,6 +3363,20 @@
         "finalMigrering:rfid:_literal_const_9": {
             "args": {
                 "data": 1
+            }, 
+            "actor_type": "std.Constant", 
+            "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
+        }, 
+        "finalMigrering:lights:flashRedGarage:light:light:command:_literal_const_34": {
+            "args": {
+                "data": {}
+            }, 
+            "actor_type": "std.Constant", 
+            "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
+        }, 
+        "finalMigrering:lights:flashRedGarage:light:light:command:_literal_const_35": {
+            "args": {
+                "data": "on"
             }, 
             "actor_type": "std.Constant", 
             "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
@@ -5206,13 +3391,6 @@
             "actor_type": "flow.Terminator", 
             "signature": "d020e4a1dc9953df2924eba3ceed61544fff2bd4fab9f602758cce0e8957d522"
         }, 
-        "finalMigrering:lights:flashGreenLego:light:_literal_const_22": {
-            "args": {
-                "data": false
-            }, 
-            "actor_type": "std.Constant", 
-            "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
-        }, 
         "finalMigrering:lights:flashRedGarage:light:light:_literal_const_19": {
             "args": {
                 "data": {}
@@ -5225,23 +3403,9 @@
             "actor_type": "json.SetValue", 
             "signature": "3e76e92b20364f1972aff4cb233188b7e41a65abe7816896cb4d09a37adf137f"
         }, 
-        "finalMigrering:lights:flashGreenGarage:light:light:url:format": {
+        "finalMigrering:lights:flashRedGarage:light:light:url:_literal_const_24": {
             "args": {
-                "fmt": "http://{address}/api/{username}/lights/{lightno}/state"
-            }, 
-            "actor_type": "text.Format", 
-            "signature": "5076805251ae7e423b8d422f3e9cba41d3b986c612c110ffe6c27d377dfaa044"
-        }, 
-        "finalMigrering:lights:flashRedLego:light:light:command:_literal_const_40": {
-            "args": {
-                "data": "hue"
-            }, 
-            "actor_type": "std.Constant", 
-            "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
-        }, 
-        "finalMigrering:lights:flashGreenGarage:_literal_const_35": {
-            "args": {
-                "data": false
+                "data": "address"
             }, 
             "actor_type": "std.Constant", 
             "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
@@ -5251,11 +3415,9 @@
             "actor_type": "flow.Collect", 
             "signature": "e6b5141ac9ddab19cec49d8785f1f3cf4acf763498c721870ff1dcafca119059"
         }, 
-        "finalMigrering:lights:flashGreenGarage:light:light:_literal_const_20": {
+        "finalMigrering:lights:flashRedLego:_literal_const_33": {
             "args": {
-                "data": {
-                    "Content-Type": "application/json"
-                }
+                "data": false
             }, 
             "actor_type": "std.Constant", 
             "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
@@ -5272,17 +3434,10 @@
             "actor_type": "net.HTTPPut", 
             "signature": "d77713364a40a05000ddd140cf8081ccc5a61ab9535b53ac5e100bf21adad46d"
         }, 
-        "finalMigrering:lights:flashGreenLego:light:light:url:_literal_const_28": {
-            "args": {
-                "data": "lightno"
-            }, 
-            "actor_type": "std.Constant", 
-            "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
-        }, 
-        "finalMigrering:lights:flashGreenGarage:light:light:url:set_username": {
+        "finalMigrering:lights:flashRedLego:_void_31": {
             "args": {}, 
-            "actor_type": "json.SetValue", 
-            "signature": "3e76e92b20364f1972aff4cb233188b7e41a65abe7816896cb4d09a37adf137f"
+            "actor_type": "flow.Terminator", 
+            "signature": "d020e4a1dc9953df2924eba3ceed61544fff2bd4fab9f602758cce0e8957d522"
         }, 
         "finalMigrering:lights:flashRedLego:_void_30": {
             "args": {}, 
@@ -5291,12 +3446,12 @@
         }, 
         "finalMigrering:lights:flashRedGarage:light:rgb:_literal_const_41": {
             "args": {
-                "data": 255
+                "data": 0
             }, 
             "actor_type": "std.Constant", 
             "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
         }, 
-        "finalMigrering:lights:flashRedGarage:light:rgb:_literal_const_43": {
+        "finalMigrering:lights:flashRedGarage:light:rgb:_literal_const_40": {
             "args": {
                 "data": 0
             }, 
@@ -5325,95 +3480,19 @@
             "actor_type": "math.RGBtoHSL", 
             "signature": "e231b14f55dbcbc393f0c67c4316b711a8f0fe843b0732f7922752c2cc722892"
         }, 
-        "finalMigrering:lights:_literal_const_46": {
-            "args": {
-                "data": true
-            }, 
-            "actor_type": "std.Constant", 
-            "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
-        }, 
-        "finalMigrering:lights:_literal_const_45": {
-            "args": {
-                "data": true
-            }, 
-            "actor_type": "std.Constant", 
-            "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
-        }, 
-        "finalMigrering:lights:_literal_const_44": {
+        "finalMigrering:lights:_literal_const_42": {
             "args": {
                 "data": "stationGarage"
             }, 
             "actor_type": "std.Constant", 
             "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
         }, 
-        "finalMigrering:lights:flashGreenGarage:light:_literal_const_22": {
+        "finalMigrering:_literal_const_45": {
             "args": {
-                "data": false
+                "data": "testprint.calvin"
             }, 
             "actor_type": "std.Constant", 
             "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
-        }, 
-        "finalMigrering:lights:flashGreenGarage:light:light:command:set_sat": {
-            "args": {}, 
-            "actor_type": "json.SetValue", 
-            "signature": "3e76e92b20364f1972aff4cb233188b7e41a65abe7816896cb4d09a37adf137f"
-        }, 
-        "finalMigrering:lights:flashGreenGarage:light:_literal_const_21": {
-            "args": {
-                "data": true
-            }, 
-            "actor_type": "std.Constant", 
-            "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
-        }, 
-        "finalMigrering:lights:flashGreenLego:light:light:url:_literal_const_25": {
-            "args": {
-                "data": "192.168.0.141"
-            }, 
-            "actor_type": "std.Constant", 
-            "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
-        }, 
-        "finalMigrering:lights:flashGreenLego:light:light:url:_literal_const_24": {
-            "args": {
-                "data": "address"
-            }, 
-            "actor_type": "std.Constant", 
-            "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
-        }, 
-        "finalMigrering:lights:flashGreenLego:light:light:url:_literal_const_27": {
-            "args": {
-                "data": "191db4b57899c277637781315c1f53"
-            }, 
-            "actor_type": "std.Constant", 
-            "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
-        }, 
-        "finalMigrering:lights:flashGreenLego:light:light:url:_literal_const_26": {
-            "args": {
-                "data": "username"
-            }, 
-            "actor_type": "std.Constant", 
-            "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
-        }, 
-        "finalMigrering:lights:flashGreenLego:light:rgb:redgb": {
-            "args": {}, 
-            "actor_type": "math.RGBtoHSL", 
-            "signature": "e231b14f55dbcbc393f0c67c4316b711a8f0fe843b0732f7922752c2cc722892"
-        }, 
-        "finalMigrering:lights:flashGreenLego:light:light:url:_literal_const_23": {
-            "args": {
-                "data": {}
-            }, 
-            "actor_type": "std.Constant", 
-            "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
-        }, 
-        "finalMigrering:lights:flashGreenLego:alternate": {
-            "args": {}, 
-            "actor_type": "flow.Alternate2", 
-            "signature": "fc9bf89634e74f97688f8b44d94a2c1e3f242f0d994c9818a5249d9e7b35921f"
-        }, 
-        "finalMigrering:lights:flashGreenLego:light:light:command:set_hue": {
-            "args": {}, 
-            "actor_type": "json.SetValue", 
-            "signature": "3e76e92b20364f1972aff4cb233188b7e41a65abe7816896cb4d09a37adf137f"
         }, 
         "finalMigrering:lights:flashRedLego:pacer": {
             "args": {
@@ -5436,18 +3515,6 @@
             "actor_type": "std.Constant", 
             "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
         }, 
-        "finalMigrering:_literal_const_49": {
-            "args": {
-                "data": "testprint.calvin"
-            }, 
-            "actor_type": "std.Constant", 
-            "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
-        }, 
-        "finalMigrering:lights:flashGreenLego:light:light:command:set_on": {
-            "args": {}, 
-            "actor_type": "json.SetValue", 
-            "signature": "3e76e92b20364f1972aff4cb233188b7e41a65abe7816896cb4d09a37adf137f"
-        }, 
         "finalMigrering:lights:flashRedGarage:_literal_const_33": {
             "args": {
                 "data": false
@@ -5468,38 +3535,12 @@
             "actor_type": "std.Constant", 
             "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
         }, 
-        "finalMigrering:lights:flashGreenGarage:light:light:url:_literal_const_29": {
+        "finalMigrering:rfid:log1": {
             "args": {
-                "data": 3
+                "loglevel": "INFO"
             }, 
-            "actor_type": "std.Constant", 
-            "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
-        }, 
-        "finalMigrering:lights:flashGreenGarage:light:light:url:_literal_const_28": {
-            "args": {
-                "data": "lightno"
-            }, 
-            "actor_type": "std.Constant", 
-            "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
-        }, 
-        "finalMigrering:lights:selectLego": {
-            "args": {}, 
-            "actor_type": "flow.Select", 
-            "signature": "95f965d1cdf97fc1148c0dd763f15ee2822f8a448b965ca387ca983921dda847"
-        }, 
-        "finalMigrering:lights:flashGreenGarage:light:light:_literal_const_19": {
-            "args": {
-                "data": {}
-            }, 
-            "actor_type": "std.Constant", 
-            "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
-        }, 
-        "finalMigrering:lights:flashGreenGarage:light:light:url:_literal_const_23": {
-            "args": {
-                "data": {}
-            }, 
-            "actor_type": "std.Constant", 
-            "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
+            "actor_type": "io.Log", 
+            "signature": "e73ce6ca0ccc9bce14f8d546e930f53cb69e466eb3325e1cc24d64e8b0bb97b5"
         }, 
         "finalMigrering:lights:flashRedLego:light:light:command:to_str": {
             "args": {}, 
@@ -5511,67 +3552,10 @@
             "actor_type": "flow.Deselect", 
             "signature": "a4f030267249aa9d2498dac1d5f9494b616bfc9d3dfd44760b3b3a9b696ee52b"
         }, 
-        "finalMigrering:lights:flashRedGarage:light:light:command:to_str": {
-            "args": {}, 
-            "actor_type": "json.ToString", 
-            "signature": "723cc86269b427b45cc02541afefefca1c512ea194d2b719cf36a077d4cb25ec"
-        }, 
-        "finalMigrering:lights:flashGreenGarage:light:light:url:_literal_const_27": {
-            "args": {
-                "data": "191db4b57899c277637781315c1f53"
-            }, 
-            "actor_type": "std.Constant", 
-            "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
-        }, 
-        "finalMigrering:lights:flashGreenGarage:light:light:url:_literal_const_26": {
-            "args": {
-                "data": "username"
-            }, 
-            "actor_type": "std.Constant", 
-            "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
-        }, 
-        "finalMigrering:lights:flashGreenGarage:light:light:url:_literal_const_25": {
-            "args": {
-                "data": "192.168.0.141"
-            }, 
-            "actor_type": "std.Constant", 
-            "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
-        }, 
-        "finalMigrering:lights:flashGreenGarage:light:light:url:_literal_const_24": {
-            "args": {
-                "data": "address"
-            }, 
-            "actor_type": "std.Constant", 
-            "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
-        }, 
         "finalMigrering:lights:flashRedGarage:light:light:url:set_username": {
             "args": {}, 
             "actor_type": "json.SetValue", 
             "signature": "3e76e92b20364f1972aff4cb233188b7e41a65abe7816896cb4d09a37adf137f"
-        }, 
-        "finalMigrering:lights:flashGreenGarage:light:light:_void_18": {
-            "args": {}, 
-            "actor_type": "flow.Terminator", 
-            "signature": "d020e4a1dc9953df2924eba3ceed61544fff2bd4fab9f602758cce0e8957d522"
-        }, 
-        "finalMigrering:lights:flashGreenGarage:light:rgb:_literal_const_43": {
-            "args": {
-                "data": 0
-            }, 
-            "actor_type": "std.Constant", 
-            "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
-        }, 
-        "finalMigrering:lights:flashGreenGarage:light:rgb:_literal_const_42": {
-            "args": {
-                "data": 255
-            }, 
-            "actor_type": "std.Constant", 
-            "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
-        }, 
-        "finalMigrering:lights:flashGreenGarage:light:light:_void_17": {
-            "args": {}, 
-            "actor_type": "flow.Terminator", 
-            "signature": "d020e4a1dc9953df2924eba3ceed61544fff2bd4fab9f602758cce0e8957d522"
         }, 
         "finalMigrering:rfid:rfidGarage": {
             "args": {}, 
@@ -5594,11 +3578,6 @@
             "args": {}, 
             "actor_type": "flow.Alternate2", 
             "signature": "fc9bf89634e74f97688f8b44d94a2c1e3f242f0d994c9818a5249d9e7b35921f"
-        }, 
-        "finalMigrering:lights:flashRedLego:light:light:command:set_sat": {
-            "args": {}, 
-            "actor_type": "json.SetValue", 
-            "signature": "3e76e92b20364f1972aff4cb233188b7e41a65abe7816896cb4d09a37adf137f"
         }, 
         "finalMigrering:rfid:_void_12": {
             "args": {}, 
@@ -5636,12 +3615,12 @@
             "actor_type": "std.Constant", 
             "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
         }, 
-        "finalMigrering:lights:flashRedGarage:light:light:url:_literal_const_24": {
+        "finalMigrering:name": {
             "args": {
-                "data": "address"
+                "data": "migrate_room"
             }, 
-            "actor_type": "std.Constant", 
-            "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
+            "actor_type": "flow.Init", 
+            "signature": "3e308e47a996352b4965a7449eeb84f049b9e0931e5011dd923bad6660e6e002"
         }, 
         "finalMigrering:lights:flashRedGarage:light:light:url:_literal_const_27": {
             "args": {
@@ -5678,22 +3657,10 @@
             "actor_type": "std.Constant", 
             "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
         }, 
-        "finalMigrering:lights:flashGreenGarage:_void_34": {
-            "args": {}, 
-            "actor_type": "flow.Terminator", 
-            "signature": "d020e4a1dc9953df2924eba3ceed61544fff2bd4fab9f602758cce0e8957d522"
-        }, 
-        "finalMigrering:lights:flashGreenGarage:light:light:command:set_bri": {
+        "finalMigrering:lights:flashRedLego:light:light:command:set_sat": {
             "args": {}, 
             "actor_type": "json.SetValue", 
             "signature": "3e76e92b20364f1972aff4cb233188b7e41a65abe7816896cb4d09a37adf137f"
-        }, 
-        "finalMigrering:lights:flashGreenLego:light:_literal_const_21": {
-            "args": {
-                "data": true
-            }, 
-            "actor_type": "std.Constant", 
-            "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
         }, 
         "finalMigrering:print": {
             "args": {
@@ -5707,20 +3674,10 @@
             "actor_type": "flow.Terminator", 
             "signature": "d020e4a1dc9953df2924eba3ceed61544fff2bd4fab9f602758cce0e8957d522"
         }, 
-        "finalMigrering:lights:flashGreenLego:light:light:url:set_address": {
-            "args": {}, 
-            "actor_type": "json.SetValue", 
-            "signature": "3e76e92b20364f1972aff4cb233188b7e41a65abe7816896cb4d09a37adf137f"
-        }, 
         "finalMigrering:lights:flashRedLego:light:light:url:set_address": {
             "args": {}, 
             "actor_type": "json.SetValue", 
             "signature": "3e76e92b20364f1972aff4cb233188b7e41a65abe7816896cb4d09a37adf137f"
-        }, 
-        "finalMigrering:lights:flashGreenGarage:alternate": {
-            "args": {}, 
-            "actor_type": "flow.Alternate2", 
-            "signature": "fc9bf89634e74f97688f8b44d94a2c1e3f242f0d994c9818a5249d9e7b35921f"
         }, 
         "finalMigrering:rfid:_literal_const_10": {
             "args": {
@@ -5745,15 +3702,8 @@
         }, 
         "finalMigrering:_void_47": {
             "args": {}, 
-            "actor_type": "flow.Terminator", 
-            "signature": "d020e4a1dc9953df2924eba3ceed61544fff2bd4fab9f602758cce0e8957d522"
-        }, 
-        "finalMigrering:lights:flashGreenLego:light:light:_literal_const_19": {
-            "args": {
-                "data": {}
-            }, 
-            "actor_type": "std.Constant", 
-            "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
+            "actor_type": "flow.Void", 
+            "signature": "3a749ff7e2bc123a6e5870c9a337f72e0025a69bff24de632bd2905f7bf21d00"
         }, 
         "finalMigrering:filereader": {
             "args": {}, 
@@ -5793,26 +3743,16 @@
             "actor_type": "std.Constant", 
             "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
         }, 
-        "finalMigrering:lights:flashRedLego:light:light:url:set_username": {
-            "args": {}, 
-            "actor_type": "json.SetValue", 
-            "signature": "3e76e92b20364f1972aff4cb233188b7e41a65abe7816896cb4d09a37adf137f"
-        }, 
-        "finalMigrering:lights:flashGreenLego:_literal_const_35": {
+        "finalMigrering:lights:flashRedGarage:light:rgb:_literal_const_39": {
             "args": {
-                "data": false
+                "data": 255
             }, 
             "actor_type": "std.Constant", 
             "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
         }, 
-        "finalMigrering:lights:flashGreenLego:_void_34": {
-            "args": {}, 
-            "actor_type": "flow.Terminator", 
-            "signature": "d020e4a1dc9953df2924eba3ceed61544fff2bd4fab9f602758cce0e8957d522"
-        }, 
         "finalMigrering:lights:flashRedGarage:light:light:command:_literal_const_37": {
             "args": {
-                "data": "on"
+                "data": "bri"
             }, 
             "actor_type": "std.Constant", 
             "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
@@ -5821,18 +3761,6 @@
             "args": {}, 
             "actor_type": "net.HTTPPost", 
             "signature": "51594f52b9c2d375fe535740fa4173db2a3d4c5353843753a511af0f0b8da72a"
-        }, 
-        "finalMigrering:lights:flashGreenLego:light:light:_void_18": {
-            "args": {}, 
-            "actor_type": "flow.Terminator", 
-            "signature": "d020e4a1dc9953df2924eba3ceed61544fff2bd4fab9f602758cce0e8957d522"
-        }, 
-        "finalMigrering:lights:flashGreenGarage:pacer": {
-            "args": {
-                "delay": 5.0
-            }, 
-            "actor_type": "std.ClassicDelay", 
-            "signature": "5787838e931900c0dd74d6bee2347038577a2677016ed4992c7653889cf1678f"
         }, 
         "finalMigrering:rfid:deselect": {
             "args": {}, 
@@ -5849,18 +3777,6 @@
         "finalMigrering:lights:flashRedGarage:light:_literal_const_22": {
             "args": {
                 "data": false
-            }, 
-            "actor_type": "std.Constant", 
-            "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
-        }, 
-        "finalMigrering:lights:flashGreenLego:light:light:command:set_bri": {
-            "args": {}, 
-            "actor_type": "json.SetValue", 
-            "signature": "3e76e92b20364f1972aff4cb233188b7e41a65abe7816896cb4d09a37adf137f"
-        }, 
-        "finalMigrering:lights:flashGreenGarage:light:light:command:_literal_const_40": {
-            "args": {
-                "data": "hue"
             }, 
             "actor_type": "std.Constant", 
             "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
