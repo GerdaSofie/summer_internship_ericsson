@@ -251,7 +251,6 @@ component CmdBuilder() on, sat, bri, hue -> string {
 
 component RgbBuilder(red, green, blue) -> saturation, brightness, hue {
 redgb : math.RGBtoHSL()
-
 red > redgb.red
 green > redgb.green
 blue > redgb.blue
