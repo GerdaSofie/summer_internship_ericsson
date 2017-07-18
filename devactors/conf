@@ -1,0 +1,4 @@
+"global": {
+  "mediaplayer_plugin": "pygame_impl",
+  "image_plugin": "opencv_impl"
+},
