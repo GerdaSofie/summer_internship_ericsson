@@ -52,7 +52,7 @@ component CalvinMigrater(control_uri, deploy_info) app_id, key -> done {
 component Migrator() room , app_id -> done {
   migrate: CalvinMigrater(control_uri=CONTROL_URI, deploy_info=
   {
-     "stationGarage":
+     "Forest":
      {
           "requirements":
           {
@@ -60,7 +60,7 @@ component Migrator() room , app_id -> done {
 
           }
       },
-      "stationLego":
+      "Office":
       {
           "requirements":
           {
@@ -75,70 +75,68 @@ component Migrator() room , app_id -> done {
 
   .app_id > migrate.app_id
   .room > compare.a
-  "stationGarage" > compare.b
+  "Forest" > compare.b
   compare.result > log.data
   compare.result > deselect.select
-  "stationGarage" > deselect.case_true
-  "stationLego" > deselect.case_false
+  "Forest" > deselect.case_true
+  "Office" > deselect.case_false
   deselect.data > migrate.key
   migrate.done > .done
 }
 
 component RFIDReader() -> data, room {
-  rfidGarage : sensor.RFIDReader()
-  rfidLego : sensor.RFIDReader()
-  constantGarage : std.Constantify(constant=1)
-  constantLego : std.Constantify(constant=2)
+  rfidoffice : sensor.RFIDReader()
+  rfidforest : sensor.RFIDReader()
+  constantoffice : std.Constantify(constant=1)
+  constantforest : std.Constantify(constant=2)
   joinConstant : flow.Collect()
   compare : std.Compare(rel="=")
   deselect : flow.Deselect()
   joinData : flow.Collect()
   log1 : io.Log(loglevel="INFO")
   log2 : io.Log(loglevel="INFO")
-  selectgarage : flow.Select()
-  selectlego : flow.Select()
-  garagestatus : json.GetValue()
-  legostatus : json.GetValue()
+  selectoffice : flow.Select()
+  selectforest : flow.Select()
+  officestatus : json.GetValue()
+  foreststatus : json.GetValue()
 
-  voidport > rfidGarage.data
-  rfidGarage.data > selectgarage.data
-  rfidGarage.data > garagestatus.container
-  "status" > status.key
-  status.value > garagestatus.key
-  garagestatus.value > selectgarage.select
-  selectgarage.case_true > joinData.token
-  selectgarage.case_true > constantGarage.in
-  selectgarage.case_false > voidport
+  voidport > rfidoffice.data
+  rfidoffice.data > selectoffice.data
+  rfidoffice.data > officestatus.container
+  "status" > officestatus.key
+  officestatus.value > selectoffice.select
+  selectoffice.case_true > joinData.token
+  selectoffice.case_true > constantoffice.in
+  selectoffice.case_false > voidport
 
-  voidport > rfidLego.data
-  rfidLego.data > selectlego.data
-  rfidLego.data > legostatus.container
-  "status" > status.key
-  status.value > legostatus.key
-  legostatus.value > selectlego.select
-  selectlego.case_true > joinData.token
-  selectlego.case_true > constantLego.in
-  selectlego.case_false > voidport
+  voidport > rfidforest.data
+  rfidforest.data > selectforest.data
+  rfidforest.data > foreststatus.container
+  "status" > foreststatus.key
+  foreststatus.value > selectforest.select
+  selectforest.case_true > joinData.token
+  selectforest.case_true > constantforest.in
+  selectforest.case_false > voidport
 
-  constantGarage.out > joinConstant.token
-  constantLego.out > joinConstant.token
+  constantoffice.out > joinConstant.token
+  constantforest.out > joinConstant.token
   joinConstant.token > compare.b
   1 > compare.a
 
   compare.result > deselect.select
-  "stationGarage" > deselect.case_true
-  "stationLego" > deselect.case_false
+  "Forest" > deselect.case_true
+  "Office" > deselect.case_false
   deselect.data > .room
   voidport > log1.data
   joinData.token > .data
   voidport > log2.data
 }
-
 component PeopleCounter() data, room -> output, count{
 people : room.PersonCounter()
 getv : json.GetValue()
 length : text.Length()
 rum : json.GetValue()
+compare1 : std.Compare(rel="=")
 
 .data > getv.container
 
@@ -146,7 +144,10 @@ rum : json.GetValue()
 getv.value > people.id
 .room > people.room
 
-people.status > .output
+people.status > voidport
+"Forest" > compare1.a
+.room > compare1.b
+compare1.result > .output
 people.rooms > rum.container
 .room > rum.key
 rum.value > length.string
@@ -157,7 +158,7 @@ component InOrOut() data, antal -> in, out {
   select : flow.Select()
   getv : json.GetValue()
   compare : std.Compare(rel=">=")
-  init : flow.Init(data="1")
+  init : flow.Init(data="0")
 
   .data > getv.container
   "data" > getv.key
@@ -173,19 +174,14 @@ component InOrOut() data, antal -> in, out {
 component Picture() id, remove -> {
   camera : media.IPCamera()
   render : media.MultipleImageRenderer()
-  getv : json.GetValue()
-  .id > getv.container
-  "lego" > getv.key
 
-   getv.value > camera.trigger
-  camera.status > voidport
+  .id >  camera.trigger
+  .id > render.id
   camera.image > render.image
-  getv.value > render.id
   .remove > render.remove
+  camera.status > voidport
 }
-
-
-component MediaPlayer() dict -> {
+component MediaPlayer() dict-> {
     dict : json.Dict()
     const : std.Constant(data=true)
     mush : text.Mustache(fmt="{{data}}.ogg")
@@ -197,7 +193,20 @@ component MediaPlayer() dict -> {
     mush.text > player.mediafile
     const.token > player.play
 }
+  /*
+component MediaPlayerUt() dict -> {
+  dict : json.Dict()
+  const : std.Constant(data=true)
+  mush : text.Mustache(fmt="{{data}}_ut.ogg")
+  player : media.MediaPlayer2()
 
+  .dict > dict.value
+  "data" > dict.key
+  dict.dict > mush.dict
+  mush.text > player.mediafile
+  const.token > player.play
+}
+  */
 component PhilipsHue(address, username, lightno) on, saturation, brightness, hue -> status {
     url : URLBuilder(address=address, username=username, lightno=lightno)
     command : CmdBuilder()
@@ -212,7 +221,6 @@ component PhilipsHue(address, username, lightno) on, saturation, brightness, hue
     {} > light.params
     command.string > light.data
     {"Content-Type": "application/json"} > light.header
-
     light.status > .status
     light.header > voidport
     light.data > voidport
@@ -257,18 +265,18 @@ component URLBuilder(address, username, lightno) -> url {
     format.text > .url
 }
 
-component RedFlashLight(address, username, lightno, interval) input-> {
-  light : StopLight(address=address, username=username, lightno=lightno,red=255, green=0, blue=0)
+component GreenFlashLight(address, username, lightno, interval) input-> {
+  light : StopLight(address=address, username=username, lightno=lightno,red=0, green=255, blue=0)
   itemize : json.Items()
   pacer : std.ClassicDelay(delay=interval)
   bool : flow.Bool()
-  select : flow.Select()
   alternate : flow.Alternate2()
+  select : flow.Select()
 
   .input > select.select
-  [1,1,1,1] > select.data
-  select.case_false > itemize.list
-  select.case_true > voidport
+  [1,1] > select.data
+  select.case_true > itemize.list
+  select.case_false > voidport
   itemize.item > bool.token
   bool.bool > pacer.token
   pacer.token > alternate.token_1
@@ -304,16 +312,16 @@ component CmdBuilder() on, sat, bri, hue -> string {
     to_str.string > .string
 }
 component Lights() room, status -> {
-  flashRedGarage : RedFlashLight(address="192.168.0.141", username="191db4b57899c277637781315c1f53", lightno=3, interval=1.0)
-  flashRedLego : RedFlashLight(address="192.168.0.141", username="191db4b57899c277637781315c1f53", lightno=2, interval=1.0)
+  flashGreenOffice : GreenFlashLight(address="192.168.0.141", username="191db4b57899c277637781315c1f53", lightno=3, interval=1.0)
+  flashGreenForest : GreenFlashLight(address="192.168.0.141", username="191db4b57899c277637781315c1f53", lightno=2, interval=1.0)
   compare : std.Compare(rel="=")
   selectLight : flow.Select()
   .room > compare.a
-  "stationGarage" > compare.b
+  "Forest" > compare.b
   compare.result > selectLight.select
   .status > selectLight.data
-  selectLight.case_true > flashRedGarage.input
-  selectLight.case_false > flashRedLego.input
+  selectLight.case_false > flashGreenOffice.input
+  selectLight.case_true > flashGreenForest.input
 
 }
 component RgbBuilder(red, green, blue) -> saturation, brightness, hue {
@@ -326,6 +334,7 @@ redgb.hue > .hue
 redgb.saturation > .saturation
 redgb.brightness > .brightness
 }
+
 component PushbulletBuilder() room, count -> json {
     set_room : json.SetValue()
     set_count: json.SetValue()
@@ -353,13 +362,12 @@ name : flow.Init(data=APPNAME)
 filereader: io.FileReader()
 linejoin : text.LineJoin()
 mediaPlayer : MediaPlayer()
+  /*mediaPlayerUt : MediaPlayerUt()*/
 InorOut : InOrOut()
 camera : Picture()
 cmd : PushbulletBuilder()
-fmt : text.Format(fmt="Welcome to {room}! There are {count} people in the room. Follow the channel on Pushbullet for more information. ")
-fmt2 : text.Format(fmt="Welcome to {room}! There is 1 person in the room.")
+fmt : text.Format(fmt="Welcome to the {room}! The amount of people in this room are {count}. Follow the channel on Pushbullet for more information. ")
 bullet : web.Pushbullet(title="Room-Wisperer")
-
 
 # Lights
 lights : Lights()
@@ -368,8 +376,12 @@ deploy: CalvinDeployer(control_uri=CONTROL_URI)
 rfid : RFIDReader()
 migrator : Migrator()
 peopleCounter : PeopleCounter()
-print : io.Log(loglevel="INFO")
+compare : std.Compare(rel="=")
+deselecter : flow.Select()
 print2 : io.Log(loglevel="INFO")
+printpush : io.Log(loglevel="INFO")
+compare : std.Compare(rel="=")
+select : flow.Select()
 
 # deploy
 FILE > filereader.filename
@@ -382,9 +394,13 @@ deploy.app_info > migrator.app_id
 
 rfid.room > peopleCounter.room
 rfid.data > peopleCounter.data
-peopleCounter.count > cmd.count
+peopleCounter.count > compare.a
+0 > compare.b
+compare.result > deselecter.select
+peopleCounter.count > deselecter.data
+deselecter.case_true > voidport
+deselecter.case_false > cmd.count
 rfid.room > cmd.room
-peopleCounter.output > print.data
 peopleCounter.count > print2.data
 rfid.room > migrator.room
 migrator.done > voidport
@@ -392,9 +408,19 @@ migrator.done > voidport
 rfid.room > lights.room
 peopleCounter.output > lights.status
 cmd.json > fmt.dict
-fmt.text > bullet.message
+fmt.text > printpush.data
+
+voidport > bullet.message
 rfid.data > InorOut.data
-InorOut.in > camera.id
+
+rfid.room > compare.a
+"Office" > compare.b
+compare.result > select.select
+InOrOut.in >select.data
+select.case_true > camera.id
+select.case_false > voidport
+
 peopleCounter.count > InorOut.antal
 InorOut.out > camera.remove
+# InorOut.out > mediaPlayerUt.dict
 InorOut.in > mediaPlayer.dict
