@@ -193,7 +193,7 @@ component MediaPlayer() dict-> {
     mush.text > player.mediafile
     const.token > player.play
 }
-  /*
+
 component MediaPlayerUt() dict -> {
   dict : json.Dict()
   const : std.Constant(data=true)
@@ -206,7 +206,7 @@ component MediaPlayerUt() dict -> {
   mush.text > player.mediafile
   const.token > player.play
 }
-  */
+
 component PhilipsHue(address, username, lightno) on, saturation, brightness, hue -> status {
     url : URLBuilder(address=address, username=username, lightno=lightno)
     command : CmdBuilder()
@@ -362,7 +362,7 @@ name : flow.Init(data=APPNAME)
 filereader: io.FileReader()
 linejoin : text.LineJoin()
 mediaPlayer : MediaPlayer()
-  /*mediaPlayerUt : MediaPlayerUt()*/
+mediaPlayerUt : MediaPlayerUt()
 InorOut : InOrOut()
 camera : Picture()
 cmd : PushbulletBuilder()
@@ -422,5 +422,5 @@ select.case_false > voidport
 
 peopleCounter.count > InorOut.antal
 InorOut.out > camera.remove
-# InorOut.out > mediaPlayerUt.dict
+InorOut.out > mediaPlayerUt.dict
 InorOut.in > mediaPlayer.dict
