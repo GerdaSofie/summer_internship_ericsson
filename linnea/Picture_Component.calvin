@@ -1,0 +1,13 @@
+component Picture() id, remove -> {
+  camera : media.IPCamera()
+  render : media.MultipleImageRenderer()
+  getv : json.GetValue()
+  .id > getv.container
+  "lego" > getv.key
+
+   getv.value > camera.trigger
+  camera.status > voidport
+  camera.image > render.image
+  getv.value > render.id
+  .remove > render.remove
+}

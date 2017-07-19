@@ -1,0 +1,17 @@
+component InOrOut() data, antal -> in, out {
+  select : flow.Select()
+  getv : json.GetValue()
+  compare : std.Compare(rel=">=")
+  init : flow.Init(data="1")
+
+  .data > getv.container
+  "data" > getv.key
+
+  .antal > compare.a
+  .antal > init.in
+  init.out > compare.b
+  compare.result > select.select
+  getv.value > select.data
+  select.case_true > .in
+  select.case_false > .out
+}
