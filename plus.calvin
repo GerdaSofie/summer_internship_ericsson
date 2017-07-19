@@ -1,3 +1,15 @@
+component MediaPlayer() dict -> {
+
+    const : std.Constant(data=true)
+    mush : text.Mustache(fmt="{{data}}.ogg")
+    player : media.MediaPlayer2()
+
+    .dict > mush.dict
+    mush.text > player.mediafile
+    const.token > player.play
+
+}
+
 
 component ClearRFID() -> ontrue {
   /* component som rensar ut falsevärdet som kommer när du plockar bort idt från läsaren och skickar ut rfid datan on true. */
@@ -15,7 +27,7 @@ component ClearRFID() -> ontrue {
   select.case_true > .ontrue
 }
 
-component MediaPlayer() dict -> {
+component MediaPlayerUt() dict -> {
   /* component som spelat upp ett välkommst meddelande*/
     const : std.Constant(data=true)
     mush : text.Mustache(fmt="{{data}}.ogg")
@@ -31,7 +43,7 @@ component InOrOut() data, antal -> in, out {
   /* outporten in skickar ut id.t när någon går in, out skickar id.t när någon går ut från rummet*/
   select : flow.Select()
   getv : json.GetValue()
-  compare : std.Compare(op=">=")
+  compare : std.Compare(rel=">=")
   init : flow.Init(data="1")
 
   .antal > compare.a
@@ -60,20 +72,29 @@ component Temperature() trigger -> message {
 temp : Temperature()
 rfid : ClearRFID()
 mp : MediaPlayer()
+
 inorout : InOrOut()
+mput : MediaPlayer()
+
+
 camera : media.IPCamera()
 render : media.MultipleImageRenderer()
 antalmush2 : text.Mustache(fmt="There is {{antal}} person in this room")
 antalmush : text.Mustache(fmt="There are {{antal}} people in this room")
-push : web.Pushbullet(title="Are you keeping up with the garage info?")
+push : web.Pushbullet(title="Welcome to garage, please keep up with the garage info?")
 people : room.PersonCounter()
 switch : flow.Switch()
-compare : std.Compare(op="=")
+compare : std.Compare(rel="=")
 rum : json.GetValue()
 
+
 /*getv : json.GetValue()*/
+/*getid : json.GetValue()*/
+antaldic : json.Dict()
+
 length : text.Length()
 print : io.Print()
+
 
 rfid.ontrue > inorout.data
 
@@ -85,8 +106,9 @@ rum.value > length.string
 
 length.length > compare.a
 1 > compare.b
-antaldic.dict > antalmush.dict
+length.length > antaldic.value
 antaldic.dict > antalmush2.dict
+
 
 compare.result > switch.switch
 antalmush2.text > switch.a
@@ -103,7 +125,7 @@ antaldic.dict > antalmush.dict
 antalmush.text > print.token
 
 inorout.out > render.remove
-  /* inorout.out > här ska ljudet för när man går ut ligga */
+inorout.out > mput.dict
 inorout.in > camera.trigger
 inorout.in > mp.dict
 camera.image > render.image

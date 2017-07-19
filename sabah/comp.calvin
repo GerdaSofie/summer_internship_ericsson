@@ -10,7 +10,6 @@ component MediaPlayer() dict -> {
 
 }
 
-
 component MediaPlayerUt() dict -> {
 
     const : std.Constant(data=true)
@@ -22,7 +21,6 @@ component MediaPlayerUt() dict -> {
     const.token > player.play
 
 }
-
 
 component ClearRFID() -> ontrue {
   /* component som rensar ut falsevärdet som kommer när du plockar bort idt från läsaren och skickar ut rfid datan. */
@@ -66,7 +64,7 @@ rfid.ontrue > getid.container
 "data" > getid.key
 getid.value > people.id
 "garage" > people.room
-people.status > voidport
+
 people.rooms > rum.container
 "garage" > rum.key
 rum.value > length.string
@@ -76,18 +74,18 @@ length.length > init.in
 "antal" > antaldic.key
 
 init.out > compareio.b
-antaldic.dict >  print.token      /* antalmush redigering*/
+antaldic.dict >  print.token
 
 compareio.result > select2.select
 getid.value > select2.data
 select2.case_false > render.remove
-select2.case_false > mput.dict
+
 select2.case_true > camera.trigger
 select2.case_true > mp.dict
+select2.case_false > mput.dict
 camera.status > voidport
 camera.image > render.image
 getid.value > render.id
-
 
 length.length > compare.a
 1 >compare.b
