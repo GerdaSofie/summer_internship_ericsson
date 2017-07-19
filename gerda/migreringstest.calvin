@@ -170,11 +170,14 @@ component InOrOut() data, antal -> in, out {
 component Picture() id, remove -> {
   camera : media.IPCamera()
   render : media.MultipleImageRenderer()
+  getv : json.GetValue()
+  .id > getv.container
+  "lego" > getv.key
 
-  .id > camera.trigger
+   getv.value > camera.trigger
   camera.status > voidport
   camera.image > render.image
-  .id > render.id
+  getv.value > render.id
   .remove > render.remove
 }
 component MediaPlayer() dict -> {
@@ -233,8 +236,9 @@ rfid.room > migrator.room
 migrator.done > voidport
 
 rfid.data > InorOut.data
-InorOut.in > camera.id
+peopleCounter.rooms > camera.id
 peopleCounter.count > InorOut.antal
+
 InorOut.out > camera.remove
 InorOut.in > print2.data
 InorOut.in > mediaPlayer.dict

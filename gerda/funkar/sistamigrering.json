@@ -1,0 +1,4703 @@
+{
+    "connections": {
+        "sistamigrering:peopleCounter:_literal_const_19.token": [
+            "sistamigrering:peopleCounter:getv.key"
+        ], 
+        "sistamigrering:lights:flashGreenOffice:light:light:url:_literal_const_34.token": [
+            "sistamigrering:lights:flashGreenOffice:light:light:url:set_address.value"
+        ], 
+        "sistamigrering:cmd:set_count.container": [
+            "sistamigrering:fmt.dict"
+        ], 
+        "sistamigrering:filereader.out": [
+            "sistamigrering:linejoin.line"
+        ], 
+        "sistamigrering:peopleCounter:people.status": [
+            "sistamigrering:peopleCounter:_void_18.void"
+        ], 
+        "sistamigrering:migrator:_literal_const_6.token": [
+            "sistamigrering:migrator:deselect.case_false"
+        ], 
+        "sistamigrering:rfid:_literal_const_12.token": [
+            "sistamigrering:rfid:foreststatus.key"
+        ], 
+        "sistamigrering:rfid:constantforest.out": [
+            "sistamigrering:rfid:joinConstant.token"
+        ], 
+        "sistamigrering:lights:flashGreenForest:light:light:url:set_lightno.container": [
+            "sistamigrering:lights:flashGreenForest:light:light:url:format.dict"
+        ], 
+        "sistamigrering:peopleCounter:getv.value": [
+            "sistamigrering:peopleCounter:people.id"
+        ], 
+        "sistamigrering:InorOut:init.out": [
+            "sistamigrering:InorOut:compare.b"
+        ], 
+        "sistamigrering:rfid:_literal_const_10.token": [
+            "sistamigrering:rfid:officestatus.key"
+        ], 
+        "sistamigrering:migrator:compare.result": [
+            "sistamigrering:migrator:log.data", 
+            "sistamigrering:migrator:deselect.select"
+        ], 
+        "sistamigrering:migrator:migrate:controlpath.out": [
+            "sistamigrering:migrator:migrate:migrate.control_uri"
+        ], 
+        "sistamigrering:migrator:migrate:migrate.header": [
+            "sistamigrering:migrator:migrate:post.header"
+        ], 
+        "sistamigrering:lights:flashGreenOffice:light:light:light.data": [
+            "sistamigrering:lights:flashGreenOffice:light:light:_void_27.void"
+        ], 
+        "sistamigrering:migrator:migrate:post.status": [
+            "sistamigrering:migrator:migrate:migrate.status"
+        ], 
+        "sistamigrering:lights:flashGreenOffice:light:light:url:format.text": [
+            "sistamigrering:lights:flashGreenOffice:light:light:light.URL"
+        ], 
+        "sistamigrering:lights:flashGreenOffice:light:light:url:_literal_const_36.token": [
+            "sistamigrering:lights:flashGreenOffice:light:light:url:set_username.value"
+        ], 
+        "sistamigrering:camera:select.case_false": [
+            "sistamigrering:camera:_void_22.void"
+        ], 
+        "sistamigrering:lights:flashGreenOffice:light:rgb:redgb.saturation": [
+            "sistamigrering:lights:flashGreenOffice:light:light:command:set_sat.value"
+        ], 
+        "sistamigrering:migrator:_literal_const_4.token": [
+            "sistamigrering:migrator:compare.b"
+        ], 
+        "sistamigrering:lights:flashGreenOffice:light:light:light.status": [
+            "sistamigrering:lights:flashGreenOffice:_void_40.void"
+        ], 
+        "sistamigrering:lights:flashGreenOffice:light:light:url:_literal_const_33.token": [
+            "sistamigrering:lights:flashGreenOffice:light:light:url:set_address.key"
+        ], 
+        "sistamigrering:mediaPlayer:dict.dict": [
+            "sistamigrering:mediaPlayer:mush.dict"
+        ], 
+        "sistamigrering:rfid:selectoffice.case_true": [
+            "sistamigrering:rfid:joinData.token", 
+            "sistamigrering:rfid:constantoffice.in"
+        ], 
+        "sistamigrering:lights:flashGreenOffice:light:light:command:set_hue.container": [
+            "sistamigrering:lights:flashGreenOffice:light:light:command:to_str.data"
+        ], 
+        "sistamigrering:lights:flashGreenOffice:select.case_false": [
+            "sistamigrering:lights:flashGreenOffice:_void_39.void"
+        ], 
+        "sistamigrering:rfid:_void_11.void": [
+            "sistamigrering:rfid:rfidforest.data"
+        ], 
+        "sistamigrering:lights:flashGreenForest:light:rgb:redgb.saturation": [
+            "sistamigrering:lights:flashGreenForest:light:light:command:set_sat.value"
+        ], 
+        "sistamigrering:lights:flashGreenForest:light:light:url:_literal_const_37.token": [
+            "sistamigrering:lights:flashGreenForest:light:light:url:set_lightno.key"
+        ], 
+        "sistamigrering:deploy:deploy.header": [
+            "sistamigrering:deploy:post.header"
+        ], 
+        "sistamigrering:lights:flashGreenOffice:select.case_true": [
+            "sistamigrering:lights:flashGreenOffice:itemize.list"
+        ], 
+        "sistamigrering:lights:flashGreenForest:light:rgb:_literal_const_49.token": [
+            "sistamigrering:lights:flashGreenForest:light:rgb:redgb.red"
+        ], 
+        "sistamigrering:lights:flashGreenForest:light:_literal_const_31.token": [
+            "sistamigrering:lights:flashGreenForest:light:select.case_false"
+        ], 
+        "sistamigrering:lights:flashGreenOffice:light:light:command:set_on.container": [
+            "sistamigrering:lights:flashGreenOffice:light:light:command:set_sat.container"
+        ], 
+        "sistamigrering:camera:_literal_const_24.token": [
+            "sistamigrering:camera:compare.b"
+        ], 
+        "sistamigrering:InorOut:select.case_true": [
+            "sistamigrering:mediaPlayer:dict.value", 
+            "sistamigrering:camera:select.data"
+        ], 
+        "sistamigrering:lights:flashGreenForest:light:light:command:set_bri.container": [
+            "sistamigrering:lights:flashGreenForest:light:light:command:set_hue.container"
+        ], 
+        "sistamigrering:lights:flashGreenOffice:light:light:_literal_const_29.token": [
+            "sistamigrering:lights:flashGreenOffice:light:light:light.header"
+        ], 
+        "sistamigrering:deploy:deploy.data": [
+            "sistamigrering:deploy:post.data"
+        ], 
+        "sistamigrering:lights:flashGreenOffice:light:rgb:_literal_const_49.token": [
+            "sistamigrering:lights:flashGreenOffice:light:rgb:redgb.red"
+        ], 
+        "sistamigrering:lights:compare.result": [
+            "sistamigrering:lights:selectLight.select"
+        ], 
+        "sistamigrering:deselecter.case_false": [
+            "sistamigrering:cmd:set_count.value"
+        ], 
+        "sistamigrering:rfid:_literal_const_14.token": [
+            "sistamigrering:rfid:deselect.case_true"
+        ], 
+        "sistamigrering:lights:selectLight.case_false": [
+            "sistamigrering:lights:flashGreenOffice:select.select"
+        ], 
+        "sistamigrering:lights:flashGreenOffice:light:bool.bool": [
+            "sistamigrering:lights:flashGreenOffice:light:select.select"
+        ], 
+        "sistamigrering:lights:flashGreenForest:light:light:command:set_sat.container": [
+            "sistamigrering:lights:flashGreenForest:light:light:command:set_bri.container"
+        ], 
+        "sistamigrering:deploy:post.status": [
+            "sistamigrering:deploy:deploy.status"
+        ], 
+        "sistamigrering:lights:flashGreenForest:select.case_false": [
+            "sistamigrering:lights:flashGreenForest:_void_39.void"
+        ], 
+        "sistamigrering:fmt.text": [
+            "sistamigrering:printpush.data"
+        ], 
+        "sistamigrering:rfid:officestatus.value": [
+            "sistamigrering:rfid:selectoffice.select"
+        ], 
+        "sistamigrering:lights:flashGreenForest:light:rgb:_literal_const_51.token": [
+            "sistamigrering:lights:flashGreenForest:light:rgb:redgb.blue"
+        ], 
+        "sistamigrering:lights:flashGreenForest:light:select.data": [
+            "sistamigrering:lights:flashGreenForest:light:light:command:set_on.value"
+        ], 
+        "sistamigrering:lights:flashGreenForest:light:light:light.header": [
+            "sistamigrering:lights:flashGreenForest:light:light:_void_26.void"
+        ], 
+        "sistamigrering:camera:camera.status": [
+            "sistamigrering:camera:_void_23.void"
+        ], 
+        "sistamigrering:rfid:selectoffice.case_false": [
+            "sistamigrering:rfid:_void_7.void"
+        ], 
+        "sistamigrering:deploy:deploy.URL": [
+            "sistamigrering:deploy:post.URL"
+        ], 
+        "sistamigrering:lights:flashGreenOffice:light:light:command:_literal_const_47.token": [
+            "sistamigrering:lights:flashGreenOffice:light:light:command:set_hue.key"
+        ], 
+        "sistamigrering:rfid:_void_9.void": [
+            "sistamigrering:rfid:rfidoffice.data"
+        ], 
+        "sistamigrering:migrator:migrate:migrate.data": [
+            "sistamigrering:migrator:migrate:post.data"
+        ], 
+        "sistamigrering:lights:flashGreenForest:light:light:command:_literal_const_44.token": [
+            "sistamigrering:lights:flashGreenForest:light:light:command:set_on.key"
+        ], 
+        "sistamigrering:rfid:_void_17.void": [
+            "sistamigrering:rfid:log2.data"
+        ], 
+        "sistamigrering:migrator:migrate:post.header": [
+            "sistamigrering:migrator:migrate:migrate.header"
+        ], 
+        "sistamigrering:lights:flashGreenOffice:light:light:command:_literal_const_43.token": [
+            "sistamigrering:lights:flashGreenOffice:light:light:command:set_on.container"
+        ], 
+        "sistamigrering:lights:flashGreenOffice:light:light:url:_literal_const_38.token": [
+            "sistamigrering:lights:flashGreenOffice:light:light:url:set_lightno.value"
+        ], 
+        "sistamigrering:lights:flashGreenForest:itemize.item": [
+            "sistamigrering:lights:flashGreenForest:bool.token"
+        ], 
+        "sistamigrering:_void_58.void": [
+            "sistamigrering:name.in"
+        ], 
+        "sistamigrering:lights:flashGreenOffice:light:light:command:_literal_const_45.token": [
+            "sistamigrering:lights:flashGreenOffice:light:light:command:set_sat.key"
+        ], 
+        "sistamigrering:rfid:constantoffice.out": [
+            "sistamigrering:rfid:joinConstant.token"
+        ], 
+        "sistamigrering:cmd:_literal_const_53.token": [
+            "sistamigrering:cmd:set_room.key"
+        ], 
+        "sistamigrering:lights:flashGreenOffice:light:light:command:set_sat.container": [
+            "sistamigrering:lights:flashGreenOffice:light:light:command:set_bri.container"
+        ], 
+        "sistamigrering:migrator:migrate:migrate.done": [
+            "sistamigrering:_void_56.void"
+        ], 
+        "sistamigrering:deploy:post.data": [
+            "sistamigrering:deploy:deploy.data"
+        ], 
+        "sistamigrering:migrator:migrate:migrate.params": [
+            "sistamigrering:migrator:migrate:post.params"
+        ], 
+        "sistamigrering:lights:flashGreenOffice:light:rgb:_literal_const_50.token": [
+            "sistamigrering:lights:flashGreenOffice:light:rgb:redgb.green"
+        ], 
+        "sistamigrering:deploy:post.header": [
+            "sistamigrering:deploy:deploy.header"
+        ], 
+        "sistamigrering:compare.result": [
+            "sistamigrering:deselecter.select"
+        ], 
+        "sistamigrering:lights:flashGreenForest:light:light:command:set_on.container": [
+            "sistamigrering:lights:flashGreenForest:light:light:command:set_sat.container"
+        ], 
+        "sistamigrering:peopleCounter:length.length": [
+            "sistamigrering:compare.a", 
+            "sistamigrering:deselecter.data", 
+            "sistamigrering:print2.data", 
+            "sistamigrering:InorOut:compare.a", 
+            "sistamigrering:InorOut:init.in"
+        ], 
+        "sistamigrering:InorOut:getv.value": [
+            "sistamigrering:InorOut:select.data"
+        ], 
+        "sistamigrering:lights:flashGreenOffice:light:light:url:set_address.container": [
+            "sistamigrering:lights:flashGreenOffice:light:light:url:set_username.container"
+        ], 
+        "sistamigrering:rfid:selectforest.case_true": [
+            "sistamigrering:rfid:joinData.token", 
+            "sistamigrering:rfid:constantforest.in"
+        ], 
+        "sistamigrering:lights:flashGreenForest:light:light:_literal_const_29.token": [
+            "sistamigrering:lights:flashGreenForest:light:light:light.header"
+        ], 
+        "sistamigrering:rfid:joinData.token": [
+            "sistamigrering:InorOut:getv.container", 
+            "sistamigrering:peopleCounter:getv.container"
+        ], 
+        "sistamigrering:lights:flashGreenForest:_literal_const_41.token": [
+            "sistamigrering:lights:flashGreenForest:select.data"
+        ], 
+        "sistamigrering:lights:flashGreenForest:_literal_const_42.token": [
+            "sistamigrering:lights:flashGreenForest:alternate.token_2"
+        ], 
+        "sistamigrering:lights:flashGreenOffice:bool.bool": [
+            "sistamigrering:lights:flashGreenOffice:pacer.token"
+        ], 
+        "sistamigrering:lights:flashGreenForest:select.case_true": [
+            "sistamigrering:lights:flashGreenForest:itemize.list"
+        ], 
+        "sistamigrering:peopleCounter:_literal_const_20.token": [
+            "sistamigrering:peopleCounter:compare.a"
+        ], 
+        "sistamigrering:lights:flashGreenOffice:_literal_const_41.token": [
+            "sistamigrering:lights:flashGreenOffice:select.data"
+        ], 
+        "sistamigrering:lights:flashGreenOffice:_literal_const_42.token": [
+            "sistamigrering:lights:flashGreenOffice:alternate.token_2"
+        ], 
+        "sistamigrering:lights:flashGreenForest:light:light:url:_literal_const_35.token": [
+            "sistamigrering:lights:flashGreenForest:light:light:url:set_username.key"
+        ], 
+        "sistamigrering:lights:flashGreenOffice:light:light:command:_literal_const_44.token": [
+            "sistamigrering:lights:flashGreenOffice:light:light:command:set_on.key"
+        ], 
+        "sistamigrering:lights:flashGreenForest:light:light:url:_literal_const_32.token": [
+            "sistamigrering:lights:flashGreenForest:light:light:url:set_address.container"
+        ], 
+        "sistamigrering:lights:flashGreenForest:light:rgb:redgb.hue": [
+            "sistamigrering:lights:flashGreenForest:light:light:command:set_hue.value"
+        ], 
+        "sistamigrering:deploy:sec_credentials.token": [
+            "sistamigrering:deploy:deploy.sec_credentials"
+        ], 
+        "sistamigrering:lights:flashGreenOffice:pacer.token": [
+            "sistamigrering:lights:flashGreenOffice:alternate.token_1"
+        ], 
+        "sistamigrering:rfid:compare.result": [
+            "sistamigrering:rfid:deselect.select"
+        ], 
+        "sistamigrering:_void_60.void": [
+            "sistamigrering:bullet.message"
+        ], 
+        "sistamigrering:rfid:_literal_const_15.token": [
+            "sistamigrering:rfid:deselect.case_false"
+        ], 
+        "sistamigrering:camera:compare.result": [
+            "sistamigrering:camera:select.select"
+        ], 
+        "sistamigrering:lights:flashGreenOffice:light:_literal_const_30.token": [
+            "sistamigrering:lights:flashGreenOffice:light:select.case_true"
+        ], 
+        "sistamigrering:lights:flashGreenForest:light:light:command:to_str.string": [
+            "sistamigrering:lights:flashGreenForest:light:light:light.data"
+        ], 
+        "sistamigrering:lights:flashGreenForest:alternate.token": [
+            "sistamigrering:lights:flashGreenForest:light:bool.token"
+        ], 
+        "sistamigrering:lights:selectLight.case_true": [
+            "sistamigrering:lights:flashGreenForest:select.select"
+        ], 
+        "sistamigrering:lights:flashGreenForest:light:light:url:format.text": [
+            "sistamigrering:lights:flashGreenForest:light:light:light.URL"
+        ], 
+        "sistamigrering:mediaPlayer:_literal_const_25.token": [
+            "sistamigrering:mediaPlayer:dict.key"
+        ], 
+        "sistamigrering:lights:flashGreenForest:light:light:url:_literal_const_33.token": [
+            "sistamigrering:lights:flashGreenForest:light:light:url:set_address.key"
+        ], 
+        "sistamigrering:InorOut:_literal_const_21.token": [
+            "sistamigrering:InorOut:getv.key"
+        ], 
+        "sistamigrering:lights:flashGreenOffice:light:light:url:set_username.container": [
+            "sistamigrering:lights:flashGreenOffice:light:light:url:set_lightno.container"
+        ], 
+        "sistamigrering:peopleCounter:people.rooms": [
+            "sistamigrering:peopleCounter:rum.container"
+        ], 
+        "sistamigrering:migrator:migrate:post.data": [
+            "sistamigrering:migrator:migrate:_void_2.void"
+        ], 
+        "sistamigrering:rfid:joinConstant.token": [
+            "sistamigrering:rfid:compare.b"
+        ], 
+        "sistamigrering:deploy_info.token": [
+            "sistamigrering:deploy:deploy.deploy_info"
+        ], 
+        "sistamigrering:lights:flashGreenForest:light:light:url:_literal_const_38.token": [
+            "sistamigrering:lights:flashGreenForest:light:light:url:set_lightno.value"
+        ], 
+        "sistamigrering:camera:camera.image": [
+            "sistamigrering:camera:render.image"
+        ], 
+        "sistamigrering:lights:flashGreenOffice:light:light:url:_literal_const_32.token": [
+            "sistamigrering:lights:flashGreenOffice:light:light:url:set_address.container"
+        ], 
+        "sistamigrering:lights:flashGreenForest:light:light:url:set_username.container": [
+            "sistamigrering:lights:flashGreenForest:light:light:url:set_lightno.container"
+        ], 
+        "sistamigrering:lights:flashGreenForest:pacer.token": [
+            "sistamigrering:lights:flashGreenForest:alternate.token_1"
+        ], 
+        "sistamigrering:lights:flashGreenForest:light:light:command:_literal_const_43.token": [
+            "sistamigrering:lights:flashGreenForest:light:light:command:set_on.container"
+        ], 
+        "sistamigrering:lights:flashGreenOffice:light:_literal_const_31.token": [
+            "sistamigrering:lights:flashGreenOffice:light:select.case_false"
+        ], 
+        "sistamigrering:lights:flashGreenForest:light:light:command:_literal_const_47.token": [
+            "sistamigrering:lights:flashGreenForest:light:light:command:set_hue.key"
+        ], 
+        "sistamigrering:peopleCounter:rum.value": [
+            "sistamigrering:peopleCounter:length.string"
+        ], 
+        "sistamigrering:migrator:migrate:_void_3.void": [
+            "sistamigrering:migrator:migrate:controlpath.in"
+        ], 
+        "sistamigrering:lights:flashGreenOffice:light:light:command:set_bri.container": [
+            "sistamigrering:lights:flashGreenOffice:light:light:command:set_hue.container"
+        ], 
+        "sistamigrering:lights:flashGreenForest:light:bool.bool": [
+            "sistamigrering:lights:flashGreenForest:light:select.select"
+        ], 
+        "sistamigrering:lights:flashGreenForest:light:light:url:set_address.container": [
+            "sistamigrering:lights:flashGreenForest:light:light:url:set_username.container"
+        ], 
+        "sistamigrering:migrator:deselect.data": [
+            "sistamigrering:migrator:migrate:migrate.key"
+        ], 
+        "sistamigrering:lights:flashGreenOffice:light:rgb:redgb.hue": [
+            "sistamigrering:lights:flashGreenOffice:light:light:command:set_hue.value"
+        ], 
+        "sistamigrering:lights:flashGreenOffice:light:light:_literal_const_28.token": [
+            "sistamigrering:lights:flashGreenOffice:light:light:light.params"
+        ], 
+        "sistamigrering:InorOut:select.case_false": [
+            "sistamigrering:camera:render.remove"
+        ], 
+        "sistamigrering:mediaPlayer:mush.text": [
+            "sistamigrering:mediaPlayer:player.mediafile"
+        ], 
+        "sistamigrering:rfid:rfidforest.data": [
+            "sistamigrering:rfid:selectforest.data", 
+            "sistamigrering:rfid:foreststatus.container"
+        ], 
+        "sistamigrering:linejoin.text": [
+            "sistamigrering:deploy:deploy.script"
+        ], 
+        "sistamigrering:deploy:controlpath.token": [
+            "sistamigrering:deploy:_void_1.void", 
+            "sistamigrering:deploy:deploy.control_uri"
+        ], 
+        "sistamigrering:lights:flashGreenForest:light:light:command:set_hue.container": [
+            "sistamigrering:lights:flashGreenForest:light:light:command:to_str.data"
+        ], 
+        "sistamigrering:lights:flashGreenForest:light:light:light.status": [
+            "sistamigrering:lights:flashGreenForest:_void_40.void"
+        ], 
+        "sistamigrering:rfid:rfidoffice.data": [
+            "sistamigrering:rfid:selectoffice.data", 
+            "sistamigrering:rfid:officestatus.container"
+        ], 
+        "sistamigrering:lights:flashGreenOffice:alternate.token": [
+            "sistamigrering:lights:flashGreenOffice:light:bool.token"
+        ], 
+        "sistamigrering:cmd:_literal_const_54.token": [
+            "sistamigrering:cmd:set_count.key"
+        ], 
+        "sistamigrering:migrator:migrate:migrate.URL": [
+            "sistamigrering:migrator:migrate:post.URL"
+        ], 
+        "sistamigrering:lights:flashGreenForest:light:rgb:_literal_const_50.token": [
+            "sistamigrering:lights:flashGreenForest:light:rgb:redgb.green"
+        ], 
+        "sistamigrering:lights:flashGreenOffice:itemize.item": [
+            "sistamigrering:lights:flashGreenOffice:bool.token"
+        ], 
+        "sistamigrering:rfid:_void_16.void": [
+            "sistamigrering:rfid:log1.data"
+        ], 
+        "sistamigrering:cmd:_literal_const_52.token": [
+            "sistamigrering:cmd:set_room.container"
+        ], 
+        "sistamigrering:lights:flashGreenForest:light:light:url:_literal_const_36.token": [
+            "sistamigrering:lights:flashGreenForest:light:light:url:set_username.value"
+        ], 
+        "sistamigrering:peopleCounter:compare.result": [
+            "sistamigrering:lights:selectLight.data"
+        ], 
+        "sistamigrering:lights:flashGreenOffice:light:light:command:to_str.string": [
+            "sistamigrering:lights:flashGreenOffice:light:light:light.data"
+        ], 
+        "sistamigrering:lights:flashGreenForest:light:_literal_const_30.token": [
+            "sistamigrering:lights:flashGreenForest:light:select.case_true"
+        ], 
+        "sistamigrering:lights:_literal_const_48.token": [
+            "sistamigrering:lights:compare.b"
+        ], 
+        "sistamigrering:InorOut:compare.result": [
+            "sistamigrering:InorOut:select.select"
+        ], 
+        "sistamigrering:_literal_const_57.token": [
+            "sistamigrering:filereader.filename"
+        ], 
+        "sistamigrering:lights:flashGreenOffice:light:light:command:_literal_const_46.token": [
+            "sistamigrering:lights:flashGreenOffice:light:light:command:set_bri.key"
+        ], 
+        "sistamigrering:lights:flashGreenForest:light:light:command:_literal_const_46.token": [
+            "sistamigrering:lights:flashGreenForest:light:light:command:set_bri.key"
+        ], 
+        "sistamigrering:lights:flashGreenForest:light:light:_literal_const_28.token": [
+            "sistamigrering:lights:flashGreenForest:light:light:light.params"
+        ], 
+        "sistamigrering:rfid:deselect.data": [
+            "sistamigrering:camera:compare.a", 
+            "sistamigrering:cmd:set_room.value", 
+            "sistamigrering:lights:compare.a", 
+            "sistamigrering:migrator:compare.a", 
+            "sistamigrering:peopleCounter:people.room", 
+            "sistamigrering:peopleCounter:compare.b", 
+            "sistamigrering:peopleCounter:rum.key"
+        ], 
+        "sistamigrering:deploy:deploy.app_info": [
+            "sistamigrering:migrator:migrate:migrate.app_id"
+        ], 
+        "sistamigrering:lights:flashGreenForest:light:light:command:_literal_const_45.token": [
+            "sistamigrering:lights:flashGreenForest:light:light:command:set_sat.key"
+        ], 
+        "sistamigrering:lights:flashGreenOffice:light:light:url:set_lightno.container": [
+            "sistamigrering:lights:flashGreenOffice:light:light:url:format.dict"
+        ], 
+        "sistamigrering:name.out": [
+            "sistamigrering:deploy:deploy.name"
+        ], 
+        "sistamigrering:lights:flashGreenOffice:light:light:light.header": [
+            "sistamigrering:lights:flashGreenOffice:light:light:_void_26.void"
+        ], 
+        "sistamigrering:lights:flashGreenOffice:light:rgb:_literal_const_51.token": [
+            "sistamigrering:lights:flashGreenOffice:light:rgb:redgb.blue"
+        ], 
+        "sistamigrering:lights:flashGreenForest:light:light:light.data": [
+            "sistamigrering:lights:flashGreenForest:light:light:_void_27.void"
+        ], 
+        "sistamigrering:camera:select.case_true": [
+            "sistamigrering:camera:camera.trigger", 
+            "sistamigrering:camera:render.id"
+        ], 
+        "sistamigrering:lights:flashGreenOffice:light:light:url:_literal_const_35.token": [
+            "sistamigrering:lights:flashGreenOffice:light:light:url:set_username.key"
+        ], 
+        "sistamigrering:rfid:_literal_const_13.token": [
+            "sistamigrering:rfid:compare.a"
+        ], 
+        "sistamigrering:_literal_const_59.token": [
+            "sistamigrering:compare.b"
+        ], 
+        "sistamigrering:deploy:deploy.params": [
+            "sistamigrering:deploy:post.params"
+        ], 
+        "sistamigrering:cmd:set_room.container": [
+            "sistamigrering:cmd:set_count.container"
+        ], 
+        "sistamigrering:mediaPlayer:const.token": [
+            "sistamigrering:mediaPlayer:player.play"
+        ], 
+        "sistamigrering:lights:flashGreenOffice:light:select.data": [
+            "sistamigrering:lights:flashGreenOffice:light:light:command:set_on.value"
+        ], 
+        "sistamigrering:lights:flashGreenForest:bool.bool": [
+            "sistamigrering:lights:flashGreenForest:pacer.token"
+        ], 
+        "sistamigrering:lights:flashGreenOffice:light:rgb:redgb.brightness": [
+            "sistamigrering:lights:flashGreenOffice:light:light:command:set_bri.value"
+        ], 
+        "sistamigrering:rfid:foreststatus.value": [
+            "sistamigrering:rfid:selectforest.select"
+        ], 
+        "sistamigrering:rfid:selectforest.case_false": [
+            "sistamigrering:rfid:_void_8.void"
+        ], 
+        "sistamigrering:deselecter.case_true": [
+            "sistamigrering:_void_55.void"
+        ], 
+        "sistamigrering:migrator:_literal_const_5.token": [
+            "sistamigrering:migrator:deselect.case_true"
+        ], 
+        "sistamigrering:lights:flashGreenForest:light:rgb:redgb.brightness": [
+            "sistamigrering:lights:flashGreenForest:light:light:command:set_bri.value"
+        ], 
+        "sistamigrering:lights:flashGreenOffice:light:light:url:_literal_const_37.token": [
+            "sistamigrering:lights:flashGreenOffice:light:light:url:set_lightno.key"
+        ], 
+        "sistamigrering:lights:flashGreenForest:light:light:url:_literal_const_34.token": [
+            "sistamigrering:lights:flashGreenForest:light:light:url:set_address.value"
+        ]
+    }, 
+    "port_properties": {
+        "sistamigrering:InorOut:_literal_const_21": [
+            {
+                "direction": "out", 
+                "port": "token", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "sistamigrering:lights:flashGreenOffice:light:light:url:set_lightno": [
+            {
+                "direction": "in", 
+                "port": "container", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "key", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "value", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "container", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "sistamigrering:mediaPlayer:const": [
+            {
+                "direction": "out", 
+                "port": "token", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "sistamigrering:cmd:set_count": [
+            {
+                "direction": "in", 
+                "port": "container", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "value", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "key", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "container", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "sistamigrering:rfid:foreststatus": [
+            {
+                "direction": "in", 
+                "port": "container", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "key", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "value", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "sistamigrering:lights:flashGreenForest:alternate": [
+            {
+                "direction": "in", 
+                "port": "token_1", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "token_2", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "token", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "sistamigrering:deselecter": [
+            {
+                "direction": "in", 
+                "port": "data", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "select", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "case_true", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "case_false", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "sistamigrering:name": [
+            {
+                "direction": "in", 
+                "port": "in", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "out", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "sistamigrering:lights:flashGreenOffice:light:light:command:_literal_const_44": [
+            {
+                "direction": "out", 
+                "port": "token", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "sistamigrering:lights:flashGreenOffice:light:light:command:_literal_const_45": [
+            {
+                "direction": "out", 
+                "port": "token", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "sistamigrering:cmd:_literal_const_54": [
+            {
+                "direction": "out", 
+                "port": "token", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "sistamigrering:lights:flashGreenOffice:light:light:command:_literal_const_47": [
+            {
+                "direction": "out", 
+                "port": "token", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "sistamigrering:cmd:_literal_const_52": [
+            {
+                "direction": "out", 
+                "port": "token", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "sistamigrering:mediaPlayer:_literal_const_25": [
+            {
+                "direction": "out", 
+                "port": "token", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "sistamigrering:lights:flashGreenOffice:light:light:command:_literal_const_43": [
+            {
+                "direction": "out", 
+                "port": "token", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "sistamigrering:lights:flashGreenForest:light:light:light": [
+            {
+                "direction": "in", 
+                "port": "URL", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "header", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "params", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "data", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "status", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "header", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "data", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "sistamigrering:rfid:constantoffice": [
+            {
+                "direction": "in", 
+                "port": "in", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "out", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "sistamigrering:lights:flashGreenOffice:light:light:url:_literal_const_34": [
+            {
+                "direction": "out", 
+                "port": "token", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "sistamigrering:linejoin": [
+            {
+                "direction": "in", 
+                "port": "line", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "text", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "sistamigrering:lights:flashGreenForest:light:light:command:to_str": [
+            {
+                "direction": "in", 
+                "port": "data", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "string", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "sistamigrering:rfid:_void_16": [
+            {
+                "direction": "out", 
+                "port": "void", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "sistamigrering:rfid:_void_17": [
+            {
+                "direction": "out", 
+                "port": "void", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "sistamigrering:migrator:_literal_const_4": [
+            {
+                "direction": "out", 
+                "port": "token", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "sistamigrering:rfid:officestatus": [
+            {
+                "direction": "in", 
+                "port": "container", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "key", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "value", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "sistamigrering:migrator:_literal_const_6": [
+            {
+                "direction": "out", 
+                "port": "token", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "sistamigrering:bullet": [
+            {
+                "direction": "in", 
+                "port": "message", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "sistamigrering:InorOut:getv": [
+            {
+                "direction": "in", 
+                "port": "container", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "key", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "value", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "sistamigrering:filereader": [
+            {
+                "direction": "in", 
+                "port": "filename", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "out", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "sistamigrering:lights:flashGreenForest:_void_39": [
+            {
+                "direction": "in", 
+                "port": "void", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "sistamigrering:deploy:sec_credentials": [
+            {
+                "direction": "out", 
+                "port": "token", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "sistamigrering:lights:flashGreenOffice:light:select": [
+            {
+                "direction": "in", 
+                "port": "case_true", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "select", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "case_false", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "data", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "sistamigrering:lights:flashGreenOffice:light:light:command:set_sat": [
+            {
+                "direction": "in", 
+                "port": "container", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "key", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "value", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "container", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "sistamigrering:lights:flashGreenForest:light:light:command:set_hue": [
+            {
+                "direction": "in", 
+                "port": "container", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "key", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "value", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "container", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "sistamigrering:deploy_info": [
+            {
+                "direction": "out", 
+                "port": "token", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "sistamigrering:peopleCounter:rum": [
+            {
+                "direction": "in", 
+                "port": "container", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "key", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "value", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "sistamigrering:lights:flashGreenForest:light:rgb:_literal_const_49": [
+            {
+                "direction": "out", 
+                "port": "token", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "sistamigrering:lights:_literal_const_48": [
+            {
+                "direction": "out", 
+                "port": "token", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "sistamigrering:deploy:deploy": [
+            {
+                "direction": "in", 
+                "port": "status", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "deploy_info", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "name", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "sec_credentials", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "script", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "header", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "control_uri", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "data", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "app_info", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "URL", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "params", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "data", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "header", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "sistamigrering:migrator:log": [
+            {
+                "direction": "in", 
+                "port": "data", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "sistamigrering:_literal_const_57": [
+            {
+                "direction": "out", 
+                "port": "token", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "sistamigrering:rfid:deselect": [
+            {
+                "direction": "in", 
+                "port": "case_true", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "select", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "case_false", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "data", 
+                "properties": {
+                    "nbr_peers": 7
+                }
+            }
+        ], 
+        "sistamigrering:lights:flashGreenOffice:light:rgb:_literal_const_51": [
+            {
+                "direction": "out", 
+                "port": "token", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "sistamigrering:lights:flashGreenOffice:light:rgb:_literal_const_50": [
+            {
+                "direction": "out", 
+                "port": "token", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "sistamigrering:lights:flashGreenForest:pacer": [
+            {
+                "direction": "in", 
+                "port": "token", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "token", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "sistamigrering:lights:flashGreenOffice:light:light:command:_literal_const_46": [
+            {
+                "direction": "out", 
+                "port": "token", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "sistamigrering:lights:flashGreenOffice:light:bool": [
+            {
+                "direction": "in", 
+                "port": "token", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "bool", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "sistamigrering:InorOut:init": [
+            {
+                "direction": "in", 
+                "port": "in", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "out", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "sistamigrering:cmd:_literal_const_53": [
+            {
+                "direction": "out", 
+                "port": "token", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "sistamigrering:lights:flashGreenForest:light:light:url:set_address": [
+            {
+                "direction": "in", 
+                "port": "container", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "key", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "value", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "container", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "sistamigrering:lights:flashGreenOffice:light:light:light": [
+            {
+                "direction": "in", 
+                "port": "URL", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "header", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "params", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "data", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "status", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "header", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "data", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "sistamigrering:rfid:_literal_const_15": [
+            {
+                "direction": "out", 
+                "port": "token", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "sistamigrering:InorOut:select": [
+            {
+                "direction": "in", 
+                "port": "data", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "select", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "case_true", 
+                "properties": {
+                    "nbr_peers": 2
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "case_false", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "sistamigrering:_literal_const_59": [
+            {
+                "direction": "out", 
+                "port": "token", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "sistamigrering:lights:flashGreenForest:light:rgb:redgb": [
+            {
+                "direction": "in", 
+                "port": "blue", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "green", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "red", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "hue", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "saturation", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "brightness", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "sistamigrering:lights:flashGreenForest:light:light:command:set_sat": [
+            {
+                "direction": "in", 
+                "port": "container", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "key", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "value", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "container", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "sistamigrering:rfid:joinData": [
+            {
+                "direction": "in", 
+                "port": "token", 
+                "properties": {
+                    "nbr_peers": 2, 
+                    "routing": "collect-unordered"
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "token", 
+                "properties": {
+                    "nbr_peers": 2
+                }
+            }
+        ], 
+        "sistamigrering:lights:flashGreenOffice:light:light:command:to_str": [
+            {
+                "direction": "in", 
+                "port": "data", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "string", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "sistamigrering:lights:flashGreenForest:light:light:_literal_const_28": [
+            {
+                "direction": "out", 
+                "port": "token", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "sistamigrering:lights:flashGreenForest:light:light:_literal_const_29": [
+            {
+                "direction": "out", 
+                "port": "token", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "sistamigrering:migrator:migrate:post": [
+            {
+                "direction": "in", 
+                "port": "URL", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "header", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "params", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "data", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "status", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "header", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "data", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "sistamigrering:rfid:constantforest": [
+            {
+                "direction": "in", 
+                "port": "in", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "out", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "sistamigrering:lights:flashGreenOffice:light:light:url:_literal_const_35": [
+            {
+                "direction": "out", 
+                "port": "token", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "sistamigrering:lights:flashGreenOffice:light:light:command:set_bri": [
+            {
+                "direction": "in", 
+                "port": "container", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "key", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "value", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "container", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "sistamigrering:lights:flashGreenOffice:light:light:url:_literal_const_37": [
+            {
+                "direction": "out", 
+                "port": "token", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "sistamigrering:lights:flashGreenOffice:light:light:url:_literal_const_36": [
+            {
+                "direction": "out", 
+                "port": "token", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "sistamigrering:rfid:selectforest": [
+            {
+                "direction": "in", 
+                "port": "data", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "select", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "case_true", 
+                "properties": {
+                    "nbr_peers": 2
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "case_false", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "sistamigrering:rfid:_void_11": [
+            {
+                "direction": "out", 
+                "port": "void", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "sistamigrering:lights:flashGreenOffice:light:light:url:_literal_const_33": [
+            {
+                "direction": "out", 
+                "port": "token", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "sistamigrering:lights:flashGreenOffice:light:light:url:_literal_const_32": [
+            {
+                "direction": "out", 
+                "port": "token", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "sistamigrering:lights:flashGreenForest:select": [
+            {
+                "direction": "in", 
+                "port": "data", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "select", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "case_true", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "case_false", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "sistamigrering:lights:flashGreenOffice:light:light:url:_literal_const_38": [
+            {
+                "direction": "out", 
+                "port": "token", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "sistamigrering:lights:compare": [
+            {
+                "direction": "in", 
+                "port": "a", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "b", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "result", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "sistamigrering:fmt": [
+            {
+                "direction": "in", 
+                "port": "dict", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "text", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "sistamigrering:migrator:migrate:_void_3": [
+            {
+                "direction": "out", 
+                "port": "void", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "sistamigrering:migrator:migrate:_void_2": [
+            {
+                "direction": "in", 
+                "port": "void", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "sistamigrering:lights:flashGreenForest:itemize": [
+            {
+                "direction": "in", 
+                "port": "list", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "item", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "sistamigrering:rfid:joinConstant": [
+            {
+                "direction": "in", 
+                "port": "token", 
+                "properties": {
+                    "nbr_peers": 2, 
+                    "routing": "collect-unordered"
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "token", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "sistamigrering:camera:camera": [
+            {
+                "direction": "in", 
+                "port": "trigger", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "status", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "image", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "sistamigrering:lights:flashGreenForest:light:light:command:_literal_const_43": [
+            {
+                "direction": "out", 
+                "port": "token", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "sistamigrering:cmd:set_room": [
+            {
+                "direction": "in", 
+                "port": "container", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "value", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "key", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "container", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "sistamigrering:lights:flashGreenForest:_literal_const_42": [
+            {
+                "direction": "out", 
+                "port": "token", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "sistamigrering:rfid:rfidoffice": [
+            {
+                "direction": "in", 
+                "port": "data", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "data", 
+                "properties": {
+                    "nbr_peers": 2
+                }
+            }
+        ], 
+        "sistamigrering:lights:flashGreenForest:_literal_const_41": [
+            {
+                "direction": "out", 
+                "port": "token", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "sistamigrering:_void_58": [
+            {
+                "direction": "out", 
+                "port": "void", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "sistamigrering:camera:_void_23": [
+            {
+                "direction": "in", 
+                "port": "void", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "sistamigrering:camera:_void_22": [
+            {
+                "direction": "in", 
+                "port": "void", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "sistamigrering:_void_55": [
+            {
+                "direction": "in", 
+                "port": "void", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "sistamigrering:_void_56": [
+            {
+                "direction": "in", 
+                "port": "void", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "sistamigrering:InorOut:compare": [
+            {
+                "direction": "in", 
+                "port": "a", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "b", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "result", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "sistamigrering:peopleCounter:_void_18": [
+            {
+                "direction": "in", 
+                "port": "void", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "sistamigrering:migrator:deselect": [
+            {
+                "direction": "in", 
+                "port": "case_true", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "select", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "case_false", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "data", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "sistamigrering:lights:flashGreenForest:light:light:url:format": [
+            {
+                "direction": "in", 
+                "port": "dict", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "text", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "sistamigrering:mediaPlayer:player": [
+            {
+                "direction": "in", 
+                "port": "play", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "mediafile", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "sistamigrering:print2": [
+            {
+                "direction": "in", 
+                "port": "data", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "sistamigrering:camera:select": [
+            {
+                "direction": "in", 
+                "port": "data", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "select", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "case_true", 
+                "properties": {
+                    "nbr_peers": 2
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "case_false", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "sistamigrering:peopleCounter:people": [
+            {
+                "direction": "in", 
+                "port": "room", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "id", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "status", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "rooms", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "sistamigrering:migrator:migrate:migrate": [
+            {
+                "direction": "in", 
+                "port": "status", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "header", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "control_uri", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "app_id", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "key", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "URL", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "params", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "done", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "data", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "header", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "sistamigrering:lights:flashGreenForest:_void_40": [
+            {
+                "direction": "in", 
+                "port": "void", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "sistamigrering:rfid:rfidforest": [
+            {
+                "direction": "in", 
+                "port": "data", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "data", 
+                "properties": {
+                    "nbr_peers": 2
+                }
+            }
+        ], 
+        "sistamigrering:deploy:post": [
+            {
+                "direction": "in", 
+                "port": "URL", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "header", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "params", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "data", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "status", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "header", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "data", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "sistamigrering:lights:flashGreenOffice:light:_literal_const_30": [
+            {
+                "direction": "out", 
+                "port": "token", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "sistamigrering:_void_60": [
+            {
+                "direction": "out", 
+                "port": "void", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "sistamigrering:lights:flashGreenOffice:_void_40": [
+            {
+                "direction": "in", 
+                "port": "void", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "sistamigrering:migrator:_literal_const_5": [
+            {
+                "direction": "out", 
+                "port": "token", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "sistamigrering:lights:flashGreenForest:light:light:url:_literal_const_32": [
+            {
+                "direction": "out", 
+                "port": "token", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "sistamigrering:lights:flashGreenForest:light:light:url:_literal_const_33": [
+            {
+                "direction": "out", 
+                "port": "token", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "sistamigrering:lights:flashGreenForest:light:light:url:_literal_const_36": [
+            {
+                "direction": "out", 
+                "port": "token", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "sistamigrering:lights:flashGreenOffice:itemize": [
+            {
+                "direction": "in", 
+                "port": "list", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "item", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "sistamigrering:lights:flashGreenForest:light:light:url:_literal_const_34": [
+            {
+                "direction": "out", 
+                "port": "token", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "sistamigrering:lights:flashGreenForest:light:light:url:_literal_const_35": [
+            {
+                "direction": "out", 
+                "port": "token", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "sistamigrering:lights:flashGreenForest:light:light:url:_literal_const_38": [
+            {
+                "direction": "out", 
+                "port": "token", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "sistamigrering:rfid:log1": [
+            {
+                "direction": "in", 
+                "port": "data", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "sistamigrering:compare": [
+            {
+                "direction": "in", 
+                "port": "a", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "b", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "result", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "sistamigrering:lights:flashGreenOffice:light:light:command:set_on": [
+            {
+                "direction": "in", 
+                "port": "container", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "key", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "value", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "container", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "sistamigrering:lights:flashGreenForest:light:light:url:_literal_const_37": [
+            {
+                "direction": "out", 
+                "port": "token", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "sistamigrering:lights:flashGreenOffice:light:_literal_const_31": [
+            {
+                "direction": "out", 
+                "port": "token", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "sistamigrering:lights:flashGreenOffice:light:light:url:format": [
+            {
+                "direction": "in", 
+                "port": "dict", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "text", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "sistamigrering:lights:flashGreenForest:light:select": [
+            {
+                "direction": "in", 
+                "port": "case_true", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "select", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "case_false", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "data", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "sistamigrering:migrator:compare": [
+            {
+                "direction": "in", 
+                "port": "a", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "b", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "result", 
+                "properties": {
+                    "nbr_peers": 2
+                }
+            }
+        ], 
+        "sistamigrering:rfid:selectoffice": [
+            {
+                "direction": "in", 
+                "port": "data", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "select", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "case_true", 
+                "properties": {
+                    "nbr_peers": 2
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "case_false", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "sistamigrering:rfid:compare": [
+            {
+                "direction": "in", 
+                "port": "a", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "b", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "result", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "sistamigrering:lights:flashGreenOffice:light:light:url:set_username": [
+            {
+                "direction": "in", 
+                "port": "container", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "key", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "value", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "container", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "sistamigrering:lights:flashGreenOffice:light:light:_void_27": [
+            {
+                "direction": "in", 
+                "port": "void", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "sistamigrering:lights:flashGreenOffice:light:light:_void_26": [
+            {
+                "direction": "in", 
+                "port": "void", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "sistamigrering:lights:flashGreenOffice:select": [
+            {
+                "direction": "in", 
+                "port": "data", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "select", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "case_true", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "case_false", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "sistamigrering:lights:flashGreenForest:light:light:command:set_bri": [
+            {
+                "direction": "in", 
+                "port": "container", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "key", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "value", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "container", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "sistamigrering:lights:flashGreenForest:light:light:_void_26": [
+            {
+                "direction": "in", 
+                "port": "void", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "sistamigrering:lights:flashGreenForest:light:light:_void_27": [
+            {
+                "direction": "in", 
+                "port": "void", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "sistamigrering:lights:flashGreenOffice:alternate": [
+            {
+                "direction": "in", 
+                "port": "token_1", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "token_2", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "token", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "sistamigrering:lights:flashGreenForest:light:light:url:set_username": [
+            {
+                "direction": "in", 
+                "port": "container", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "key", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "value", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "container", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "sistamigrering:mediaPlayer:mush": [
+            {
+                "direction": "in", 
+                "port": "dict", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "text", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "sistamigrering:rfid:_void_7": [
+            {
+                "direction": "in", 
+                "port": "void", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "sistamigrering:lights:flashGreenForest:light:rgb:_literal_const_50": [
+            {
+                "direction": "out", 
+                "port": "token", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "sistamigrering:lights:flashGreenForest:light:rgb:_literal_const_51": [
+            {
+                "direction": "out", 
+                "port": "token", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "sistamigrering:rfid:_void_8": [
+            {
+                "direction": "in", 
+                "port": "void", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "sistamigrering:rfid:_void_9": [
+            {
+                "direction": "out", 
+                "port": "void", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "sistamigrering:lights:flashGreenOffice:_literal_const_41": [
+            {
+                "direction": "out", 
+                "port": "token", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "sistamigrering:lights:flashGreenOffice:_literal_const_42": [
+            {
+                "direction": "out", 
+                "port": "token", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "sistamigrering:camera:render": [
+            {
+                "direction": "in", 
+                "port": "image", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "id", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "remove", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "sistamigrering:lights:flashGreenOffice:light:rgb:_literal_const_49": [
+            {
+                "direction": "out", 
+                "port": "token", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "sistamigrering:lights:flashGreenForest:light:light:command:set_on": [
+            {
+                "direction": "in", 
+                "port": "container", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "key", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "value", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "container", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "sistamigrering:lights:flashGreenOffice:light:rgb:redgb": [
+            {
+                "direction": "in", 
+                "port": "blue", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "green", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "red", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "hue", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "saturation", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "brightness", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "sistamigrering:peopleCounter:getv": [
+            {
+                "direction": "in", 
+                "port": "container", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "key", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "value", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "sistamigrering:peopleCounter:_literal_const_19": [
+            {
+                "direction": "out", 
+                "port": "token", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "sistamigrering:peopleCounter:compare": [
+            {
+                "direction": "in", 
+                "port": "a", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "b", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "result", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "sistamigrering:lights:flashGreenOffice:pacer": [
+            {
+                "direction": "in", 
+                "port": "token", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "token", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "sistamigrering:lights:flashGreenForest:light:light:url:set_lightno": [
+            {
+                "direction": "in", 
+                "port": "container", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "key", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "value", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "container", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "sistamigrering:rfid:_literal_const_14": [
+            {
+                "direction": "out", 
+                "port": "token", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "sistamigrering:lights:flashGreenOffice:bool": [
+            {
+                "direction": "in", 
+                "port": "token", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "bool", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "sistamigrering:rfid:_literal_const_10": [
+            {
+                "direction": "out", 
+                "port": "token", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "sistamigrering:lights:flashGreenOffice:_void_39": [
+            {
+                "direction": "in", 
+                "port": "void", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "sistamigrering:rfid:_literal_const_12": [
+            {
+                "direction": "out", 
+                "port": "token", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "sistamigrering:rfid:_literal_const_13": [
+            {
+                "direction": "out", 
+                "port": "token", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "sistamigrering:lights:flashGreenOffice:light:light:_literal_const_29": [
+            {
+                "direction": "out", 
+                "port": "token", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "sistamigrering:lights:flashGreenOffice:light:light:_literal_const_28": [
+            {
+                "direction": "out", 
+                "port": "token", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "sistamigrering:deploy:_void_1": [
+            {
+                "direction": "in", 
+                "port": "void", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "sistamigrering:lights:flashGreenForest:light:bool": [
+            {
+                "direction": "in", 
+                "port": "token", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "bool", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "sistamigrering:lights:selectLight": [
+            {
+                "direction": "in", 
+                "port": "data", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "select", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "case_true", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "case_false", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "sistamigrering:mediaPlayer:dict": [
+            {
+                "direction": "in", 
+                "port": "value", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "key", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "dict", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "sistamigrering:lights:flashGreenOffice:light:light:command:set_hue": [
+            {
+                "direction": "in", 
+                "port": "container", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "key", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "value", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "container", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "sistamigrering:rfid:log2": [
+            {
+                "direction": "in", 
+                "port": "data", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "sistamigrering:peopleCounter:_literal_const_20": [
+            {
+                "direction": "out", 
+                "port": "token", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "sistamigrering:peopleCounter:length": [
+            {
+                "direction": "in", 
+                "port": "string", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "length", 
+                "properties": {
+                    "nbr_peers": 5
+                }
+            }
+        ], 
+        "sistamigrering:camera:_literal_const_24": [
+            {
+                "direction": "out", 
+                "port": "token", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "sistamigrering:migrator:migrate:controlpath": [
+            {
+                "direction": "in", 
+                "port": "in", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "out", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "sistamigrering:lights:flashGreenForest:light:light:command:_literal_const_47": [
+            {
+                "direction": "out", 
+                "port": "token", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "sistamigrering:deploy:controlpath": [
+            {
+                "direction": "out", 
+                "port": "token", 
+                "properties": {
+                    "nbr_peers": 2
+                }
+            }
+        ], 
+        "sistamigrering:printpush": [
+            {
+                "direction": "in", 
+                "port": "data", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "sistamigrering:lights:flashGreenForest:light:_literal_const_31": [
+            {
+                "direction": "out", 
+                "port": "token", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "sistamigrering:lights:flashGreenForest:light:_literal_const_30": [
+            {
+                "direction": "out", 
+                "port": "token", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "sistamigrering:lights:flashGreenOffice:light:light:url:set_address": [
+            {
+                "direction": "in", 
+                "port": "container", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "key", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "value", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "container", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "sistamigrering:camera:compare": [
+            {
+                "direction": "in", 
+                "port": "a", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "b", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "result", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "sistamigrering:lights:flashGreenForest:bool": [
+            {
+                "direction": "in", 
+                "port": "token", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "bool", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "sistamigrering:lights:flashGreenForest:light:light:command:_literal_const_46": [
+            {
+                "direction": "out", 
+                "port": "token", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "sistamigrering:lights:flashGreenForest:light:light:command:_literal_const_45": [
+            {
+                "direction": "out", 
+                "port": "token", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "sistamigrering:lights:flashGreenForest:light:light:command:_literal_const_44": [
+            {
+                "direction": "out", 
+                "port": "token", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ]
+    }, 
+    "valid": true, 
+    "actors": {
+        "sistamigrering:InorOut:_literal_const_21": {
+            "args": {
+                "data": "data"
+            }, 
+            "actor_type": "std.Constant", 
+            "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
+        }, 
+        "sistamigrering:lights:flashGreenOffice:light:light:url:set_lightno": {
+            "args": {}, 
+            "actor_type": "json.SetValue", 
+            "signature": "3e76e92b20364f1972aff4cb233188b7e41a65abe7816896cb4d09a37adf137f"
+        }, 
+        "sistamigrering:mediaPlayer:const": {
+            "args": {
+                "data": true
+            }, 
+            "actor_type": "std.Constant", 
+            "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
+        }, 
+        "sistamigrering:cmd:set_count": {
+            "args": {}, 
+            "actor_type": "json.SetValue", 
+            "signature": "3e76e92b20364f1972aff4cb233188b7e41a65abe7816896cb4d09a37adf137f"
+        }, 
+        "sistamigrering:rfid:foreststatus": {
+            "args": {}, 
+            "actor_type": "json.GetValue", 
+            "signature": "b5af23ef7594f12cb586ebda67fd1b51b6c437445c67593b37d6dc3b00fc66f7"
+        }, 
+        "sistamigrering:lights:flashGreenForest:alternate": {
+            "args": {}, 
+            "actor_type": "flow.Alternate2", 
+            "signature": "fc9bf89634e74f97688f8b44d94a2c1e3f242f0d994c9818a5249d9e7b35921f"
+        }, 
+        "sistamigrering:deselecter": {
+            "args": {}, 
+            "actor_type": "flow.Select", 
+            "signature": "95f965d1cdf97fc1148c0dd763f15ee2822f8a448b965ca387ca983921dda847"
+        }, 
+        "sistamigrering:name": {
+            "args": {
+                "data": "migrate_room"
+            }, 
+            "actor_type": "flow.Init", 
+            "signature": "3e308e47a996352b4965a7449eeb84f049b9e0931e5011dd923bad6660e6e002"
+        }, 
+        "sistamigrering:lights:flashGreenOffice:light:light:command:_literal_const_44": {
+            "args": {
+                "data": "on"
+            }, 
+            "actor_type": "std.Constant", 
+            "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
+        }, 
+        "sistamigrering:lights:flashGreenOffice:light:light:command:_literal_const_45": {
+            "args": {
+                "data": "sat"
+            }, 
+            "actor_type": "std.Constant", 
+            "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
+        }, 
+        "sistamigrering:cmd:_literal_const_54": {
+            "args": {
+                "data": "count"
+            }, 
+            "actor_type": "std.Constant", 
+            "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
+        }, 
+        "sistamigrering:lights:flashGreenOffice:light:light:command:_literal_const_47": {
+            "args": {
+                "data": "hue"
+            }, 
+            "actor_type": "std.Constant", 
+            "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
+        }, 
+        "sistamigrering:cmd:_literal_const_52": {
+            "args": {
+                "data": {}
+            }, 
+            "actor_type": "std.Constant", 
+            "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
+        }, 
+        "sistamigrering:mediaPlayer:_literal_const_25": {
+            "args": {
+                "data": "data"
+            }, 
+            "actor_type": "std.Constant", 
+            "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
+        }, 
+        "sistamigrering:lights:flashGreenOffice:light:light:command:_literal_const_43": {
+            "args": {
+                "data": {}
+            }, 
+            "actor_type": "std.Constant", 
+            "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
+        }, 
+        "sistamigrering:lights:flashGreenForest:light:light:light": {
+            "args": {}, 
+            "actor_type": "net.HTTPPut", 
+            "signature": "d77713364a40a05000ddd140cf8081ccc5a61ab9535b53ac5e100bf21adad46d"
+        }, 
+        "sistamigrering:rfid:constantoffice": {
+            "args": {
+                "constant": 1
+            }, 
+            "actor_type": "std.Constantify", 
+            "signature": "1a4817b57e4582f845962c396b4305f8a48609c75fdcb134ed50c34226b1a97d"
+        }, 
+        "sistamigrering:lights:flashGreenOffice:light:light:url:_literal_const_34": {
+            "args": {
+                "data": "192.168.0.141"
+            }, 
+            "actor_type": "std.Constant", 
+            "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
+        }, 
+        "sistamigrering:linejoin": {
+            "args": {}, 
+            "actor_type": "text.LineJoin", 
+            "signature": "d56aebb2d606cbcc767002df862aecec5162c0bbdd7f6e6547f4bcbbaa1beabe"
+        }, 
+        "sistamigrering:lights:flashGreenForest:light:light:command:to_str": {
+            "args": {}, 
+            "actor_type": "json.ToString", 
+            "signature": "723cc86269b427b45cc02541afefefca1c512ea194d2b719cf36a077d4cb25ec"
+        }, 
+        "sistamigrering:rfid:_void_16": {
+            "args": {}, 
+            "actor_type": "flow.Void", 
+            "signature": "3a749ff7e2bc123a6e5870c9a337f72e0025a69bff24de632bd2905f7bf21d00"
+        }, 
+        "sistamigrering:rfid:_void_17": {
+            "args": {}, 
+            "actor_type": "flow.Void", 
+            "signature": "3a749ff7e2bc123a6e5870c9a337f72e0025a69bff24de632bd2905f7bf21d00"
+        }, 
+        "sistamigrering:migrator:_literal_const_4": {
+            "args": {
+                "data": "Forest"
+            }, 
+            "actor_type": "std.Constant", 
+            "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
+        }, 
+        "sistamigrering:rfid:officestatus": {
+            "args": {}, 
+            "actor_type": "json.GetValue", 
+            "signature": "b5af23ef7594f12cb586ebda67fd1b51b6c437445c67593b37d6dc3b00fc66f7"
+        }, 
+        "sistamigrering:migrator:_literal_const_6": {
+            "args": {
+                "data": "Office"
+            }, 
+            "actor_type": "std.Constant", 
+            "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
+        }, 
+        "sistamigrering:bullet": {
+            "args": {
+                "title": "Room-Wisperer"
+            }, 
+            "actor_type": "web.Pushbullet", 
+            "signature": "3dd82f99c941b08e1f22b5345fc91e1459e5fa0e082dda1ef44b6646d4d849b1"
+        }, 
+        "sistamigrering:InorOut:getv": {
+            "args": {}, 
+            "actor_type": "json.GetValue", 
+            "signature": "b5af23ef7594f12cb586ebda67fd1b51b6c437445c67593b37d6dc3b00fc66f7"
+        }, 
+        "sistamigrering:filereader": {
+            "args": {}, 
+            "actor_type": "io.FileReader", 
+            "signature": "22504cbad608cd467cb9fb346940ef04491cd7c6ad7aab035c36bd09ffd63f2d"
+        }, 
+        "sistamigrering:lights:flashGreenForest:_void_39": {
+            "args": {}, 
+            "actor_type": "flow.Terminator", 
+            "signature": "d020e4a1dc9953df2924eba3ceed61544fff2bd4fab9f602758cce0e8957d522"
+        }, 
+        "sistamigrering:deploy:sec_credentials": {
+            "args": {
+                "data": {}
+            }, 
+            "actor_type": "std.Constant", 
+            "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
+        }, 
+        "sistamigrering:lights:flashGreenOffice:light:select": {
+            "args": {}, 
+            "actor_type": "flow.Deselect", 
+            "signature": "a4f030267249aa9d2498dac1d5f9494b616bfc9d3dfd44760b3b3a9b696ee52b"
+        }, 
+        "sistamigrering:lights:flashGreenOffice:light:light:command:set_sat": {
+            "args": {}, 
+            "actor_type": "json.SetValue", 
+            "signature": "3e76e92b20364f1972aff4cb233188b7e41a65abe7816896cb4d09a37adf137f"
+        }, 
+        "sistamigrering:lights:flashGreenForest:light:light:command:set_hue": {
+            "args": {}, 
+            "actor_type": "json.SetValue", 
+            "signature": "3e76e92b20364f1972aff4cb233188b7e41a65abe7816896cb4d09a37adf137f"
+        }, 
+        "sistamigrering:deploy_info": {
+            "args": {
+                "data": {
+                    "requirements": {
+                        "log": [
+                            {
+                                "kwargs": {
+                                    "index": [
+                                        "address", 
+                                        {
+                                            "name": "Garage"
+                                        }
+                                    ]
+                                }, 
+                                "type": "+", 
+                                "op": "node_attr_match"
+                            }
+                        ]
+                    }
+                }
+            }, 
+            "actor_type": "std.Constant", 
+            "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
+        }, 
+        "sistamigrering:peopleCounter:rum": {
+            "args": {}, 
+            "actor_type": "json.GetValue", 
+            "signature": "b5af23ef7594f12cb586ebda67fd1b51b6c437445c67593b37d6dc3b00fc66f7"
+        }, 
+        "sistamigrering:lights:flashGreenForest:light:rgb:_literal_const_49": {
+            "args": {
+                "data": 0
+            }, 
+            "actor_type": "std.Constant", 
+            "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
+        }, 
+        "sistamigrering:lights:_literal_const_48": {
+            "args": {
+                "data": "Forest"
+            }, 
+            "actor_type": "std.Constant", 
+            "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
+        }, 
+        "sistamigrering:deploy:deploy": {
+            "args": {}, 
+            "actor_type": "calvin.CalvinDeployerA", 
+            "signature": "04ad548d73c2c38a31532705b376cced977ec194bf52df742343e9e860a9336f"
+        }, 
+        "sistamigrering:migrator:log": {
+            "args": {
+                "loglevel": "INFO"
+            }, 
+            "actor_type": "io.Log", 
+            "signature": "e73ce6ca0ccc9bce14f8d546e930f53cb69e466eb3325e1cc24d64e8b0bb97b5"
+        }, 
+        "sistamigrering:_literal_const_57": {
+            "args": {
+                "data": "testprint.calvin"
+            }, 
+            "actor_type": "std.Constant", 
+            "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
+        }, 
+        "sistamigrering:rfid:deselect": {
+            "args": {}, 
+            "actor_type": "flow.Deselect", 
+            "signature": "a4f030267249aa9d2498dac1d5f9494b616bfc9d3dfd44760b3b3a9b696ee52b"
+        }, 
+        "sistamigrering:lights:flashGreenOffice:light:rgb:_literal_const_51": {
+            "args": {
+                "data": 0
+            }, 
+            "actor_type": "std.Constant", 
+            "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
+        }, 
+        "sistamigrering:lights:flashGreenOffice:light:rgb:_literal_const_50": {
+            "args": {
+                "data": 255
+            }, 
+            "actor_type": "std.Constant", 
+            "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
+        }, 
+        "sistamigrering:lights:flashGreenForest:pacer": {
+            "args": {
+                "delay": 2.0
+            }, 
+            "actor_type": "std.ClassicDelay", 
+            "signature": "5787838e931900c0dd74d6bee2347038577a2677016ed4992c7653889cf1678f"
+        }, 
+        "sistamigrering:lights:flashGreenOffice:light:light:command:_literal_const_46": {
+            "args": {
+                "data": "bri"
+            }, 
+            "actor_type": "std.Constant", 
+            "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
+        }, 
+        "sistamigrering:lights:flashGreenOffice:light:bool": {
+            "args": {}, 
+            "actor_type": "flow.Bool", 
+            "signature": "bb08d2e2cc20741968e8c27886c1d8917382699121e5d303efcfe3ca72ff246a"
+        }, 
+        "sistamigrering:InorOut:init": {
+            "args": {
+                "data": "0"
+            }, 
+            "actor_type": "flow.Init", 
+            "signature": "3e308e47a996352b4965a7449eeb84f049b9e0931e5011dd923bad6660e6e002"
+        }, 
+        "sistamigrering:cmd:_literal_const_53": {
+            "args": {
+                "data": "room"
+            }, 
+            "actor_type": "std.Constant", 
+            "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
+        }, 
+        "sistamigrering:lights:flashGreenForest:light:light:url:set_address": {
+            "args": {}, 
+            "actor_type": "json.SetValue", 
+            "signature": "3e76e92b20364f1972aff4cb233188b7e41a65abe7816896cb4d09a37adf137f"
+        }, 
+        "sistamigrering:lights:flashGreenOffice:light:light:light": {
+            "args": {}, 
+            "actor_type": "net.HTTPPut", 
+            "signature": "d77713364a40a05000ddd140cf8081ccc5a61ab9535b53ac5e100bf21adad46d"
+        }, 
+        "sistamigrering:rfid:_literal_const_15": {
+            "args": {
+                "data": "Office"
+            }, 
+            "actor_type": "std.Constant", 
+            "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
+        }, 
+        "sistamigrering:InorOut:select": {
+            "args": {}, 
+            "actor_type": "flow.Select", 
+            "signature": "95f965d1cdf97fc1148c0dd763f15ee2822f8a448b965ca387ca983921dda847"
+        }, 
+        "sistamigrering:_literal_const_59": {
+            "args": {
+                "data": 0
+            }, 
+            "actor_type": "std.Constant", 
+            "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
+        }, 
+        "sistamigrering:lights:flashGreenForest:light:rgb:redgb": {
+            "args": {}, 
+            "actor_type": "math.RGBtoHSL", 
+            "signature": "e231b14f55dbcbc393f0c67c4316b711a8f0fe843b0732f7922752c2cc722892"
+        }, 
+        "sistamigrering:lights:flashGreenForest:light:light:command:set_sat": {
+            "args": {}, 
+            "actor_type": "json.SetValue", 
+            "signature": "3e76e92b20364f1972aff4cb233188b7e41a65abe7816896cb4d09a37adf137f"
+        }, 
+        "sistamigrering:rfid:joinData": {
+            "args": {}, 
+            "actor_type": "flow.Collect", 
+            "signature": "e6b5141ac9ddab19cec49d8785f1f3cf4acf763498c721870ff1dcafca119059"
+        }, 
+        "sistamigrering:lights:flashGreenOffice:light:light:command:to_str": {
+            "args": {}, 
+            "actor_type": "json.ToString", 
+            "signature": "723cc86269b427b45cc02541afefefca1c512ea194d2b719cf36a077d4cb25ec"
+        }, 
+        "sistamigrering:lights:flashGreenForest:light:light:_literal_const_28": {
+            "args": {
+                "data": {}
+            }, 
+            "actor_type": "std.Constant", 
+            "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
+        }, 
+        "sistamigrering:lights:flashGreenForest:light:light:_literal_const_29": {
+            "args": {
+                "data": {
+                    "Content-Type": "application/json"
+                }
+            }, 
+            "actor_type": "std.Constant", 
+            "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
+        }, 
+        "sistamigrering:migrator:migrate:post": {
+            "args": {}, 
+            "actor_type": "net.HTTPPost", 
+            "signature": "51594f52b9c2d375fe535740fa4173db2a3d4c5353843753a511af0f0b8da72a"
+        }, 
+        "sistamigrering:rfid:constantforest": {
+            "args": {
+                "constant": 2
+            }, 
+            "actor_type": "std.Constantify", 
+            "signature": "1a4817b57e4582f845962c396b4305f8a48609c75fdcb134ed50c34226b1a97d"
+        }, 
+        "sistamigrering:lights:flashGreenOffice:light:light:url:_literal_const_35": {
+            "args": {
+                "data": "username"
+            }, 
+            "actor_type": "std.Constant", 
+            "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
+        }, 
+        "sistamigrering:lights:flashGreenOffice:light:light:command:set_bri": {
+            "args": {}, 
+            "actor_type": "json.SetValue", 
+            "signature": "3e76e92b20364f1972aff4cb233188b7e41a65abe7816896cb4d09a37adf137f"
+        }, 
+        "sistamigrering:lights:flashGreenOffice:light:light:url:_literal_const_37": {
+            "args": {
+                "data": "lightno"
+            }, 
+            "actor_type": "std.Constant", 
+            "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
+        }, 
+        "sistamigrering:lights:flashGreenOffice:light:light:url:_literal_const_36": {
+            "args": {
+                "data": "191db4b57899c277637781315c1f53"
+            }, 
+            "actor_type": "std.Constant", 
+            "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
+        }, 
+        "sistamigrering:rfid:selectforest": {
+            "args": {}, 
+            "actor_type": "flow.Select", 
+            "signature": "95f965d1cdf97fc1148c0dd763f15ee2822f8a448b965ca387ca983921dda847"
+        }, 
+        "sistamigrering:rfid:_void_11": {
+            "args": {}, 
+            "actor_type": "flow.Void", 
+            "signature": "3a749ff7e2bc123a6e5870c9a337f72e0025a69bff24de632bd2905f7bf21d00"
+        }, 
+        "sistamigrering:lights:flashGreenOffice:light:light:url:_literal_const_33": {
+            "args": {
+                "data": "address"
+            }, 
+            "actor_type": "std.Constant", 
+            "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
+        }, 
+        "sistamigrering:lights:flashGreenOffice:light:light:url:_literal_const_32": {
+            "args": {
+                "data": {}
+            }, 
+            "actor_type": "std.Constant", 
+            "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
+        }, 
+        "sistamigrering:lights:flashGreenForest:select": {
+            "args": {}, 
+            "actor_type": "flow.Select", 
+            "signature": "95f965d1cdf97fc1148c0dd763f15ee2822f8a448b965ca387ca983921dda847"
+        }, 
+        "sistamigrering:lights:flashGreenOffice:light:light:url:_literal_const_38": {
+            "args": {
+                "data": 3
+            }, 
+            "actor_type": "std.Constant", 
+            "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
+        }, 
+        "sistamigrering:lights:compare": {
+            "args": {
+                "rel": "="
+            }, 
+            "actor_type": "std.Compare", 
+            "signature": "ea233444664ef2a929101373002d8fa5d89e91aceae7724fbd5a109e5f874446"
+        }, 
+        "sistamigrering:fmt": {
+            "args": {
+                "fmt": "Welcome to the {room}! The amount of people in this room are {count}. Follow the channel on Pushbullet for more information. "
+            }, 
+            "actor_type": "text.Format", 
+            "signature": "5076805251ae7e423b8d422f3e9cba41d3b986c612c110ffe6c27d377dfaa044"
+        }, 
+        "sistamigrering:migrator:migrate:_void_3": {
+            "args": {}, 
+            "actor_type": "flow.Void", 
+            "signature": "3a749ff7e2bc123a6e5870c9a337f72e0025a69bff24de632bd2905f7bf21d00"
+        }, 
+        "sistamigrering:migrator:migrate:_void_2": {
+            "args": {}, 
+            "actor_type": "flow.Terminator", 
+            "signature": "d020e4a1dc9953df2924eba3ceed61544fff2bd4fab9f602758cce0e8957d522"
+        }, 
+        "sistamigrering:lights:flashGreenForest:itemize": {
+            "args": {}, 
+            "actor_type": "json.Items", 
+            "signature": "3a387e57370546dc0c449790c66f8d44257152d0e42c3c94b844893f215313d6"
+        }, 
+        "sistamigrering:rfid:joinConstant": {
+            "args": {}, 
+            "actor_type": "flow.Collect", 
+            "signature": "e6b5141ac9ddab19cec49d8785f1f3cf4acf763498c721870ff1dcafca119059"
+        }, 
+        "sistamigrering:camera:camera": {
+            "args": {}, 
+            "actor_type": "media.IPCamera", 
+            "signature": "74197391468ed744b38ce507bb433ed83ec8c62a966b9da53403c629f56697da"
+        }, 
+        "sistamigrering:lights:flashGreenForest:light:light:command:_literal_const_43": {
+            "args": {
+                "data": {}
+            }, 
+            "actor_type": "std.Constant", 
+            "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
+        }, 
+        "sistamigrering:cmd:set_room": {
+            "args": {}, 
+            "actor_type": "json.SetValue", 
+            "signature": "3e76e92b20364f1972aff4cb233188b7e41a65abe7816896cb4d09a37adf137f"
+        }, 
+        "sistamigrering:lights:flashGreenForest:_literal_const_42": {
+            "args": {
+                "data": false
+            }, 
+            "actor_type": "std.Constant", 
+            "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
+        }, 
+        "sistamigrering:rfid:rfidoffice": {
+            "args": {}, 
+            "actor_type": "sensor.RFIDReader", 
+            "signature": "c6d20d15bf5bcd83714d963b4348025fb6882ecd955776bdb78b5598ec115e3f"
+        }, 
+        "sistamigrering:lights:flashGreenForest:_literal_const_41": {
+            "args": {
+                "data": [
+                    1, 
+                    1
+                ]
+            }, 
+            "actor_type": "std.Constant", 
+            "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
+        }, 
+        "sistamigrering:_void_58": {
+            "args": {}, 
+            "actor_type": "flow.Void", 
+            "signature": "3a749ff7e2bc123a6e5870c9a337f72e0025a69bff24de632bd2905f7bf21d00"
+        }, 
+        "sistamigrering:camera:_void_23": {
+            "args": {}, 
+            "actor_type": "flow.Terminator", 
+            "signature": "d020e4a1dc9953df2924eba3ceed61544fff2bd4fab9f602758cce0e8957d522"
+        }, 
+        "sistamigrering:camera:_void_22": {
+            "args": {}, 
+            "actor_type": "flow.Terminator", 
+            "signature": "d020e4a1dc9953df2924eba3ceed61544fff2bd4fab9f602758cce0e8957d522"
+        }, 
+        "sistamigrering:_void_55": {
+            "args": {}, 
+            "actor_type": "flow.Terminator", 
+            "signature": "d020e4a1dc9953df2924eba3ceed61544fff2bd4fab9f602758cce0e8957d522"
+        }, 
+        "sistamigrering:_void_56": {
+            "args": {}, 
+            "actor_type": "flow.Terminator", 
+            "signature": "d020e4a1dc9953df2924eba3ceed61544fff2bd4fab9f602758cce0e8957d522"
+        }, 
+        "sistamigrering:InorOut:compare": {
+            "args": {
+                "rel": ">="
+            }, 
+            "actor_type": "std.Compare", 
+            "signature": "ea233444664ef2a929101373002d8fa5d89e91aceae7724fbd5a109e5f874446"
+        }, 
+        "sistamigrering:peopleCounter:_void_18": {
+            "args": {}, 
+            "actor_type": "flow.Terminator", 
+            "signature": "d020e4a1dc9953df2924eba3ceed61544fff2bd4fab9f602758cce0e8957d522"
+        }, 
+        "sistamigrering:migrator:deselect": {
+            "args": {}, 
+            "actor_type": "flow.Deselect", 
+            "signature": "a4f030267249aa9d2498dac1d5f9494b616bfc9d3dfd44760b3b3a9b696ee52b"
+        }, 
+        "sistamigrering:lights:flashGreenForest:light:light:url:format": {
+            "args": {
+                "fmt": "http://{address}/api/{username}/lights/{lightno}/state"
+            }, 
+            "actor_type": "text.Format", 
+            "signature": "5076805251ae7e423b8d422f3e9cba41d3b986c612c110ffe6c27d377dfaa044"
+        }, 
+        "sistamigrering:mediaPlayer:player": {
+            "args": {}, 
+            "actor_type": "media.MediaPlayer2", 
+            "signature": "aea5a4558649e460bb06ae5e2cee2244a3a87884b78cc07095d349e7f6a2aedd"
+        }, 
+        "sistamigrering:print2": {
+            "args": {
+                "loglevel": "INFO"
+            }, 
+            "actor_type": "io.Log", 
+            "signature": "e73ce6ca0ccc9bce14f8d546e930f53cb69e466eb3325e1cc24d64e8b0bb97b5"
+        }, 
+        "sistamigrering:camera:select": {
+            "args": {}, 
+            "actor_type": "flow.Select", 
+            "signature": "95f965d1cdf97fc1148c0dd763f15ee2822f8a448b965ca387ca983921dda847"
+        }, 
+        "sistamigrering:peopleCounter:people": {
+            "args": {}, 
+            "actor_type": "room.PersonCounter", 
+            "signature": "c6a4012230f2b6d14e4ef7a00790fc8093692f66b1255f99a1a05483b7801fdc"
+        }, 
+        "sistamigrering:migrator:migrate:migrate": {
+            "args": {
+                "deploy_info": {
+                    "Forest": {
+                        "requirements": {
+                            "log": [
+                                {
+                                    "kwargs": {
+                                        "index": [
+                                            "address", 
+                                            {
+                                                "room": "Garage"
+                                            }
+                                        ]
+                                    }, 
+                                    "type": "+", 
+                                    "op": "node_attr_match"
+                                }
+                            ]
+                        }
+                    }, 
+                    "Office": {
+                        "requirements": {
+                            "log": [
+                                {
+                                    "kwargs": {
+                                        "index": [
+                                            "address", 
+                                            {
+                                                "room": "Lego"
+                                            }
+                                        ]
+                                    }, 
+                                    "type": "+", 
+                                    "op": "node_attr_match"
+                                }
+                            ]
+                        }
+                    }
+                }
+            }, 
+            "actor_type": "calvin.CalvinMigraterA", 
+            "signature": "e671fbaa47a4bc35eef5bbabe94f5b5d649b729bb94e58f0bb698f4c56195c03"
+        }, 
+        "sistamigrering:lights:flashGreenForest:_void_40": {
+            "args": {}, 
+            "actor_type": "flow.Terminator", 
+            "signature": "d020e4a1dc9953df2924eba3ceed61544fff2bd4fab9f602758cce0e8957d522"
+        }, 
+        "sistamigrering:rfid:rfidforest": {
+            "args": {}, 
+            "actor_type": "sensor.RFIDReader", 
+            "signature": "c6d20d15bf5bcd83714d963b4348025fb6882ecd955776bdb78b5598ec115e3f"
+        }, 
+        "sistamigrering:deploy:post": {
+            "args": {}, 
+            "actor_type": "net.HTTPPost", 
+            "signature": "51594f52b9c2d375fe535740fa4173db2a3d4c5353843753a511af0f0b8da72a"
+        }, 
+        "sistamigrering:lights:flashGreenOffice:light:_literal_const_30": {
+            "args": {
+                "data": true
+            }, 
+            "actor_type": "std.Constant", 
+            "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
+        }, 
+        "sistamigrering:_void_60": {
+            "args": {}, 
+            "actor_type": "flow.Void", 
+            "signature": "3a749ff7e2bc123a6e5870c9a337f72e0025a69bff24de632bd2905f7bf21d00"
+        }, 
+        "sistamigrering:lights:flashGreenOffice:_void_40": {
+            "args": {}, 
+            "actor_type": "flow.Terminator", 
+            "signature": "d020e4a1dc9953df2924eba3ceed61544fff2bd4fab9f602758cce0e8957d522"
+        }, 
+        "sistamigrering:migrator:_literal_const_5": {
+            "args": {
+                "data": "Forest"
+            }, 
+            "actor_type": "std.Constant", 
+            "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
+        }, 
+        "sistamigrering:lights:flashGreenForest:light:light:url:_literal_const_32": {
+            "args": {
+                "data": {}
+            }, 
+            "actor_type": "std.Constant", 
+            "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
+        }, 
+        "sistamigrering:lights:flashGreenForest:light:light:url:_literal_const_33": {
+            "args": {
+                "data": "address"
+            }, 
+            "actor_type": "std.Constant", 
+            "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
+        }, 
+        "sistamigrering:lights:flashGreenForest:light:light:url:_literal_const_36": {
+            "args": {
+                "data": "191db4b57899c277637781315c1f53"
+            }, 
+            "actor_type": "std.Constant", 
+            "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
+        }, 
+        "sistamigrering:lights:flashGreenOffice:itemize": {
+            "args": {}, 
+            "actor_type": "json.Items", 
+            "signature": "3a387e57370546dc0c449790c66f8d44257152d0e42c3c94b844893f215313d6"
+        }, 
+        "sistamigrering:lights:flashGreenForest:light:light:url:_literal_const_34": {
+            "args": {
+                "data": "192.168.0.141"
+            }, 
+            "actor_type": "std.Constant", 
+            "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
+        }, 
+        "sistamigrering:lights:flashGreenForest:light:light:url:_literal_const_35": {
+            "args": {
+                "data": "username"
+            }, 
+            "actor_type": "std.Constant", 
+            "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
+        }, 
+        "sistamigrering:lights:flashGreenForest:light:light:url:_literal_const_38": {
+            "args": {
+                "data": 2
+            }, 
+            "actor_type": "std.Constant", 
+            "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
+        }, 
+        "sistamigrering:rfid:log1": {
+            "args": {
+                "loglevel": "INFO"
+            }, 
+            "actor_type": "io.Log", 
+            "signature": "e73ce6ca0ccc9bce14f8d546e930f53cb69e466eb3325e1cc24d64e8b0bb97b5"
+        }, 
+        "sistamigrering:compare": {
+            "args": {
+                "rel": "="
+            }, 
+            "actor_type": "std.Compare", 
+            "signature": "ea233444664ef2a929101373002d8fa5d89e91aceae7724fbd5a109e5f874446"
+        }, 
+        "sistamigrering:lights:flashGreenOffice:light:light:command:set_on": {
+            "args": {}, 
+            "actor_type": "json.SetValue", 
+            "signature": "3e76e92b20364f1972aff4cb233188b7e41a65abe7816896cb4d09a37adf137f"
+        }, 
+        "sistamigrering:lights:flashGreenForest:light:light:url:_literal_const_37": {
+            "args": {
+                "data": "lightno"
+            }, 
+            "actor_type": "std.Constant", 
+            "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
+        }, 
+        "sistamigrering:lights:flashGreenOffice:light:_literal_const_31": {
+            "args": {
+                "data": false
+            }, 
+            "actor_type": "std.Constant", 
+            "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
+        }, 
+        "sistamigrering:lights:flashGreenOffice:light:light:url:format": {
+            "args": {
+                "fmt": "http://{address}/api/{username}/lights/{lightno}/state"
+            }, 
+            "actor_type": "text.Format", 
+            "signature": "5076805251ae7e423b8d422f3e9cba41d3b986c612c110ffe6c27d377dfaa044"
+        }, 
+        "sistamigrering:lights:flashGreenForest:light:select": {
+            "args": {}, 
+            "actor_type": "flow.Deselect", 
+            "signature": "a4f030267249aa9d2498dac1d5f9494b616bfc9d3dfd44760b3b3a9b696ee52b"
+        }, 
+        "sistamigrering:migrator:compare": {
+            "args": {
+                "rel": "="
+            }, 
+            "actor_type": "std.Compare", 
+            "signature": "ea233444664ef2a929101373002d8fa5d89e91aceae7724fbd5a109e5f874446"
+        }, 
+        "sistamigrering:rfid:selectoffice": {
+            "args": {}, 
+            "actor_type": "flow.Select", 
+            "signature": "95f965d1cdf97fc1148c0dd763f15ee2822f8a448b965ca387ca983921dda847"
+        }, 
+        "sistamigrering:rfid:compare": {
+            "args": {
+                "rel": "="
+            }, 
+            "actor_type": "std.Compare", 
+            "signature": "ea233444664ef2a929101373002d8fa5d89e91aceae7724fbd5a109e5f874446"
+        }, 
+        "sistamigrering:lights:flashGreenOffice:light:light:url:set_username": {
+            "args": {}, 
+            "actor_type": "json.SetValue", 
+            "signature": "3e76e92b20364f1972aff4cb233188b7e41a65abe7816896cb4d09a37adf137f"
+        }, 
+        "sistamigrering:lights:flashGreenOffice:light:light:_void_27": {
+            "args": {}, 
+            "actor_type": "flow.Terminator", 
+            "signature": "d020e4a1dc9953df2924eba3ceed61544fff2bd4fab9f602758cce0e8957d522"
+        }, 
+        "sistamigrering:lights:flashGreenOffice:light:light:_void_26": {
+            "args": {}, 
+            "actor_type": "flow.Terminator", 
+            "signature": "d020e4a1dc9953df2924eba3ceed61544fff2bd4fab9f602758cce0e8957d522"
+        }, 
+        "sistamigrering:lights:flashGreenOffice:select": {
+            "args": {}, 
+            "actor_type": "flow.Select", 
+            "signature": "95f965d1cdf97fc1148c0dd763f15ee2822f8a448b965ca387ca983921dda847"
+        }, 
+        "sistamigrering:lights:flashGreenForest:light:light:command:set_bri": {
+            "args": {}, 
+            "actor_type": "json.SetValue", 
+            "signature": "3e76e92b20364f1972aff4cb233188b7e41a65abe7816896cb4d09a37adf137f"
+        }, 
+        "sistamigrering:lights:flashGreenForest:light:light:_void_26": {
+            "args": {}, 
+            "actor_type": "flow.Terminator", 
+            "signature": "d020e4a1dc9953df2924eba3ceed61544fff2bd4fab9f602758cce0e8957d522"
+        }, 
+        "sistamigrering:lights:flashGreenForest:light:light:_void_27": {
+            "args": {}, 
+            "actor_type": "flow.Terminator", 
+            "signature": "d020e4a1dc9953df2924eba3ceed61544fff2bd4fab9f602758cce0e8957d522"
+        }, 
+        "sistamigrering:lights:flashGreenOffice:alternate": {
+            "args": {}, 
+            "actor_type": "flow.Alternate2", 
+            "signature": "fc9bf89634e74f97688f8b44d94a2c1e3f242f0d994c9818a5249d9e7b35921f"
+        }, 
+        "sistamigrering:lights:flashGreenForest:light:light:url:set_username": {
+            "args": {}, 
+            "actor_type": "json.SetValue", 
+            "signature": "3e76e92b20364f1972aff4cb233188b7e41a65abe7816896cb4d09a37adf137f"
+        }, 
+        "sistamigrering:mediaPlayer:mush": {
+            "args": {
+                "fmt": "{{data}}.ogg"
+            }, 
+            "actor_type": "text.Mustache", 
+            "signature": "900a7cc28954a343c955a2ee713535809ea91067b33177dbcc7fb5dc8e58270d"
+        }, 
+        "sistamigrering:rfid:_void_7": {
+            "args": {}, 
+            "actor_type": "flow.Terminator", 
+            "signature": "d020e4a1dc9953df2924eba3ceed61544fff2bd4fab9f602758cce0e8957d522"
+        }, 
+        "sistamigrering:lights:flashGreenForest:light:rgb:_literal_const_50": {
+            "args": {
+                "data": 255
+            }, 
+            "actor_type": "std.Constant", 
+            "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
+        }, 
+        "sistamigrering:lights:flashGreenForest:light:rgb:_literal_const_51": {
+            "args": {
+                "data": 0
+            }, 
+            "actor_type": "std.Constant", 
+            "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
+        }, 
+        "sistamigrering:rfid:_void_8": {
+            "args": {}, 
+            "actor_type": "flow.Terminator", 
+            "signature": "d020e4a1dc9953df2924eba3ceed61544fff2bd4fab9f602758cce0e8957d522"
+        }, 
+        "sistamigrering:rfid:_void_9": {
+            "args": {}, 
+            "actor_type": "flow.Void", 
+            "signature": "3a749ff7e2bc123a6e5870c9a337f72e0025a69bff24de632bd2905f7bf21d00"
+        }, 
+        "sistamigrering:lights:flashGreenOffice:_literal_const_41": {
+            "args": {
+                "data": [
+                    1, 
+                    1
+                ]
+            }, 
+            "actor_type": "std.Constant", 
+            "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
+        }, 
+        "sistamigrering:lights:flashGreenOffice:_literal_const_42": {
+            "args": {
+                "data": false
+            }, 
+            "actor_type": "std.Constant", 
+            "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
+        }, 
+        "sistamigrering:camera:render": {
+            "args": {}, 
+            "actor_type": "media.MultipleImageRenderer", 
+            "signature": "b1c076bfe993018ea2ca7f1b2239c2c572af5b4014fa776c705ad6faf0c293c0"
+        }, 
+        "sistamigrering:lights:flashGreenOffice:light:rgb:_literal_const_49": {
+            "args": {
+                "data": 0
+            }, 
+            "actor_type": "std.Constant", 
+            "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
+        }, 
+        "sistamigrering:lights:flashGreenForest:light:light:command:set_on": {
+            "args": {}, 
+            "actor_type": "json.SetValue", 
+            "signature": "3e76e92b20364f1972aff4cb233188b7e41a65abe7816896cb4d09a37adf137f"
+        }, 
+        "sistamigrering:lights:flashGreenOffice:light:rgb:redgb": {
+            "args": {}, 
+            "actor_type": "math.RGBtoHSL", 
+            "signature": "e231b14f55dbcbc393f0c67c4316b711a8f0fe843b0732f7922752c2cc722892"
+        }, 
+        "sistamigrering:peopleCounter:getv": {
+            "args": {}, 
+            "actor_type": "json.GetValue", 
+            "signature": "b5af23ef7594f12cb586ebda67fd1b51b6c437445c67593b37d6dc3b00fc66f7"
+        }, 
+        "sistamigrering:peopleCounter:_literal_const_19": {
+            "args": {
+                "data": "data"
+            }, 
+            "actor_type": "std.Constant", 
+            "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
+        }, 
+        "sistamigrering:peopleCounter:compare": {
+            "args": {
+                "rel": "="
+            }, 
+            "actor_type": "std.Compare", 
+            "signature": "ea233444664ef2a929101373002d8fa5d89e91aceae7724fbd5a109e5f874446"
+        }, 
+        "sistamigrering:lights:flashGreenOffice:pacer": {
+            "args": {
+                "delay": 2.0
+            }, 
+            "actor_type": "std.ClassicDelay", 
+            "signature": "5787838e931900c0dd74d6bee2347038577a2677016ed4992c7653889cf1678f"
+        }, 
+        "sistamigrering:lights:flashGreenForest:light:light:url:set_lightno": {
+            "args": {}, 
+            "actor_type": "json.SetValue", 
+            "signature": "3e76e92b20364f1972aff4cb233188b7e41a65abe7816896cb4d09a37adf137f"
+        }, 
+        "sistamigrering:rfid:_literal_const_14": {
+            "args": {
+                "data": "Forest"
+            }, 
+            "actor_type": "std.Constant", 
+            "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
+        }, 
+        "sistamigrering:lights:flashGreenOffice:bool": {
+            "args": {}, 
+            "actor_type": "flow.Bool", 
+            "signature": "bb08d2e2cc20741968e8c27886c1d8917382699121e5d303efcfe3ca72ff246a"
+        }, 
+        "sistamigrering:rfid:_literal_const_10": {
+            "args": {
+                "data": "status"
+            }, 
+            "actor_type": "std.Constant", 
+            "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
+        }, 
+        "sistamigrering:lights:flashGreenOffice:_void_39": {
+            "args": {}, 
+            "actor_type": "flow.Terminator", 
+            "signature": "d020e4a1dc9953df2924eba3ceed61544fff2bd4fab9f602758cce0e8957d522"
+        }, 
+        "sistamigrering:rfid:_literal_const_12": {
+            "args": {
+                "data": "status"
+            }, 
+            "actor_type": "std.Constant", 
+            "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
+        }, 
+        "sistamigrering:rfid:_literal_const_13": {
+            "args": {
+                "data": 1
+            }, 
+            "actor_type": "std.Constant", 
+            "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
+        }, 
+        "sistamigrering:lights:flashGreenOffice:light:light:_literal_const_29": {
+            "args": {
+                "data": {
+                    "Content-Type": "application/json"
+                }
+            }, 
+            "actor_type": "std.Constant", 
+            "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
+        }, 
+        "sistamigrering:lights:flashGreenOffice:light:light:_literal_const_28": {
+            "args": {
+                "data": {}
+            }, 
+            "actor_type": "std.Constant", 
+            "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
+        }, 
+        "sistamigrering:deploy:_void_1": {
+            "args": {}, 
+            "actor_type": "flow.Terminator", 
+            "signature": "d020e4a1dc9953df2924eba3ceed61544fff2bd4fab9f602758cce0e8957d522"
+        }, 
+        "sistamigrering:lights:flashGreenForest:light:bool": {
+            "args": {}, 
+            "actor_type": "flow.Bool", 
+            "signature": "bb08d2e2cc20741968e8c27886c1d8917382699121e5d303efcfe3ca72ff246a"
+        }, 
+        "sistamigrering:lights:selectLight": {
+            "args": {}, 
+            "actor_type": "flow.Select", 
+            "signature": "95f965d1cdf97fc1148c0dd763f15ee2822f8a448b965ca387ca983921dda847"
+        }, 
+        "sistamigrering:mediaPlayer:dict": {
+            "args": {}, 
+            "actor_type": "json.Dict", 
+            "signature": "69aad0571b587874280e4f60ba2445e6aaefeabf80fbc8f5f4fc7bb4f032adf2"
+        }, 
+        "sistamigrering:lights:flashGreenOffice:light:light:command:set_hue": {
+            "args": {}, 
+            "actor_type": "json.SetValue", 
+            "signature": "3e76e92b20364f1972aff4cb233188b7e41a65abe7816896cb4d09a37adf137f"
+        }, 
+        "sistamigrering:rfid:log2": {
+            "args": {
+                "loglevel": "INFO"
+            }, 
+            "actor_type": "io.Log", 
+            "signature": "e73ce6ca0ccc9bce14f8d546e930f53cb69e466eb3325e1cc24d64e8b0bb97b5"
+        }, 
+        "sistamigrering:peopleCounter:_literal_const_20": {
+            "args": {
+                "data": "Forest"
+            }, 
+            "actor_type": "std.Constant", 
+            "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
+        }, 
+        "sistamigrering:peopleCounter:length": {
+            "args": {}, 
+            "actor_type": "text.Length", 
+            "signature": "8a70cfa62da2134e74b308fac090aaa279574fabcc6afbb5bb6a26f364534da9"
+        }, 
+        "sistamigrering:camera:_literal_const_24": {
+            "args": {
+                "data": "Office"
+            }, 
+            "actor_type": "std.Constant", 
+            "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
+        }, 
+        "sistamigrering:migrator:migrate:controlpath": {
+            "args": {
+                "data": "http://192.168.0.139:5001"
+            }, 
+            "actor_type": "flow.Init", 
+            "signature": "3e308e47a996352b4965a7449eeb84f049b9e0931e5011dd923bad6660e6e002"
+        }, 
+        "sistamigrering:lights:flashGreenForest:light:light:command:_literal_const_47": {
+            "args": {
+                "data": "hue"
+            }, 
+            "actor_type": "std.Constant", 
+            "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
+        }, 
+        "sistamigrering:deploy:controlpath": {
+            "args": {
+                "data": "http://192.168.0.139:5001"
+            }, 
+            "actor_type": "std.Constant", 
+            "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
+        }, 
+        "sistamigrering:printpush": {
+            "args": {
+                "loglevel": "INFO"
+            }, 
+            "actor_type": "io.Log", 
+            "signature": "e73ce6ca0ccc9bce14f8d546e930f53cb69e466eb3325e1cc24d64e8b0bb97b5"
+        }, 
+        "sistamigrering:lights:flashGreenForest:light:_literal_const_31": {
+            "args": {
+                "data": false
+            }, 
+            "actor_type": "std.Constant", 
+            "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
+        }, 
+        "sistamigrering:lights:flashGreenForest:light:_literal_const_30": {
+            "args": {
+                "data": true
+            }, 
+            "actor_type": "std.Constant", 
+            "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
+        }, 
+        "sistamigrering:lights:flashGreenOffice:light:light:url:set_address": {
+            "args": {}, 
+            "actor_type": "json.SetValue", 
+            "signature": "3e76e92b20364f1972aff4cb233188b7e41a65abe7816896cb4d09a37adf137f"
+        }, 
+        "sistamigrering:camera:compare": {
+            "args": {
+                "rel": "="
+            }, 
+            "actor_type": "std.Compare", 
+            "signature": "ea233444664ef2a929101373002d8fa5d89e91aceae7724fbd5a109e5f874446"
+        }, 
+        "sistamigrering:lights:flashGreenForest:bool": {
+            "args": {}, 
+            "actor_type": "flow.Bool", 
+            "signature": "bb08d2e2cc20741968e8c27886c1d8917382699121e5d303efcfe3ca72ff246a"
+        }, 
+        "sistamigrering:lights:flashGreenForest:light:light:command:_literal_const_46": {
+            "args": {
+                "data": "bri"
+            }, 
+            "actor_type": "std.Constant", 
+            "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
+        }, 
+        "sistamigrering:lights:flashGreenForest:light:light:command:_literal_const_45": {
+            "args": {
+                "data": "sat"
+            }, 
+            "actor_type": "std.Constant", 
+            "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
+        }, 
+        "sistamigrering:lights:flashGreenForest:light:light:command:_literal_const_44": {
+            "args": {
+                "data": "on"
+            }, 
+            "actor_type": "std.Constant", 
+            "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
+        }
+    }, 
+    "name": "sistamigrering"
+}

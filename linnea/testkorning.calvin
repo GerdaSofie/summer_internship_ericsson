@@ -1,18 +1,78 @@
-rfid : sensor.RFIDReader()
+component ClearRFID() -> casetrue {
+  rfid : sensor.RFIDReader()
+  select : flow.Select()
+  status : json.GetValue()
 
-voidport > rfid.data
-rfid.data > .dict
+  voidport > rfid.data
+  rfid.data > select.data
+  rfid.data > status.container
+  "status" > status.key
+  status.value > select.select
+
+  select.case_false > voidport
+  select.case_true > .casetrue
+
+}
+component Personer() inport -> antalpersoner, data {
+  people : room.PersonCounter()
+  rum : json.GetValue()
+  length : text.Length()
+  getv : json.GetValue()
 
 
-component mediaplayer() dict -> {
-
-    const : std.Constant(data=true)
-    mush : text.Mustache(fmt="{{data}}.ogg")
-    mediaplayer : media.MediaPlayer()
-
-    .dict > mush.dict
-    mush.text > mediaplayer.mediafile
-    const.token > mediaplayer.play
+  "data" > getv.key
+  .inport > getv.container
+  getv.value >  people.id
+  "garage" > people.room
+  people.status > voidport
+  people.rooms > rum.container
+  "garage" > rum.key
+  rum.value > length.string
+  .inport > .data
+  length.length > .antalpersoner
 
 
 }
+component InOrOut() data, antal -> in, out {
+  select : flow.Select()
+  getv : json.GetValue()
+  compare : std.Compare(op=">=")
+  init : flow.Init(data="1")
+  print : io.Print()
+  /*
+  select.case_true > print.token
+*/
+  .data > getv.container
+  "data" > getv.key
+
+  .antal > compare.a
+  .antal > init.in
+  init.out > print.token
+  init.out > compare.b
+  compare.result > select.select
+  getv.value > select.data
+  select.case_true > .in
+  select.case_false > .out
+}
+component Picture() id, remove -> {
+  camera : media.IPCamera()
+  render : media.MultipleImageRenderer()
+  /*
+  print : io.Print()
+  .id > print.token
+*/
+  .id > camera.trigger
+  camera.status > voidport
+  camera.image > render.image
+  .id > render.id
+  .remove > render.remove
+}
+inorout : InOrOut()
+bild : Picture()
+rfid : ClearRFID()
+personer : Personer()
+rfid.casetrue > personer.inport
+personer.antalpersoner > inorout.antal
+inorout.in > bild.id
+inorout.out > bild.remove
+personer.data > inorout.data
