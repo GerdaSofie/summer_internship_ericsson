@@ -1,0 +1,5 @@
+rfid : sensor.RFIDReader()
+log : io.Log(loglevel="Data")
+
+voidport > rfid.data
+rfid.data > log.data

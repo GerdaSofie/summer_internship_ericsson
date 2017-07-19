@@ -272,48 +272,6 @@ component Lights() room, status -> {
   selectLight.case_false > flashRedLego.input
 
 }
-component InOrOut() data, antal -> in, out {
-  select : flow.Select()
-  getv : json.GetValue()
-  compare : std.Compare(rel=">=")
-  init : flow.Init(data="1")
-
-  .data > getv.container
-  "data" > getv.key
-
-  .antal > compare.a
-  .antal > init.in
-  init.out > compare.b
-  compare.result > select.select
-  getv.value > select.data
-  select.case_true > .in
-  select.case_false > .out
-}
-
-component Picture() id, remove -> {
-  camera : media.IPCamera()
-  render : media.MultipleImageRenderer()
-
-  .id > camera.trigger
-  camera.status > voidport
-  camera.image > render.image
-  .id > render.id
-  .remove > render.remove
-}
-
-component MediaPlayer() dict -> {
-    dict : json.Dict()
-    const : std.Constant(data=true)
-    mush : text.Mustache(fmt="{{data}}.ogg")
-    player : media.MediaPlayer2()
-
-    .dict > dict.value
-    "data" > dict.key
-    dict.dict > mush.dict
-    mush.text > player.mediafile
-    const.token > player.play
-
-}
 deploy_info : std.Constant(data=
 {
     "requirements":
@@ -324,9 +282,6 @@ deploy_info : std.Constant(data=
 })
 
 name : flow.Init(data=APPNAME)
-camera : Picture()
-InorOut : InOrOut()
-mediaPlayer : MediaPlayer()
 filereader: io.FileReader()
 linejoin : text.LineJoin()
 
@@ -358,10 +313,3 @@ peopleCounter.count > voidport
 rfid.room > print.data
 rfid.room > migrator.room
 migrator.done > voidport
-
-
-rfid.data > InorOut.data
-peopleCounter.count > InorOut.antal
-InorOut.in > camera.id
-InorOut.in > mediaPlayer.dict
-InorOut.out > camera.remove

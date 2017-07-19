@@ -120,7 +120,7 @@ component getColorsAndBeing() trigger -> red,green,blue,water{
 
 /*The component reads the humidity and sets the light to the correct color. Green is for OK-humidity, Yellow is for quite dry and Red means that the plant needs to be watered. The outport "water" is a boolean that tells if the plant needs watering. */
 component PlantPuppy() trigger -> water {
-  flash : FlashingStopLights(address="192.168.0.141", username="191db4b57899c277637781315c1f53", lightno=1)
+  flash : FlashingStopLights(address="192.168.0.141", username="191db4b57899c277637781315c1f53", lightno=2)
   humidity : getColorsAndBeing()
 
   .trigger > humidity.trigger
