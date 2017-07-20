@@ -1,7 +1,13 @@
+/* This application deploys another application, defined by the chosen FILE.
+/* The application can also migrate actors defined in the Migrator-component. The migration is triggered by RFID-readers.
+/* When a RFID-reader is triggered by data from a card, a light flashed green. At the same time, a photograph is taken if the RFID-reader is in the "Office".
+/* Different sound-files are played the first and second time you blip the card to the reader.
+
 define CONTROL_URI = "http://192.168.0.125:5001"
 define APPNAME = "migrating_room"
 define FILE = "runningapplication.calvin"
 
+/*The component depoys an application specified by the name, script and deploy_info.*/
 component CalvinDeployer(control_uri) name, script, deploy_info -> app_info {
     sec_credentials:std.Constant(data={})
     controlpath: std.Constant(data=control_uri)
@@ -26,7 +32,7 @@ component CalvinDeployer(control_uri) name, script, deploy_info -> app_info {
     post.header > deploy.header
     post.data > deploy.data
 }
-
+/*The component migrates an application specified by the control_uri and the deploy-info.*/
 component CalvinMigrater(control_uri, deploy_info) app_id, key -> done {
     controlpath: flow.Init(data=control_uri)
     migrate: calvin.CalvinMigraterA(deploy_info=deploy_info)
@@ -48,7 +54,7 @@ component CalvinMigrater(control_uri, deploy_info) app_id, key -> done {
     post.header > migrate.header
     post.data > voidport
 }
-
+/*The component uses a CalvinMigrater-component to migrate to the right room.*/
 component Migrator() room , app_id -> done {
   migrate: CalvinMigrater(control_uri=CONTROL_URI, deploy_info=
   {
@@ -83,7 +89,7 @@ component Migrator() room , app_id -> done {
   deselect.data > migrate.key
   migrate.done > .done
 }
-
+/*The component has two RFID-readers and sends out data from them, and the other outport specifies which room/reader the data comes from.*/
 component RFIDReader() -> data, room {
   rfidoffice : sensor.RFIDReader()
   rfidforest : sensor.RFIDReader()
@@ -121,54 +127,57 @@ component RFIDReader() -> data, room {
   constantoffice.out > joinConstant.token
   constantforest.out > joinConstant.token
   joinConstant.token > compare.b
+  joinConstant.token > log1.data
   1 > compare.a
 
   compare.result > deselect.select
   "Forest" > deselect.case_true
   "Office" > deselect.case_false
   deselect.data > .room
-  voidport > log1.data
+  deselect.data > log2.data
+
   joinData.token > .data
-  voidport > log2.data
 }
+/*The component takes room and data as input and gives the amount of people checked in to the specified room.*/
 component PeopleCounter() data, room -> count{
-people : room.PersonCounter()
-getv : json.GetValue()
-length : text.Length()
-rum : json.GetValue()
+  people : room.PersonCounter()
+  getv : json.GetValue()
+  length : text.Length()
+  rum : json.GetValue()
 
-.data > getv.container
+  .data > getv.container
 
-"data" > getv.key
-getv.value > people.id
-.room > people.room
+  "data" > getv.key
+  getv.value > people.id
+  .room > people.room
 
-people.status > voidport
-people.rooms > rum.container
-.room > rum.key
-rum.value > length.string
-length.length > .count
+  people.status > voidport
+  people.rooms > rum.container
+  .room > rum.key
+  rum.value > length.string
+  length.length > .count
 }
-
-component InOrOut() data, antal -> in, out {
+/*The component takes data from the RFID-reader and count (number of checked in people). It returns the id from the data on the in- or out- outport depending on if the person is coming or leaving the room. */
+component InOrOut() data, count -> in, out {
   select : flow.Select()
   getv : json.GetValue()
   compare : std.Compare(rel="<=")
-  init : flow.Init(data="1")
+  init : flow.Init(data=1)
   print : io.Print()
 
   .data > getv.container
   "data" > getv.key
 
-  .antal > compare.b
-  .antal > print.token
-  .antal > init.in
+  .count > compare.b
+  .count > print.token
+  .count > init.in
   init.out > compare.a
   compare.result > select.select
   getv.value > select.data
   select.case_true > .in
   select.case_false > .out
 }
+/*The component takes a picture with the specified id from the RFID-card. It removes the card from teh MultipleImageRender if remove is true.*/
 component Picture() id, remove -> {
   camera : media.IPCamera()
   render : media.MultipleImageRenderer()
@@ -179,7 +188,8 @@ component Picture() id, remove -> {
   .remove > render.remove
   camera.status > voidport
 }
-component MediaPlayer() dict-> {
+/*The component plays a sound when the RFID-reader is bliped for the first time (If the person arrives to the room.)*/
+component MediaPlayerIn() dict-> {
     dict : json.Dict()
     const : std.Constant(data=true)
     mush : text.Mustache(fmt="{{data}}.ogg")
@@ -191,7 +201,7 @@ component MediaPlayer() dict-> {
     mush.text > player.mediafile
     const.token > player.play
 }
-
+/*The component plays a sound when the person leaves a room.Different sounds are played depending on the id from the RFID-card.*/
 component MediaPlayerUt() dict -> {
   dict : json.Dict()
   const : std.Constant(data=true)
@@ -204,7 +214,7 @@ component MediaPlayerUt() dict -> {
   mush.text > player.mediafile
   const.token > player.play
 }
-
+/*This component sends an url with information to a PhilipsHue-light*/
 component PhilipsHue(address, username, lightno) on, saturation, brightness, hue -> status {
     url : URLBuilder(address=address, username=username, lightno=lightno)
     command : CmdBuilder()
@@ -223,25 +233,25 @@ component PhilipsHue(address, username, lightno) on, saturation, brightness, hue
     light.header > voidport
     light.data > voidport
 }
-
+/*This component creates a philips-hue light.*/
 component StopLight(address, username,red, green, blue,lightno) state-> status {
-light : PhilipsHue(address=address, username=username, lightno=lightno)
-rgb : RgbBuilder(red=red, green=green,blue=blue)
-bool:   flow.Bool()
-select : flow.Deselect()
+  light : PhilipsHue(address=address, username=username, lightno=lightno)
+  rgb : RgbBuilder(red=red, green=green,blue=blue)
+  bool:   flow.Bool()
+  select : flow.Deselect()
 
-.state > bool.token
-bool.bool > select.select
-rgb.saturation > light.saturation
-rgb.brightness > light.brightness
-rgb.hue > light.hue
+  .state > bool.token
+  bool.bool > select.select
+  rgb.saturation > light.saturation
+  rgb.brightness > light.brightness
+  rgb.hue > light.hue
 
-true > select.case_true
-false > select.case_false
-select.data > light.on
-light.status > .status
+  true > select.case_true
+  false > select.case_false
+  select.data > light.on
+  light.status > .status
 }
-
+/*This component creates a url with information to send to the light.*/
 component URLBuilder(address, username ,lightno) -> url {
     format : text.Format(fmt="http://{address}/api/{username}/lights/{lightno}/state")
     set_address : json.SetValue()
@@ -260,7 +270,7 @@ component URLBuilder(address, username ,lightno) -> url {
     set_lightno.container > format.dict
     format.text > .url
 }
-
+/*The component creates a light with a PhilipsHue-light adn makes it flash green, when triggered by the input.*/
 component GreenFlashLight(address, username,interval, lightno) input-> {
   light : StopLight(address=address, username=username,red=0, green=255, blue=0,lightno=lightno)
   itemize : json.Items()
@@ -280,7 +290,7 @@ component GreenFlashLight(address, username,interval, lightno) input-> {
   alternate.token > light.state
   light.status > voidport
 }
-
+/*This component builds up a string with information to sent to the PhilipsHue-light.*/
 component CmdBuilder() on, sat, bri, hue -> string {
     to_str : json.ToString()
     set_on : json.SetValue()
@@ -307,6 +317,7 @@ component CmdBuilder() on, sat, bri, hue -> string {
     set_hue.container > to_str.data
     to_str.string > .string
 }
+/*The component triggers a GreenFlashLight depending on which room that is sent in on the inport.*/
 component Lights() room -> {
   flashGreenOffice : GreenFlashLight(address="192.168.0.141", username="191db4b57899c277637781315c1f53",interval=1.0,lightno=2)
   flashGreenForest : GreenFlashLight(address="192.168.0.141", username="191db4b57899c277637781315c1f53",interval=1.0,lightno=3)
@@ -322,33 +333,34 @@ component Lights() room -> {
   bool.bool > selectLight.data
   selectLight.case_true > flashGreenForest.input
 }
-
+/*The component uses a RGBtoHSL-actor to convert RGB to HSL, which in a later step is used by the Philips-hue light.*/
 component RgbBuilder(red, green, blue) -> saturation, brightness, hue {
-redgb : math.RGBtoHSL()
+  redgb : math.RGBtoHSL()
 
-red > redgb.red
-green > redgb.green
-blue > redgb.blue
-redgb.hue > .hue
-redgb.saturation > .saturation
-redgb.brightness > .brightness
+  red > redgb.red
+  green > redgb.green
+  blue > redgb.blue
+  redgb.hue > .hue
+  redgb.saturation > .saturation
+  redgb.brightness > .brightness
 }
-
+/*The component sends out a json with the "room" and "count" as keys.*/
 component PushbulletBuilder() room, count -> json {
-    set_room : json.SetValue()
-    set_count: json.SetValue()
+  set_room : json.SetValue()
+  set_count: json.SetValue()
 
-    {} > set_room.container
-    "room" > set_room.key
-    .room > set_room.value
+  {} > set_room.container
+  "room" > set_room.key
+  .room > set_room.value
 
-    set_room.container > set_count.container
-    "count" > set_count.key
-    .count > set_count.value
+  set_room.container > set_count.container
+  "count" > set_count.key
+  .count > set_count.value
 
-    set_count.container > .json
+  set_count.container > .json
 }
 
+  /*Actors*/
 deploy_info : std.Constant(data=
 {
     "requirements":
@@ -364,20 +376,21 @@ deploy_info : std.Constant(data=
 name : flow.Init(data=APPNAME)
 filereader: io.FileReader()
 linejoin : text.LineJoin()
-mediaPlayer : MediaPlayer()
+# Mediaplayers
+mediaPlayer : MediaPlayerIn()
 mediaPlayerUt : MediaPlayerUt()
+# Lights
+lights : Lights()
+# Deployment- and Migrating-actors
+deploy: CalvinDeployer(control_uri=CONTROL_URI)
+migrator : Migrator()
+# Other..
 InorOut : InOrOut()
 camera : Picture()
 cmd : PushbulletBuilder()
 fmt : text.Format(fmt="Welcome to the {room}! The amount of people in this room are {count}. Follow the channel on Pushbullet for more information. ")
 bullet : web.Pushbullet(title="Room-Wisperer")
-
-# Lights
-lights : Lights()
-# rt control
-deploy: CalvinDeployer(control_uri=CONTROL_URI)
 rfid : RFIDReader()
-migrator : Migrator()
 peopleCounter : PeopleCounter()
 compare1 : std.Compare(rel="=")
 print2 : io.Log(loglevel="INFO")
@@ -386,7 +399,7 @@ select : flow.Select()
 bool : flow.Bool()
 selecter : flow.Select()
 
-# deploy
+ /*Connections*/
 FILE > filereader.filename
 filereader.out > linejoin.line
 linejoin.text > deploy.script
@@ -414,7 +427,7 @@ InorOut.in > select.data
 select.case_true > camera.id
 select.case_false > voidport
 
-peopleCounter.count > InorOut.antal
+peopleCounter.count > InorOut.count
 InorOut.out > camera.remove
 InorOut.out > mediaPlayerUt.dict
 InorOut.in > bool.token
