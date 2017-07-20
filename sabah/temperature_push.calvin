@@ -1,0 +1,11 @@
+temperature : sensor.Temperature(frequency=1)
+push : web.Pushbullet(title="Temperature in the garage")
+delay : std.Delay(delay=10)
+format : text.Mustache(fmt="The temperature in this room is {{temperature}} ")
+dict : json.Dict()
+
+temperature.centigrade > delay.token
+delay.token > dict.value
+"temperature" > dict.key
+dict.dict > format.dict
+format.text > push.message

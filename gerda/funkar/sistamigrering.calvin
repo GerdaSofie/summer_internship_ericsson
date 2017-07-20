@@ -205,7 +205,7 @@ component MediaPlayerUt() dict -> {
   const.token > player.play
 }
 
-component PhilipsHue(address, username,lightno) on, saturation, brightness, hue -> status {
+component PhilipsHue(address, username, lightno) on, saturation, brightness, hue -> status {
     url : URLBuilder(address=address, username=username, lightno=lightno)
     command : CmdBuilder()
     light : net.HTTPPut()
