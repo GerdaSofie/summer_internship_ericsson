@@ -1,38 +1,41 @@
+/*The application has a humidity-sensor in a plant, and a temperature sensor. The information is sent to Pushbullet
+/*with a frequency set by a trigger.
+
+/*This component sends an url with information to a PhilipsHue-light*/
 component PhilipsHue(address, username, lightno) on, saturation, brightness, hue -> status {
-    url : URLBuilder(address=address, username=username, lightno=lightno)
-    command : CmdBuilder()
-    light : net.HTTPPut()
+  url : URLBuilder(address=address, username=username, lightno=lightno)
+  command : CmdBuilder()
+  light : net.HTTPPut()
 
-    .on > command.on
-    .saturation > command.sat
-    .brightness > command.bri
-    .hue > command.hue
+  .on > command.on
+  .saturation > command.sat
+  .brightness > command.bri
+  .hue > command.hue
 
-    url.url > light.URL
-    {} > light.params
-    command.string > light.data
-    {"Content-Type": "application/json"} > light.header
+  url.url > light.URL
+  {} > light.params
+  command.string > light.data
+  {"Content-Type": "application/json"} > light.header
 
-    light.status > .status
-    light.header > voidport
-    light.data > voidport
+  light.status > .status
+  light.header > voidport
+  light.data > voidport
 }
-
+/*This component creates a philips-hue light.*/
 component StopLight(address, username, lightno) red,green,blue, state -> status {
-light : PhilipsHue(address=address, username=username, lightno=lightno)
-rgb : RgbBuilder()
+  light : PhilipsHue(address=address, username=username, lightno=lightno)
+  rgb : RgbBuilder()
 
-.red > rgb.red
-.green > rgb.green
-.blue > rgb.blue
-.state > light.on
-rgb.saturation > light.saturation
-rgb.brightness > light.brightness
-rgb.hue > light.hue
-light.status > .status
-
+  .red > rgb.red
+  .green > rgb.green
+  .blue > rgb.blue
+  .state > light.on
+  rgb.saturation > light.saturation
+  rgb.brightness > light.brightness
+  rgb.hue > light.hue
+  light.status > .status
 }
-
+/*This component creates a url with information to send to the light.*/
 component URLBuilder(address, username, lightno) -> url {
     format : text.Format(fmt="http://{address}/api/{username}/lights/{lightno}/state")
     set_address : json.SetValue()
@@ -51,7 +54,7 @@ component URLBuilder(address, username, lightno) -> url {
     set_lightno.container > format.dict
     format.text > .url
 }
-
+/*This component sets the philips-hue light to different colors.*/
 component FlashingStopLights(address, username, lightno) red,green,blue -> {
     """Use StopLight component to set PhilipsHue light to different colors"""
     light : StopLight(address=address, username=username, lightno=lightno)
@@ -61,9 +64,8 @@ component FlashingStopLights(address, username, lightno) red,green,blue -> {
     .blue > light.blue
     on.data > light.state
     light.status > voidport
-
 }
-
+/*This component builds up a string with information to sent to the PhilipsHue-light.*/
 component CmdBuilder() on, sat, bri, hue -> string {
     to_str : json.ToString()
     set_on : json.SetValue()
@@ -90,18 +92,18 @@ component CmdBuilder() on, sat, bri, hue -> string {
     set_hue.container > to_str.data
     to_str.string > .string
 }
+/*The component takes RGB and translates it to HSL to send to the PhilipsHue-light.*/
 component RgbBuilder() red, green, blue-> saturation, brightness, hue {
-redgb : math.RGBtoHSL()
+  redgb : math.RGBtoHSL()
 
-.red > redgb.red
-.green > redgb.green
-.blue > redgb.blue
-redgb.hue > .hue
-redgb.saturation > .saturation
-redgb.brightness > .brightness
+  .red > redgb.red
+  .green > redgb.green
+  .blue > redgb.blue
+  redgb.hue > .hue
+  redgb.saturation > .saturation
+  redgb.brightness > .brightness
 }
-
-/*The component returns the colors to the PhilipsHue-light depending on if the plant needs watering. The outport "water" gives True/False depending on if the plant needs watering.*/
+/*The component returns the colors to the PhilipsHue-light depending on the humidity from the sensor. The outport "water" gives True/False depending on if the plant needs watering.*/
 component getColorsAndBeing() trigger -> red,green,blue, water{
   moisture : sensor.TriggeredSoilMoisture()
   getColors : math.GetHumidityColors()
@@ -117,19 +119,14 @@ component getColorsAndBeing() trigger -> red,green,blue, water{
   255 > compare.b
   compare.result > .water
 }
-/*
+/*The component triggers a temperature-sensor and returns the temperature. */
 component Temperature() trigger -> message {
     temp : sensor.TriggeredTemperature()
-    text : std.Constant(data="the temperature is ")
-    plus : math.Compute(op="+")
 
     .trigger > temp.trigger
-    text.token > plus.a
-    temp.centigrade > plus.b
-    plus.result > .message
+    temp.centigrade >.message
 }
-*/
-
+/*The component creates a json with "temperature" and "plant" as keys. */
 component CommandBuilder() temp, plant -> json {
     set_temp : json.SetValue()
     set_plant: json.SetValue()
@@ -144,9 +141,9 @@ component CommandBuilder() temp, plant -> json {
 
     set_plant.container > .json
 }
-
+/*The plantpuppy-component sets the philips-hue light in the right colors and returns true or false depending on if the plant needs watering.*/
 component PlantPuppy() trigger -> water {
-  flash : FlashingStopLights(address="192.168.0.141", username="191db4b57899c277637781315c1f53", lightno=2)
+  flash : FlashingStopLights(address="192.168.0.141", username="191db4b57899c277637781315c1f53", lightno=1)
   humidity : getColorsAndBeing()
 
   .trigger > humidity.trigger
@@ -156,26 +153,23 @@ component PlantPuppy() trigger -> water {
   humidity.blue > flash.blue
 }
 
-/*Actors*/
-/*temp : Temperature()*/
+  /*Actors*/
+temp : Temperature()
 cmd : CommandBuilder()
-trigger : std.Trigger(tick=20, data=" ")
-fmt : text.Format(fmt="The temperature in the room is {temperature} degrees. The plant feels {plant}.")
-status : io.Print()
-bullet : web.Pushbullet(title="Room-Wisperer")
+trigger : std.Trigger(tick=60, data=" ")
+fmt : text.Format(fmt="The temperature in the room is {temperature} degrees. The plant feels {plant}!")
+bullet : web.Pushbullet(title="Update")
 plant : PlantPuppy()
 deselect : flow.Deselect()
 
-/*Connections*/
-/*trigger.data > temp.trigger*/
+  /*Connections*/
+trigger.data > temp.trigger
 trigger.data > plant.trigger
-/*temp.message > cmd.temp*/
-"20" > cmd.temp
+temp.message > cmd.temp
 plant.water > deselect.select
 "happy" > deselect.case_false
 "thirsty" > deselect.case_true
 deselect.data > cmd.plant
-cmd.json > status.token
+cmd.json > voidport
 cmd.json > fmt.dict
-fmt.text > voidport
-voidport > bullet.message
+fmt.text > bullet.message
