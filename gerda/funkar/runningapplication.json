@@ -1,0 +1,1236 @@
+{
+    "connections": {
+        "runningapplication:plant:flash:light:light:url:set_username.container": [
+            "runningapplication:plant:flash:light:light:url:set_lightno.container"
+        ], 
+        "runningapplication:plant:humidity:getColors.blue": [
+            "runningapplication:plant:flash:light:rgb:redgb.blue"
+        ], 
+        "runningapplication:_literal_const_23.token": [
+            "runningapplication:cmd:set_temp.value"
+        ], 
+        "runningapplication:cmd:_literal_const_20.token": [
+            "runningapplication:cmd:set_temp.key"
+        ], 
+        "runningapplication:_void_26.void": [
+            "runningapplication:bullet.message"
+        ], 
+        "runningapplication:plant:flash:light:light:command:to_str.string": [
+            "runningapplication:plant:flash:light:light:light.data"
+        ], 
+        "runningapplication:plant:flash:light:light:light.header": [
+            "runningapplication:plant:flash:light:light:_void_1.void"
+        ], 
+        "runningapplication:plant:flash:light:light:command:_literal_const_14.token": [
+            "runningapplication:plant:flash:light:light:command:set_on.key"
+        ], 
+        "runningapplication:plant:humidity:getColors.green": [
+            "runningapplication:plant:flash:light:rgb:redgb.green"
+        ], 
+        "runningapplication:cmd:set_temp.container": [
+            "runningapplication:cmd:set_plant.container"
+        ], 
+        "runningapplication:plant:flash:light:light:command:set_sat.container": [
+            "runningapplication:plant:flash:light:light:command:set_bri.container"
+        ], 
+        "runningapplication:plant:flash:light:light:command:_literal_const_16.token": [
+            "runningapplication:plant:flash:light:light:command:set_bri.key"
+        ], 
+        "runningapplication:plant:flash:light:light:_literal_const_4.token": [
+            "runningapplication:plant:flash:light:light:light.header"
+        ], 
+        "runningapplication:plant:flash:light:light:_literal_const_3.token": [
+            "runningapplication:plant:flash:light:light:light.params"
+        ], 
+        "runningapplication:plant:flash:light:light:light.data": [
+            "runningapplication:plant:flash:light:light:_void_2.void"
+        ], 
+        "runningapplication:plant:flash:light:light:command:_literal_const_13.token": [
+            "runningapplication:plant:flash:light:light:command:set_on.container"
+        ], 
+        "runningapplication:plant:flash:light:light:light.status": [
+            "runningapplication:plant:flash:_void_12.void"
+        ], 
+        "runningapplication:plant:flash:light:light:command:_literal_const_17.token": [
+            "runningapplication:plant:flash:light:light:command:set_hue.key"
+        ], 
+        "runningapplication:trigger.data": [
+            "runningapplication:plant:humidity:moisture.trigger"
+        ], 
+        "runningapplication:plant:humidity:moisture.level": [
+            "runningapplication:plant:humidity:getColors.humidity"
+        ], 
+        "runningapplication:plant:flash:light:rgb:redgb.brightness": [
+            "runningapplication:plant:flash:light:light:command:set_bri.value"
+        ], 
+        "runningapplication:plant:flash:light:rgb:redgb.saturation": [
+            "runningapplication:plant:flash:light:light:command:set_sat.value"
+        ], 
+        "runningapplication:plant:flash:light:light:command:set_on.container": [
+            "runningapplication:plant:flash:light:light:command:set_sat.container"
+        ], 
+        "runningapplication:plant:humidity:getColors.red": [
+            "runningapplication:plant:humidity:compare.a", 
+            "runningapplication:plant:flash:light:rgb:redgb.red"
+        ], 
+        "runningapplication:plant:flash:light:light:command:set_bri.container": [
+            "runningapplication:plant:flash:light:light:command:set_hue.container"
+        ], 
+        "runningapplication:cmd:set_plant.container": [
+            "runningapplication:status.token", 
+            "runningapplication:fmt.dict"
+        ], 
+        "runningapplication:plant:flash:on.data": [
+            "runningapplication:plant:flash:light:light:command:set_on.value"
+        ], 
+        "runningapplication:plant:flash:light:light:url:_literal_const_8.token": [
+            "runningapplication:plant:flash:light:light:url:set_username.key"
+        ], 
+        "runningapplication:plant:flash:light:rgb:redgb.hue": [
+            "runningapplication:plant:flash:light:light:command:set_hue.value"
+        ], 
+        "runningapplication:cmd:_literal_const_21.token": [
+            "runningapplication:cmd:set_plant.key"
+        ], 
+        "runningapplication:_literal_const_24.token": [
+            "runningapplication:deselect.case_false"
+        ], 
+        "runningapplication:plant:humidity:_literal_const_18.token": [
+            "runningapplication:plant:humidity:compare.b"
+        ], 
+        "runningapplication:plant:flash:light:light:url:_literal_const_5.token": [
+            "runningapplication:plant:flash:light:light:url:set_address.container"
+        ], 
+        "runningapplication:_literal_const_25.token": [
+            "runningapplication:deselect.case_true"
+        ], 
+        "runningapplication:fmt.text": [
+            "runningapplication:_void_22.void"
+        ], 
+        "runningapplication:plant:flash:light:light:url:_literal_const_6.token": [
+            "runningapplication:plant:flash:light:light:url:set_address.key"
+        ], 
+        "runningapplication:cmd:_literal_const_19.token": [
+            "runningapplication:cmd:set_temp.container"
+        ], 
+        "runningapplication:plant:flash:light:light:url:set_lightno.container": [
+            "runningapplication:plant:flash:light:light:url:format.dict"
+        ], 
+        "runningapplication:plant:flash:light:light:url:format.text": [
+            "runningapplication:plant:flash:light:light:light.URL"
+        ], 
+        "runningapplication:plant:flash:light:light:url:_literal_const_11.token": [
+            "runningapplication:plant:flash:light:light:url:set_lightno.value"
+        ], 
+        "runningapplication:deselect.data": [
+            "runningapplication:cmd:set_plant.value"
+        ], 
+        "runningapplication:plant:humidity:compare.result": [
+            "runningapplication:deselect.select"
+        ], 
+        "runningapplication:plant:flash:light:light:url:set_address.container": [
+            "runningapplication:plant:flash:light:light:url:set_username.container"
+        ], 
+        "runningapplication:plant:flash:light:light:command:_literal_const_15.token": [
+            "runningapplication:plant:flash:light:light:command:set_sat.key"
+        ], 
+        "runningapplication:plant:flash:light:light:url:_literal_const_7.token": [
+            "runningapplication:plant:flash:light:light:url:set_address.value"
+        ], 
+        "runningapplication:plant:flash:light:light:url:_literal_const_9.token": [
+            "runningapplication:plant:flash:light:light:url:set_username.value"
+        ], 
+        "runningapplication:plant:flash:light:light:url:_literal_const_10.token": [
+            "runningapplication:plant:flash:light:light:url:set_lightno.key"
+        ], 
+        "runningapplication:plant:flash:light:light:command:set_hue.container": [
+            "runningapplication:plant:flash:light:light:command:to_str.data"
+        ]
+    }, 
+    "port_properties": {
+        "runningapplication:status": [
+            {
+                "direction": "in", 
+                "port": "token", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "runningapplication:plant:flash:light:light:_literal_const_3": [
+            {
+                "direction": "out", 
+                "port": "token", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "runningapplication:plant:flash:light:light:_literal_const_4": [
+            {
+                "direction": "out", 
+                "port": "token", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "runningapplication:_void_22": [
+            {
+                "direction": "in", 
+                "port": "void", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "runningapplication:plant:flash:light:light:url:_literal_const_11": [
+            {
+                "direction": "out", 
+                "port": "token", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "runningapplication:plant:flash:light:light:url:_literal_const_10": [
+            {
+                "direction": "out", 
+                "port": "token", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "runningapplication:bullet": [
+            {
+                "direction": "in", 
+                "port": "message", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "runningapplication:_void_26": [
+            {
+                "direction": "out", 
+                "port": "void", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "runningapplication:plant:flash:light:light:command:set_sat": [
+            {
+                "direction": "in", 
+                "port": "container", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "key", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "value", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "container", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "runningapplication:plant:flash:light:light:command:_literal_const_16": [
+            {
+                "direction": "out", 
+                "port": "token", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "runningapplication:plant:flash:light:light:command:_literal_const_15": [
+            {
+                "direction": "out", 
+                "port": "token", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "runningapplication:plant:flash:light:light:command:_literal_const_14": [
+            {
+                "direction": "out", 
+                "port": "token", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "runningapplication:plant:flash:light:light:url:set_address": [
+            {
+                "direction": "in", 
+                "port": "container", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "key", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "value", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "container", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "runningapplication:plant:flash:light:light:url:set_username": [
+            {
+                "direction": "in", 
+                "port": "container", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "key", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "value", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "container", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "runningapplication:cmd:set_temp": [
+            {
+                "direction": "in", 
+                "port": "container", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "value", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "key", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "container", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "runningapplication:plant:humidity:getColors": [
+            {
+                "direction": "in", 
+                "port": "humidity", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "blue", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "green", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "red", 
+                "properties": {
+                    "nbr_peers": 2
+                }
+            }
+        ], 
+        "runningapplication:plant:flash:_void_12": [
+            {
+                "direction": "in", 
+                "port": "void", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "runningapplication:plant:flash:light:light:_void_1": [
+            {
+                "direction": "in", 
+                "port": "void", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "runningapplication:plant:flash:light:light:_void_2": [
+            {
+                "direction": "in", 
+                "port": "void", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "runningapplication:plant:flash:light:light:command:set_on": [
+            {
+                "direction": "in", 
+                "port": "container", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "key", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "value", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "container", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "runningapplication:trigger": [
+            {
+                "direction": "out", 
+                "port": "data", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "runningapplication:plant:flash:light:light:light": [
+            {
+                "direction": "in", 
+                "port": "URL", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "header", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "params", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "data", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "status", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "header", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "data", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "runningapplication:deselect": [
+            {
+                "direction": "in", 
+                "port": "case_true", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "select", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "case_false", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "data", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "runningapplication:plant:humidity:_literal_const_18": [
+            {
+                "direction": "out", 
+                "port": "token", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "runningapplication:plant:humidity:moisture": [
+            {
+                "direction": "in", 
+                "port": "trigger", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "level", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "runningapplication:plant:flash:light:rgb:redgb": [
+            {
+                "direction": "in", 
+                "port": "blue", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "green", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "red", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "hue", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "saturation", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "brightness", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "runningapplication:plant:flash:light:light:command:set_bri": [
+            {
+                "direction": "in", 
+                "port": "container", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "key", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "value", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "container", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "runningapplication:plant:flash:light:light:url:_literal_const_7": [
+            {
+                "direction": "out", 
+                "port": "token", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "runningapplication:plant:flash:light:light:url:_literal_const_6": [
+            {
+                "direction": "out", 
+                "port": "token", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "runningapplication:plant:flash:light:light:url:_literal_const_5": [
+            {
+                "direction": "out", 
+                "port": "token", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "runningapplication:plant:humidity:compare": [
+            {
+                "direction": "in", 
+                "port": "a", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "b", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "result", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "runningapplication:cmd:_literal_const_19": [
+            {
+                "direction": "out", 
+                "port": "token", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "runningapplication:plant:flash:light:light:command:to_str": [
+            {
+                "direction": "in", 
+                "port": "data", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "string", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "runningapplication:plant:flash:on": [
+            {
+                "direction": "out", 
+                "port": "data", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "runningapplication:cmd:set_plant": [
+            {
+                "direction": "in", 
+                "port": "container", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "value", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "key", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "container", 
+                "properties": {
+                    "nbr_peers": 2
+                }
+            }
+        ], 
+        "runningapplication:plant:flash:light:light:url:_literal_const_9": [
+            {
+                "direction": "out", 
+                "port": "token", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "runningapplication:plant:flash:light:light:url:_literal_const_8": [
+            {
+                "direction": "out", 
+                "port": "token", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "runningapplication:plant:flash:light:light:command:_literal_const_17": [
+            {
+                "direction": "out", 
+                "port": "token", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "runningapplication:cmd:_literal_const_20": [
+            {
+                "direction": "out", 
+                "port": "token", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "runningapplication:cmd:_literal_const_21": [
+            {
+                "direction": "out", 
+                "port": "token", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "runningapplication:plant:flash:light:light:command:set_hue": [
+            {
+                "direction": "in", 
+                "port": "container", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "key", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "value", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "container", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "runningapplication:plant:flash:light:light:url:format": [
+            {
+                "direction": "in", 
+                "port": "dict", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "text", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "runningapplication:plant:flash:light:light:url:set_lightno": [
+            {
+                "direction": "in", 
+                "port": "container", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "key", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "in", 
+                "port": "value", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "container", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "runningapplication:fmt": [
+            {
+                "direction": "in", 
+                "port": "dict", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }, 
+            {
+                "direction": "out", 
+                "port": "text", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "runningapplication:plant:flash:light:light:command:_literal_const_13": [
+            {
+                "direction": "out", 
+                "port": "token", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "runningapplication:_literal_const_24": [
+            {
+                "direction": "out", 
+                "port": "token", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "runningapplication:_literal_const_25": [
+            {
+                "direction": "out", 
+                "port": "token", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ], 
+        "runningapplication:_literal_const_23": [
+            {
+                "direction": "out", 
+                "port": "token", 
+                "properties": {
+                    "nbr_peers": 1
+                }
+            }
+        ]
+    }, 
+    "valid": true, 
+    "actors": {
+        "runningapplication:status": {
+            "args": {}, 
+            "actor_type": "io.Print", 
+            "signature": "84d582e5e5c3a95bf20849693d7758370fc724809ffdcb0a4a5be1e96673ac21"
+        }, 
+        "runningapplication:plant:flash:light:light:_literal_const_3": {
+            "args": {
+                "data": {}
+            }, 
+            "actor_type": "std.Constant", 
+            "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
+        }, 
+        "runningapplication:plant:flash:light:light:_literal_const_4": {
+            "args": {
+                "data": {
+                    "Content-Type": "application/json"
+                }
+            }, 
+            "actor_type": "std.Constant", 
+            "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
+        }, 
+        "runningapplication:_void_22": {
+            "args": {}, 
+            "actor_type": "flow.Terminator", 
+            "signature": "d020e4a1dc9953df2924eba3ceed61544fff2bd4fab9f602758cce0e8957d522"
+        }, 
+        "runningapplication:plant:flash:light:light:url:_literal_const_11": {
+            "args": {
+                "data": 2
+            }, 
+            "actor_type": "std.Constant", 
+            "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
+        }, 
+        "runningapplication:plant:flash:light:light:url:_literal_const_10": {
+            "args": {
+                "data": "lightno"
+            }, 
+            "actor_type": "std.Constant", 
+            "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
+        }, 
+        "runningapplication:bullet": {
+            "args": {
+                "title": "Room-Wisperer"
+            }, 
+            "actor_type": "web.Pushbullet", 
+            "signature": "3dd82f99c941b08e1f22b5345fc91e1459e5fa0e082dda1ef44b6646d4d849b1"
+        }, 
+        "runningapplication:_void_26": {
+            "args": {}, 
+            "actor_type": "flow.Void", 
+            "signature": "3a749ff7e2bc123a6e5870c9a337f72e0025a69bff24de632bd2905f7bf21d00"
+        }, 
+        "runningapplication:plant:flash:light:light:command:set_sat": {
+            "args": {}, 
+            "actor_type": "json.SetValue", 
+            "signature": "3e76e92b20364f1972aff4cb233188b7e41a65abe7816896cb4d09a37adf137f"
+        }, 
+        "runningapplication:plant:flash:light:light:command:_literal_const_16": {
+            "args": {
+                "data": "bri"
+            }, 
+            "actor_type": "std.Constant", 
+            "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
+        }, 
+        "runningapplication:plant:flash:light:light:command:_literal_const_15": {
+            "args": {
+                "data": "sat"
+            }, 
+            "actor_type": "std.Constant", 
+            "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
+        }, 
+        "runningapplication:plant:flash:light:light:command:_literal_const_14": {
+            "args": {
+                "data": "on"
+            }, 
+            "actor_type": "std.Constant", 
+            "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
+        }, 
+        "runningapplication:plant:flash:light:light:url:set_address": {
+            "args": {}, 
+            "actor_type": "json.SetValue", 
+            "signature": "3e76e92b20364f1972aff4cb233188b7e41a65abe7816896cb4d09a37adf137f"
+        }, 
+        "runningapplication:plant:flash:light:light:url:set_username": {
+            "args": {}, 
+            "actor_type": "json.SetValue", 
+            "signature": "3e76e92b20364f1972aff4cb233188b7e41a65abe7816896cb4d09a37adf137f"
+        }, 
+        "runningapplication:cmd:set_temp": {
+            "args": {}, 
+            "actor_type": "json.SetValue", 
+            "signature": "3e76e92b20364f1972aff4cb233188b7e41a65abe7816896cb4d09a37adf137f"
+        }, 
+        "runningapplication:plant:humidity:getColors": {
+            "args": {}, 
+            "actor_type": "math.GetHumidityColors", 
+            "signature": "48978b02bb2f5984b83a05194358edd84f758fd41a603b76ff1cf3be2e7a9c9a"
+        }, 
+        "runningapplication:plant:flash:_void_12": {
+            "args": {}, 
+            "actor_type": "flow.Terminator", 
+            "signature": "d020e4a1dc9953df2924eba3ceed61544fff2bd4fab9f602758cce0e8957d522"
+        }, 
+        "runningapplication:plant:flash:light:light:_void_1": {
+            "args": {}, 
+            "actor_type": "flow.Terminator", 
+            "signature": "d020e4a1dc9953df2924eba3ceed61544fff2bd4fab9f602758cce0e8957d522"
+        }, 
+        "runningapplication:plant:flash:light:light:_void_2": {
+            "args": {}, 
+            "actor_type": "flow.Terminator", 
+            "signature": "d020e4a1dc9953df2924eba3ceed61544fff2bd4fab9f602758cce0e8957d522"
+        }, 
+        "runningapplication:plant:flash:light:light:command:set_on": {
+            "args": {}, 
+            "actor_type": "json.SetValue", 
+            "signature": "3e76e92b20364f1972aff4cb233188b7e41a65abe7816896cb4d09a37adf137f"
+        }, 
+        "runningapplication:trigger": {
+            "args": {
+                "tick": 20, 
+                "data": " "
+            }, 
+            "actor_type": "std.Trigger", 
+            "signature": "ba09c716dfc88b9fdf447ede4d0ad64ee4ea24c03a7fb1568f24f5b89254b58e"
+        }, 
+        "runningapplication:plant:flash:light:light:light": {
+            "args": {}, 
+            "actor_type": "net.HTTPPut", 
+            "signature": "d77713364a40a05000ddd140cf8081ccc5a61ab9535b53ac5e100bf21adad46d"
+        }, 
+        "runningapplication:deselect": {
+            "args": {}, 
+            "actor_type": "flow.Deselect", 
+            "signature": "a4f030267249aa9d2498dac1d5f9494b616bfc9d3dfd44760b3b3a9b696ee52b"
+        }, 
+        "runningapplication:plant:humidity:_literal_const_18": {
+            "args": {
+                "data": 255
+            }, 
+            "actor_type": "std.Constant", 
+            "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
+        }, 
+        "runningapplication:plant:humidity:moisture": {
+            "args": {}, 
+            "actor_type": "sensor.TriggeredSoilMoisture", 
+            "signature": "0ad63cef90cd99293eb2c70ddfc513daf09fb674847eb805b4fdb0531a88eb83"
+        }, 
+        "runningapplication:plant:flash:light:rgb:redgb": {
+            "args": {}, 
+            "actor_type": "math.RGBtoHSL", 
+            "signature": "e231b14f55dbcbc393f0c67c4316b711a8f0fe843b0732f7922752c2cc722892"
+        }, 
+        "runningapplication:plant:flash:light:light:command:set_bri": {
+            "args": {}, 
+            "actor_type": "json.SetValue", 
+            "signature": "3e76e92b20364f1972aff4cb233188b7e41a65abe7816896cb4d09a37adf137f"
+        }, 
+        "runningapplication:plant:flash:light:light:url:_literal_const_7": {
+            "args": {
+                "data": "192.168.0.141"
+            }, 
+            "actor_type": "std.Constant", 
+            "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
+        }, 
+        "runningapplication:plant:flash:light:light:url:_literal_const_6": {
+            "args": {
+                "data": "address"
+            }, 
+            "actor_type": "std.Constant", 
+            "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
+        }, 
+        "runningapplication:plant:flash:light:light:url:_literal_const_5": {
+            "args": {
+                "data": {}
+            }, 
+            "actor_type": "std.Constant", 
+            "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
+        }, 
+        "runningapplication:plant:humidity:compare": {
+            "args": {
+                "rel": "="
+            }, 
+            "actor_type": "std.Compare", 
+            "signature": "ea233444664ef2a929101373002d8fa5d89e91aceae7724fbd5a109e5f874446"
+        }, 
+        "runningapplication:cmd:_literal_const_19": {
+            "args": {
+                "data": {}
+            }, 
+            "actor_type": "std.Constant", 
+            "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
+        }, 
+        "runningapplication:plant:flash:light:light:command:to_str": {
+            "args": {}, 
+            "actor_type": "json.ToString", 
+            "signature": "723cc86269b427b45cc02541afefefca1c512ea194d2b719cf36a077d4cb25ec"
+        }, 
+        "runningapplication:plant:flash:on": {
+            "args": {
+                "tick": 0.0, 
+                "data": true
+            }, 
+            "actor_type": "std.Trigger", 
+            "signature": "ba09c716dfc88b9fdf447ede4d0ad64ee4ea24c03a7fb1568f24f5b89254b58e"
+        }, 
+        "runningapplication:cmd:set_plant": {
+            "args": {}, 
+            "actor_type": "json.SetValue", 
+            "signature": "3e76e92b20364f1972aff4cb233188b7e41a65abe7816896cb4d09a37adf137f"
+        }, 
+        "runningapplication:plant:flash:light:light:url:_literal_const_9": {
+            "args": {
+                "data": "191db4b57899c277637781315c1f53"
+            }, 
+            "actor_type": "std.Constant", 
+            "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
+        }, 
+        "runningapplication:plant:flash:light:light:url:_literal_const_8": {
+            "args": {
+                "data": "username"
+            }, 
+            "actor_type": "std.Constant", 
+            "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
+        }, 
+        "runningapplication:plant:flash:light:light:command:_literal_const_17": {
+            "args": {
+                "data": "hue"
+            }, 
+            "actor_type": "std.Constant", 
+            "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
+        }, 
+        "runningapplication:cmd:_literal_const_20": {
+            "args": {
+                "data": "temperature"
+            }, 
+            "actor_type": "std.Constant", 
+            "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
+        }, 
+        "runningapplication:cmd:_literal_const_21": {
+            "args": {
+                "data": "plant"
+            }, 
+            "actor_type": "std.Constant", 
+            "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
+        }, 
+        "runningapplication:plant:flash:light:light:command:set_hue": {
+            "args": {}, 
+            "actor_type": "json.SetValue", 
+            "signature": "3e76e92b20364f1972aff4cb233188b7e41a65abe7816896cb4d09a37adf137f"
+        }, 
+        "runningapplication:plant:flash:light:light:url:format": {
+            "args": {
+                "fmt": "http://{address}/api/{username}/lights/{lightno}/state"
+            }, 
+            "actor_type": "text.Format", 
+            "signature": "5076805251ae7e423b8d422f3e9cba41d3b986c612c110ffe6c27d377dfaa044"
+        }, 
+        "runningapplication:plant:flash:light:light:url:set_lightno": {
+            "args": {}, 
+            "actor_type": "json.SetValue", 
+            "signature": "3e76e92b20364f1972aff4cb233188b7e41a65abe7816896cb4d09a37adf137f"
+        }, 
+        "runningapplication:fmt": {
+            "args": {
+                "fmt": "The temperature in the room is {temperature} degrees. The plant feels {plant}."
+            }, 
+            "actor_type": "text.Format", 
+            "signature": "5076805251ae7e423b8d422f3e9cba41d3b986c612c110ffe6c27d377dfaa044"
+        }, 
+        "runningapplication:plant:flash:light:light:command:_literal_const_13": {
+            "args": {
+                "data": {}
+            }, 
+            "actor_type": "std.Constant", 
+            "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
+        }, 
+        "runningapplication:_literal_const_24": {
+            "args": {
+                "data": "happy"
+            }, 
+            "actor_type": "std.Constant", 
+            "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
+        }, 
+        "runningapplication:_literal_const_25": {
+            "args": {
+                "data": "thirsty"
+            }, 
+            "actor_type": "std.Constant", 
+            "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
+        }, 
+        "runningapplication:_literal_const_23": {
+            "args": {
+                "data": "20"
+            }, 
+            "actor_type": "std.Constant", 
+            "signature": "fbf51915d742024c29847ed828e3d53e34d126a089540b943c8c8b77f9cbe224"
+        }
+    }, 
+    "name": "runningapplication"
+}

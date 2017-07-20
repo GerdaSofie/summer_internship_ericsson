@@ -1,6 +1,6 @@
-define CONTROL_URI = "http://192.168.0.139:5001"
-define APPNAME = "migrate_room"
-define FILE = "testprint.calvin"
+define CONTROL_URI = "http://192.168.0.125:5001"
+define APPNAME = "migrating_room"
+define FILE = "runningapplication.calvin"
 
 component CalvinDeployer(control_uri) name, script, deploy_info -> app_info {
     sec_credentials:std.Constant(data={})
@@ -56,7 +56,7 @@ component Migrator() room , app_id -> done {
      {
           "requirements":
           {
-  	    "log":[{"op": "node_attr_match","kwargs": {"index": ["address", {"room": "Garage"}]}, "type": "+"}],
+  	    "temp":[{"op": "node_attr_match","kwargs": {"index": ["address", {"room": "Garage"}]}, "type": "+"}],
 
           }
       },
@@ -64,7 +64,7 @@ component Migrator() room , app_id -> done {
       {
           "requirements":
           {
-  	    "log":[{"op": "node_attr_match","kwargs": {"index": ["address", {"room": "Lego"}]}, "type": "+"}],
+  	    "temp":[{"op": "node_attr_match","kwargs": {"index": ["address", {"room": "Lego"}]}, "type": "+"}],
 
           }
       }
@@ -131,12 +131,11 @@ component RFIDReader() -> data, room {
   joinData.token > .data
   voidport > log2.data
 }
-component PeopleCounter() data, room -> output, count{
+component PeopleCounter() data, room -> count{
 people : room.PersonCounter()
 getv : json.GetValue()
 length : text.Length()
 rum : json.GetValue()
-compare1 : std.Compare(rel="=")
 
 .data > getv.container
 
@@ -145,9 +144,6 @@ getv.value > people.id
 .room > people.room
 
 people.status > voidport
-"Forest" > compare1.a
-.room > compare1.b
-compare1.result > .output
 people.rooms > rum.container
 .room > rum.key
 rum.value > length.string
@@ -157,15 +153,17 @@ length.length > .count
 component InOrOut() data, antal -> in, out {
   select : flow.Select()
   getv : json.GetValue()
-  compare : std.Compare(rel=">=")
-  init : flow.Init(data="0")
+  compare : std.Compare(rel="<=")
+  init : flow.Init(data="1")
+  print : io.Print()
 
   .data > getv.container
   "data" > getv.key
 
-  .antal > compare.a
+  .antal > compare.b
+  .antal > print.token
   .antal > init.in
-  init.out > compare.b
+  init.out > compare.a
   compare.result > select.select
   getv.value > select.data
   select.case_true > .in
@@ -193,7 +191,7 @@ component MediaPlayer() dict-> {
     mush.text > player.mediafile
     const.token > player.play
 }
-  /*
+
 component MediaPlayerUt() dict -> {
   dict : json.Dict()
   const : std.Constant(data=true)
@@ -206,8 +204,8 @@ component MediaPlayerUt() dict -> {
   mush.text > player.mediafile
   const.token > player.play
 }
-  */
-component PhilipsHue(address, username, lightno) on, saturation, brightness, hue -> status {
+
+component PhilipsHue(address, username,lightno) on, saturation, brightness, hue -> status {
     url : URLBuilder(address=address, username=username, lightno=lightno)
     command : CmdBuilder()
     light : net.HTTPPut()
@@ -226,12 +224,11 @@ component PhilipsHue(address, username, lightno) on, saturation, brightness, hue
     light.data > voidport
 }
 
-component StopLight(address, username, lightno,red, green, blue) state -> status {
+component StopLight(address, username,red, green, blue,lightno) state-> status {
 light : PhilipsHue(address=address, username=username, lightno=lightno)
 rgb : RgbBuilder(red=red, green=green,blue=blue)
 bool:   flow.Bool()
 select : flow.Deselect()
-
 
 .state > bool.token
 bool.bool > select.select
@@ -243,10 +240,9 @@ true > select.case_true
 false > select.case_false
 select.data > light.on
 light.status > .status
-
 }
 
-component URLBuilder(address, username, lightno) -> url {
+component URLBuilder(address, username ,lightno) -> url {
     format : text.Format(fmt="http://{address}/api/{username}/lights/{lightno}/state")
     set_address : json.SetValue()
     set_username : json.SetValue()
@@ -265,8 +261,8 @@ component URLBuilder(address, username, lightno) -> url {
     format.text > .url
 }
 
-component GreenFlashLight(address, username, lightno, interval) input-> {
-  light : StopLight(address=address, username=username, lightno=lightno,red=0, green=255, blue=0)
+component GreenFlashLight(address, username,interval, lightno) input-> {
+  light : StopLight(address=address, username=username,red=0, green=255, blue=0,lightno=lightno)
   itemize : json.Items()
   pacer : std.ClassicDelay(delay=interval)
   bool : flow.Bool()
@@ -274,7 +270,7 @@ component GreenFlashLight(address, username, lightno, interval) input-> {
   select : flow.Select()
 
   .input > select.select
-  [1,1] > select.data
+  [1,1,1] > select.data
   select.case_true > itemize.list
   select.case_false > voidport
   itemize.item > bool.token
@@ -311,19 +307,22 @@ component CmdBuilder() on, sat, bri, hue -> string {
     set_hue.container > to_str.data
     to_str.string > .string
 }
-component Lights() room, status -> {
-  flashGreenOffice : GreenFlashLight(address="192.168.0.141", username="191db4b57899c277637781315c1f53", lightno=3, interval=1.0)
-  flashGreenForest : GreenFlashLight(address="192.168.0.141", username="191db4b57899c277637781315c1f53", lightno=2, interval=1.0)
+component Lights() room -> {
+  flashGreenOffice : GreenFlashLight(address="192.168.0.141", username="191db4b57899c277637781315c1f53",interval=1.0,lightno=2)
+  flashGreenForest : GreenFlashLight(address="192.168.0.141", username="191db4b57899c277637781315c1f53",interval=1.0,lightno=3)
   compare : std.Compare(rel="=")
   selectLight : flow.Select()
-  .room > compare.a
-  "Forest" > compare.b
-  compare.result > selectLight.select
-  .status > selectLight.data
-  selectLight.case_false > flashGreenOffice.input
-  selectLight.case_true > flashGreenForest.input
+  bool : flow.Bool()
 
+  .room > compare.a
+  "Office" > compare.b
+  compare.result > selectLight.select
+  selectLight.case_false > flashGreenOffice.input
+  .room > bool.token
+  bool.bool > selectLight.data
+  selectLight.case_true > flashGreenForest.input
 }
+
 component RgbBuilder(red, green, blue) -> saturation, brightness, hue {
 redgb : math.RGBtoHSL()
 
@@ -354,7 +353,11 @@ deploy_info : std.Constant(data=
 {
     "requirements":
     {
-        "log":[{"op": "node_attr_match", "kwargs": {"index": ["address", {"name": "Garage"}]},"type":"+"}],
+        "temp":[{"op": "node_attr_match", "kwargs": {"index": ["address", {"name": "Garage"}]},"type":"+"}],
+        "moisture":[{"op": "node_attr_match", "kwargs": {"index": ["address", {"name": "Home"}]},"type":"+"}],
+        "bullet":[{"op": "node_attr_match", "kwargs": {"index": ["address", {"name": "Home"}]},"type":"+"}]
+
+
     }
 })
 
@@ -362,7 +365,7 @@ name : flow.Init(data=APPNAME)
 filereader: io.FileReader()
 linejoin : text.LineJoin()
 mediaPlayer : MediaPlayer()
-  /*mediaPlayerUt : MediaPlayerUt()*/
+mediaPlayerUt : MediaPlayerUt()
 InorOut : InOrOut()
 camera : Picture()
 cmd : PushbulletBuilder()
@@ -376,12 +379,12 @@ deploy: CalvinDeployer(control_uri=CONTROL_URI)
 rfid : RFIDReader()
 migrator : Migrator()
 peopleCounter : PeopleCounter()
-compare : std.Compare(rel="=")
-deselecter : flow.Select()
+compare1 : std.Compare(rel="=")
 print2 : io.Log(loglevel="INFO")
-printpush : io.Log(loglevel="INFO")
-compare : std.Compare(rel="=")
+# printpush : io.Log(loglevel="INFO")
 select : flow.Select()
+bool : flow.Bool()
+selecter : flow.Select()
 
 # deploy
 FILE > filereader.filename
@@ -394,33 +397,29 @@ deploy.app_info > migrator.app_id
 
 rfid.room > peopleCounter.room
 rfid.data > peopleCounter.data
-peopleCounter.count > compare.a
-0 > compare.b
-compare.result > deselecter.select
-peopleCounter.count > deselecter.data
-deselecter.case_true > voidport
-deselecter.case_false > cmd.count
+peopleCounter.count > cmd.count
 rfid.room > cmd.room
 peopleCounter.count > print2.data
 rfid.room > migrator.room
 migrator.done > voidport
 
 rfid.room > lights.room
-peopleCounter.output > lights.status
 cmd.json > fmt.dict
-fmt.text > printpush.data
-
-voidport > bullet.message
 rfid.data > InorOut.data
 
-rfid.room > compare.a
-"Office" > compare.b
-compare.result > select.select
-InOrOut.in >select.data
+rfid.room > compare1.a
+"Office" > compare1.b
+compare1.result > select.select
+InorOut.in > select.data
 select.case_true > camera.id
 select.case_false > voidport
 
 peopleCounter.count > InorOut.antal
 InorOut.out > camera.remove
-# InorOut.out > mediaPlayerUt.dict
+InorOut.out > mediaPlayerUt.dict
+InorOut.in > bool.token
+bool.bool > selecter.select
+fmt.text > selecter.data
+selecter.case_true > bullet.message
+selecter.case_false > voidport
 InorOut.in > mediaPlayer.dict
